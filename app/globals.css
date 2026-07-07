@@ -498,6 +498,21 @@ textarea:focus {
   scrollbar-color: #c9a86e transparent;
 }
 
+/* Marquee-лента (галерея выданных авто клиентам) — вынесено из <style jsx>
+   в client-компонент, чтобы избежать hydration mismatch в Next 15 / React 19 */
+@keyframes orient-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  min-width: 200%;
+  will-change: transform;
+  animation: orient-marquee 40s linear infinite;
+}
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
 /* Паттерн фона из лого Orient Auto — placeholder до финального SVG-паттерна от клиента */
 .orient-pattern {
   position: relative;
