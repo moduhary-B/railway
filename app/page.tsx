@@ -43,8 +43,10 @@ import YandexMap from "../components/YandexMap";
 import DebugBreakpoints from "../components/DebugBreakpoints";
 import { SocialIcon, SocialLinkButton, ORIENT_SOCIALS } from "@/components/social-icons";
 import { useConsultationModal } from "@/components/consultation-modal";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const consultation = useConsultationModal()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeReviewIndex, setActiveReviewIndex] = useState(0)
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
@@ -997,63 +999,87 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
-                
-
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight">
+                {/* Hero заголовок — анимация вылета справа (msg_2) */}
+                <motion.h1
+                  initial={{ x: 120, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight"
+                >
                   Автомобили из{" "}
                   <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">
                     Азии
                   </span>{" "}
                   с гарантией качества
-                </h1>
+                </motion.h1>
 
-                <p className="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto lg:mx-0">
+                {/* Подзаголовок — вылет снизу (msg_2) */}
+                <motion.p
+                  initial={{ y: 40, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
+                  className="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto lg:mx-0"
+                >
                   Мы специализируемся на подборе и доставке автомобилей из Японии, Кореи и Китая с полным
                   сопровождением сделки.
-                </p>
+                </motion.p>
 
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start mb-8">
-                  <a
-                    href="#consultation"
-                    className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] hover:from-[#d4b876] hover:to-[#c9a86e] text-[#0e1720] font-semibold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-[#c9a86e]/25 transform hover:scale-105 active:scale-95 text-sm sm:text-base md:text-lg min-h-[44px] flex items-center justify-center text-center"
+                {/* Одна кнопка "Оставить заявку" по центру, с подсветкой-пульсацией (msg_2) */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  className="flex justify-center lg:justify-start mb-10"
+                >
+                  <button
+                    type="button"
+                    onClick={() => consultation.open("hero")}
+                    className="relative group bg-gradient-to-r from-[#c9a86e] to-[#d4b876] hover:from-[#d4b876] hover:to-[#c9a86e] text-[#0e1720] font-bold px-8 py-4 md:px-10 md:py-5 rounded-xl transition-all duration-300 shadow-[0_0_40px_-8px_rgba(201,168,110,0.55)] hover:shadow-[0_0_60px_-8px_rgba(201,168,110,0.8)] hover:scale-105 active:scale-95 text-base md:text-lg min-h-[52px] flex items-center gap-2 uppercase tracking-wide"
                   >
-                    Бесплатная консультация
-                  </a>
-                  <a
-                    href="https://t.me/orientauto_chat"
-                    className="bg-transparent border-2 border-[#c9a86e] text-[#c9a86e] hover:bg-[#c9a86e]/10 font-semibold px-4 py-3 sm:px-6 sm:py-4 md:px-8 md:py-4 rounded-lg transition-all duration-300 transform hover:scale-105 active:scale-95 text-sm sm:text-base md:text-lg min-h-[44px] flex items-center justify-center text-center"
-                  >
-                    Telegram чат
-                  </a>
-                </div>
+                    <span className="absolute inset-0 rounded-xl bg-[#c9a86e] opacity-40 blur-lg group-hover:opacity-60 transition-opacity animate-pulse -z-10" />
+                    Оставить заявку
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </motion.div>
 
+                {/* Для вопросов: MAX → WhatsApp → Telegram, оригинальные бренд-иконки (msg_2) */}
                 <div className="flex flex-col items-center justify-center lg:items-start gap-4">
                   <div className="flex flex-col sm:flex-row items-center gap-4">
                     <div className="text-white/80">Для вопросов:</div>
-                    <div className="flex items-center gap-4 justify-center lg:justify-start">
-                    <a
-                      href="https://wa.me/79958689768"
-                      className="flex items-center gap-2 text-white/80 hover:text-[#c9a86e] transition-colors"
-                    >
-                      <div className="w-10 h-10 rounded-full bg-[#1a2332] flex items-center justify-center">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106" />
-                        </svg>
-                      </div>
-                      WhatsApp
-                    </a>
-                    <a
-                      href="https://t.me/al_orientauto"
-                      className="flex items-center gap-2 text-white/80 hover:text-[#c9a86e] transition-colors"
-                    >
-                      <div className="w-10 h-10 rounded-full bg-[#1a2332] flex items-center justify-center">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.25l-2.173 10.244c-.168.78-.621.936-1.26.578l-3.478-2.568-1.68 1.614c-.189.182-.345.336-.708.336l.257-3.596 6.531-5.903c.285-.248-.062-.384-.441-.136L7.926 13.8l-3.475-1.086c-.755-.236-.77-.755.157-1.118l13.563-5.229c.631-.231 1.178.349.891 1.883z" />
-                        </svg>
-                      </div>
-                      Telegram
-                    </a>
-                  
+                    <div className="flex items-center gap-3 justify-center lg:justify-start">
+                      <a
+                        href={ORIENT_SOCIALS.max.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
+                      >
+                        <div className="w-10 h-10 rounded-full bg-[#1a2332] border border-[#c9a86e]/20 flex items-center justify-center">
+                          <SocialIcon network="max" size={22} />
+                        </div>
+                        MAX
+                      </a>
+                      <a
+                        href={ORIENT_SOCIALS.whatsapp.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
+                      >
+                        <div className="w-10 h-10 rounded-full bg-[#1a2332] border border-[#c9a86e]/20 flex items-center justify-center">
+                          <SocialIcon network="whatsapp" size={22} />
+                        </div>
+                        WhatsApp
+                      </a>
+                      <a
+                        href={ORIENT_SOCIALS.telegram.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
+                      >
+                        <div className="w-10 h-10 rounded-full bg-[#1a2332] border border-[#c9a86e]/20 flex items-center justify-center">
+                          <SocialIcon network="telegram" size={22} />
+                        </div>
+                        Telegram
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -1220,30 +1246,43 @@ export default function Home() {
 
 
 
-      {/* Затем блок 'О нас', но marquee внутри удаляю, оставляю только текст, цифры и картинку. */}
-      <section className="py-24 bg-gradient-to-b from-[#0a0f1a] to-[#0e1720] w-full overflow-hidden">
+      {/* Блок 'О нас' — msg_6: убран большой заголовок ORIENT AUTO,
+          однотонный фон с паттерном лого, новый текст клиента с акцентными выделениями */}
+      <section className="py-24 bg-[#0a0f1a] w-full overflow-hidden orient-pattern">
         {/* Контейнер с текстом и цифрами */}
-        <div className="mx-auto px-4 max-w-7xl">
+        <div className="mx-auto px-4 max-w-7xl relative">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-            <div className="space-y-8 w-full">
-              <h2 className="text-5xl md:text-6xl font-light tracking-wide">
-                <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">
-                  ORIENT AUTO
-                </span>
-              </h2>
-              <div className="space-y-6 text-lg leading-relaxed">
-                <p className="text-white/90">
-                  ORIENT AUTO — команда профессионалов, которая сопровождает клиента на каждом этапе: от подбора до передачи ключей от автомобиля вашей мечты.
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ duration: 0.7 }}
+              className="space-y-8 w-full"
+            >
+              <div className="space-y-6 leading-relaxed">
+                <p className="text-2xl md:text-3xl font-light text-white leading-snug">
+                  Профессиональный подбор и доставка автомобилей из{" "}
+                  <span className="font-semibold text-white">Японии</span>,{" "}
+                  <span className="font-semibold text-red-400">Китая</span> и{" "}
+                  <span className="font-semibold text-blue-400">Кореи</span>.
                 </p>
-                <p className="text-white/80">
-                  Мы работаем напрямую с аукционами и дилерами Японии, Кореи и Китая, тщательно проверяем автомобили и берём на себя все вопросы логистики, оформления и доставки.
+                <p className="text-lg md:text-xl text-white/80">
+                  Работаем{" "}
+                  <span className="text-[#c9a86e] font-medium">напрямую</span> с
+                  аукционами и дилерами, сопровождая клиента на всех этапах —{" "}
+                  <span className="text-white/95">от подбора автомобиля до передачи ключей</span>.
                 </p>
-                <p className="text-white/80">
-                  Наша миссия — сделать покупку авто из Азии простой, прозрачной и комфортной для каждого клиента.
-                </p>
-                <p className="text-[#c9a86e] font-medium">
-                  Доверьте нам заботу о вашем будущем автомобиле!
-                </p>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
+                    Просто
+                  </span>
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
+                    Надёжно
+                  </span>
+                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
+                    Прозрачно
+                  </span>
+                </div>
               </div>
               <div className="flex gap-4 pt-4 justify-center overflow-hidden">
                 <div className="text-center flex-1 min-w-0">
@@ -1259,7 +1298,7 @@ export default function Home() {
                   <div className="text-white/70 text-base overflow-hidden">Гарантия качества</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             {/* Правая колонка: карусель преимуществ с анимацией как у 'Этапы работы' */}
             {/* Десктопная версия */}
             <div className="w-full flex flex-col items-center hidden md:flex">
@@ -1444,31 +1483,34 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Countries Grid */}
+          {/* Countries Grid — msg_7: порядок Япония → Китай → Корея,
+              шапки цвета флагов (белый / красный / синий) */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[
               {
-                id: 'korea',
-                name: 'Корея',
-                description: 'Качественные автомобили из Южной Кореи',
-                color: 'from-[#c9a86e] to-[#d4b876]',
+                id: 'japan',
+                name: 'Япония',
+                description: 'Надежные автомобили из Японии',
+                color: 'from-white/70 via-white/30 to-white/5',
+                accent: 'text-slate-900',
                 stats: {
-                  cars: '1500+',
-                  brands: '5',
-                  avgPrice: '2.5M ₽'
+                  cars: '3000+',
+                  brands: '12',
+                  avgPrice: '3.2M ₽'
                 },
                 features: [
-                  'Kia, Hyundai, Genesis',
-                  'Современные технологии',
-                  'Высокое качество сборки',
-                  'Экономичный расход топлива'
+                  'Toyota, Honda, Nissan',
+                  'Высокая надежность',
+                  'Отличная репутация',
+                  'Долговечность'
                 ]
               },
               {
                 id: 'china',
                 name: 'Китай',
                 description: 'Доступные автомобили из Китая',
-                color: 'from-[#c9a86e] to-[#d4b876]',
+                color: 'from-red-600 via-red-500 to-red-700',
+                accent: 'text-white',
                 stats: {
                   cars: '2000+',
                   brands: '8',
@@ -1482,31 +1524,32 @@ export default function Home() {
                 ]
               },
               {
-                id: 'japan',
-                name: 'Япония',
-                description: 'Надежные автомобили из Японии',
-                color: 'from-[#c9a86e] to-[#d4b876]',
+                id: 'korea',
+                name: 'Корея',
+                description: 'Качественные автомобили из Южной Кореи',
+                color: 'from-blue-700 via-blue-500 to-blue-800',
+                accent: 'text-white',
                 stats: {
-                  cars: '3000+',
-                  brands: '12',
-                  avgPrice: '3.2M ₽'
+                  cars: '1500+',
+                  brands: '5',
+                  avgPrice: '2.5M ₽'
                 },
                 features: [
-                  'Toyota, Honda, Nissan',
-                  'Высокая надежность',
-                  'Отличная репутация',
-                  'Долговечность'
+                  'Kia, Hyundai, Genesis',
+                  'Современные технологии',
+                  'Высокое качество сборки',
+                  'Экономичный расход топлива'
                 ]
               }
             ].map((country) => (
               <div key={country.id} className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 hover:border-[#c9a86e]/40 transition-all duration-300 group hover:shadow-2xl hover:shadow-[#c9a86e]/10 transform hover:-translate-y-2 rounded-xl overflow-hidden">
                 <div className="relative overflow-hidden rounded-t-lg p-6">
-                  <div className={`absolute inset-0 bg-gradient-to-r ${country.color} opacity-20 group-hover:opacity-30 transition-opacity`} />
+                  <div className={`absolute inset-0 bg-gradient-to-br ${country.color} opacity-90 group-hover:opacity-100 transition-opacity`} />
                   <div className="relative z-10">
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className={`text-2xl font-bold mb-2 ${country.accent}`}>
                       {country.name}
                     </h3>
-                    <p className="text-white/70">{country.description}</p>
+                    <p className={country.accent === 'text-white' ? 'text-white/85' : 'text-slate-800/80'}>{country.description}</p>
                   </div>
                 </div>
                 <div className="p-6">
@@ -1548,11 +1591,8 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Additional Info */}
+          {/* Additional Info — заголовок "Почему выбирают Orient Auto?" убран (msg_7) */}
           <div className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 rounded-xl p-8 text-center">
-            <h2 className="text-2xl font-bold text-white mb-4">
-              Почему выбирают Orient Auto?
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex flex-col items-center">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mb-3">
