@@ -1626,32 +1626,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Telegram Chat Section - Улучшенная иллюстрация и стрелка на кнопке */}
+      {/* Chat Section — msg_9: "Чат менеджеров" (не только Telegram),
+          единый шрифт, две кнопки MAX + TG в бренд-цветах, порядок MAX -> TG */}
       <section className="pt-[14.5rem] pb-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] relative md:overflow-hidden overflow-visible">
-        {/* Пятнышко вынесено за пределы родительского блока */}
-        <div className="absolute -top-32 md:top-24 mb:left-6  w-96 h-96 bg-gradient-to-br from-[#c9a86e]/20 to-[#d4b876]/10 rounded-full blur-3xl opacity-40 z-0"></div>
+        <div className="absolute -top-32 md:top-24 mb:left-6 w-96 h-96 bg-gradient-to-br from-[#c9a86e]/20 to-[#d4b876]/10 rounded-full blur-3xl opacity-40 z-0"></div>
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center relative z-10 gap-12">
           <div className="flex-1 flex flex-col items-center md:items-start overflow-visible">
             <h2 className="text-white text-4xl md:text-5xl mb-8 text-center md:text-left font-bold tracking-wide drop-shadow-xl">
-              <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">TELEGRAM-ЧАТ МЕНЕДЖЕРОВ</span>
+              <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">ЧАТ МЕНЕДЖЕРОВ</span>
             </h2>
-            <div className="max-w-2xl text-center md:text-left mb-12">
-              <p className="text-white/90 text-xl md:text-2xl font-light mb-4">Общайтесь в реальном времени с опытными специалистами Orient Auto!</p>
-              <p className="text-[#c9a86e] text-lg md:text-xl font-medium">Мгновенные ответы на любые вопросы, честные консультации и поддержка без ожидания!</p>
-              <p className="text-white/70 mt-4">В нашем Telegram-чате <span className="text-[#c9a86e] font-semibold">@orientauto_chat</span> вы получите профессиональную помощь напрямую от менеджеров компании. Присоединяйтесь — конкуренты такого не предлагают!</p>
+            {/* Единый шрифт (font-light для всех абзацев), цвет для смысловых акцентов */}
+            <div className="max-w-2xl text-center md:text-left mb-12 space-y-4">
+              <p className="text-white/90 text-xl md:text-2xl font-light">
+                Общайтесь в реальном времени с опытными специалистами Orient Auto!
+              </p>
+              <p className="text-lg md:text-xl font-light text-white/80">
+                <span className="text-[#c9a86e]">Мгновенные ответы</span> на любые вопросы,{" "}
+                <span className="text-[#c9a86e]">честные консультации</span> и поддержка без ожидания.
+              </p>
+              <p className="text-base md:text-lg font-light text-white/70">
+                В наших чатах — <span className="text-[#c9a86e]">MAX</span> и{" "}
+                <span className="text-[#c9a86e]">Telegram</span> — вы получите профессиональную помощь
+                напрямую от менеджеров компании.
+              </p>
             </div>
-            <a
-              href="https://t.me/orientauto_chat"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 md:gap-3 px-6 py-3 md:px-10 md:py-5 rounded-xl md:rounded-2xl bg-gradient-to-r from-[#c9a86e] to-[#d4b876] text-[#181f2a] text-base md:text-2xl font-semibold md:font-bold shadow-xl hover:scale-105 hover:from-[#d4b876] hover:to-[#c9a86e] transition-all duration-300 drop-shadow-lg"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" className="md:w-8 md:h-8 w-5 h-5"><path fill="#181f2a" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.25l-2.173 10.244c-.168.78-.621.936-1.26.578l-3.478-2.568-1.68 1.614c-.189.182-.345.336-.708.336l.257-3.596 6.531-5.903c.285-.248-.062-.384-.441-.136L7.926 13.8l-3.475-1.086c-.755-.236-.77-.755.157-1.118l13.563-5.229c.631-.231 1.178.349.891 1.883z"/></svg>
-              Перейти в Telegram-чат
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" className="md:w-7 md:h-7 w-5 h-5"><path d="M5 12h14M13 6l6 6-6 6" stroke="#181f2a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
-            </a>
+            {/* Две кнопки в бренд-цветах, MAX первая */}
+            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+              <a
+                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-6 py-4 md:px-8 md:py-4 rounded-2xl bg-gradient-to-br from-[#4CC1FF] via-[#5E3FE3] to-[#9333EA] text-white text-base md:text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <SocialIcon network="max" size={28} />
+                Перейти в MAX-чат
+                <ArrowRight className="w-5 h-5" />
+              </a>
+              <a
+                href="https://t.me/orientauto_chat"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-6 py-4 md:px-8 md:py-4 rounded-2xl bg-[#26A5E4] hover:bg-[#1F8DC7] text-white text-base md:text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-300"
+              >
+                <SocialIcon network="telegram" size={26} colored={false} />
+                Перейти в Telegram-чат
+                <ArrowRight className="w-5 h-5" />
+              </a>
+            </div>
           </div>
-          {/* SVG-иллюстрация чата — современный стиль, скрыта на мобильных */}
+          {/* SVG-иллюстрация чата — обновлена в компоненте ChatIllustration (msg_9) */}
           <div className="hidden md:block flex-1">
             <ChatIllustration />
           </div>
