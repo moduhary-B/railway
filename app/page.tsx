@@ -567,17 +567,19 @@ export default function Home() {
   };
 
   // --- Карусель для блока 'Команда ORIENT AUTO' ---
+  // msg_19: должность + имя вынесены ПОД фото (не на фото), под каждым — телефон.
+  // Финальные номера и обновлённые фото придут от клиента отдельно (заглушки того же формата).
   const teamMembers = [
-    { name: "Алихан", position: "Руководитель компании", photo: "/personal/p1.PNG" },
-    { name: "Кирилл", position: "Руководитель отдела продаж", photo: "/personal/p2.PNG" },
-    { name: "Арина", position: "SMM-специалист", photo: "/personal/p3.PNG" },
-    { name: "Валентин", position: "Менеджер отдела продаж", photo: "/personal/p4.PNG" },
-    { name: "Вадим", position: "Менеджер отдела продаж", photo: "/personal/p5.PNG" },
-    { name: "Павел", position: "Менеджер отдела продаж", photo: "/personal/p6.PNG" },
-    { name: "Андрей", position: "Менеджер отдела продаж", photo: "/personal/p7.PNG" },
-    { name: "Павел", position: "Менеджер отдела продаж", photo: "/personal/p8.PNG" },
-    { name: "Владислав", position: "Менеджер отдела продаж", photo: "/personal/p9.PNG" },
-    { name: "Владислав", position: "Менеджер отдела продаж", photo: "/personal/p10.PNG" },
+    { name: "Алихан", position: "Руководитель компании", photo: "/personal/p1.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Кирилл", position: "Руководитель отдела продаж", photo: "/personal/p2.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Арина", position: "SMM-специалист", photo: "/personal/p3.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Валентин", position: "Менеджер отдела продаж", photo: "/personal/p4.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Вадим", position: "Менеджер отдела продаж", photo: "/personal/p5.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Павел", position: "Менеджер отдела продаж", photo: "/personal/p6.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Андрей", position: "Менеджер отдела продаж", photo: "/personal/p7.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Павел", position: "Менеджер отдела продаж", photo: "/personal/p8.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Владислав", position: "Менеджер отдела продаж", photo: "/personal/p9.PNG", phone: "+7 (995) 868-97-68" },
+    { name: "Владислав", position: "Менеджер отдела продаж", photo: "/personal/p10.PNG", phone: "+7 (995) 868-97-68" },
   ];
   const TEAM_VISIBLE = 4;
   const CARD_WIDTH = 325; // Увеличено на ~10% при сохранении видимых 4 карточек
@@ -1986,109 +1988,80 @@ export default function Home() {
       )}
       */}
 
-      {/* How to Order Section - With Arrows */}
-      <section className="py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] w-full overflow-hidden">
-        <div className="container mx-auto px-4 max-w-full">
-          <h2 className="text-white text-4xl md:text-5xl mb-20 text-center font-light tracking-wide">
-            Этапы работы
-          </h2>
+      {/* How to Order — msg_14+15: полностью переверстано.
+          Слева — фото Kia K5 (заглушка до финального от клиента, /placeholder-car.jpg),
+          справа — вертикальный список этапов с анимацией по скроллу.
+          Заголовок в новом стиле (двухсоставный, с золотым акцентом). */}
+      <section className="py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] w-full overflow-hidden orient-pattern">
+        <div className="container mx-auto px-4 max-w-7xl relative">
+          {/* Заголовок в новом стиле (по образцу msg_15) */}
+          <div className="text-center mb-16">
+            <div className="inline-block">
+              <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-sm md:text-base mb-3">
+                6 шагов
+              </span>
+              <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide">
+                Как мы <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">работаем</span>
+              </h2>
+              <div className="h-1 w-24 mx-auto mt-4 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+            </div>
+          </div>
 
-          <div className="relative flex items-center justify-center min-h-[500px] lg:min-h-[520px]">
-            {/* Левая стрелка */}
-            <button
-              onClick={() => handleOrderStepChange(Math.max(activeOrderStep - 1, 0))}
-              className="absolute left-4 md:left-[25%] bottom-4 md:top-1/2 md:-translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-300 hover:scale-110 border border-[#c9a86e]/20 hover:border-[#c9a86e]/40 flex items-center justify-center z-50"
-              aria-label="Предыдущий шаг"
-              disabled={activeOrderStep === 0}
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <div 
-              className="flex justify-center items-center w-full gap-4 md:gap-12 relative overflow-x-hidden overflow-y-visible pb-8" 
-              style={{minHeight: 400}}
-              onTouchStart={onTouchStart}
-              onTouchMove={onTouchMove}
-              onTouchEnd={() => onTouchEnd(activeOrderStep, orderSteps.length - 1, handleOrderStepChange)}
-            >
-              {orderSteps.map((item, idx) => {
-                // Определяем позицию карточки относительно активной
-                let position = idx - activeOrderStep;
-                let isActive = idx === activeOrderStep;
-                let isPrev = idx === activeOrderStep - 1;
-                let isNext = idx === activeOrderStep + 1;
-                // Анимация направления
-                let direction = activeOrderStep > prevOrderStep ? 1 : -1;
-                // Стили для анимации
-                let base = "absolute left-1/2 top-0 w-full max-w-md lg:max-w-lg transition-all duration-500 ease-in-out";
-                let style = {};
-                if (isActive) {
-                  style = {
-                    transform: "translateX(-50%) scale(1)",
-                    zIndex: 40,
-                    opacity: 1,
-                    filter: "none"
-                  };
-                } else if (isPrev) {
-                  style = {
-                    transform: "translateX(-100%) scale(0.9)",
-                    zIndex: 20,
-                    opacity: 0.6,
-                    filter: "blur(4px)"
-                  };
-                } else if (isNext) {
-                  style = {
-                    transform: "translateX(0%) scale(0.9)",
-                    zIndex: 20,
-                    opacity: 0.6,
-                    filter: "blur(4px)"
-                  };
-                } else {
-                  style = {
-                    transform: `translateX(${position * 100}%) scale(0.7)`,
-                    zIndex: 10,
-                    opacity: 0,
-                    pointerEvents: "none"
-                  };
-                }
-                return (
-                  <div
-                    key={idx}
-                    className={base + (isActive ? " group bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/40 p-8 lg:p-10 rounded-xl shadow-2xl" : " group bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 p-8 lg:p-10 rounded-xl shadow-xl pointer-events-none")}
-                    style={style}
-                  >
-                    <div className="w-16 h-16 lg:w-18 lg:h-18 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] font-bold text-2xl lg:text-3xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg relative z-10">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            {/* Левая колонка: фото Kia K5 (заглушка) */}
+            <div className="lg:sticky lg:top-24 self-start">
+              <motion.div
+                initial={{ opacity: 0, x: -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                className="relative"
+              >
+                <div className="relative">
+                  {/* Свечение под фото */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#c9a86e]/20 to-[#d4b876]/20 rounded-full blur-3xl scale-90" />
+                  <Image
+                    src="/placeholder-car.jpg"
+                    alt="Kia K5 — заглушка (клиент пришлёт вырезку)"
+                    width={800}
+                    height={500}
+                    className="relative w-full h-auto object-contain drop-shadow-2xl"
+                    priority={false}
+                  />
+                </div>
+                <p className="text-center text-white/40 text-xs mt-4 italic">
+                  * Заглушка. Финальная вырезка Kia K5 2024 от клиента.
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Правая колонка: список этапов с анимацией по скроллу */}
+            <div className="space-y-5">
+              {orderSteps.map((item, idx) => (
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, x: 60 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: "-80px" }}
+                  transition={{ duration: 0.5, delay: idx * 0.08, ease: "easeOut" }}
+                  className="group relative bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 hover:border-[#c9a86e]/50 rounded-2xl p-6 lg:p-7 transition-all duration-300 hover:shadow-xl hover:shadow-[#c9a86e]/10 hover:-translate-y-1"
+                >
+                  <div className="flex gap-5 items-start">
+                    <div className="flex-shrink-0 w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] font-bold text-xl lg:text-2xl shadow-lg group-hover:scale-110 transition-transform">
                       {item.step}
                     </div>
-                    <h3 className="text-white text-xl lg:text-2xl font-semibold mb-4 group-hover:text-[#c9a86e] transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="text-white/70 lg:text-lg leading-relaxed group-hover:text-white/90 transition-colors">
-                      {item.description}
-                    </p>
+                    <div className="flex-1">
+                      <h3 className="text-white text-lg lg:text-xl font-semibold mb-2 group-hover:text-[#c9a86e] transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-white/70 text-sm lg:text-base leading-relaxed">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                );
-              })}
+                </motion.div>
+              ))}
             </div>
-            {/* Правая стрелка */}
-            <button
-              onClick={() => handleOrderStepChange(Math.min(activeOrderStep + 1, orderSteps.length - 1))}
-              className="absolute right-4 md:right-[25%] bottom-4 md:top-1/2 md:-translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 text-white rounded-full transition-all duration-300 hover:scale-110 z-50 border border-[#c9a86e]/20 hover:border-[#c9a86e]/40 flex items-center justify-center"
-              aria-label="Следующий шаг"
-              disabled={activeOrderStep === orderSteps.length - 1}
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-          </div>
-          {/* Индикаторы */}
-          <div className="flex justify-center gap-2">
-            {orderSteps.map((_, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleOrderStepChange(idx)}
-                className={`carousel-dot w-3 h-3 rounded-full transition-all duration-300 ${idx === activeOrderStep ? "bg-[#c9a86e]" : "bg-white/30 hover:bg-white/50"}`}
-                aria-label={`Перейти к шагу ${idx + 1}`}
-              />
-            ))}
           </div>
         </div>
       </section>
@@ -2205,7 +2178,11 @@ export default function Home() {
           </div>
           */}
           
-          <div className="w-full">
+          {/* Виджет отзывов SmartWidgets — обёрнут в рамку, чтобы убрать "пустоту" (msg_16).
+              ВАЖНО: настройка вкладок (убрать Vl.ru, добавить Яндекс, порядок 2ГИС → Яндекс)
+              делается в личном кабинете SmartWidgets — не в коде.
+              Yandex Maps: https://yandex.ru/maps/-/CPxsbY1c */}
+          <div className="w-full rounded-2xl border border-[#c9a86e]/20 bg-gradient-to-br from-[#1a2332]/60 to-[#0e1720]/60 p-4 md:p-6 backdrop-blur-sm shadow-xl">
             <script src="https://res.smartwidgets.ru/app.js" defer></script>
             <div className="sw-app" data-app="7b48850d9c7da346aae2677ecfa009b1"></div>
           </div>
@@ -2445,11 +2422,14 @@ export default function Home() {
                 >
                   <ChevronLeft className="w-6 h-6" />
                 </button>
-                {/* Карусель карточек */}
-                <div className="overflow-hidden max-w-full" style={{
+                {/* Карусель карточек — msg_19: подписи под фото, градиенты по краям */}
+                <div className="overflow-hidden max-w-full relative" style={{
                   width: '100%',
                   maxWidth: TEAM_VISIBLE * CARD_WIDTH + (TEAM_VISIBLE - 1) * GAP + 'px',
                 }}>
+                  {/* Градиенты по краям */}
+                  <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-r from-[#0e1720] to-transparent" />
+                  <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 z-10 bg-gradient-to-l from-[#1a2332] to-transparent" />
                   <div
                     className={`flex gap-6 ${teamWithTransition ? 'transition-transform duration-500 ease-in-out' : ''}`}
                     style={{
@@ -2466,16 +2446,31 @@ export default function Home() {
                           className={`flex flex-col items-center group relative transition-all duration-500 ${isAccent ? 'scale-103 z-10' : 'scale-90 opacity-60'}`}
                           style={{ width: CARD_WIDTH + 'px' }}
                         >
-                          <div className="relative aspect-[8/10] w-full flex items-center justify-center">
+                          <div className="relative aspect-[8/10] w-full flex items-center justify-center overflow-hidden rounded-xl shadow-lg">
                             <Image
                               src={member.photo}
                               alt={member.name}
                               fill
-                              className="object-cover rounded-xl shadow-lg"
+                              className="object-cover"
                               sizes="(max-width: 768px) 60vw, 20vw"
                             />
                           </div>
-                          {/* Подписи под фото убраны по требованию */}
+                          {/* Подписи ПОД фото (msg_19): должность, имя, телефон */}
+                          <div className="w-full text-center mt-4 space-y-1">
+                            <div className="text-[#c9a86e]/80 text-xs uppercase tracking-widest">
+                              {member.position}
+                            </div>
+                            <div className="text-white text-lg font-semibold">
+                              {member.name}
+                            </div>
+                            <a
+                              href={`tel:${member.phone.replace(/[^\d+]/g, "")}`}
+                              className="inline-flex items-center gap-1.5 text-white/70 hover:text-[#c9a86e] transition-colors text-sm"
+                            >
+                              <Phone className="w-3.5 h-3.5" />
+                              {member.phone}
+                            </a>
+                          </div>
                         </div>
                       );
                     })}
@@ -2586,6 +2581,28 @@ export default function Home() {
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
+            {/* Подпись активного сотрудника ПОД мобильной каруселью (msg_19) */}
+            {(() => {
+              const active = teamMembers[activeTeamSlide > maxIndex ? 0 : Math.max(0, activeTeamSlide)]
+              if (!active) return null
+              return (
+                <div className="text-center mt-4 space-y-1 min-h-[70px]">
+                  <div className="text-[#c9a86e]/80 text-xs uppercase tracking-widest">
+                    {active.position}
+                  </div>
+                  <div className="text-white text-lg font-semibold">
+                    {active.name}
+                  </div>
+                  <a
+                    href={`tel:${active.phone.replace(/[^\d+]/g, "")}`}
+                    className="inline-flex items-center gap-1.5 text-white/70 hover:text-[#c9a86e] transition-colors text-sm"
+                  >
+                    <Phone className="w-3.5 h-3.5" />
+                    {active.phone}
+                  </a>
+                </div>
+              )
+            })()}
             {/* Индикаторы для мобильных */}
             <div className="flex justify-center mt-6 gap-2">
               {teamMembers.map((_, idx) => (
@@ -2642,7 +2659,7 @@ export default function Home() {
                   <p className="text-white/80 text-lg">Приморский край, г. Владивосток, ул. Борисенко 35г</p>
                 </div>
               </div>
-              {/* Время работы */}
+              {/* Время работы — msg_20: 11:00 - 19:00 */}
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center flex-shrink-0">
                   <Clock className="w-6 h-6 text-[#0e1720]" />
@@ -2650,27 +2667,39 @@ export default function Home() {
                 <div>
                   <div className="text-white text-xl font-semibold mb-1">Режим работы</div>
                   <div className="space-y-1">
-                    <p className="text-white/80">Пн-Пт: 10:00 - 19:00</p>
+                    <p className="text-white/80">Пн-Пт: 11:00 - 19:00</p>
                     <p className="text-white/80">Сб-Вс: выходной</p>
                   </div>
                 </div>
               </div>
-              {/* Соцсети */}
+              {/* Соцсети — msg_20: бренд-иконки, порядок Инст -> YT -> TG -> MAX */}
               <div>
-                <div className="text-white/80 text-lg mb-2">Мы в соцсетях:</div>
+                <div className="text-white/80 text-lg mb-3">Мы в соцсетях:</div>
                 <div className="flex gap-4 mt-2">
-                  <a href="https://t.me/orientauto_ru" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 flex items-center justify-center hover:border-[#c9a86e]/40 transition-all duration-300 hover:scale-110 group" title="Telegram">
-                    <svg className="w-6 h-6 text-[#c9a86e] group-hover:text-[#d4b876] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.25l-2.173 10.244c-.168.78-.621.936-1.26.578l-3.478-2.568-1.68 1.614c-.189.182-.345.336-.708.336l.257-3.596 6.531-5.903c.285-.248-.062-.384-.441-.136L7.926 13.8l-3.475-1.086c-.755-.236-.77-.755.157-1.118l13.563-5.229c.631-.231 1.178.349.891 1.883z"/></svg>
-                  </a>
-                  <a href="https://wa.me/79958689768" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 flex items-center justify-center hover:border-[#c9a86e]/40 transition-all duration-300 hover:scale-110 group" title="WhatsApp">
-                    <svg className="w-6 h-6 text-[#c9a86e] group-hover:text-[#d4b876] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.611-.916-2.206-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.363.709.306 1.262.489 1.694.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 5.421h-.001a8.933 8.933 0 01-4.548-1.252l-.326-.194-3.377.896.902-3.289-.213-.338a8.933 8.933 0 01-1.364-4.725c.001-4.962 4.037-9 9-9 2.406 0 4.663.936 6.364 2.636a8.924 8.924 0 012.635 6.363c-.002 4.962-4.038 9-9 9m7.5-16.5C19.151 2.151 16.209 1 12.999 1c-7.065 0-12 5.935-12 12 0 2.122.555 4.197 1.607 6.032L1 23l6.115-1.605A11.96 11.96 0 0013 25c7.065 0 12-5.935 12-12 0-3.21-1.151-6.152-3.428-8.428z"/></svg>
-                  </a>
-                  <a href="https://www.youtube.com/@orientauto_ru" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 flex items-center justify-center hover:border-[#c9a86e]/40 transition-all duration-300 hover:scale-110 group" title="YouTube">
-                    <Youtube className="w-6 h-6 text-[#c9a86e] group-hover:text-[#d4b876] transition-colors" />
-                  </a>
-                  <a href="https://www.instagram.com/orientauto.ru" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 flex items-center justify-center hover:border-[#c9a86e]/40 transition-all duration-300 hover:scale-110 group" title="Instagram">
-                    <Instagram className="w-6 h-6 text-[#c9a86e] group-hover:text-[#d4b876] transition-colors" />
-                  </a>
+                  <SocialLinkButton
+                    network="instagram"
+                    href="https://www.instagram.com/orientauto.ru"
+                    label="Instagram"
+                    size={26}
+                  />
+                  <SocialLinkButton
+                    network="youtube"
+                    href="https://youtube.com/@orientauto_ru"
+                    label="YouTube"
+                    size={28}
+                  />
+                  <SocialLinkButton
+                    network="telegram"
+                    href="https://t.me/orientauto_ru"
+                    label="Telegram-канал"
+                    size={26}
+                  />
+                  <SocialLinkButton
+                    network="max"
+                    href="https://max.ru/id253401357515_biz"
+                    label="MAX-канал"
+                    size={30}
+                  />
                 </div>
               </div>
             </div>
@@ -2696,75 +2725,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Form Section */}
-      <div id="consultation" className="relative -top-32 h-0 pointer-events-none"></div>
-      <section className="py-24 bg-gradient-to-b from-[#0e1720] to-[#0e1720]">
-        <div className="container mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-white text-4xl md:text-5xl mb-8 font-light tracking-wide">Оставьте заявку на подбор</h2>
-            <p className="text-white/70 text-lg mb-12">Наши специалисты свяжутся с вами в течение 15 минут</p>
-
-            <form className="space-y-6" onSubmit={handleFormSubmit}>
-              <div>
-                <input
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleFormChange}
-                  placeholder="Ваше имя"
-                  className="w-full p-4 bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-[#c9a86e] transition-colors text-lg"
-                  required
-                />
-              </div>
-
-              <div>
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleFormChange}
-                  placeholder="Ваш телефон"
-                  className="w-full p-4 bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-[#c9a86e] transition-colors text-lg"
-                  required
-                />
-              </div>
-
-              <div>
-                <textarea
-                  name="message"
-                  value={formData.message}
-                  onChange={handleFormChange}
-                  placeholder="Ваш комментарий"
-                  rows={4}
-                  className="w-full p-4 bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:border-[#c9a86e] transition-colors text-lg resize-none"
-                ></textarea>
-              </div>
-
-              <div className="flex items-start space-x-2 pt-2 text-left">
-                <input type="checkbox" id="consent" name="consent" required className="mt-1" />
-                <label htmlFor="consent" className="text-sm text-white/50">
-                  Я согласен на обработку персональных данных и принимаю{" "}
-                  <a href="/privacy-policy" className="text-[#c9a86e] hover:text-[#d4b876] transition-colors">
-                    политику конфиденциальности
-                  </a>
-                </label>
-              </div>
-
-              {isSubmitted ? (
-                <div className="text-green-400 text-lg font-semibold py-4">Спасибо за заявку!</div>
-              ) : (
-                <button
-                  type="submit"
-                  className="w-full bg-gradient-to-r from-[#c9a86e] to-[#d4b876] hover:from-[#d4b876] hover:to-[#c9a86e] text-[#0e1720] font-semibold p-4 rounded-lg transition-all duration-300 shadow-lg hover:shadow-[#c9a86e]/25 transform hover:scale-105 text-lg"
-                  disabled={isSending}
-                >
-                  {isSending ? "Отправка..." : "ОТПРАВИТЬ ЗАЯВКУ"}
-                </button>
-              )}
-            </form>
-          </div>
-        </div>
-      </section>
+      {/* Секция "Оставьте заявку" — msg_21: убрана, заменена на модальное окно.
+          Триггеры "Оставить заявку" / "Бесплатная консультация" открывают <ConsultationModal>.
+          Легаси-якорь #consultation оставлен как no-op для старых внутренних ссылок. */}
+      <div id="consultation" className="h-0 pointer-events-none" aria-hidden="true"></div>
 
       {/* Footer — msg_22: уменьшенное лого, копирайт 2024–2026, иконки у телефона/почты */}
       <footer className="py-10 bg-gradient-to-r from-[#0a0f1a] via-[#0e1720] to-[#0a0f1a] border-t border-[#c9a86e]/20">
