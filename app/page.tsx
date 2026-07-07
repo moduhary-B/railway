@@ -1131,15 +1131,44 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Флаги стран — msg_3: порядок Япония → Китай → Корея, каждый флаг — ссылка на каталог,
+                флаг Китая заменён на официальный SVG (Wikimedia) */}
             <div className="mt-16 pt-8 border-t border-[#c9a86e]/20">
               <div className="flex flex-row flex-nowrap justify-center items-center gap-4 md:gap-20">
-                <div className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4">
+                {/* Япония */}
+                <Link
+                  href="/catalog/japan"
+                  className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4"
+                  aria-label="Каталог авто из Японии"
+                >
                   <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white to-gray-100 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                     <div className="w-6 h-6 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-inner"></div>
                   </div>
-                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0">ЯПОНИИ</span>
-                </div>
-                <div className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4">
+                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">ЯПОНИИ</span>
+                </Link>
+                {/* Китай — официальный флаг КНР в круглой обёртке */}
+                <Link
+                  href="/catalog/china"
+                  className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4"
+                  aria-label="Каталог авто из Китая"
+                >
+                  <div className="w-10 h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
+                    <Image
+                      src="/icons/flag-china.svg"
+                      alt="Флаг Китая"
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
+                </Link>
+                {/* Корея */}
+                <Link
+                  href="/catalog/korea"
+                  className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4"
+                  aria-label="Каталог авто из Кореи"
+                >
                   <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white to-gray-100 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
                     <div className="relative w-6 h-6 md:w-10 md:h-10">
                       <div className="absolute inset-0 bg-white rounded-full"></div>
@@ -1147,20 +1176,8 @@ export default function Home() {
                       <div className="absolute top-0.5 right-0.5 w-2 h-2 md:w-4 md:h-4 bg-gradient-to-br from-red-500 to-red-600 rounded-sm shadow-inner"></div>
                     </div>
                   </div>
-                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0">КОРЕИ</span>
-                </div>
-                <div className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4">
-                  <div className="w-10 h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
-                    <div className="flex flex-col items-center">
-                      <div className="w-2 h-2 md:w-3 md:h-3 bg-gradient-to-br from-yellow-400 to-yellow-500 mb-0.5 md:mb-1 shadow-inner"></div>
-                      <div className="flex gap-0.5 md:gap-1">
-                        <div className="w-2 h-2 md:w-3 md:h-3 bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-inner"></div>
-                        <div className="w-2 h-2 md:w-3 md:h-3 bg-gradient-to-br from-yellow-400 to-yellow-500 shadow-inner"></div>
-                      </div>
-                    </div>
-                  </div>
-                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0">КИТАЯ</span>
-                </div>
+                  <span className="text-white text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
+                </Link>
               </div>
             </div>
           </div>
