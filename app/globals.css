@@ -497,3 +497,23 @@ textarea:focus {
   scrollbar-width: thin;
   scrollbar-color: #c9a86e transparent;
 }
+
+/* Паттерн фона из лого Orient Auto — placeholder до финального SVG-паттерна от клиента */
+.orient-pattern {
+  position: relative;
+}
+.orient-pattern::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/logo-orient.png");
+  background-repeat: repeat;
+  background-size: 220px auto;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+.orient-pattern > * {
+  position: relative;
+  z-index: 1;
+}

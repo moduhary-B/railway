@@ -2,6 +2,7 @@ import type React from "react"
 import "./globals.css"
 import { Inter } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
+import { ConsultationModalProvider } from "@/components/consultation-modal"
 import CookieBanner from "@/components/CookieBanner"
 
 console.log('=== LAYOUT ЗАГРУЖЕН ===');
@@ -38,8 +39,10 @@ export default function RootLayout({
     <html lang="ru" suppressHydrationWarning className="overflow-x-hidden">
       <body className={`${inter.className} overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          {children}
-          <CookieBanner />
+          <ConsultationModalProvider>
+            {children}
+            <CookieBanner />
+          </ConsultationModalProvider>
         </ThemeProvider>
       </body>
     </html>
