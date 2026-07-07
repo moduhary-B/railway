@@ -1,0 +1,223 @@
+{
+  "brand_id": "kia",
+  "brand_name": "KIA",
+  "valid_models": [
+    {
+      "id": "carens",
+      "name": "CARENS"
+    },
+    {
+      "id": "ev6",
+      "name": "EV6"
+    },
+    {
+      "id": "k3",
+      "name": "K3"
+    },
+    {
+      "id": "k5",
+      "name": "K5"
+    },
+    {
+      "id": "k7",
+      "name": "K7"
+    },
+    {
+      "id": "k8",
+      "name": "K8"
+    },
+    {
+      "id": "k9",
+      "name": "K9"
+    },
+    {
+      "id": "mohave",
+      "name": "MOHAVE"
+    },
+    {
+      "id": "morning",
+      "name": "MORNING"
+    },
+    {
+      "id": "niro",
+      "name": "NIRO"
+    },
+    {
+      "id": "pride",
+      "name": "PRIDE"
+    },
+    {
+      "id": "ray",
+      "name": "RAY"
+    },
+    {
+      "id": "seltos",
+      "name": "SELTOS"
+    },
+    {
+      "id": "sorento",
+      "name": "SORENTO"
+    },
+    {
+      "id": "soul",
+      "name": "SOUL"
+    },
+    {
+      "id": "sportage",
+      "name": "SPORTAGE"
+    },
+    {
+      "id": "stinger",
+      "name": "STINGER"
+    },
+    {
+      "id": "stonic",
+      "name": "STONIC"
+    }
+  ],
+  "invalid_models": [
+    {
+      "id": "canival",
+      "name": "CANIVAL"
+    },
+    {
+      "id": "canival-grand",
+      "name": "CANIVAL GRAND"
+    },
+    {
+      "id": "canival-ii",
+      "name": "CANIVAL II"
+    },
+    {
+      "id": "canival-r",
+      "name": "CANIVAL R"
+    },
+    {
+      "id": "cerato",
+      "name": "CERATO"
+    },
+    {
+      "id": "credos",
+      "name": "CREDOS"
+    },
+    {
+      "id": "elan",
+      "name": "ELAN"
+    },
+    {
+      "id": "enterprise",
+      "name": "ENTERPRISE"
+    },
+    {
+      "id": "k3-koup",
+      "name": "K3 KOUP"
+    },
+    {
+      "id": "k5-hybrid",
+      "name": "K5 HYBRID"
+    },
+    {
+      "id": "k7-hybrid",
+      "name": "K7 HYBRID"
+    },
+    {
+      "id": "k7-premier",
+      "name": "K7 PREMIER"
+    },
+    {
+      "id": "k7-premier-hybrid",
+      "name": "K7 PREMIER HYBRID"
+    },
+    {
+      "id": "k7-the-prestige",
+      "name": "K7 THE PRESTIGE"
+    },
+    {
+      "id": "k8-hybrid",
+      "name": "K8 HYBRID"
+    },
+    {
+      "id": "mohave-the-master",
+      "name": "MOHAVE THE MASTER"
+    },
+    {
+      "id": "morning-ja",
+      "name": "MORNING JA"
+    },
+    {
+      "id": "morning-urban-ja",
+      "name": "MORNING URBAN JA"
+    },
+    {
+      "id": "niro-ev",
+      "name": "NIRO EV"
+    },
+    {
+      "id": "niro-plus",
+      "name": "NIRO PLUS"
+    },
+    {
+      "id": "opirus",
+      "name": "OPIRUS"
+    },
+    {
+      "id": "opirus-premium",
+      "name": "OPIRUS PREMIUM"
+    },
+    {
+      "id": "parktown",
+      "name": "PARKTOWN"
+    },
+    {
+      "id": "porte",
+      "name": "PORTE"
+    },
+    {
+      "id": "porte-hatchback",
+      "name": "PORTE HATCHBACK"
+    },
+    {
+      "id": "porte-koup",
+      "name": "PORTE KOUP"
+    },
+    {
+      "id": "potentia",
+      "name": "POTENTIA"
+    },
+    {
+      "id": "pride-new",
+      "name": "PRIDE NEW"
+    },
+    {
+      "id": "sorento-r",
+      "name": "SORENTO R"
+    },
+    {
+      "id": "soul-booster",
+      "name": "SOUL BOOSTER"
+    },
+    {
+      "id": "soul-booster-ev",
+      "name": "SOUL BOOSTER EV"
+    },
+    {
+      "id": "sportage-hybrid",
+      "name": "SPORTAGE  HYBRID"
+    },
+    {
+      "id": "sportage-r",
+      "name": "SPORTAGE R"
+    },
+    {
+      "id": "sportage-the-bold",
+      "name": "SPORTAGE THE BOLD"
+    },
+    {
+      "id": "stinger-meister",
+      "name": "STINGER MEISTER"
+    }
+  ],
+  "total_checked": 53,
+  "valid_count": 18,
+  "invalid_count": 35
+}

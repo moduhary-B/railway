@@ -1,0 +1,2746 @@
+Лог проверки китайских моделей
+==================================================
+
+Бренд: AITO (aito)
+  ❌ Wenjie M5 (wenjie-m5) - НЕ НАЙДЕНА
+  ❌ Wenjie M7 (wenjie-m7) - НЕ НАЙДЕНА
+  ❌ Wenjie M9 (wenjie-m9) - НЕ НАЙДЕНА
+  ❌ QJM8 (qjm8) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: AVATR (avatr)
+  ❌ Avita 06 (avita-06) - НЕ НАЙДЕНА
+  ❌ Avita 07 (avita-07) - НЕ НАЙДЕНА
+  ❌ Avita 11 (avita-11) - НЕ НАЙДЕНА
+  ❌ Avita 12 (avita-12) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: BAIC (baic)
+  ❌ Beidou Star X5 (beidou-star-x5) - НЕ НАЙДЕНА
+  ❌ Beijing BJ20 (beijing-bj20) - НЕ НАЙДЕНА
+  ❌ Beijing BJ40 (beijing-bj40) - НЕ НАЙДЕНА
+  ❌ Beijing BJ60 (beijing-bj60) - НЕ НАЙДЕНА
+  ❌ Beijing BJ80 (beijing-bj80) - НЕ НАЙДЕНА
+  ❌ Beijing BJ90 (beijing-bj90) - НЕ НАЙДЕНА
+  ❌ Beijing EU5 (beijing-eu5) - НЕ НАЙДЕНА
+  ❌ Beijing EU5 PLUS (beijing-eu5-plus) - НЕ НАЙДЕНА
+  ❌ Beijing EX3 (beijing-ex3) - НЕ НАЙДЕНА
+  ❌ Beijing EX5 (beijing-ex5) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ30 (beijing-off-road-bj30) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ40 (beijing-off-road-bj40) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ60 (beijing-off-road-bj60) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ60 Thunder (beijing-off-road-bj60-thunder) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ80 (beijing-off-road-bj80) - НЕ НАЙДЕНА
+  ❌ Beijing Off-road BJ90 (beijing-off-road-bj90) - НЕ НАЙДЕНА
+  ❌ Beijing U5 (beijing-u5) - НЕ НАЙДЕНА
+  ❌ Beijing U5 PLUS (beijing-u5-plus) - НЕ НАЙДЕНА
+  ❌ Beijing U7 (beijing-u7) - НЕ НАЙДЕНА
+  ❌ Beijing X3 (beijing-x3) - НЕ НАЙДЕНА
+  ❌ Beijing X7 (beijing-x7) - НЕ НАЙДЕНА
+  ❌ BeijingEU7 (beijingeu7) - НЕ НАЙДЕНА
+  ❌ Changhe A6 (changhe-a6) - НЕ НАЙДЕНА
+  ❌ Changhe Big Dipper (changhe-big-dipper) - НЕ НАЙДЕНА
+  ❌ Changhe M50S (changhe-m50s) - НЕ НАЙДЕНА
+  ❌ Changhe M70 (changhe-m70) - НЕ НАЙДЕНА
+  ❌ Changhe Q25 (changhe-q25) - НЕ НАЙДЕНА
+  ❌ Changhe Q35 (changhe-q35) - НЕ НАЙДЕНА
+  ❌ Changhe Q7 (changhe-q7) - НЕ НАЙДЕНА
+  ❌ Chi Heng (chi-heng) - НЕ НАЙДЕНА
+  ❌ EV2 (ev2) - НЕ НАЙДЕНА
+  ❌ EV5 (ev5) - НЕ НАЙДЕНА
+  ❌ F40 (f40) - НЕ НАЙДЕНА
+  ❌ Freda (freda) - НЕ НАЙДЕНА
+  ❌ Huansu H2 (huansu-h2) - НЕ НАЙДЕНА
+  ❌ Huansu H2V (huansu-h2v) - НЕ НАЙДЕНА
+  ❌ LITE (lite) - НЕ НАЙДЕНА
+  ❌ Magic S6 (magic-s6) - НЕ НАЙДЕНА
+  ❌ Magic Speed H3 (magic-speed-h3) - НЕ НАЙДЕНА
+  ❌ Magic Speed S2 (magic-speed-s2) - НЕ НАЙДЕНА
+  ❌ Magic Speed S3 (magic-speed-s3) - НЕ НАЙДЕНА
+  ❌ Magic Speed S5 (magic-speed-s5) - НЕ НАЙДЕНА
+  ❌ Magic Speed S7 (magic-speed-s7) - НЕ НАЙДЕНА
+  ❌ Motor E Series (motor-e-series) - НЕ НАЙДЕНА
+  ❌ New Energy EC (new-energy-ec) - НЕ НАЙДЕНА
+  ❌ New Energy EC5 (new-energy-ec5) - НЕ НАЙДЕНА
+  ❌ New Energy EU (new-energy-eu) - НЕ НАЙДЕНА
+  ❌ New Energy EV (new-energy-ev) - НЕ НАЙДЕНА
+  ❌ New Energy EX (new-energy-ex) - НЕ НАЙДЕНА
+  ❌ Rubiks cube (rubiks-cube) - НЕ НАЙДЕНА
+  ❌ Ruixiang X5 (ruixiang-x5) - НЕ НАЙДЕНА
+  ❌ Saab CC (saab-cc) - НЕ НАЙДЕНА
+  ❌ Saab D70 (saab-d70) - НЕ НАЙДЕНА
+  ❌ Saab D80 (saab-d80) - НЕ НАЙДЕНА
+  ❌ Shenbao D20 (shenbao-d20) - НЕ НАЙДЕНА
+  ❌ Shenbao D50 (shenbao-d50) - НЕ НАЙДЕНА
+  ❌ Shenbao D60 (shenbao-d60) - НЕ НАЙДЕНА
+  ❌ Shenbao X25 (shenbao-x25) - НЕ НАЙДЕНА
+  ❌ Shenbao X35 (shenbao-x35) - НЕ НАЙДЕНА
+  ❌ Shenbao X55 (shenbao-x55) - НЕ НАЙДЕНА
+  ❌ Shenbao X65 (shenbao-x65) - НЕ НАЙДЕНА
+  ❌ Weiwang 306 (weiwang-306) - НЕ НАЙДЕНА
+  ❌ Weiwang 307 (weiwang-307) - НЕ НАЙДЕНА
+  ❌ Weiwang M20 (weiwang-m20) - НЕ НАЙДЕНА
+  ❌ Weiwang M30 (weiwang-m30) - НЕ НАЙДЕНА
+  ❌ Weiwang M50F (weiwang-m50f) - НЕ НАЙДЕНА
+  ❌ Weiwang S50 (weiwang-s50) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/67
+
+Бренд: BYD (byd)
+  ❌ D1 (d1) - НЕ НАЙДЕНА
+  ❌ Destroyer 05 (destroyer-05) - НЕ НАЙДЕНА
+  ❌ Dolphin (dolphin) - НЕ НАЙДЕНА
+  ❌ e1 (e1) - НЕ НАЙДЕНА
+  ❌ e2 (e2) - НЕ НАЙДЕНА
+  ❌ e3 (e3) - НЕ НАЙДЕНА
+  ❌ e5 (e5) - НЕ НАЙДЕНА
+  ❌ e6 (e6) - НЕ НАЙДЕНА
+  ❌ e9 (e9) - НЕ НАЙДЕНА
+  ❌ F0 (f0) - НЕ НАЙДЕНА
+  ❌ F3 (f3) - НЕ НАЙДЕНА
+  ❌ F3R (f3r) - НЕ НАЙДЕНА
+  ❌ Frigate 07 (frigate-07) - НЕ НАЙДЕНА
+  ❌ G3 (g3) - НЕ НАЙДЕНА
+  ❌ G5 (g5) - НЕ НАЙДЕНА
+  ❌ G6 (g6) - НЕ НАЙДЕНА
+  ❌ HAN DM (han-dm) - НЕ НАЙДЕНА
+  ❌ Han EV (han-ev) - НЕ НАЙДЕНА
+  ❌ L3 (l3) - НЕ НАЙДЕНА
+  ❌ M6 (m6) - НЕ НАЙДЕНА
+  ❌ Qin (qin) - НЕ НАЙДЕНА
+  ❌ Qin DM (qin-dm) - НЕ НАЙДЕНА
+  ❌ Qin L DM (qin-l-dm) - НЕ НАЙДЕНА
+  ❌ Qin L EV (qin-l-ev) - НЕ НАЙДЕНА
+  ❌ Qin PLUS DM (qin-plus-dm) - НЕ НАЙДЕНА
+  ❌ Qin PLUS EV (qin-plus-ev) - НЕ НАЙДЕНА
+  ❌ Qin Pro (qin-pro) - НЕ НАЙДЕНА
+  ❌ Qin Pro DM (qin-pro-dm) - НЕ НАЙДЕНА
+  ❌ Qin Pro EV (qin-pro-ev) - НЕ НАЙДЕНА
+  ❌ QinEV (qinev) - НЕ НАЙДЕНА
+  ❌ S2 (s2) - НЕ НАЙДЕНА
+  ❌ S6 (s6) - НЕ НАЙДЕНА
+  ❌ S7 (s7) - НЕ НАЙДЕНА
+  ❌ Sea Lion 05DM (sea-lion-05dm) - НЕ НАЙДЕНА
+  ❌ Sea Lion 05EV (sea-lion-05ev) - НЕ НАЙДЕНА
+  ❌ Sea Lion 07EV (sea-lion-07ev) - НЕ НАЙДЕНА
+  ❌ Seagull (seagull) - НЕ НАЙДЕНА
+  ❌ Seal (seal) - НЕ НАЙДЕНА
+  ❌ Seal 05DM (seal-05dm) - НЕ НАЙДЕНА
+  ❌ Seal 06 (seal-06) - НЕ НАЙДЕНА
+  ❌ Seal 06DM (seal-06dm) - НЕ НАЙДЕНА
+  ❌ SEAL 06GT (seal-06gt) - НЕ НАЙДЕНА
+  ❌ Seal 07DM (seal-07dm) - НЕ НАЙДЕНА
+  ❌ Seal DM (seal-dm) - НЕ НАЙДЕНА
+  ❌ Song (song) - НЕ НАЙДЕНА
+  ❌ Song DM (song-dm) - НЕ НАЙДЕНА
+  ❌ Song EV (song-ev) - НЕ НАЙДЕНА
+  ❌ Song L DM (song-l-dm) - НЕ НАЙДЕНА
+  ❌ Song L EV (song-l-ev) - НЕ НАЙДЕНА
+  ❌ Song MAX (song-max) - НЕ НАЙДЕНА
+  ❌ Song MAX DM (song-max-dm) - НЕ НАЙДЕНА
+  ❌ Song PLUS (song-plus) - НЕ НАЙДЕНА
+  ❌ Song PLUS DM (song-plus-dm) - НЕ НАЙДЕНА
+  ❌ Song PLUS EV (song-plus-ev) - НЕ НАЙДЕНА
+  ❌ Song Pro (song-pro) - НЕ НАЙДЕНА
+  ❌ Song Pro DM (song-pro-dm) - НЕ НАЙДЕНА
+  ❌ Song Pro EV (song-pro-ev) - НЕ НАЙДЕНА
+  ❌ Speedy (speedy) - НЕ НАЙДЕНА
+  ❌ Summer (summer) - НЕ НАЙДЕНА
+  ❌ Tang (tang) - НЕ НАЙДЕНА
+  ❌ Tang DM (tang-dm) - НЕ НАЙДЕНА
+  ❌ Tang EV (tang-ev) - НЕ НАЙДЕНА
+  ❌ Yangwang U8 (yangwang-u8) - НЕ НАЙДЕНА
+  ❌ Yuan (yuan) - НЕ НАЙДЕНА
+  ❌ Yuan EV (yuan-ev) - НЕ НАЙДЕНА
+  ❌ Yuan PLUS (yuan-plus) - НЕ НАЙДЕНА
+  ❌ Yuan Pro (yuan-pro) - НЕ НАЙДЕНА
+  ❌ Yuan UP (yuan-up) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/68
+
+Бренд: Changan (changan)
+  ❌ Ben Ben (ben-ben) - НЕ НАЙДЕНА
+  ❌ Benben EV (benben-ev) - НЕ НАЙДЕНА
+  ❌ Benben MINI (benben-mini) - НЕ НАЙДЕНА
+  ❌ CS15 (cs15) - НЕ НАЙДЕНА
+  ❌ CS15 E-Pro (cs15-e-pro) - НЕ НАЙДЕНА
+  ❌ CS15 EV (cs15-ev) - НЕ НАЙДЕНА
+  ❌ CS35 (cs35) - НЕ НАЙДЕНА
+  ❌ CS35 PLUS (cs35-plus) - НЕ НАЙДЕНА
+  ❌ CS55 (cs55) - НЕ НАЙДЕНА
+  ❌ CS55 E-Rock (cs55-e-rock) - НЕ НАЙДЕНА
+  ❌ CS55 PLUS (cs55-plus) - НЕ НАЙДЕНА
+  ❌ CS75 (cs75) - НЕ НАЙДЕНА
+  ❌ CS75 PHEV (cs75-phev) - НЕ НАЙДЕНА
+  ❌ CS75 PLUS (cs75-plus) - НЕ НАЙДЕНА
+  ❌ CS75 PLUS Smart Electric iDD (cs75-plus-smart-electric-idd) - НЕ НАЙДЕНА
+  ❌ CS85 COUPE (cs85-coupe) - НЕ НАЙДЕНА
+  ❌ CS95 (cs95) - НЕ НАЙДЕНА
+  ❌ CX20 (cx20) - НЕ НАЙДЕНА
+  ❌ Eado DT (eado-dt) - НЕ НАЙДЕНА
+  ❌ Eado EV (eado-ev) - НЕ НАЙДЕНА
+  ❌ Eado PHEV (eado-phev) - НЕ НАЙДЕНА
+  ❌ Eado XT (eado-xt) - НЕ НАЙДЕНА
+  ❌ Escape (escape) - НЕ НАЙДЕНА
+  ❌ Explorer (explorer) - НЕ НАЙДЕНА
+  ❌ Hunter (hunter) - НЕ НАЙДЕНА
+  ❌ Ling Xuan (ling-xuan) - НЕ НАЙДЕНА
+  ❌ Lumin (lumin) - НЕ НАЙДЕНА
+  ❌ Qiyuan A05 (qiyuan-a05) - НЕ НАЙДЕНА
+  ❌ Qiyuan A06 (qiyuan-a06) - НЕ НАЙДЕНА
+  ❌ Qiyuan A06 Classic (qiyuan-a06-classic) - НЕ НАЙДЕНА
+  ❌ Qiyuan A07 (qiyuan-a07) - НЕ НАЙДЕНА
+  ❌ Qiyuan E07 (qiyuan-e07) - НЕ НАЙДЕНА
+  ❌ Qiyuan Q05 (qiyuan-q05) - НЕ НАЙДЕНА
+  ❌ Qiyuan Q07 (qiyuan-q07) - НЕ НАЙДЕНА
+  ❌ Ruicheng (ruicheng) - НЕ НАЙДЕНА
+  ❌ Ruicheng CC (ruicheng-cc) - НЕ НАЙДЕНА
+  ❌ Ruicheng PLUS (ruicheng-plus) - НЕ НАЙДЕНА
+  ❌ UNI-K (uni-k) - НЕ НАЙДЕНА
+  ❌ UNI-K smart electronic iDD (uni-k-smart-electronic-idd) - НЕ НАЙДЕНА
+  ❌ UNI-T (uni-t) - НЕ НАЙДЕНА
+  ❌ UNI-V (uni-v) - НЕ НАЙДЕНА
+  ❌ UNI-V Smart Electric iDD (uni-v-smart-electric-idd) - НЕ НАЙДЕНА
+  ❌ UNI-Z (uni-z) - НЕ НАЙДЕНА
+  ❌ UNI-Z PHEV (uni-z-phev) - НЕ НАЙДЕНА
+  ❌ X5 PLUS (x5-plus) - НЕ НАЙДЕНА
+  ❌ X7 PLUS (x7-plus) - НЕ НАЙДЕНА
+  ❌ Yida (yida) - НЕ НАЙДЕНА
+  ❌ Yuexiang (yuexiang) - НЕ НАЙДЕНА
+  ❌ Yuexiang V3 (yuexiang-v3) - НЕ НАЙДЕНА
+  ❌ Yuexiang V5 (yuexiang-v5) - НЕ НАЙДЕНА
+  ❌ Yuexiang V7 (yuexiang-v7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/51
+
+Бренд: Chery (chery)
+  ❌ A3 (a3) - НЕ НАЙДЕНА
+  ❌ A5 (a5) - НЕ НАЙДЕНА
+  ❌ Arrizo 3 (arrizo-3) - НЕ НАЙДЕНА
+  ❌ Arrizo 5 (arrizo-5) - НЕ НАЙДЕНА
+  ❌ Arrizo 5 GT (arrizo-5-gt) - НЕ НАЙДЕНА
+  ❌ Arrizo 5e (arrizo-5e) - НЕ НАЙДЕНА
+  ❌ Arrizo 7 (arrizo-7) - НЕ НАЙДЕНА
+  ❌ Arrizo 7e (arrizo-7e) - НЕ НАЙДЕНА
+  ❌ Arrizo 8 (arrizo-8) - НЕ НАЙДЕНА
+  ❌ Arrizo GX (arrizo-gx) - НЕ НАЙДЕНА
+  ❌ Arrizo M7 (arrizo-m7) - НЕ НАЙДЕНА
+  ❌ Arrizoe (arrizoe) - НЕ НАЙДЕНА
+  ❌ E3 (e3) - НЕ НАЙДЕНА
+  ❌ E5 (e5) - НЕ НАЙДЕНА
+  ❌ Explore 06 (explore-06) - НЕ НАЙДЕНА
+  ❌ Explore 06 C-DM (explore-06-c-dm) - НЕ НАЙДЕНА
+  ❌ Fengyun A8 (fengyun-a8) - НЕ НАЙДЕНА
+  ❌ Fengyun A8L (fengyun-a8l) - НЕ НАЙДЕНА
+  ❌ Fengyun T10 (fengyun-t10) - НЕ НАЙДЕНА
+  ❌ Fengyun T9 (fengyun-t9) - НЕ НАЙДЕНА
+  ❌ Flag Cloud 2 (flag-cloud-2) - НЕ НАЙДЕНА
+  ❌ Little ant (little-ant) - НЕ НАЙДЕНА
+  ❌ QQ (qq) - НЕ НАЙДЕНА
+  ❌ QQ Ice Cream (qq-ice-cream) - НЕ НАЙДЕНА
+  ❌ Shuxiangjia (shuxiangjia) - НЕ НАЙДЕНА
+  ❌ Storm 2 (storm-2) - НЕ НАЙДЕНА
+  ❌ Tiggo (tiggo) - НЕ НАЙДЕНА
+  ❌ Tiggo 3 (tiggo-3) - НЕ НАЙДЕНА
+  ❌ Tiggo 3x (tiggo-3x) - НЕ НАЙДЕНА
+  ❌ Tiggo 3xe (tiggo-3xe) - НЕ НАЙДЕНА
+  ❌ Tiggo 5 (tiggo-5) - НЕ НАЙДЕНА
+  ❌ Tiggo 5x (tiggo-5x) - НЕ НАЙДЕНА
+  ❌ Tiggo 7 (tiggo-7) - НЕ НАЙДЕНА
+  ❌ Tiggo 7 C-DM (tiggo-7-c-dm) - НЕ НАЙДЕНА
+  ❌ Tiggo 7 PLUS (tiggo-7-plus) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 (tiggo-8) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 PLUS (tiggo-8-plus) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 PLUS C-DM (tiggo-8-plus-c-dm) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 PLUS Kunpeng e+ (tiggo-8-plus-kunpeng-e) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 PRO (tiggo-8-pro) - НЕ НАЙДЕНА
+  ❌ Tiggo 8 PRO PHEV (tiggo-8-pro-phev) - НЕ НАЙДЕНА
+  ❌ Tiggo 9 (tiggo-9) - НЕ НАЙДЕНА
+  ❌ Tiggo 9 C-DM (tiggo-9-c-dm) - НЕ НАЙДЕНА
+  ❌ Tiggo T11 (tiggo-t11) - НЕ НАЙДЕНА
+  ❌ Unbounded Pro (unbounded-pro) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/45
+
+Бренд: Denza (denza)
+  ❌ D9 DM (d9-dm) - НЕ НАЙДЕНА
+  ❌ D9 EV (d9-ev) - НЕ НАЙДЕНА
+  ❌ DENGZH9GT DM (dengzh9gt-dm) - НЕ НАЙДЕНА
+  ❌ DENZA X BEV (denza-x-bev) - НЕ НАЙДЕНА
+  ❌ Gain momentum (gain-momentum) - НЕ НАЙДЕНА
+  ❌ N7 (n7) - НЕ НАЙДЕНА
+  ❌ N8 DM (n8-dm) - НЕ НАЙДЕНА
+  ❌ Tengzhong N9 DM (tengzhong-n9-dm) - НЕ НАЙДЕНА
+  ❌ Tengzhong Z9 DM (tengzhong-z9-dm) - НЕ НАЙДЕНА
+  ❌ X PHEV (x-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/10
+
+Бренд: Dongfeng (dongfeng)
+  ❌ A9 (a9) - НЕ НАЙДЕНА
+  ❌ Eπ007 (e-007) - НЕ НАЙДЕНА
+  ❌ Eπ008 (e-008) - НЕ НАЙДЕНА
+  ❌ Fengdu MX5 (fengdu-mx5) - НЕ НАЙДЕНА
+  ❌ Fengdu MX6 (fengdu-mx6) - НЕ НАЙДЕНА
+  ❌ Fengguang 580Pro (fengguang-580pro) - НЕ НАЙДЕНА
+  ❌ Fengon 330 (fengon-330) - НЕ НАЙДЕНА
+  ❌ Fengon 350 (fengon-350) - НЕ НАЙДЕНА
+  ❌ Fengon 360 (fengon-360) - НЕ НАЙДЕНА
+  ❌ Fengon 370 (fengon-370) - НЕ НАЙДЕНА
+  ❌ Fengon 380 (fengon-380) - НЕ НАЙДЕНА
+  ❌ Fengon 500 (fengon-500) - НЕ НАЙДЕНА
+  ❌ Fengon 580 (fengon-580) - НЕ НАЙДЕНА
+  ❌ Fengshen A30 (fengshen-a30) - НЕ НАЙДЕНА
+  ❌ Fengshen A60 (fengshen-a60) - НЕ НАЙДЕНА
+  ❌ Fengshen AX3 (fengshen-ax3) - НЕ НАЙДЕНА
+  ❌ Fengshen AX4 (fengshen-ax4) - НЕ НАЙДЕНА
+  ❌ Fengshen AX5 (fengshen-ax5) - НЕ НАЙДЕНА
+  ❌ Fengshen AX7 (fengshen-ax7) - НЕ НАЙДЕНА
+  ❌ Fengshen E70 (fengshen-e70) - НЕ НАЙДЕНА
+  ❌ Fengshen H30 (fengshen-h30) - НЕ НАЙДЕНА
+  ❌ Fengshen L60 (fengshen-l60) - НЕ НАЙДЕНА
+  ❌ Fengshen L7 PHEV (fengshen-l7-phev) - НЕ НАЙДЕНА
+  ❌ Fengshen S30 (fengshen-s30) - НЕ НАЙДЕНА
+  ❌ Haohan (haohan) - НЕ НАЙДЕНА
+  ❌ Haoji (haoji) - НЕ НАЙДЕНА
+  ❌ Junfeng E11K (junfeng-e11k) - НЕ НАЙДЕНА
+  ❌ Junfeng E17 (junfeng-e17) - НЕ НАЙДЕНА
+  ❌ Junfeng ER30 (junfeng-er30) - НЕ НАЙДЕНА
+  ❌ Nano 01 (nano-01) - НЕ НАЙДЕНА
+  ❌ Nano BOX (nano-box) - НЕ НАЙДЕНА
+  ❌ Nano EX1 (nano-ex1) - НЕ НАЙДЕНА
+  ❌ pickup truck (pickup-truck) - НЕ НАЙДЕНА
+  ❌ Ruiqi (ruiqi) - НЕ НАЙДЕНА
+  ❌ Ruiqi 6 (ruiqi-6) - НЕ НАЙДЕНА
+  ❌ Ruiqi 6 EV (ruiqi-6-ev) - НЕ НАЙДЕНА
+  ❌ Ruiqi 7 (ruiqi-7) - НЕ НАЙДЕНА
+  ❌ Scenery (scenery) - НЕ НАЙДЕНА
+  ❌ Scenery E1 (scenery-e1) - НЕ НАЙДЕНА
+  ❌ Scenery ix5 (scenery-ix5) - НЕ НАЙДЕНА
+  ❌ Scenery ix7 (scenery-ix7) - НЕ НАЙДЕНА
+  ❌ Scenery MINIEV (scenery-miniev) - НЕ НАЙДЕНА
+  ❌ Scenery S560 (scenery-s560) - НЕ НАЙДЕНА
+  ❌ Shuaike (shuaike) - НЕ НАЙДЕНА
+  ❌ SKY EV01 (sky-ev01) - НЕ НАЙДЕНА
+  ❌ Xiaokang C36 (xiaokang-c36) - НЕ НАЙДЕНА
+  ❌ Xiaokang C37 (xiaokang-c37) - НЕ НАЙДЕНА
+  ❌ Xiaokang EC36 (xiaokang-ec36) - НЕ НАЙДЕНА
+  ❌ Xiaokang K05S (xiaokang-k05s) - НЕ НАЙДЕНА
+  ❌ Xiaokang K07II (xiaokang-k07ii) - НЕ НАЙДЕНА
+  ❌ Xiaokang K07S (xiaokang-k07s) - НЕ НАЙДЕНА
+  ❌ Xiaokang V07S (xiaokang-v07s) - НЕ НАЙДЕНА
+  ❌ Xiaokang V29 (xiaokang-v29) - НЕ НАЙДЕНА
+  ❌ Yixuan (yixuan) - НЕ НАЙДЕНА
+  ❌ Yixuan GS (yixuan-gs) - НЕ НАЙДЕНА
+  ❌ Yixuan MAX (yixuan-max) - НЕ НАЙДЕНА
+  ❌ Yufeng (yufeng) - НЕ НАЙДЕНА
+  ❌ Yufeng EM26 (yufeng-em26) - НЕ НАЙДЕНА
+  ❌ Yufeng EM27 (yufeng-em27) - НЕ НАЙДЕНА
+  ❌ Yufeng P16 (yufeng-p16) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/60
+
+Бренд: Exeed (exeed)
+  ❌ Chasing the stars (chasing-the-stars) - НЕ НАЙДЕНА
+  ❌ Star road yaoguang (star-road-yaoguang) - НЕ НАЙДЕНА
+  ❌ Star Era ET (star-era-et) - НЕ НАЙДЕНА
+  ❌ Sterra ES (sterra-es) - НЕ НАЙДЕНА
+  ❌ Stars in the clouds (stars-in-the-clouds) - НЕ НАЙДЕНА
+  ❌ The starry road embraces the moon (the-starry-road-embraces-the-moon) - НЕ НАЙДЕНА
+  ❌ Xingtu Yaoguang C-DM (xingtu-yaoguang-c-dm) - НЕ НАЙДЕНА
+  ❌ Xingtu Zhuifeng C-DM (xingtu-zhuifeng-c-dm) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: FAW (faw)
+  ❌ Besturn B30 (besturn-b30) - НЕ НАЙДЕНА
+  ❌ Besturn B50 (besturn-b50) - НЕ НАЙДЕНА
+  ❌ Besturn B70 (besturn-b70) - НЕ НАЙДЕНА
+  ❌ Besturn B70S (besturn-b70s) - НЕ НАЙДЕНА
+  ❌ Besturn M9 (besturn-m9) - НЕ НАЙДЕНА
+  ❌ Besturn NAT (besturn-nat) - НЕ НАЙДЕНА
+  ❌ Besturn T33 (besturn-t33) - НЕ НАЙДЕНА
+  ❌ Besturn T55 (besturn-t55) - НЕ НАЙДЕНА
+  ❌ Besturn T77 (besturn-t77) - НЕ НАЙДЕНА
+  ❌ Besturn T90 (besturn-t90) - НЕ НАЙДЕНА
+  ❌ Besturn T99 (besturn-t99) - НЕ НАЙДЕНА
+  ❌ Besturn X40 (besturn-x40) - НЕ НАЙДЕНА
+  ❌ Besturn X80 (besturn-x80) - НЕ НАЙДЕНА
+  ❌ Galloping Pony (galloping-pony) - НЕ НАЙДЕНА
+  ❌ Jiabao V52 (jiabao-v52) - НЕ НАЙДЕНА
+  ❌ Junpai A70 (junpai-a70) - НЕ НАЙДЕНА
+  ❌ Junpai CX65 (junpai-cx65) - НЕ НАЙДЕНА
+  ❌ Junpai D60 (junpai-d60) - НЕ НАЙДЕНА
+  ❌ Majesty (majesty) - НЕ НАЙДЕНА
+  ❌ Pentium B90 (pentium-b90) - НЕ НАЙДЕНА
+  ❌ Senya M80 (senya-m80) - НЕ НАЙДЕНА
+  ❌ Senya R7 (senya-r7) - НЕ НАЙДЕНА
+  ❌ Senya R9 (senya-r9) - НЕ НАЙДЕНА
+  ❌ Senya S80 (senya-s80) - НЕ НАЙДЕНА
+  ❌ Weizhi V2 (weizhi-v2) - НЕ НАЙДЕНА
+  ❌ Weizhi V5 (weizhi-v5) - НЕ НАЙДЕНА
+  ❌ Xiali N7 (xiali-n7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/27
+
+Бренд: Forthing (forthing)
+  ❌ Fengxing CM7 (fengxing-cm7) - НЕ НАЙДЕНА
+  ❌ Fengxing F600 (fengxing-f600) - НЕ НАЙДЕНА
+  ❌ Fengxing M6 (fengxing-m6) - НЕ НАЙДЕНА
+  ❌ Fengxing M7 (fengxing-m7) - НЕ НАЙДЕНА
+  ❌ Fengxing S500 (fengxing-s500) - НЕ НАЙДЕНА
+  ❌ Fengxing SX6 (fengxing-sx6) - НЕ НАЙДЕНА
+  ❌ Fengxing T5 (fengxing-t5) - НЕ НАЙДЕНА
+  ❌ Fengxing T5 EVO (fengxing-t5-evo) - НЕ НАЙДЕНА
+  ❌ Fengxing T5L (fengxing-t5l) - НЕ НАЙДЕНА
+  ❌ Jingyi (jingyi) - НЕ НАЙДЕНА
+  ❌ Jingyi S50 (jingyi-s50) - НЕ НАЙДЕНА
+  ❌ Jingyi SUV (jingyi-suv) - НЕ НАЙДЕНА
+  ❌ Jingyi X3 (jingyi-x3) - НЕ НАЙДЕНА
+  ❌ Jingyi X5 (jingyi-x5) - НЕ НАЙДЕНА
+  ❌ Jingyi X6 (jingyi-x6) - НЕ НАЙДЕНА
+  ❌ Jingyi XV (jingyi-xv) - НЕ НАЙДЕНА
+  ❌ Lingzhi (lingzhi) - НЕ НАЙДЕНА
+  ❌ Lingzhi New Energy (lingzhi-new-energy) - НЕ НАЙДЕНА
+  ❌ Lingzhi PLUS (lingzhi-plus) - НЕ НАЙДЕНА
+  ❌ Popular yacht (popular-yacht) - НЕ НАЙДЕНА
+  ❌ Wind and Thunder (wind-and-thunder) - НЕ НАЙДЕНА
+  ❌ Xinghai S7 (xinghai-s7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/22
+
+Бренд: Foton (foton)
+  ❌ Elf Zhilan (elf-zhilan) - НЕ НАЙДЕНА
+  ❌ Futian scenery (futian-scenery) - НЕ НАЙДЕНА
+  ❌ Gatu ix7 (gatu-ix7) - НЕ НАЙДЕНА
+  ❌ Landscape G5 (landscape-g5) - НЕ НАЙДЕНА
+  ❌ Landscape G7 (landscape-g7) - НЕ НАЙДЕНА
+  ❌ Landscape G9 (landscape-g9) - НЕ НАЙДЕНА
+  ❌ Landscape V5 (landscape-v5) - НЕ НАЙДЕНА
+  ❌ Mars 7 (mars-7) - НЕ НАЙДЕНА
+  ❌ Midi (midi) - НЕ НАЙДЕНА
+  ❌ Monpike E (monpike-e) - НЕ НАЙДЕНА
+  ❌ Pioneer (pioneer) - НЕ НАЙДЕНА
+  ❌ Sap (sap) - НЕ НАЙДЕНА
+  ❌ Scenery Zhilan G5 (scenery-zhilan-g5) - НЕ НАЙДЕНА
+  ❌ The victorious path to land expansion (the-victorious-path-to-land-expansion) - НЕ НАЙДЕНА
+  ❌ Those who open up the land control the road (those-who-open-up-the-land-control-the-road) - НЕ НАЙДЕНА
+  ❌ Tuiano (tuiano) - НЕ НАЙДЕНА
+  ❌ General F9 (general-f9) - НЕ НАЙДЕНА
+  ❌ General G7 (general-g7) - НЕ НАЙДЕНА
+  ❌ General G9 (general-g9) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/19
+
+Бренд: GAC (gac)
+  ❌ Qizhi PHEV (qizhi-phev) - НЕ НАЙДЕНА
+  ❌ Shadow Leopard (shadow-leopard) - НЕ НАЙДЕНА
+  ❌ Shadowcool (shadowcool) - НЕ НАЙДЕНА
+  ❌ Shi Rui PHEV (shi-rui-phev) - НЕ НАЙДЕНА
+  ❌ Toyota iA5 (toyota-ia5) - НЕ НАЙДЕНА
+  ❌ Toyota ix4 (toyota-ix4) - НЕ НАЙДЕНА
+  ❌ Trumpchi E8 (trumpchi-e8) - НЕ НАЙДЕНА
+  ❌ Trumpchi E8 PHEV (trumpchi-e8-phev) - НЕ НАЙДЕНА
+  ❌ Trumpchi E9 PHEV (trumpchi-e9-phev) - НЕ НАЙДЕНА
+  ❌ Trumpchi ES9 PHEV (trumpchi-es9-phev) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA3 (trumpchi-ga3) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA3S Vision (trumpchi-ga3s-vision) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA4 (trumpchi-ga4) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA5 (trumpchi-ga5) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA5 EV (trumpchi-ga5-ev) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA6 (trumpchi-ga6) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA8 (trumpchi-ga8) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS3 (trumpchi-gs3) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS4 (trumpchi-gs4) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS4 Coupe (trumpchi-gs4-coupe) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS4 PHEV (trumpchi-gs4-phev) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS4 PLUS (trumpchi-gs4-plus) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS5 (trumpchi-gs5) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS5 Super (trumpchi-gs5-super) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS7 (trumpchi-gs7) - НЕ НАЙДЕНА
+  ❌ Trumpchi GS8 (trumpchi-gs8) - НЕ НАЙДЕНА
+  ❌ Trumpchi M6 (trumpchi-m6) - НЕ НАЙДЕНА
+  ❌ Trumpchi M8 (trumpchi-m8) - НЕ НАЙДЕНА
+  ❌ Xinglang (xinglang) - НЕ НАЙДЕНА
+  ❌ Yile (yile) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/30
+
+Бренд: Geely (geely)
+  ❌ Boyue (boyue) - НЕ НАЙДЕНА
+  ❌ Boyue L (boyue-l) - НЕ НАЙДЕНА
+  ❌ Binrui (binrui) - НЕ НАЙДЕНА
+  ❌ Binyue PHEV (binyue-phev) - НЕ НАЙДЕНА
+  ❌ Borui (borui) - НЕ НАЙДЕНА
+  ❌ Borui ePro (borui-epro) - НЕ НАЙДЕНА
+  ❌ Classic Emgrand (classic-emgrand) - НЕ НАЙДЕНА
+  ❌ Classic panda (classic-panda) - НЕ НАЙДЕНА
+  ❌ Binyue (binyue) - НЕ НАЙДЕНА
+  ❌ Cowboy (cowboy) - НЕ НАЙДЕНА
+  ❌ EC8 (ec8) - НЕ НАЙДЕНА
+  ❌ Emgrand (emgrand) - НЕ НАЙДЕНА
+  ❌ Emgrand EV (emgrand-ev) - НЕ НАЙДЕНА
+  ❌ Emgrand GL (emgrand-gl) - НЕ НАЙДЕНА
+  ❌ Emgrand GS (emgrand-gs) - НЕ НАЙДЕНА
+  ❌ Emgrand GSe (emgrand-gse) - НЕ НАЙДЕНА
+  ❌ Emgrand L (emgrand-l) - НЕ НАЙДЕНА
+  ❌ Emgrand L HiP (emgrand-l-hip) - НЕ НАЙДЕНА
+  ❌ Emgrand PHEV (emgrand-phev) - НЕ НАЙДЕНА
+  ❌ Emgrand S (emgrand-s) - НЕ НАЙДЕНА
+  ❌ EX3 Kung Fu Cow (ex3-kung-fu-cow) - НЕ НАЙДЕНА
+  ❌ Freedom ship (freedom-ship) - НЕ НАЙДЕНА
+  ❌ Galaxy E5 (galaxy-e5) - НЕ НАЙДЕНА
+  ❌ Galaxy E8 (galaxy-e8) - НЕ НАЙДЕНА
+  ❌ Galaxy L6 (galaxy-l6) - НЕ НАЙДЕНА
+  ❌ Galaxy L7 (galaxy-l7) - НЕ НАЙДЕНА
+  ❌ Galaxy Starship 7 EM-i (galaxy-starship-7-em-i) - НЕ НАЙДЕНА
+  ❌ GC7 (gc7) - НЕ НАЙДЕНА
+  ❌ Geometry A (geometry-a) - НЕ НАЙДЕНА
+  ❌ Geometry C (geometry-c) - НЕ НАЙДЕНА
+  ❌ Geometry E Firefly (geometry-e-firefly) - НЕ НАЙДЕНА
+  ❌ Geometry G6 (geometry-g6) - НЕ НАЙДЕНА
+  ❌ Geometry M6 (geometry-m6) - НЕ НАЙДЕНА
+  ❌ GX7 (gx7) - НЕ НАЙДЕНА
+  ❌ Haoyue L (haoyue-l) - НЕ НАЙДЕНА
+  ❌ Haoyue PRO (haoyue-pro) - НЕ НАЙДЕНА
+  ❌ ICON (icon) - НЕ НАЙДЕНА
+  ❌ Jiaji (jiaji) - НЕ НАЙДЕНА
+  ❌ Jiaji PHEV (jiaji-phev) - НЕ НАЙДЕНА
+  ❌ King Kong (king-kong) - НЕ НАЙДЕНА
+  ❌ Xingyue L extended range electric version (xingyue-l-extended-range-electric-version) - НЕ НАЙДЕНА
+  ❌ Xingyue L (xingyue-l) - НЕ НАЙДЕНА
+  ❌ Xingyue L Zhiqing (xingyue-l-zhiqing) - НЕ НАЙДЕНА
+  ❌ Okavango (okavango) - НЕ НАЙДЕНА
+  ❌ Panda (panda) - НЕ НАЙДЕНА
+  ❌ Radar Horizon EV (radar-horizon-ev) - НЕ НАЙДЕНА
+  ❌ Sea view (sea-view) - НЕ НАЙДЕНА
+  ❌ Star Wish (star-wish) - НЕ НАЙДЕНА
+  ❌ SX7 (sx7) - НЕ НАЙДЕНА
+  ❌ Xingyue (xingyue) - НЕ НАЙДЕНА
+  ❌ Vision (vision) - НЕ НАЙДЕНА
+  ❌ Vision S1 (vision-s1) - НЕ НАЙДЕНА
+  ❌ Vision X1 (vision-x1) - НЕ НАЙДЕНА
+  ❌ Vision X3 (vision-x3) - НЕ НАЙДЕНА
+  ❌ Vision X6 (vision-x6) - НЕ НАЙДЕНА
+  ❌ Xing Rui (xing-rui) - НЕ НАЙДЕНА
+  ❌ Xingrui L (xingrui-l) - НЕ НАЙДЕНА
+  ❌ Xingyue PHEV (xingyue-phev) - НЕ НАЙДЕНА
+  ❌ Xingyue S (xingyue-s) - НЕ НАЙДЕНА
+  ❌ Yizhen L380 (yizhen-l380) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/60
+
+Бренд: Great Wall (great-wall)
+  ❌ C20R (c20r) - НЕ НАЙДЕНА
+  ❌ C30 (c30) - НЕ НАЙДЕНА
+  ❌ C50 (c50) - НЕ НАЙДЕНА
+  ❌ Good reputation (good-reputation) - НЕ НАЙДЕНА
+  ❌ Gun (gun) - НЕ НАЙДЕНА
+  ❌ King Kong Cannon (king-kong-cannon) - НЕ НАЙДЕНА
+  ❌ M2 (m2) - НЕ НАЙДЕНА
+  ❌ M4 (m4) - НЕ НАЙДЕНА
+  ❌ Shanhaicannon (shanhaicannon) - НЕ НАЙДЕНА
+  ❌ V80 (v80) - НЕ НАЙДЕНА
+  ❌ Wing Jun 5 (wing-jun-5) - НЕ НАЙДЕНА
+  ❌ Wing Jun 6 (wing-jun-6) - НЕ НАЙДЕНА
+  ❌ Wing Jun 7 (wing-jun-7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/13
+
+Бренд: Haval (haval)
+  ❌ Dargo (dargo) - НЕ НАЙДЕНА
+  ❌ F7 (f7) - НЕ НАЙДЕНА
+  ❌ H2 (h2) - НЕ НАЙДЕНА
+  ❌ H6 (h6) - НЕ НАЙДЕНА
+  ❌ H6 Coupe (h6-coupe) - НЕ НАЙДЕНА
+  ❌ Beast (beast) - НЕ НАЙДЕНА
+  ❌ cool dog (cool-dog) - НЕ НАЙДЕНА
+  ❌ F5 (f5) - НЕ НАЙДЕНА
+  ❌ F7x (f7x) - НЕ НАЙДЕНА
+  ❌ H1 (h1) - НЕ НАЙДЕНА
+  ❌ H2s (h2s) - НЕ НАЙДЕНА
+  ❌ H3 (h3) - НЕ НАЙДЕНА
+  ❌ H4 (h4) - НЕ НАЙДЕНА
+  ❌ H5 (h5) - НЕ НАЙДЕНА
+  ❌ H5 classic (h5-classic) - НЕ НАЙДЕНА
+  ❌ H6 PHEV (h6-phev) - НЕ НАЙДЕНА
+  ❌ H6S (h6s) - НЕ НАЙДЕНА
+  ❌ H7 (h7) - НЕ НАЙДЕНА
+  ❌ H8 (h8) - НЕ НАЙДЕНА
+  ❌ H9 (h9) - НЕ НАЙДЕНА
+  ❌ Harvard Raptors (harvard-raptors) - НЕ НАЙДЕНА
+  ❌ Harvard Red Rabbit (harvard-red-rabbit) - НЕ НАЙДЕНА
+  ❌ Harvard Xiaolong (harvard-xiaolong) - НЕ НАЙДЕНА
+  ❌ Jolion (jolion) - НЕ НАЙДЕНА
+  ❌ M6 (m6) - НЕ НАЙДЕНА
+  ❌ Raptors PHEV (raptors-phev) - НЕ НАЙДЕНА
+  ❌ second generation big dog (second-generation-big-dog) - НЕ НАЙДЕНА
+  ❌ second generation big dog PHEV (second-generation-big-dog-phev) - НЕ НАЙДЕНА
+  ❌ Xiaolong MAX (xiaolong-max) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/29
+
+Бренд: HiPhi (hiphi)
+  ❌ X (x) - НЕ НАЙДЕНА
+  ❌ Y (y) - НЕ НАЙДЕНА
+  ❌ Z (z) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Hongqi (hongqi)
+  ❌ E-HS3 (e-hs3) - НЕ НАЙДЕНА
+  ❌ E-HS9 (e-hs9) - НЕ НАЙДЕНА
+  ❌ E-QM5 (e-qm5) - НЕ НАЙДЕНА
+  ❌ EH7 (eh7) - НЕ НАЙДЕНА
+  ❌ H5 (h5) - НЕ НАЙДЕНА
+  ❌ H5 classic (h5-classic) - НЕ НАЙДЕНА
+  ❌ H5 PHEV (h5-phev) - НЕ НАЙДЕНА
+  ❌ H6 (h6) - НЕ НАЙДЕНА
+  ❌ H7 (h7) - НЕ НАЙДЕНА
+  ❌ H9 (h9) - НЕ НАЙДЕНА
+  ❌ HQ9 (hq9) - НЕ НАЙДЕНА
+  ❌ HQ9 PHEV (hq9-phev) - НЕ НАЙДЕНА
+  ❌ HS3 (hs3) - НЕ НАЙДЕНА
+  ❌ HS3 PHEV (hs3-phev) - НЕ НАЙДЕНА
+  ❌ HS5 (hs5) - НЕ НАЙДЕНА
+  ❌ HS7 (hs7) - НЕ НАЙДЕНА
+  ❌ HS7 PHEV (hs7-phev) - НЕ НАЙДЕНА
+  ❌ Red flag flourishing (red-flag-flourishing) - НЕ НАЙДЕНА
+  ❌ Red Flag Guoya (red-flag-guoya) - НЕ НАЙДЕНА
+  ❌ Red Flag National Glory (red-flag-national-glory) - НЕ НАЙДЕНА
+  ❌ Red Flag Tiangong 08 (red-flag-tiangong-08) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/21
+
+Бренд: JAC (jac)
+  ❌ Ruifeng L5 (ruifeng-l5) - НЕ НАЙДЕНА
+  ❌ Ruifeng L6 MAX (ruifeng-l6-max) - НЕ НАЙДЕНА
+  ❌ Ruifeng M3 (ruifeng-m3) - НЕ НАЙДЕНА
+  ❌ Ruifeng M4 (ruifeng-m4) - НЕ НАЙДЕНА
+  ❌ Ruifeng RF8 PHEV (ruifeng-rf8-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Jetour (jetour)
+  ❌ Dashing (dashing) - НЕ НАЙДЕНА
+  ❌ Dashing i-DM (dashing-i-dm) - НЕ НАЙДЕНА
+  ❌ Jet Traveler (jet-traveler) - НЕ НАЙДЕНА
+  ❌ JETTO Freedom (jetto-freedom) - НЕ НАЙДЕНА
+  ❌ Jietu Shanhai L9 (jietu-shanhai-l9) - НЕ НАЙДЕНА
+  ❌ Jietu X70 (jietu-x70) - НЕ НАЙДЕНА
+  ❌ Jietu X70 Coupe (jietu-x70-coupe) - НЕ НАЙДЕНА
+  ❌ Jietu X70 PLUS (jietu-x70-plus) - НЕ НАЙДЕНА
+  ❌ Jietu X70 PRO (jietu-x70-pro) - НЕ НАЙДЕНА
+  ❌ Jietu X70M (jietu-x70m) - НЕ НАЙДЕНА
+  ❌ Jietu X70S (jietu-x70s) - НЕ НАЙДЕНА
+  ❌ Jietu X90 (jietu-x90) - НЕ НАЙДЕНА
+  ❌ Jietu X90 PLUS (jietu-x90-plus) - НЕ НАЙДЕНА
+  ❌ Jietu X95 (jietu-x95) - НЕ НАЙДЕНА
+  ❌ SHANHAI L6 (shanhai-l6) - НЕ НАЙДЕНА
+  ❌ SHANHAI L7 (shanhai-l7) - НЕ НАЙДЕНА
+  ❌ Shanhai T1 (shanhai-t1) - НЕ НАЙДЕНА
+  ❌ X70 C-DM (x70-c-dm) - НЕ НАЙДЕНА
+  ❌ X70S EV (x70s-ev) - НЕ НАЙДЕНА
+  ❌ X90 PRO (x90-pro) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/20
+
+Бренд: Kaiyi (kaiyi)
+  ❌ C3 (c3) - НЕ НАЙДЕНА
+  ❌ Dazzling world (dazzling-world) - НЕ НАЙДЕНА
+  ❌ E3 (e3) - НЕ НАЙДЕНА
+  ❌ Kunlun (kunlun) - НЕ НАЙДЕНА
+  ❌ Kunlun iHD (kunlun-ihd) - НЕ НАЙДЕНА
+  ❌ Ten months (ten-months) - НЕ НАЙДЕНА
+  ❌ V3 (v3) - НЕ НАЙДЕНА
+  ❌ X3 (x3) - НЕ НАЙДЕНА
+  ❌ X5 (x5) - НЕ НАЙДЕНА
+  ❌ Xuandu (xuandu) - НЕ НАЙДЕНА
+  ❌ Xuanjie Pro EV (xuanjie-pro-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: Lixiang (Li) (li)
+  ❌ Ideal L6 (ideal-l6) - НЕ НАЙДЕНА
+  ❌ Ideal L7 (ideal-l7) - НЕ НАЙДЕНА
+  ❌ Ideal L8 (ideal-l8) - НЕ НАЙДЕНА
+  ❌ Ideal L9 (ideal-l9) - НЕ НАЙДЕНА
+  ❌ Ideal MEGA (ideal-mega) - НЕ НАЙДЕНА
+  ❌ Ideal ONE (ideal-one) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Lifan (lifan)
+  ❌ 330 EV (330-ev) - НЕ НАЙДЕНА
+  ❌ Celliya (530) (530) - НЕ НАЙДЕНА
+  ❌ Maiwe (maiwe) - НЕ НАЙДЕНА
+  ❌ Maple Leaf 80V (maple-leaf-80v) - НЕ НАЙДЕНА
+  ❌ Murman (820) (820) - НЕ НАЙДЕНА
+  ❌ Smily (330) (330) - НЕ НАЙДЕНА
+  ❌ Solano (620) (620) - НЕ НАЙДЕНА
+  ❌ X50 (x50) - НЕ НАЙДЕНА
+  ❌ X60 (x60) - НЕ НАЙДЕНА
+  ❌ X80 (x80) - НЕ НАЙДЕНА
+  ❌ Xuanlang (xuanlang) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: Lotus (lotus)
+  ❌ Eletre (eletre) - НЕ НАЙДЕНА
+  ❌ Emeya (emeya) - НЕ НАЙДЕНА
+  ❌ Emira (emira) - НЕ НАЙДЕНА
+  ❌ Evora (evora) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Lynk &amp; Co (lynk-amp-co)
+  ❌ 01 (01) - НЕ НАЙДЕНА
+  ❌ 01 EM-P (01-em-p) - НЕ НАЙДЕНА
+  ❌ 02 (02) - НЕ НАЙДЕНА
+  ❌ 02 Hatchback (02-hatchback) - НЕ НАЙДЕНА
+  ❌ 02 PHEV (02-phev) - НЕ НАЙДЕНА
+  ❌ 03 (03) - НЕ НАЙДЕНА
+  ❌ 05 (05) - НЕ НАЙДЕНА
+  ❌ 05 EM-P (05-em-p) - НЕ НАЙДЕНА
+  ❌ 06 (06) - НЕ НАЙДЕНА
+  ❌ 06 EM-P (06-em-p) - НЕ НАЙДЕНА
+  ❌ 07 EM-P (07-em-p) - НЕ НАЙДЕНА
+  ❌ 08 EM-P (08-em-p) - НЕ НАЙДЕНА
+  ❌ 09 (09) - НЕ НАЙДЕНА
+  ❌ 09 EM-P (09-em-p) - НЕ НАЙДЕНА
+  ❌ Z10 (z10) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/15
+
+Бренд: Maxus (maxus)
+  ❌ Chase EUNIQ 5 PLUG IN (chase-euniq-5-plug-in) - НЕ НАЙДЕНА
+  ❌ Chase G90 (chase-g90) - НЕ НАЙДЕНА
+  ❌ D60 (d60) - НЕ НАЙДЕНА
+  ❌ D90 (d90) - НЕ НАЙДЕНА
+  ❌ D90 Pro (d90-pro) - НЕ НАЙДЕНА
+  ❌ Dana V1 (dana-v1) - НЕ НАЙДЕНА
+  ❌ EV30 (ev30) - НЕ НАЙДЕНА
+  ❌ Everyone 5 EV (everyone-5-ev) - НЕ НАЙДЕНА
+  ❌ Everyone 5 PLUG IN (everyone-5-plug-in) - НЕ НАЙДЕНА
+  ❌ G10 (g10) - НЕ НАЙДЕНА
+  ❌ G20 (g20) - НЕ НАЙДЕНА
+  ❌ G50 (g50) - НЕ НАЙДЕНА
+  ❌ G70 (g70) - НЕ НАЙДЕНА
+  ❌ Interstellar (interstellar) - НЕ НАЙДЕНА
+  ❌ SAIC Niu•Devil (saic-niu-devil) - НЕ НАЙДЕНА
+  ❌ T60 (t60) - НЕ НАЙДЕНА
+  ❌ T70 (t70) - НЕ НАЙДЕНА
+  ❌ Territory (territory) - НЕ НАЙДЕНА
+  ❌ V80 RV (v80-rv) - НЕ НАЙДЕНА
+  ❌ V90 RV (v90-rv) - НЕ НАЙДЕНА
+  ❌ Xintu EV80 (xintu-ev80) - НЕ НАЙДЕНА
+  ❌ Xintu V80 (xintu-v80) - НЕ НАЙДЕНА
+  ❌ Xintu V90 (xintu-v90) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/23
+
+Бренд: MG (mg)
+  ❌ 3 (3) - НЕ НАЙДЕНА
+  ❌ 3SW (3sw) - НЕ НАЙДЕНА
+  ❌ 4 (4) - НЕ НАЙДЕНА
+  ❌ 4 EV (4-ev) - НЕ НАЙДЕНА
+  ❌ 5 (5) - НЕ НАЙДЕНА
+  ❌ 5 Scorpio (5-scorpio) - НЕ НАЙДЕНА
+  ❌ 6 (6) - НЕ НАЙДЕНА
+  ❌ 6 PHEV (6-phev) - НЕ НАЙДЕНА
+  ❌ 7 (7) - НЕ НАЙДЕНА
+  ❌ Cyberster (cyberster) - НЕ НАЙДЕНА
+  ❌ ES5 (es5) - НЕ НАЙДЕНА
+  ❌ EZS pure electric (ezs-pure-electric) - НЕ НАЙДЕНА
+  ❌ H.S. (h-s) - НЕ НАЙДЕНА
+  ❌ ONE (one) - НЕ НАЙДЕНА
+  ❌ pilot (pilot) - НЕ НАЙДЕНА
+  ❌ Pilot PHEV (pilot-phev) - НЕ НАЙДЕНА
+  ❌ Ruiteng (ruiteng) - НЕ НАЙДЕНА
+  ❌ Ruixing (ruixing) - НЕ НАЙДЕНА
+  ❌ ZS (zs) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/19
+
+Бренд: NIO (nio)
+  ❌ EC6 (ec6) - НЕ НАЙДЕНА
+  ❌ EC7 (ec7) - НЕ НАЙДЕНА
+  ❌ ES6 (es6) - НЕ НАЙДЕНА
+  ❌ ES7 (es7) - НЕ НАЙДЕНА
+  ❌ ES8 (es8) - НЕ НАЙДЕНА
+  ❌ ET5 (et5) - НЕ НАЙДЕНА
+  ❌ ET5T (et5t) - НЕ НАЙДЕНА
+  ❌ ET7 (et7) - НЕ НАЙДЕНА
+  ❌ ET9 (et9) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Omoda (omoda)
+  ❌ C5 (c5) - НЕ НАЙДЕНА
+  ❌ S5 (s5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: ORA (ora)
+  ❌ Euler ballet cat (euler-ballet-cat) - НЕ НАЙДЕНА
+  ❌ Euler black cat (euler-black-cat) - НЕ НАЙДЕНА
+  ❌ Euler good cat (euler-good-cat) - НЕ НАЙДЕНА
+  ❌ Euler Good Cat GT (euler-good-cat-gt) - НЕ НАЙДЕНА
+  ❌ Euler iQ (euler-iq) - НЕ НАЙДЕНА
+  ❌ Euler lightning cat (euler-lightning-cat) - НЕ НАЙДЕНА
+  ❌ Euler white cat (euler-white-cat) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/7
+
+Бренд: Oshan (oshan)
+  ❌ Benben E-Star (benben-e-star) - НЕ НАЙДЕНА
+  ❌ Benben mini-e (benben-mini-e) - НЕ НАЙДЕНА
+  ❌ Changan Auchan A800 (changan-auchan-a800) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Corsa 5 (changan-auchan-corsa-5) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Corsa Pro (changan-auchan-corsa-pro) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Coshan (changan-auchan-coshan) - НЕ НАЙДЕНА
+  ❌ Changan Auchan CX70 (changan-auchan-cx70) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Keshan EV (changan-auchan-keshan-ev) - НЕ НАЙДЕНА
+  ❌ Changan Auchan X5 (changan-auchan-x5) - НЕ НАЙДЕНА
+  ❌ Changan Auchan X5 PLUS (changan-auchan-x5-plus) - НЕ НАЙДЕНА
+  ❌ Changan Auchan X7 (changan-auchan-x7) - НЕ НАЙДЕНА
+  ❌ Changan Auchan X7 PLUS (changan-auchan-x7-plus) - НЕ НАЙДЕНА
+  ❌ Changan Auchan X70A (changan-auchan-x70a) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Z6 (changan-auchan-z6) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Z6 iDD new energy (changan-auchan-z6-idd-new-energy) - НЕ НАЙДЕНА
+  ❌ Changan Oushang Kesai (changan-oushang-kesai) - НЕ НАЙДЕНА
+  ❌ Oriwei (oriwei) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/17
+
+Бренд: Polestar (polestar)
+  ❌ 2 (2) - НЕ НАЙДЕНА
+  ❌ 4 (4) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Rising Auto (rising-auto)
+  ❌ Feifan ER6 (feifan-er6) - НЕ НАЙДЕНА
+  ❌ Feifan F7 (feifan-f7) - НЕ НАЙДЕНА
+  ❌ Feifan MARVEL R (feifan-marvel-r) - НЕ НАЙДЕНА
+  ❌ Feifan R7 (feifan-r7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Roewe (roewe)
+  ❌ 350 (350) - НЕ НАЙДЕНА
+  ❌ 360 (360) - НЕ НАЙДЕНА
+  ❌ 550 (550) - НЕ НАЙДЕНА
+  ❌ 750 (750) - НЕ НАЙДЕНА
+  ❌ 950 (950) - НЕ НАЙДЕНА
+  ❌ CLEVER (clever) - НЕ НАЙДЕНА
+  ❌ D5X DMH (d5x-dmh) - НЕ НАЙДЕНА
+  ❌ D6 (d6) - НЕ НАЙДЕНА
+  ❌ D7 DMH (d7-dmh) - НЕ НАЙДЕНА
+  ❌ D7 EV (d7-ev) - НЕ НАЙДЕНА
+  ❌ e550 (e550) - НЕ НАЙДЕНА
+  ❌ e950 (e950) - НЕ НАЙДЕНА
+  ❌ Ei5 (ei5) - НЕ НАЙДЕНА
+  ❌ ei6 (ei6) - НЕ НАЙДЕНА
+  ❌ ei6 MAX (ei6-max) - НЕ НАЙДЕНА
+  ❌ eRX5 (erx5) - НЕ НАЙДЕНА
+  ❌ i5 (i5) - НЕ НАЙДЕНА
+  ❌ i6 (i6) - НЕ НАЙДЕНА
+  ❌ i6 MAX (i6-max) - НЕ НАЙДЕНА
+  ❌ i6 MAX EV (i6-max-ev) - НЕ НАЙДЕНА
+  ❌ iMAX8 (imax8) - НЕ НАЙДЕНА
+  ❌ iMAX8 DMH (imax8-dmh) - НЕ НАЙДЕНА
+  ❌ iMAX8 EV (imax8-ev) - НЕ НАЙДЕНА
+  ❌ Marvel X (marvel-x) - НЕ НАЙДЕНА
+  ❌ RX3 (rx3) - НЕ НАЙДЕНА
+  ❌ RX5 (rx5) - НЕ НАЙДЕНА
+  ❌ RX5 eMAX (rx5-emax) - НЕ НАЙДЕНА
+  ❌ RX5 MAX (rx5-max) - НЕ НАЙДЕНА
+  ❌ RX8 (rx8) - НЕ НАЙДЕНА
+  ❌ RX9 (rx9) - НЕ НАЙДЕНА
+  ❌ W5 (w5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/31
+
+Бренд: SERES (seres)
+  ❌ Cyrus SF5 (cyrus-sf5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Skywell (skywell)
+  ❌ Skyworth EV6 (skyworth-ev6) - НЕ НАЙДЕНА
+  ❌ Skyworth HT-i (skyworth-ht-i) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Tank (tank)
+  ❌ 300 (300) - НЕ НАЙДЕНА
+  ❌ 300 Hi4-T (300-hi4-t) - НЕ НАЙДЕНА
+  ❌ 400 (400) - НЕ НАЙДЕНА
+  ❌ 400 Hi4-T (400-hi4-t) - НЕ НАЙДЕНА
+  ❌ 500 (500) - НЕ НАЙДЕНА
+  ❌ 500 Hi4-T (500-hi4-t) - НЕ НАЙДЕНА
+  ❌ 500 Hi4-Z (500-hi4-z) - НЕ НАЙДЕНА
+  ❌ 700 Hi4-T (700-hi4-t) - НЕ НАЙДЕНА
+  ❌ Cyber  300 (cyber-300) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Voyah (voyah)
+  ❌ Courage (courage) - НЕ НАЙДЕНА
+  ❌ Lantu Dreamer EV (lantu-dreamer-ev) - НЕ НАЙДЕНА
+  ❌ Lantu Dreamer PHEV (lantu-dreamer-phev) - НЕ НАЙДЕНА
+  ❌ Lantu FREE (lantu-free) - НЕ НАЙДЕНА
+  ❌ Passion EV (passion-ev) - НЕ НАЙДЕНА
+  ❌ Passion PHEV (passion-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Weltmeister (weltmeister)
+  ❌ Weimar E.5 (weimar-e-5) - НЕ НАЙДЕНА
+  ❌ Weimar W6 (weimar-w6) - НЕ НАЙДЕНА
+  ❌ WM EX5 (wm-ex5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Wuling (wuling)
+  ❌ Air ev clear sky (air-ev-clear-sky) - НЕ НАЙДЕНА
+  ❌ Bingo (bingo) - НЕ НАЙДЕНА
+  ❌ Bingo PLUS (bingo-plus) - НЕ НАЙДЕНА
+  ❌ Capgemini Victory (capgemini-victory) - НЕ НАЙДЕНА
+  ❌ EV50 (ev50) - НЕ НАЙДЕНА
+  ❌ Hongguang (hongguang) - НЕ НАЙДЕНА
+  ❌ Hongguang MINIEV (hongguang-miniev) - НЕ НАЙДЕНА
+  ❌ Hongguang PLUS (hongguang-plus) - НЕ НАЙДЕНА
+  ❌ Hongguang pure electric version (hongguang-pure-electric-version) - НЕ НАЙДЕНА
+  ❌ Hongguang S3 (hongguang-s3) - НЕ НАЙДЕНА
+  ❌ Hongguang V (hongguang-v) - НЕ НАЙДЕНА
+  ❌ Jiachen (jiachen) - НЕ НАЙДЕНА
+  ❌ journey (journey) - НЕ НАЙДЕНА
+  ❌ journey classic (journey-classic) - НЕ НАЙДЕНА
+  ❌ light (light) - НЕ НАЙДЕНА
+  ❌ light mini card (light-mini-card) - НЕ НАЙДЕНА
+  ❌ Nano EV (nano-ev) - НЕ НАЙДЕНА
+  ❌ Nebula (nebula) - НЕ НАЙДЕНА
+  ❌ Rongguang (rongguang) - НЕ НАЙДЕНА
+  ❌ Rongguang EV (rongguang-ev) - НЕ НАЙДЕНА
+  ❌ Rongguang V (rongguang-v) - НЕ НАЙДЕНА
+  ❌ Star (star) - НЕ НАЙДЕНА
+  ❌ Starlight EV (starlight-ev) - НЕ НАЙДЕНА
+  ❌ Starlight PHEV (starlight-phev) - НЕ НАЙДЕНА
+  ❌ Starlight S EV (starlight-s-ev) - НЕ НАЙДЕНА
+  ❌ Starlight S PHEV (starlight-s-phev) - НЕ НАЙДЕНА
+  ❌ Xingchi (xingchi) - НЕ НАЙДЕНА
+  ❌ Yangguang (yangguang) - НЕ НАЙДЕНА
+  ❌ Zhiguang EV (zhiguang-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/29
+
+Бренд: Xpeng (xpeng)
+  ❌ G3 (g3) - НЕ НАЙДЕНА
+  ❌ G6 (g6) - НЕ НАЙДЕНА
+  ❌ G9 (g9) - НЕ НАЙДЕНА
+  ❌ P5 (p5) - НЕ НАЙДЕНА
+  ❌ P7 (p7) - НЕ НАЙДЕНА
+  ❌ X9 (x9) - НЕ НАЙДЕНА
+  ❌ Xiaopeng MONA M03 (xiaopeng-mona-m03) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/7
+
+Бренд: ZEEKR (zeekr)
+  ❌ 001 (001) - НЕ НАЙДЕНА
+  ❌ 001 FR (001-fr) - НЕ НАЙДЕНА
+  ❌ 007 (007) - НЕ НАЙДЕНА
+  ❌ 007GT (007gt) - НЕ НАЙДЕНА
+  ❌ 009 (009) - НЕ НАЙДЕНА
+  ❌ 7X (7x) - НЕ НАЙДЕНА
+  ❌ MIX (mix) - НЕ НАЙДЕНА
+  ❌ X (x) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: Zotye (zotye)
+  ❌ 5008 (5008) - НЕ НАЙДЕНА
+  ❌ Cloud 100 (cloud-100) - НЕ НАЙДЕНА
+  ❌ Damai X5 (damai-x5) - НЕ НАЙДЕНА
+  ❌ Damai X7 (damai-x7) - НЕ НАЙДЕНА
+  ❌ E200 (e200) - НЕ НАЙДЕНА
+  ❌ Gangnam TT (gangnam-tt) - НЕ НАЙДЕНА
+  ❌ SR7 (sr7) - НЕ НАЙДЕНА
+  ❌ SR9 (sr9) - НЕ НАЙДЕНА
+  ❌ T200 (t200) - НЕ НАЙДЕНА
+  ❌ T300 (t300) - НЕ НАЙДЕНА
+  ❌ T500 (t500) - НЕ НАЙДЕНА
+  ❌ T600 (t600) - НЕ НАЙДЕНА
+  ❌ T600 Coupe (t600-coupe) - НЕ НАЙДЕНА
+  ❌ T700 (t700) - НЕ НАЙДЕНА
+  ❌ Z300 (z300) - НЕ НАЙДЕНА
+  ❌ Z500 (z500) - НЕ НАЙДЕНА
+  ❌ Z560 (z560) - НЕ НАЙДЕНА
+  ❌ Z700 (z700) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/18
+
+Бренд: firefly (firefly)
+  ❌ Firefly (firefly) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: 212 (212)
+  ❌ Sniper (sniper) - НЕ НАЙДЕНА
+  ❌ T01 (t01) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Acura (acura)
+  ❌ CDX (cdx) - НЕ НАЙДЕНА
+  ❌ ILX (ilx) - НЕ НАЙДЕНА
+  ❌ MDX (mdx) - НЕ НАЙДЕНА
+  ❌ NSX (nsx) - НЕ НАЙДЕНА
+  ❌ RDX (rdx) - НЕ НАЙДЕНА
+  ❌ imported (rdx-imported) - НЕ НАЙДЕНА
+  ❌ RL (rl) - НЕ НАЙДЕНА
+  ❌ RLX (rlx) - НЕ НАЙДЕНА
+  ❌ TL (tl) - НЕ НАЙДЕНА
+  ❌ TLX (tlx) - НЕ НАЙДЕНА
+  ❌ TLX-L (tlx-l) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: AION (aion)
+  ❌ LX (lx) - НЕ НАЙДЕНА
+  ❌ RT (rt) - НЕ НАЙДЕНА
+  ❌ S (s) - НЕ НАЙДЕНА
+  ❌ Trumpchi GA3S PHEV (trumpchi-ga3s-phev) - НЕ НАЙДЕНА
+  ❌ Trumpchi GE3 (trumpchi-ge3) - НЕ НАЙДЕНА
+  ❌ UT (ut) - НЕ НАЙДЕНА
+  ❌ V (v) - НЕ НАЙДЕНА
+  ❌ Y (y) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: AIWAYS (aiways)
+  ❌ U5 (u5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Alfa romeo (alfa-romeo)
+  ❌ Giulia Juliet (giulia-juliet) - НЕ НАЙДЕНА
+  ❌ Stelvio (stelvio) - НЕ НАЙДЕНА
+  ❌ Tonale Tonali (tonale-tonali) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: ARCFOX Extreme Fox (arcfox-extreme-fox)
+  ❌ Arctic Fox Koala S (arctic-fox-koala-s) - НЕ НАЙДЕНА
+  ❌ Extreme Fox Alpha T (extreme-fox-alpha-t) - НЕ НАЙДЕНА
+  ❌ JiFox Alpha S5 (jifox-alpha-s5) - НЕ НАЙДЕНА
+  ❌ JiFox Alpha T5 (jifox-alpha-t5) - НЕ НАЙДЕНА
+  ❌ Polar Fox Alpha S (polar-fox-alpha-s) - НЕ НАЙДЕНА
+  ❌ Polar Fox Koala (polar-fox-koala) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Aston Martin (aston-martin)
+  ❌ DB11 (db11) - НЕ НАЙДЕНА
+  ❌ DB12 (db12) - НЕ НАЙДЕНА
+  ❌ DB9 (db9) - НЕ НАЙДЕНА
+  ❌ DBS (dbs) - НЕ НАЙДЕНА
+  ❌ DBX (dbx) - НЕ НАЙДЕНА
+  ❌ Rapide (rapide) - НЕ НАЙДЕНА
+  ❌ Vanquish (vanquish) - НЕ НАЙДЕНА
+  ❌ Vantage (vantage) - НЕ НАЙДЕНА
+  ❌ Virage (virage) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Audi (audi)
+  ❌ A1 (a1) - НЕ НАЙДЕНА
+  ❌ A3 (a3) - НЕ НАЙДЕНА
+  ❌ imported (a3-imported) - НЕ НАЙДЕНА
+  ❌ A4 (a4) - НЕ НАЙДЕНА
+  ❌ imported (a4-imported) - НЕ НАЙДЕНА
+  ❌ A4L (a4l) - НЕ НАЙДЕНА
+  ❌ A5 (a5) - НЕ НАЙДЕНА
+  ❌ A6 (a6) - НЕ НАЙДЕНА
+  ❌ imported (a6-imported) - НЕ НАЙДЕНА
+  ❌ A6L (a6l) - НЕ НАЙДЕНА
+  ❌ A6L PHEV (a6l-phev) - НЕ НАЙДЕНА
+  ❌ A7 (a7) - НЕ НАЙДЕНА
+  ❌ A7L (a7l) - НЕ НАЙДЕНА
+  ❌ A8 (a8) - НЕ НАЙДЕНА
+  ❌ e-tron (e-tron) - НЕ НАЙДЕНА
+  ❌ imported (e-tron-imported) - НЕ НАЙДЕНА
+  ❌ e-tron GT (e-tron-gt) - НЕ НАЙДЕНА
+  ❌ Q2L (q2l) - НЕ НАЙДЕНА
+  ❌ Q2L e-tron (q2l-e-tron) - НЕ НАЙДЕНА
+  ❌ Q3 (q3) - НЕ НАЙДЕНА
+  ❌ imported (q3-imported) - НЕ НАЙДЕНА
+  ❌ Q3 Sportback (q3-sportback) - НЕ НАЙДЕНА
+  ❌ Q4 e-tron (q4-e-tron) - НЕ НАЙДЕНА
+  ❌ Q5 (q5) - НЕ НАЙДЕНА
+  ❌ imported (q5-imported) - НЕ НАЙДЕНА
+  ❌ Q5 e-tron (q5-e-tron) - НЕ НАЙДЕНА
+  ❌ Q5L (q5l) - НЕ НАЙДЕНА
+  ❌ Q5L Sportback (q5l-sportback) - НЕ НАЙДЕНА
+  ❌ Q6 (q6) - НЕ НАЙДЕНА
+  ❌ Q7 (q7) - НЕ НАЙДЕНА
+  ❌ Q7 PHEV (q7-phev) - НЕ НАЙДЕНА
+  ❌ Q8 (q8) - НЕ НАЙДЕНА
+  ❌ R8 (r8) - НЕ НАЙДЕНА
+  ❌ RS 3 (rs-3) - НЕ НАЙДЕНА
+  ❌ RS 4 (rs-4) - НЕ НАЙДЕНА
+  ❌ RS 5 (rs-5) - НЕ НАЙДЕНА
+  ❌ RS 6 (rs-6) - НЕ НАЙДЕНА
+  ❌ RS 7 (rs-7) - НЕ НАЙДЕНА
+  ❌ RS e-tron GT (rs-e-tron-gt) - НЕ НАЙДЕНА
+  ❌ RS Q8 (rs-q8) - НЕ НАЙДЕНА
+  ❌ S3 (s3) - НЕ НАЙДЕНА
+  ❌ S4 (s4) - НЕ НАЙДЕНА
+  ❌ S5 (s5) - НЕ НАЙДЕНА
+  ❌ S6 (s6) - НЕ НАЙДЕНА
+  ❌ S7 (s7) - НЕ НАЙДЕНА
+  ❌ S8 (s8) - НЕ НАЙДЕНА
+  ❌ SQ5 (sq5) - НЕ НАЙДЕНА
+  ❌ SQ7 (sq7) - НЕ НАЙДЕНА
+  ❌ TT (tt) - НЕ НАЙДЕНА
+  ❌ TT RS (tt-rs) - НЕ НАЙДЕНА
+  ❌ TTS (tts) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/51
+
+Бренд: Baizhi (baizhi)
+  ❌ Big Bear (big-bear) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Baojun (baojun)
+  ❌ 310 (310) - НЕ НАЙДЕНА
+  ❌ 310W (310w) - НЕ НАЙДЕНА
+  ❌ 360 (360) - НЕ НАЙДЕНА
+  ❌ 510 (510) - НЕ НАЙДЕНА
+  ❌ 530 (530) - НЕ НАЙДЕНА
+  ❌ 560 (560) - НЕ НАЙДЕНА
+  ❌ 610 (610) - НЕ НАЙДЕНА
+  ❌ 630 (630) - НЕ НАЙДЕНА
+  ❌ 730 (730) - НЕ НАЙДЕНА
+  ❌ Clouds (clouds) - НЕ НАЙДЕНА
+  ❌ E100 (e100) - НЕ НАЙДЕНА
+  ❌ E200 (e200) - НЕ НАЙДЕНА
+  ❌ E300 (e300) - НЕ НАЙДЕНА
+  ❌ Enjoy EV (enjoy-ev) - НЕ НАЙДЕНА
+  ❌ Enjoy PHEV (enjoy-phev) - НЕ НАЙДЕНА
+  ❌ KiWi EV (kiwi-ev) - НЕ НАЙДЕНА
+  ❌ Lechi (lechi) - НЕ НАЙДЕНА
+  ❌ RC-5 (rc-5) - НЕ НАЙДЕНА
+  ❌ RC-6 (rc-6) - НЕ НАЙДЕНА
+  ❌ RM-5 (rm-5) - НЕ НАЙДЕНА
+  ❌ RS-3 (rs-3) - НЕ НАЙДЕНА
+  ❌ RS-5 (rs-5) - НЕ НАЙДЕНА
+  ❌ Valli (valli) - НЕ НАЙДЕНА
+  ❌ Yue Ye (yue-ye) - НЕ НАЙДЕНА
+  ❌ Yueya Plus (yueya-plus) - НЕ НАЙДЕНА
+  ❌ Yunhai EV (yunhai-ev) - НЕ НАЙДЕНА
+  ❌ Yunhai PHEV (yunhai-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/27
+
+Бренд: BAW (baw)
+  ❌ 212 Classic (212-classic) - НЕ НАЙДЕНА
+  ❌ Battle flag (battle-flag) - НЕ НАЙДЕНА
+  ❌ Ingots (ingots) - НЕ НАЙДЕНА
+  ❌ Ruisheng Ace M7 (ruisheng-ace-m7) - НЕ НАЙДЕНА
+  ❌ Warrior (warrior) - НЕ НАЙДЕНА
+  ❌ Warrior Pickup (warrior-pickup) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Bentley (bentley)
+  ❌ Bentayga (bentayga) - НЕ НАЙДЕНА
+  ❌ Bentayga PHEV (bentayga-phev) - НЕ НАЙДЕНА
+  ❌ Continental (continental) - НЕ НАЙДЕНА
+  ❌ Flying Spur PHEV (flying-spur-phev) - НЕ НАЙДЕНА
+  ❌ Galloping (galloping) - НЕ НАЙДЕНА
+  ❌ Mulsanne (mulsanne) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: BMW (bmw)
+  ❌ 1 Series (1-series) - НЕ НАЙДЕНА
+  ❌ imported (1-series-imported) - НЕ НАЙДЕНА
+  ❌ 1 Series M (1-series-m) - НЕ НАЙДЕНА
+  ❌ 2 Series (2-series) - НЕ НАЙДЕНА
+  ❌ Imported (2-series-imported) - НЕ НАЙДЕНА
+  ❌ 2 series multifunctional station wagon (2-series-multifunctional-station-wagon) - НЕ НАЙДЕНА
+  ❌ 2 series station wagon (2-series-station-wagon) - НЕ НАЙДЕНА
+  ❌ imported (2-series-station-wagon-imported) - НЕ НАЙДЕНА
+  ❌ 3 Series (3-series) - НЕ НАЙДЕНА
+  ❌ imported (3-series-imported) - НЕ НАЙДЕНА
+  ❌ 3 Series GT (3-series-gt) - НЕ НАЙДЕНА
+  ❌ 4 Series (4-series) - НЕ НАЙДЕНА
+  ❌ 5 Series (5-series) - НЕ НАЙДЕНА
+  ❌ imported (5-series-imported) - НЕ НАЙДЕНА
+  ❌ 5 Series GT (5-series-gt) - НЕ НАЙДЕНА
+  ❌ 5 Series PHEV (5-series-phev) - НЕ НАЙДЕНА
+  ❌ 6 Series (6-series) - НЕ НАЙДЕНА
+  ❌ 6 Series GT (6-series-gt) - НЕ НАЙДЕНА
+  ❌ 7 Series (7-series) - НЕ НАЙДЕНА
+  ❌ 7 Series PHEV (7-series-phev) - НЕ НАЙДЕНА
+  ❌ 8 Series (8-series) - НЕ НАЙДЕНА
+  ❌ i3 (i3) - НЕ НАЙДЕНА
+  ❌ imported (i3-imported) - НЕ НАЙДЕНА
+  ❌ i4 (i4) - НЕ НАЙДЕНА
+  ❌ i5 (i5) - НЕ НАЙДЕНА
+  ❌ i7 (i7) - НЕ НАЙДЕНА
+  ❌ i8 (i8) - НЕ НАЙДЕНА
+  ❌ iX (ix) - НЕ НАЙДЕНА
+  ❌ iX1 (ix1) - НЕ НАЙДЕНА
+  ❌ iX3 (ix3) - НЕ НАЙДЕНА
+  ❌ M2 (m2) - НЕ НАЙДЕНА
+  ❌ M3 (m3) - НЕ НАЙДЕНА
+  ❌ M4 (m4) - НЕ НАЙДЕНА
+  ❌ M5 (m5) - НЕ НАЙДЕНА
+  ❌ M5 PHEV (m5-phev) - НЕ НАЙДЕНА
+  ❌ M6 (m6) - НЕ НАЙДЕНА
+  ❌ M8 (m8) - НЕ НАЙДЕНА
+  ❌ X1 (x1) - НЕ НАЙДЕНА
+  ❌ imported (x1-imported) - НЕ НАЙДЕНА
+  ❌ X1 PHEV (x1-phev) - НЕ НАЙДЕНА
+  ❌ X2 (x2) - НЕ НАЙДЕНА
+  ❌ imported (x2-imported) - НЕ НАЙДЕНА
+  ❌ X3 (x3) - НЕ НАЙДЕНА
+  ❌ imported (x3-imported) - НЕ НАЙДЕНА
+  ❌ X3 M (x3-m) - НЕ НАЙДЕНА
+  ❌ X4 (x4) - НЕ НАЙДЕНА
+  ❌ X4 M (x4-m) - НЕ НАЙДЕНА
+  ❌ X5 (x5) - НЕ НАЙДЕНА
+  ❌ imported (x5-imported) - НЕ НАЙДЕНА
+  ❌ X5 PHEV (x5-phev) - НЕ НАЙДЕНА
+  ❌ X5M (x5m) - НЕ НАЙДЕНА
+  ❌ X6 (x6) - НЕ НАЙДЕНА
+  ❌ X6 M (x6-m) - НЕ НАЙДЕНА
+  ❌ X7 (x7) - НЕ НАЙДЕНА
+  ❌ XM (xm) - НЕ НАЙДЕНА
+  ❌ Z4 (z4) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/56
+
+Бренд: Borgward (borgward)
+  ❌ BX5 (bx5) - НЕ НАЙДЕНА
+  ❌ BX7 (bx7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Brilliance (brilliance)
+  ❌ China H3 (china-h3) - НЕ НАЙДЕНА
+  ❌ China Junjie FRV (china-junjie-frv) - НЕ НАЙДЕНА
+  ❌ China V3 (china-v3) - НЕ НАЙДЕНА
+  ❌ Zhonghua H220 (zhonghua-h220) - НЕ НАЙДЕНА
+  ❌ Zhonghua H330 (zhonghua-h330) - НЕ НАЙДЕНА
+  ❌ Zhonghua H530 (zhonghua-h530) - НЕ НАЙДЕНА
+  ❌ Zhonghua V5 (zhonghua-v5) - НЕ НАЙДЕНА
+  ❌ Zhonghua V6 (zhonghua-v6) - НЕ НАЙДЕНА
+  ❌ Zhonghua V7 (zhonghua-v7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Buick (buick)
+  ❌ Angke Banner (angke-banner) - НЕ НАЙДЕНА
+  ❌ Century (century) - НЕ НАЙДЕНА
+  ❌ E4 (e4) - НЕ НАЙДЕНА
+  ❌ E5 (e5) - НЕ НАЙДЕНА
+  ❌ Encore (encore) - НЕ НАЙДЕНА
+  ❌ Encore GX (encore-gx) - НЕ НАЙДЕНА
+  ❌ Envision (envision) - НЕ НАЙДЕНА
+  ❌ Envision S (envision-s) - НЕ НАЙДЕНА
+  ❌ Excelle (excelle) - НЕ НАЙДЕНА
+  ❌ GL6 (gl6) - НЕ НАЙДЕНА
+  ❌ GL8 (gl8) - НЕ НАЙДЕНА
+  ❌ GL8 PHEV (gl8-phev) - НЕ НАЙДЕНА
+  ❌ High-spirited (high-spirited) - НЕ НАЙДЕНА
+  ❌ LaCrosse (lacrosse) - НЕ НАЙДЕНА
+  ❌ Majesty (majesty) - НЕ НАЙДЕНА
+  ❌ Micro blue 6 (micro-blue-6) - НЕ НАЙДЕНА
+  ❌ Micro blue 7 (micro-blue-7) - НЕ НАЙДЕНА
+  ❌ Onkola (onkola) - НЕ НАЙДЕНА
+  ❌ Valeant (valeant) - НЕ НАЙДЕНА
+  ❌ VELITE 5 (velite-5) - НЕ НАЙДЕНА
+  ❌ Weilan 6 PHEV (weilan-6-phev) - НЕ НАЙДЕНА
+  ❌ Yinglang (yinglang) - НЕ НАЙДЕНА
+  ❌ Yue Lang (yue-lang) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/23
+
+Бренд: BYD Leopard (byd-leopard)
+  ❌ Leopard 5 (leopard-5) - НЕ НАЙДЕНА
+  ❌ Leopard 8 (leopard-8) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Cadillac (cadillac)
+  ❌ imported (ats-imported) - НЕ НАЙДЕНА
+  ❌ ATS-L (ats-l) - НЕ НАЙДЕНА
+  ❌ CT4 (ct4) - НЕ НАЙДЕНА
+  ❌ CT5 (ct5) - НЕ НАЙДЕНА
+  ❌ CT6 (ct6) - НЕ НАЙДЕНА
+  ❌ CT6 PLUG-IN (ct6-plug-in) - НЕ НАЙДЕНА
+  ❌ imported (cts-imported) - НЕ НАЙДЕНА
+  ❌ Escalade (escalade) - НЕ НАЙДЕНА
+  ❌ GT4 (gt4) - НЕ НАЙДЕНА
+  ❌ IQ Aoge (iq-aoge) - НЕ НАЙДЕНА
+  ❌ IQ Ruige (iq-ruige) - НЕ НАЙДЕНА
+  ❌ SLS Saiwei (sls-saiwei) - НЕ НАЙДЕНА
+  ❌ SRX (srx) - НЕ НАЙДЕНА
+  ❌ XT4 (xt4) - НЕ НАЙДЕНА
+  ❌ XT5 (xt5) - НЕ НАЙДЕНА
+  ❌ XT6 (xt6) - НЕ НАЙДЕНА
+  ❌ XTS (xts) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/17
+
+Бренд: Carrier (carrier)
+  ❌ Dolphin EV (dolphin-ev) - НЕ НАЙДЕНА
+  ❌ Finless porpoise (finless-porpoise) - НЕ НАЙДЕНА
+  ❌ Finless Porpoise E7 (finless-porpoise-e7) - НЕ НАЙДЕНА
+  ❌ K50 (k50) - НЕ НАЙДЕНА
+  ❌ K60 (k60) - НЕ НАЙДЕНА
+  ❌ K60 EV (k60-ev) - НЕ НАЙДЕНА
+  ❌ Porpoise E5 (porpoise-e5) - НЕ НАЙДЕНА
+  ❌ Youyou (youyou) - НЕ НАЙДЕНА
+  ❌ Youyou EV (youyou-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Changan Kaicene (changan-kaicene)
+  ❌ Changan Auchan A600 (changan-auchan-a600) - НЕ НАЙДЕНА
+  ❌ Changan Auchan A600 EV (changan-auchan-a600-ev) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Changxing (changan-auchan-changxing) - НЕ НАЙДЕНА
+  ❌ Changan Auchan Changxing EV (changan-auchan-changxing-ev) - НЕ НАЙДЕНА
+  ❌ Changan Kaicheng F70 (changan-kaicheng-f70) - НЕ НАЙДЕНА
+  ❌ Changan Star 2 (changan-star-2) - НЕ НАЙДЕНА
+  ❌ Changan Star 3 (changan-star-3) - НЕ НАЙДЕНА
+  ❌ Changan Star 5 (changan-star-5) - НЕ НАЙДЕНА
+  ❌ Changan Star 7 (changan-star-7) - НЕ НАЙДЕНА
+  ❌ Changan Star 9 (changan-star-9) - НЕ НАЙДЕНА
+  ❌ Changan Star 9 EV (changan-star-9-ev) - НЕ НАЙДЕНА
+  ❌ Changan Starlight 4500 (changan-starlight-4500) - НЕ НАЙДЕНА
+  ❌ Ruixing EM60 (ruixing-em60) - НЕ НАЙДЕНА
+  ❌ Ruixing EM80 (ruixing-em80) - НЕ НАЙДЕНА
+  ❌ Ruixing M60 (ruixing-m60) - НЕ НАЙДЕНА
+  ❌ Ruixing M70 (ruixing-m70) - НЕ НАЙДЕНА
+  ❌ Ruixing M80 (ruixing-m80) - НЕ НАЙДЕНА
+  ❌ Ruixing M90 (ruixing-m90) - НЕ НАЙДЕНА
+  ❌ Ruixing S50 (ruixing-s50) - НЕ НАЙДЕНА
+  ❌ Shenqi F30 (shenqi-f30) - НЕ НАЙДЕНА
+  ❌ Uno S (uno-s) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/21
+
+Бренд: Changan span (changan-span)
+  ❌ Changan V3 (changan-v3) - НЕ НАЙДЕНА
+  ❌ Cross Star V3 (cross-star-v3) - НЕ НАЙДЕНА
+  ❌ Cross Star V5 (cross-star-v5) - НЕ НАЙДЕНА
+  ❌ Cross Star V7 (cross-star-v7) - НЕ НАЙДЕНА
+  ❌ Crossstar V5 EV (crossstar-v5-ev) - НЕ НАЙДЕНА
+  ❌ Crossstar V7 EV (crossstar-v7-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Cheetah cars (cheetah-cars)
+  ❌ Black King Kong (black-king-kong) - НЕ НАЙДЕНА
+  ❌ Cheetah 6481 (cheetah-6481) - НЕ НАЙДЕНА
+  ❌ Cheetah CS10 (cheetah-cs10) - НЕ НАЙДЕНА
+  ❌ Cheetah CS9 (cheetah-cs9) - НЕ НАЙДЕНА
+  ❌ Cheetah CS9 EV (cheetah-cs9-ev) - НЕ НАЙДЕНА
+  ❌ Cheetah CT7 (cheetah-ct7) - НЕ НАЙДЕНА
+  ❌ Cheetah Q6 (cheetah-q6) - НЕ НАЙДЕНА
+  ❌ Mattu (mattu) - НЕ НАЙДЕНА
+  ❌ Soar (soar) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Chery Fengyun (chery-fengyun)
+  ❌ Fengyun A8 (fengyun-a8) - НЕ НАЙДЕНА
+  ❌ Fengyun T6 (fengyun-t6) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Chevrolet (chevrolet)
+  ❌ Aveo (aveo) - НЕ НАЙДЕНА
+  ❌ Camaro (camaro) - НЕ НАЙДЕНА
+  ❌ Capchi (capchi) - НЕ НАЙДЕНА
+  ❌ Imported (captiva-classic-imported) - НЕ НАЙДЕНА
+  ❌ Chuangku (chuangku) - НЕ НАЙДЕНА
+  ❌ Create a world (create-a-world) - НЕ НАЙДЕНА
+  ❌ Cruise (cruise) - НЕ НАЙДЕНА
+  ❌ Cruze (cruze) - НЕ НАЙДЕНА
+  ❌ Epica (epica) - НЕ НАЙДЕНА
+  ❌ Explorer (explorer) - НЕ НАЙДЕНА
+  ❌ Explorer Plus (explorer-plus) - НЕ НАЙДЕНА
+  ❌ Express (express) - НЕ НАЙДЕНА
+  ❌ Kovoz (kovoz) - НЕ НАЙДЕНА
+  ❌ LeFeng RV (lefeng-rv) - НЕ НАЙДЕНА
+  ❌ Malibu (malibu) - НЕ НАЙДЕНА
+  ❌ Malibu XL (malibu-xl) - НЕ НАЙДЕНА
+  ❌ Music style (music-style) - НЕ НАЙДЕНА
+  ❌ Pioneer (pioneer) - НЕ НАЙДЕНА
+  ❌ Sail (sail) - НЕ НАЙДЕНА
+  ❌ Star Milo (star-milo) - НЕ НАЙДЕНА
+  ❌ Volando (volando) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/21
+
+Бренд: Chrysler (chrysler)
+  ❌ 300C (300c) - НЕ НАЙДЕНА
+  ❌ imported (300c-imported) - НЕ НАЙДЕНА
+  ❌ imported (dajielong-imported) - НЕ НАЙДЕНА
+  ❌ imported (dajielong-phev-imported) - НЕ НАЙДЕНА
+  ❌ Grand Dragon (grand-dragon) - НЕ НАЙДЕНА
+  ❌ Platinum Rui (platinum-rui) - НЕ НАЙДЕНА
+  ❌ PT Walker (pt-walker) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/7
+
+Бренд: Citroën (citro-n)
+  ❌ C2 (c2) - НЕ НАЙДЕНА
+  ❌ C3-XR (c3-xr) - НЕ НАЙДЕНА
+  ❌ C3L (c3l) - НЕ НАЙДЕНА
+  ❌ C4 Picasso (c4-picasso) - НЕ НАЙДЕНА
+  ❌ C4 Sega (c4-sega) - НЕ НАЙДЕНА
+  ❌ Citroen C4L (citroen-c4l) - НЕ НАЙДЕНА
+  ❌ Citroen C5 (citroen-c5) - НЕ НАЙДЕНА
+  ❌ Citroen C6 (citroen-c6) - НЕ НАЙДЕНА
+  ❌ Elysee (elysee) - НЕ НАЙДЕНА
+  ❌ SEGA (sega) - НЕ НАЙДЕНА
+  ❌ Tianyi C5 AIRCROSS (tianyi-c5-aircross) - НЕ НАЙДЕНА
+  ❌ Versailles C5 X (versailles-c5-x) - НЕ НАЙДЕНА
+  ❌ Yunyi C4 AIRCROSS (yunyi-c4-aircross) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/13
+
+Бренд: Daihatsu Motor (daihatsu-motor)
+  ❌ Mahayana G60 (mahayana-g60) - НЕ НАЙДЕНА
+  ❌ Mahayana G60S (mahayana-g60s) - НЕ НАЙДЕНА
+  ❌ Mahindra G70s (mahindra-g70s) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Dayun (dayun)
+  ❌ Universiade P30 (universiade-p30) - НЕ НАЙДЕНА
+  ❌ Yuehu (yuehu) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Deepal (deepal)
+  ❌ Dark blue G318 (dark-blue-g318) - НЕ НАЙДЕНА
+  ❌ Dark blue L07 (dark-blue-l07) - НЕ НАЙДЕНА
+  ❌ Dark blue S05 (dark-blue-s05) - НЕ НАЙДЕНА
+  ❌ Dark blue S07 (dark-blue-s07) - НЕ НАЙДЕНА
+  ❌ Dark blue SL03 (dark-blue-sl03) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Dodge (dodge)
+  ❌ Cool Bo (cool-bo) - НЕ НАЙДЕНА
+  ❌ Coolwei (coolwei) - НЕ НАЙДЕНА
+  ❌ Fengzhe (fengzhe) - НЕ НАЙДЕНА
+  ❌ Kai Ling (kai-ling) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: DS (ds)
+  ❌ 3 Classic (3-classic) - НЕ НАЙДЕНА
+  ❌ 3EV (3ev) - НЕ НАЙДЕНА
+  ❌ 4 (4) - НЕ НАЙДЕНА
+  ❌ 4S (4s) - НЕ НАЙДЕНА
+  ❌ 5 (5) - НЕ НАЙДЕНА
+  ❌ imported (5-imported) - НЕ НАЙДЕНА
+  ❌ 5LS (5ls) - НЕ НАЙДЕНА
+  ❌ 6 (6) - НЕ НАЙДЕНА
+  ❌ 7 (7) - НЕ НАЙДЕНА
+  ❌ 9PHEV (9phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/10
+
+Бренд: Electric House (electric-house)
+  ❌ YOUNG Guang Xiaoxin (young-guang-xiaoxin) - НЕ НАЙДЕНА
+  ❌ Yue 01 (yue-01) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Enjoy the world (enjoy-the-world)
+  ❌ Enjoy S9 (enjoy-s9) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Extreme (extreme)
+  ❌ 01 (01) - НЕ НАЙДЕНА
+  ❌ 07 (07) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Ferrari (ferrari)
+  ❌ 296 (296) - НЕ НАЙДЕНА
+  ❌ 458 (458) - НЕ НАЙДЕНА
+  ❌ 488 (488) - НЕ НАЙДЕНА
+  ❌ 599 (599) - НЕ НАЙДЕНА
+  ❌ 812 (812) - НЕ НАЙДЕНА
+  ❌ California T (california-t) - НЕ НАЙДЕНА
+  ❌ F12berlinetta (f12berlinetta) - НЕ НАЙДЕНА
+  ❌ F430 (f430) - НЕ НАЙДЕНА
+  ❌ F8 (f8) - НЕ НАЙДЕНА
+  ❌ FF (ff) - НЕ НАЙДЕНА
+  ❌ GTC4Lusso (gtc4lusso) - НЕ НАЙДЕНА
+  ❌ Portofino (portofino) - НЕ НАЙДЕНА
+  ❌ Purosangue (purosangue) - НЕ НАЙДЕНА
+  ❌ Roma (roma) - НЕ НАЙДЕНА
+  ❌ SF90 (sf90) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/15
+
+Бренд: Fiat (fiat)
+  ❌ 500 (500) - НЕ НАЙДЕНА
+  ❌ Boyue (boyue) - НЕ НАЙДЕНА
+  ❌ Delight (delight) - НЕ НАЙДЕНА
+  ❌ Feixiang (feixiang) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Foday (foday)
+  ❌ Blessing (blessing) - НЕ НАЙДЕНА
+  ❌ Hero F16 (hero-f16) - НЕ НАЙДЕНА
+  ❌ Hero F22 (hero-f22) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Ford (ford)
+  ❌ C-MAX PHEV (c-max-phev) - НЕ НАЙДЕНА
+  ❌ Carnival (carnival) - НЕ НАЙДЕНА
+  ❌ imported (carnival-imported) - НЕ НАЙДЕНА
+  ❌ Classic Transit (classic-transit) - НЕ НАЙДЕНА
+  ❌ E350 (e350) - НЕ НАЙДЕНА
+  ❌ electric horse (electric-horse) - НЕ НАЙДЕНА
+  ❌ EVOS (evos) - НЕ НАЙДЕНА
+  ❌ Explorer (explorer) - НЕ НАЙДЕНА
+  ❌ imported (explorer-imported) - НЕ НАЙДЕНА
+  ❌ F-150 (f-150) - НЕ НАЙДЕНА
+  ❌ F-150 Raptor (f-150-raptor) - НЕ НАЙДЕНА
+  ❌ imported (focus-imported) - НЕ НАЙДЕНА
+  ❌ Forrest (forrest) - НЕ НАЙДЕНА
+  ❌ Fox (fox) - НЕ НАЙДЕНА
+  ❌ Fox Active (fox-active) - НЕ НАЙДЕНА
+  ❌ Leading (leading) - НЕ НАЙДЕНА
+  ❌ Lingrui PHEV (lingrui-phev) - НЕ НАЙДЕНА
+  ❌ Lingyu (lingyu) - НЕ НАЙДЕНА
+  ❌ Lingyu PHEV (lingyu-phev) - НЕ НАЙДЕНА
+  ❌ Max (max) - НЕ НАЙДЕНА
+  ❌ Mondeo (mondeo) - НЕ НАЙДЕНА
+  ❌ Mondeo PHEV (mondeo-phev) - НЕ НАЙДЕНА
+  ❌ Mondeo-Winning (mondeo-winning) - НЕ НАЙДЕНА
+  ❌ Mustang (mustang) - НЕ НАЙДЕНА
+  ❌ New generation transit (new-generation-transit) - НЕ НАЙДЕНА
+  ❌ rama (rama) - НЕ НАЙДЕНА
+  ❌ Ranger (ranger) - НЕ НАЙДЕНА
+  ❌ imported (ranger-imported) - НЕ НАЙДЕНА
+  ❌ Road shaker (road-shaker) - НЕ НАЙДЕНА
+  ❌ Ruiji (ruiji) - НЕ НАЙДЕНА
+  ❌ Ruiji PHEV (ruiji-phev) - НЕ НАЙДЕНА
+  ❌ imported (ruijie-imported) - НЕ НАЙДЕНА
+  ❌ Sharp boundary (sharp-boundary) - НЕ НАЙДЕНА
+  ❌ Taurus (taurus) - НЕ НАЙДЕНА
+  ❌ Territory (territory) - НЕ НАЙДЕНА
+  ❌ Toureo (toureo) - НЕ НАЙДЕНА
+  ❌ Transit (transit) - НЕ НАЙДЕНА
+  ❌ Win (win) - НЕ НАЙДЕНА
+  ❌ Wing tiger (wing-tiger) - НЕ НАЙДЕНА
+  ❌ Yibo (yibo) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/40
+
+Бренд: GAC Haobo (gac-haobo)
+  ❌ Haobo SSR (haobo-ssr) - НЕ НАЙДЕНА
+  ❌ Haopin GT (haopin-gt) - НЕ НАЙДЕНА
+  ❌ Haopin HT (haopin-ht) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Genesis (genesis)
+  ❌ G70 (g70) - НЕ НАЙДЕНА
+  ❌ G80 (g80) - НЕ НАЙДЕНА
+  ❌ G90 (g90) - НЕ НАЙДЕНА
+  ❌ GV60 (gv60) - НЕ НАЙДЕНА
+  ❌ GV70 (gv70) - НЕ НАЙДЕНА
+  ❌ GV80 (gv80) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Global Hawk (global-hawk)
+  ❌ EX3 (ex3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: GMC (gmc)
+  ❌ SAVANA (savana) - НЕ НАЙДЕНА
+  ❌ YUKON Yukon (yukon-yukon) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Golden cup (golden-cup)
+  ❌ Brilliance Jinbei 750 (brilliance-jinbei-750) - НЕ НАЙДЕНА
+  ❌ Golden Cup sea lion (golden-cup-sea-lion) - НЕ НАЙДЕНА
+  ❌ Golden Cup Sea Lion King (golden-cup-sea-lion-king) - НЕ НАЙДЕНА
+  ❌ Grace (grace) - НЕ НАЙДЕНА
+  ❌ Jinbei Express (jinbei-express) - НЕ НАЙДЕНА
+  ❌ Jinbei F50 (jinbei-f50) - НЕ НАЙДЕНА
+  ❌ Jinbei S70 (jinbei-s70) - НЕ НАЙДЕНА
+  ❌ Little sea lion X30 (little-sea-lion-x30) - НЕ НАЙДЕНА
+  ❌ New Hiace S (new-hiace-s) - НЕ НАЙДЕНА
+  ❌ New Hiace X30L (new-hiace-x30l) - НЕ НАЙДЕНА
+  ❌ sea lion (sea-lion) - НЕ НАЙДЕНА
+  ❌ Zhishang S30 (zhishang-s30) - НЕ НАЙДЕНА
+  ❌ Zhishang S35 (zhishang-s35) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/13
+
+Бренд: Golden dragon (golden-dragon)
+  ❌ Clicquot (clicquot) - НЕ НАЙДЕНА
+  ❌ Hiace EV (hiace-ev) - НЕ НАЙДЕНА
+  ❌ Hiace Z series (hiace-z-series) - НЕ НАЙДЕНА
+  ❌ Jinwei (jinwei) - НЕ НАЙДЕНА
+  ❌ Kelly Hulk (kelly-hulk) - НЕ НАЙДЕНА
+  ❌ Long Yao 6 (long-yao-6) - НЕ НАЙДЕНА
+  ❌ Sea Lion (sea-lion) - НЕ НАЙДЕНА
+  ❌ Veuve Clicquot EV (veuve-clicquot-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: Guangtong Bus (guangtong-bus)
+  ❌ Guangtong Effie (guangtong-effie) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: HAIMA (haima)
+  ❌ Familia (familia) - НЕ НАЙДЕНА
+  ❌ Familia F7 (familia-f7) - НЕ НАЙДЕНА
+  ❌ Familia MPV (familia-mpv) - НЕ НАЙДЕНА
+  ❌ Haifuxing (haifuxing) - НЕ НАЙДЕНА
+  ❌ Haima 7X (haima-7x) - НЕ НАЙДЕНА
+  ❌ Haima 8S (haima-8s) - НЕ НАЙДЕНА
+  ❌ Haima M3 (haima-m3) - НЕ НАЙДЕНА
+  ❌ Haima M6 (haima-m6) - НЕ НАЙДЕНА
+  ❌ Haima S5 (haima-s5) - НЕ НАЙДЕНА
+  ❌ Haima S5 Youth Edition (haima-s5-youth-edition) - НЕ НАЙДЕНА
+  ❌ Haima S7 (haima-s7) - НЕ НАЙДЕНА
+  ❌ Haima V70 (haima-v70) - НЕ НАЙДЕНА
+  ❌ Prima (prima) - НЕ НАЙДЕНА
+  ❌ Prince seahorse (prince-seahorse) - НЕ НАЙДЕНА
+  ❌ Seahorse knight (seahorse-knight) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/15
+
+Бренд: Hanteng (hanteng)
+  ❌ V7 (v7) - НЕ НАЙДЕНА
+  ❌ X5 (x5) - НЕ НАЙДЕНА
+  ❌ X7 (x7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Hawtai (hawtai)
+  ❌ Bollig (bollig) - НЕ НАЙДЕНА
+  ❌ Santa Fe (santa-fe) - НЕ НАЙДЕНА
+  ❌ Santa fe classic (santa-fe-classic) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Honda (honda)
+  ❌ Accord (accord) - НЕ НАЙДЕНА
+  ❌ Accord PHEV (accord-phev) - НЕ НАЙДЕНА
+  ❌ Crown Road (crown-road) - НЕ НАЙДЕНА
+  ❌ Avant-garde classic (avant-garde-classic) - НЕ НАЙДЕНА
+  ❌ Haoying (haoying) - НЕ НАЙДЕНА
+  ❌ Civic (civic) - НЕ НАЙДЕНА
+  ❌ imported (civic-imported) - НЕ НАЙДЕНА
+  ❌ CR-V (cr-v) - НЕ НАЙДЕНА
+  ❌ CR-V PHEV (cr-v-phev) - НЕ НАЙДЕНА
+  ❌ Lingpai (lingpai) - НЕ НАЙДЕНА
+  ❌ Dongfeng  M-NV (dongfeng-m-nv) - НЕ НАЙДЕНА
+  ❌ Dongfeng  X-NV (dongfeng-x-nv) - НЕ НАЙДЕНА
+  ❌ E:NP1 Ji Pai 1 (e-np1-ji-pai-1) - НЕ НАЙДЕНА
+  ❌ E:NP2 Ji Pai 2 (e-np2-ji-pai-2) - НЕ НАЙДЕНА
+  ❌ e:NS1 (e-ns1) - НЕ НАЙДЕНА
+  ❌ Alison (alison) - НЕ НАЙДЕНА
+  ❌ Enjoy domain (enjoy-domain) - НЕ НАЙДЕНА
+  ❌ Feng Fan (feng-fan) - НЕ НАЙДЕНА
+  ❌ Fit (fit) - НЕ НАЙДЕНА
+  ❌ Gray (gray) - НЕ НАЙДЕНА
+  ❌ Haoying PHEV (haoying-phev) - НЕ НАЙДЕНА
+  ❌ HONDA LIFE (honda-life) - НЕ НАЙДЕНА
+  ❌ HR-V (hr-v) - НЕ НАЙДЕНА
+  ❌ Hunting light e:NS2 (hunting-light-e-ns2) - НЕ НАЙДЕНА
+  ❌ Yingshipai PHEV (yingshipai-phev) - НЕ НАЙДЕНА
+  ❌ Yingshipai (yingshipai) - НЕ НАЙДЕНА
+  ❌ Style (style) - НЕ НАЙДЕНА
+  ❌ Jed (jed) - НЕ НАЙДЕНА
+  ❌ Jingrui (jingrui) - НЕ НАЙДЕНА
+  ❌ Odyssey (odyssey) - НЕ НАЙДЕНА
+  ❌ S2000 (s2000) - НЕ НАЙДЕНА
+  ❌ Sibo Rui (sibo-rui) - НЕ НАЙДЕНА
+  ❌ Sidi (sidi) - НЕ НАЙДЕНА
+  ❌ Siming (siming) - НЕ НАЙДЕНА
+  ❌ Songs and poems (songs-and-poems) - НЕ НАЙДЕНА
+  ❌ UR-V (ur-v) - НЕ НАЙДЕНА
+  ❌ Binzhi (binzhi) - НЕ НАЙДЕНА
+  ❌ XR-V (xr-v) - НЕ НАЙДЕНА
+  ❌ ZR-V Zhizai (zr-v-zhizai) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/39
+
+Бренд: Hua Song (hua-song)
+  ❌ Huasong 7 (huasong-7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Huanghai (huanghai)
+  ❌ Yellow Sea N3 (yellow-sea-n3) - НЕ НАЙДЕНА
+  ❌ Yellow Sea Xianglong (yellow-sea-xianglong) - НЕ НАЙДЕНА
+  ❌ Yellow Sea·Jiaolong (yellow-sea-jiaolong) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Hummer (hummer)
+  ❌ H2 (h2) - НЕ НАЙДЕНА
+  ❌ H3 (h3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: HYCAN (hycan)
+  ❌ Hechuang A06 (hechuang-a06) - НЕ НАЙДЕНА
+  ❌ Hechuang V09 (hechuang-v09) - НЕ НАЙДЕНА
+  ❌ Hechuang Z03 (hechuang-z03) - НЕ НАЙДЕНА
+  ❌ Hechuang007 (hechuang007) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Hyundai (hyundai)
+  ❌ Accent (accent) - НЕ НАЙДЕНА
+  ❌ Accept (accept) - НЕ НАЙДЕНА
+  ❌ Coolpad (coolpad) - НЕ НАЙДЕНА
+  ❌ Elantra (elantra) - НЕ НАЙДЕНА
+  ❌ Encino pure electric (encino-pure-electric) - НЕ НАЙДЕНА
+  ❌ Equus (equus) - НЕ НАЙДЕНА
+  ❌ Famous pictures (famous-pictures) - НЕ НАЙДЕНА
+  ❌ Festa (festa) - НЕ НАЙДЕНА
+  ❌ Genesis (genesis) - НЕ НАЙДЕНА
+  ❌ Genesis-Coolpad (genesis-coolpad) - НЕ НАЙДЕНА
+  ❌ Geyue (geyue) - НЕ НАЙДЕНА
+  ❌ H-1 Huiyi (h-1-huiyi) - НЕ НАЙДЕНА
+  ❌ i30 (i30) - НЕ НАЙДЕНА
+  ❌ IONIQ 5 N (ioniq-5-n) - НЕ НАЙДЕНА
+  ❌ ix25 (ix25) - НЕ НАЙДЕНА
+  ❌ ix35 (ix35) - НЕ НАЙДЕНА
+  ❌ Joyful (joyful) - НЕ НАЙДЕНА
+  ❌ Kustu (kustu) - НЕ НАЙДЕНА
+  ❌ Langdong (langdong) - НЕ НАЙДЕНА
+  ❌ Lead (lead) - НЕ НАЙДЕНА
+  ❌ Leading PHEV (leading-phev) - НЕ НАЙДЕНА
+  ❌ Lingxiang (lingxiang) - НЕ НАЙДЕНА
+  ❌ Mingyu (mingyu) - НЕ НАЙДЕНА
+  ❌ Oncino (oncino) - НЕ НАЙДЕНА
+  ❌ Origins (origins) - НЕ НАЙДЕНА
+  ❌ Paristi (paristi) - НЕ НАЙДЕНА
+  ❌ Rena (rena) - НЕ НАЙДЕНА
+  ❌ Ruiyi (ruiyi) - НЕ НАЙДЕНА
+  ❌ Santa Claus Classic (santa-claus-classic) - НЕ НАЙДЕНА
+  ❌ Shengda (shengda) - НЕ НАЙДЕНА
+  ❌ imported (shengda-imported) - НЕ НАЙДЕНА
+  ❌ Sonata (sonata) - НЕ НАЙДЕНА
+  ❌ Sonata eight (sonata-eight) - НЕ НАЙДЕНА
+  ❌ Sonata nine (sonata-nine) - НЕ НАЙДЕНА
+  ❌ Sonata PHEV (sonata-phev) - НЕ НАЙДЕНА
+  ❌ Tucson (tucson) - НЕ НАЙДЕНА
+  ❌ Velasquez (velasquez) - НЕ НАЙДЕНА
+  ❌ Veloster (veloster) - НЕ НАЙДЕНА
+  ❌ Yazun (yazun) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/39
+
+Бренд: ICAR (icar)
+  ❌ 03 (03) - НЕ НАЙДЕНА
+  ❌ 03T (03t) - НЕ НАЙДЕНА
+  ❌ V23 (v23) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Infiniti (infiniti)
+  ❌ ESQ (esq) - НЕ НАЙДЕНА
+  ❌ EX (ex) - НЕ НАЙДЕНА
+  ❌ FX (fx) - НЕ НАЙДЕНА
+  ❌ G Series (g-series) - НЕ НАЙДЕНА
+  ❌ JX (jx) - НЕ НАЙДЕНА
+  ❌ M Series (m-series) - НЕ НАЙДЕНА
+  ❌ Q50 (q50) - НЕ НАЙДЕНА
+  ❌ Q50L (q50l) - НЕ НАЙДЕНА
+  ❌ Q60 (q60) - НЕ НАЙДЕНА
+  ❌ Q70 (q70) - НЕ НАЙДЕНА
+  ❌ QX (qx) - НЕ НАЙДЕНА
+  ❌ QX30 (qx30) - НЕ НАЙДЕНА
+  ❌ QX50 (qx50) - НЕ НАЙДЕНА
+  ❌ imported (qx50-imported) - НЕ НАЙДЕНА
+  ❌ QX60 (qx60) - НЕ НАЙДЕНА
+  ❌ imported (qx60-imported) - НЕ НАЙДЕНА
+  ❌ QX70 (qx70) - НЕ НАЙДЕНА
+  ❌ QX80 (qx80) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/18
+
+Бренд: Inge Motors (inge-motors)
+  ❌ Inranger 727 (inranger-727) - НЕ НАЙДЕНА
+  ❌ Yingzhi G3 (yingzhi-g3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Insightful (insightful)
+  ❌ LingxiL (lingxil) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Isuzu (isuzu)
+  ❌ Competitor (competitor) - НЕ НАЙДЕНА
+  ❌ D-MAX (d-max) - НЕ НАЙДЕНА
+  ❌ Mu-X Shepherd (mu-x-shepherd) - НЕ НАЙДЕНА
+  ❌ pickup truck (pickup-truck) - НЕ НАЙДЕНА
+  ❌ Qingling  T17 (qingling-t17) - НЕ НАЙДЕНА
+  ❌ Remai (remai) - НЕ НАЙДЕНА
+  ❌ Suzutaku (suzutaku) - НЕ НАЙДЕНА
+  ❌ TAGA Daka (taga-daka) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: Iveco (iveco)
+  ❌ Bodhi (bodhi) - НЕ НАЙДЕНА
+  ❌ proud (proud) - НЕ НАЙДЕНА
+  ❌ Wolfson (wolfson) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: JAC (Sihao) (jac-sihao)
+  ❌ Sihao A5 (sihao-a5) - НЕ НАЙДЕНА
+  ❌ Sihao E20X (sihao-e20x) - НЕ НАЙДЕНА
+  ❌ Sihao E40X (sihao-e40x) - НЕ НАЙДЕНА
+  ❌ Sihao E50A (sihao-e50a) - НЕ НАЙДЕНА
+  ❌ Sihao Flower Fairy (sihao-flower-fairy) - НЕ НАЙДЕНА
+  ❌ Sihao loves to run (sihao-loves-to-run) - НЕ НАЙДЕНА
+  ❌ Sihao QX (sihao-qx) - НЕ НАЙДЕНА
+  ❌ Sihao X4 (sihao-x4) - НЕ НАЙДЕНА
+  ❌ Sihao X6 (sihao-x6) - НЕ НАЙДЕНА
+  ❌ Sihao X8 (sihao-x8) - НЕ НАЙДЕНА
+  ❌ Sihao X8 PLUS (sihao-x8-plus) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: Jaguar (jaguar)
+  ❌ E-PACE (e-pace) - НЕ НАЙДЕНА
+  ❌ F-PACE (f-pace) - НЕ НАЙДЕНА
+  ❌ F-TYPE (f-type) - НЕ НАЙДЕНА
+  ❌ I-PACE (i-pace) - НЕ НАЙДЕНА
+  ❌ S-Type (s-type) - НЕ НАЙДЕНА
+  ❌ XE (xe) - НЕ НАЙДЕНА
+  ❌ XEL (xel) - НЕ НАЙДЕНА
+  ❌ XF (xf) - НЕ НАЙДЕНА
+  ❌ XFL (xfl) - НЕ НАЙДЕНА
+  ❌ XJ (xj) - НЕ НАЙДЕНА
+  ❌ XK (xk) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: Jeep (jeep)
+  ❌ Commander (commander) - НЕ НАЙДЕНА
+  ❌ Commander classic (commander-classic) - НЕ НАЙДЕНА
+  ❌ Imported (compass-imported) - НЕ НАЙДЕНА
+  ❌ Free light (free-light) - НЕ НАЙДЕНА
+  ❌ imported (free-light-imported) - НЕ НАЙДЕНА
+  ❌ Free man (free-man) - НЕ НАЙДЕНА
+  ❌ Freelancer (freelancer) - НЕ НАЙДЕНА
+  ❌ Freeman (freeman) - НЕ НАЙДЕНА
+  ❌ Gladiator (gladiator) - НЕ НАЙДЕНА
+  ❌ imported (grand-cherokee-imported) - НЕ НАЙДЕНА
+  ❌ Grand Cherokee SRT (grand-cherokee-srt) - НЕ НАЙДЕНА
+  ❌ Grand commander (grand-commander) - НЕ НАЙДЕНА
+  ❌ Grand Commander PHEV (grand-commander-phev) - НЕ НАЙДЕНА
+  ❌ Guide to (guide-to) - НЕ НАЙДЕНА
+  ❌ Wrangler (wrangler) - НЕ НАЙДЕНА
+  ❌ Wrangler 4xe PHEV (wrangler-4xe-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/16
+
+Бренд: Jetta (jetta)
+  ❌ VA3 (va3) - НЕ НАЙДЕНА
+  ❌ VA7 (va7) - НЕ НАЙДЕНА
+  ❌ VS5 (vs5) - НЕ НАЙДЕНА
+  ❌ VS7 (vs7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Jianghuai (jianghuai)
+  ❌ JAC A5 PLUS (jac-a5-plus) - НЕ НАЙДЕНА
+  ❌ JAC QX PHEV (jac-qx-phev) - НЕ НАЙДЕНА
+  ❌ Love to run (love-to-run) - НЕ НАЙДЕНА
+  ❌ Yttrium is 3 (yttrium-is-3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Jiangling (jiangling)
+  ❌ Avenue (avenue) - НЕ НАЙДЕНА
+  ❌ Bible (bible) - НЕ НАЙДЕНА
+  ❌ Domain Tiger 3 (domain-tiger-3) - НЕ НАЙДЕНА
+  ❌ Domain Tiger 5 (domain-tiger-5) - НЕ НАЙДЕНА
+  ❌ Domain Tiger 7 (domain-tiger-7) - НЕ НАЙДЕНА
+  ❌ Domain Tiger 9 (domain-tiger-9) - НЕ НАЙДЕНА
+  ❌ E200L (e200l) - НЕ НАЙДЕНА
+  ❌ E200N (e200n) - НЕ НАЙДЕНА
+  ❌ Fushun (fushun) - НЕ НАЙДЕНА
+  ❌ Little unicorn (little-unicorn) - НЕ НАЙДЕНА
+  ❌ Teshun (teshun) - НЕ НАЙДЕНА
+  ❌ Yi (yi) - НЕ НАЙДЕНА
+  ❌ Yizhi EV3 (yizhi-ev3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/13
+
+Бренд: Jiangxi (jiangxi)
+  ❌ Blue cat (blue-cat) - НЕ НАЙДЕНА
+  ❌ Hard journey (hard-journey) - НЕ НАЙДЕНА
+  ❌ Heyue (heyue) - НЕ НАЙДЕНА
+  ❌ Heyue A30 (heyue-a30) - НЕ НАЙДЕНА
+  ❌ JAC iEV (jac-iev) - НЕ НАЙДЕНА
+  ❌ JAC iEV6E (jac-iev6e) - НЕ НАЙДЕНА
+  ❌ JAC iEV6S (jac-iev6s) - НЕ НАЙДЕНА
+  ❌ JAC iEV7S (jac-iev7s) - НЕ НАЙДЕНА
+  ❌ JAC iEVS4 (jac-ievs4) - НЕ НАЙДЕНА
+  ❌ JAC T6 (jac-t6) - НЕ НАЙДЕНА
+  ❌ JAC T8 (jac-t8) - НЕ НАЙДЕНА
+  ❌ JAC V7 (jac-v7) - НЕ НАЙДЕНА
+  ❌ JAC Van Bolo (jac-van-bolo) - НЕ НАЙДЕНА
+  ❌ Jiayue A5 (jiayue-a5) - НЕ НАЙДЕНА
+  ❌ Jiayue X4 (jiayue-x4) - НЕ НАЙДЕНА
+  ❌ Jiayue X7 (jiayue-x7) - НЕ НАЙДЕНА
+  ❌ Refine S7 (refine-s7) - НЕ НАЙДЕНА
+  ❌ Rui Ying (rui-ying) - НЕ НАЙДЕНА
+  ❌ Ruifeng (ruifeng) - НЕ НАЙДЕНА
+  ❌ Ruifeng A60 (ruifeng-a60) - НЕ НАЙДЕНА
+  ❌ Ruifeng M2 (ruifeng-m2) - НЕ НАЙДЕНА
+  ❌ Ruifeng M5 (ruifeng-m5) - НЕ НАЙДЕНА
+  ❌ Ruifeng R3 (ruifeng-r3) - НЕ НАЙДЕНА
+  ❌ Ruifeng S2 (ruifeng-s2) - НЕ НАЙДЕНА
+  ❌ Ruifeng S2mini (ruifeng-s2mini) - НЕ НАЙДЕНА
+  ❌ Ruifeng S3 (ruifeng-s3) - НЕ НАЙДЕНА
+  ❌ Ruifeng S4 (ruifeng-s4) - НЕ НАЙДЕНА
+  ❌ Ruifeng S5 (ruifeng-s5) - НЕ НАЙДЕНА
+  ❌ Tongyue RS (tongyue-rs) - НЕ НАЙДЕНА
+  ❌ Xing Rui (xing-rui) - НЕ НАЙДЕНА
+  ❌ Yueyue (yueyue) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/31
+
+Бренд: Jietu Shanhai (jietu-shanhai)
+  ❌ JETOUR SHANHAI L6 (jetour-shanhai-l6) - НЕ НАЙДЕНА
+  ❌ JETOUR SHANHAI L7 (jetour-shanhai-l7) - НЕ НАЙДЕНА
+  ❌ Jetour Shanhai T1 (jetour-shanhai-t1) - НЕ НАЙДЕНА
+  ❌ Jetour Shanhai T2 (jetour-shanhai-t2) - НЕ НАЙДЕНА
+  ❌ L9 (l9) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Joylong (joylong)
+  ❌ Effie (effie) - НЕ НАЙДЕНА
+  ❌ Kowloon A5 (kowloon-a5) - НЕ НАЙДЕНА
+  ❌ Kowloon A6 (kowloon-a6) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Kai Chen (kai-chen)
+  ❌ Qichen Big V DD-i (qichen-big-v-dd-i) - НЕ НАЙДЕНА
+  ❌ Venucia Big V (venucia-big-v) - НЕ НАЙДЕНА
+  ❌ Venucia D50 (venucia-d50) - НЕ НАЙДЕНА
+  ❌ Venucia D60 (venucia-d60) - НЕ НАЙДЕНА
+  ❌ Venucia D60 EV (venucia-d60-ev) - НЕ НАЙДЕНА
+  ❌ Venucia e30 (venucia-e30) - НЕ НАЙДЕНА
+  ❌ Venucia M50V (venucia-m50v) - НЕ НАЙДЕНА
+  ❌ Venucia R30 (venucia-r30) - НЕ НАЙДЕНА
+  ❌ Venucia R50 (venucia-r50) - НЕ НАЙДЕНА
+  ❌ Venucia R50X (venucia-r50x) - НЕ НАЙДЕНА
+  ❌ Venucia T60 (venucia-t60) - НЕ НАЙДЕНА
+  ❌ Venucia T70 (venucia-t70) - НЕ НАЙДЕНА
+  ❌ Venucia T70X (venucia-t70x) - НЕ НАЙДЕНА
+  ❌ Venucia T90 (venucia-t90) - НЕ НАЙДЕНА
+  ❌ Venucia V DD-i super hybrid (venucia-v-dd-i-super-hybrid) - НЕ НАЙДЕНА
+  ❌ Venucia VX6 (venucia-vx6) - НЕ НАЙДЕНА
+  ❌ Venus Star (venus-star) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/17
+
+Бренд: Kia (kia)
+  ❌ Ba Rui (ba-rui) - НЕ НАЙДЕНА
+  ❌ Cerato (cerato) - НЕ НАЙДЕНА
+  ❌ Distant ship (distant-ship) - НЕ НАЙДЕНА
+  ❌ EV5 (ev5) - НЕ НАЙДЕНА
+  ❌ Freddie (freddie) - НЕ НАЙДЕНА
+  ❌ Huanchi (huanchi) - НЕ НАЙДЕНА
+  ❌ Jiahua (jiahua) - НЕ НАЙДЕНА
+  ❌ imported (jiahua-imported) - НЕ НАЙДЕНА
+  ❌ Jiale (jiale) - НЕ НАЙДЕНА
+  ❌ K2 (k2) - НЕ НАЙДЕНА
+  ❌ K3 (k3) - НЕ НАЙДЕНА
+  ❌ K3 PHEV (k3-phev) - НЕ НАЙДЕНА
+  ❌ K3S (k3s) - НЕ НАЙДЕНА
+  ❌ K4 (k4) - НЕ НАЙДЕНА
+  ❌ K5 (k5) - НЕ НАЙДЕНА
+  ❌ K5 PHEV (k5-phev) - НЕ НАЙДЕНА
+  ❌ Kaishen (kaishen) - НЕ НАЙДЕНА
+  ❌ Kaizun (kaizun) - НЕ НАЙДЕНА
+  ❌ KX CROSS (kx-cross) - НЕ НАЙДЕНА
+  ❌ KX5 (kx5) - НЕ НАЙДЕНА
+  ❌ KX7 (kx7) - НЕ НАЙДЕНА
+  ❌ Lion Platinum Expands the Boundary (lion-platinum-expands-the-boundary) - НЕ НАЙДЕНА
+  ❌ Ofeles (ofeles) - НЕ НАЙДЕНА
+  ❌ Run proudly (run-proudly) - НЕ НАЙДЕНА
+  ❌ Sethus (sethus) - НЕ НАЙДЕНА
+  ❌ Shor (shor) - НЕ НАЙДЕНА
+  ❌ Sorento (sorento) - НЕ НАЙДЕНА
+  ❌ Speedy (speedy) - НЕ НАЙДЕНА
+  ❌ Sportage (sportage) - НЕ НАЙДЕНА
+  ❌ VQ (vq) - НЕ НАЙДЕНА
+  ❌ Yipao (yipao) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/31
+
+Бренд: Lamborghini (lamborghini)
+  ❌ Aventador (aventador) - НЕ НАЙДЕНА
+  ❌ Gallardo (gallardo) - НЕ НАЙДЕНА
+  ❌ Huracán (hurac-n) - НЕ НАЙДЕНА
+  ❌ Revuelto (revuelto) - НЕ НАЙДЕНА
+  ❌ Urus (urus) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Land Rover (land-rover)
+  ❌ Discover (discover) - НЕ НАЙДЕНА
+  ❌ Imported (discover-shenxing-imported) - НЕ НАЙДЕНА
+  ❌ Discover Sports (discover-sports) - НЕ НАЙДЕНА
+  ❌ Discover the magic (discover-the-magic) - НЕ НАЙДЕНА
+  ❌ Discovery Sport (discovery-sport) - НЕ НАЙДЕНА
+  ❌ Discovery Sport PHEV (discovery-sport-phev) - НЕ НАЙДЕНА
+  ❌ Freelander 2 (freelander-2) - НЕ НАЙДЕНА
+  ❌ Guard (guard) - НЕ НАЙДЕНА
+  ❌ Range rover (range-rover) - НЕ НАЙДЕНА
+  ❌ Range Rover Evoque (range-rover-evoque) - НЕ НАЙДЕНА
+  ❌ imported (range-rover-evoque-imported) - НЕ НАЙДЕНА
+  ❌ Range Rover Evoque PHEV (range-rover-evoque-phev) - НЕ НАЙДЕНА
+  ❌ Range Rover PHEV (range-rover-phev) - НЕ НАЙДЕНА
+  ❌ Range Rover Sport (range-rover-sport) - НЕ НАЙДЕНА
+  ❌ Range Rover Sport PHEV (range-rover-sport-phev) - НЕ НАЙДЕНА
+  ❌ Range Rover Velar (range-rover-velar) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/16
+
+Бренд: Leapmotor (leapmotor)
+  ❌ B10 (b10) - НЕ НАЙДЕНА
+  ❌ C16 (c16) - НЕ НАЙДЕНА
+  ❌ Leap running S01 (leap-running-s01) - НЕ НАЙДЕНА
+  ❌ Zero running C01 (zero-running-c01) - НЕ НАЙДЕНА
+  ❌ Zero running C10 (zero-running-c10) - НЕ НАЙДЕНА
+  ❌ Zero running C11 (zero-running-c11) - НЕ НАЙДЕНА
+  ❌ Zero running T03 (zero-running-t03) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/7
+
+Бренд: Ledao (ledao)
+  ❌ L60 (l60) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: LETIN (letin)
+  ❌ Mango (mango) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: LEVC Yizhen Automobile (levc-yizhen-automobile)
+  ❌ LEVCTX (levctx) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Lexus (lexus)
+  ❌ CT (ct) - НЕ НАЙДЕНА
+  ❌ ES (es) - НЕ НАЙДЕНА
+  ❌ GS (gs) - НЕ НАЙДЕНА
+  ❌ GX (gx) - НЕ НАЙДЕНА
+  ❌ IS (is) - НЕ НАЙДЕНА
+  ❌ LC (lc) - НЕ НАЙДЕНА
+  ❌ LM (lm) - НЕ НАЙДЕНА
+  ❌ LS (ls) - НЕ НАЙДЕНА
+  ❌ LX (lx) - НЕ НАЙДЕНА
+  ❌ NX (nx) - НЕ НАЙДЕНА
+  ❌ NX PHEV (nx-phev) - НЕ НАЙДЕНА
+  ❌ RC (rc) - НЕ НАЙДЕНА
+  ❌ RX (rx) - НЕ НАЙДЕНА
+  ❌ RX Classic (rx-classic) - НЕ НАЙДЕНА
+  ❌ RX PHEV (rx-phev) - НЕ НАЙДЕНА
+  ❌ RZ (rz) - НЕ НАЙДЕНА
+  ❌ SC (sc) - НЕ НАЙДЕНА
+  ❌ UX (ux) - НЕ НАЙДЕНА
+  ❌ UX EV (ux-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/19
+
+Бренд: Lincoln (lincoln)
+  ❌ Adventurer (adventurer) - НЕ НАЙДЕНА
+  ❌ Adventurer PHEV (adventurer-phev) - НЕ НАЙДЕНА
+  ❌ Aviator (aviator) - НЕ НАЙДЕНА
+  ❌ Continental (continental) - НЕ НАЙДЕНА
+  ❌ MKC (mkc) - НЕ НАЙДЕНА
+  ❌ MKT (mkt) - НЕ НАЙДЕНА
+  ❌ MKX (mkx) - НЕ НАЙДЕНА
+  ❌ MKZ (mkz) - НЕ НАЙДЕНА
+  ❌ Navigator (navigator) - НЕ НАЙДЕНА
+  ❌ Pilot (pilot) - НЕ НАЙДЕНА
+  ❌ imported (pilot-imported) - НЕ НАЙДЕНА
+  ❌ Pilot PHEV (pilot-phev) - НЕ НАЙДЕНА
+  ❌ imported (voyager-imported) - НЕ НАЙДЕНА
+  ❌ Z (z) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/14
+
+Бренд: Lingbao (lingbao)
+  ❌ BOX (box) - НЕ НАЙДЕНА
+  ❌ Uni (uni) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: LINXYS (linxys)
+  ❌ Lingshi gold warehouse (lingshi-gold-warehouse) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Lotus cars (lotus-cars)
+  ❌ Lotus L3 (lotus-l3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Lotus sports car (lotus-sports-car)
+  ❌ Eletre (eletre) - НЕ НАЙДЕНА
+  ❌ Emira (emira) - НЕ НАЙДЕНА
+  ❌ Evora (evora) - НЕ НАЙДЕНА
+  ❌ Exige (exige) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Lu Feng (lu-feng)
+  ❌ Landwind X2 (landwind-x2) - НЕ НАЙДЕНА
+  ❌ Landwind X5 (landwind-x5) - НЕ НАЙДЕНА
+  ❌ Landwind X7 (landwind-x7) - НЕ НАЙДЕНА
+  ❌ Landwind X8 (landwind-x8) - НЕ НАЙДЕНА
+  ❌ Xiaoyao (xiaoyao) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Luxeed (luxeed)
+  ❌ SmartS7 (smarts7) - НЕ НАЙДЕНА
+  ❌ Zhijie R7 (zhijie-r7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Lynk & Co (lynk-co)
+  ❌ Lynk &amp; Co 01 (lynk-amp-co-01) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 01 EM-P (lynk-amp-co-01-em-p) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 02 (lynk-amp-co-02) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 02 Hatchback (lynk-amp-co-02-hatchback) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 03 (lynk-amp-co-03) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 05 (lynk-amp-co-05) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 06 (lynk-amp-co-06) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 06 EM-P (lynk-amp-co-06-em-p) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 07 EM-P (lynk-amp-co-07-em-p) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 08 EM-P (lynk-amp-co-08-em-p) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 09 (lynk-amp-co-09) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co 09 EM-P (lynk-amp-co-09-em-p) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co Z10 (lynk-amp-co-z10) - НЕ НАЙДЕНА
+  ❌ Lynk &amp; Co Z20 (lynk-amp-co-z20) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/14
+
+Бренд: Maple (maple)
+  ❌ Cao Cao 60 (cao-cao-60) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Maserati (maserati)
+  ❌ Ghibli (ghibli) - НЕ НАЙДЕНА
+  ❌ GranCabrio (grancabrio) - НЕ НАЙДЕНА
+  ❌ GranTurismo (granturismo) - НЕ НАЙДЕНА
+  ❌ Grecale (grecale) - НЕ НАЙДЕНА
+  ❌ Levante (levante) - НЕ НАЙДЕНА
+  ❌ MC20 (mc20) - НЕ НАЙДЕНА
+  ❌ President (president) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/7
+
+Бренд: Maybach (maybach)
+  ❌ Maybach (maybach) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Mazda (mazda)
+  ❌ 2 (2) - НЕ НАЙДЕНА
+  ❌ 2 Jinxiang (2-jinxiang) - НЕ НАЙДЕНА
+  ❌ 3 (3) - НЕ НАЙДЕНА
+  ❌ imported (3-imported) - НЕ НАЙДЕНА
+  ❌ 3 Angkesela (3-angkesela) - НЕ НАЙДЕНА
+  ❌ 3 star (3-star) - НЕ НАЙДЕНА
+  ❌ 5 (5) - НЕ НАЙДЕНА
+  ❌ 6 (6) - НЕ НАЙДЕНА
+  ❌ 8 (8) - НЕ НАЙДЕНА
+  ❌ ATENZA (atenza) - НЕ НАЙДЕНА
+  ❌ Atez (atez) - НЕ НАЙДЕНА
+  ❌ CX-3 (cx-3) - НЕ НАЙДЕНА
+  ❌ CX-30 (cx-30) - НЕ НАЙДЕНА
+  ❌ CX-4 (cx-4) - НЕ НАЙДЕНА
+  ❌ CX-5 (cx-5) - НЕ НАЙДЕНА
+  ❌ imported (cx-5-imported) - НЕ НАЙДЕНА
+  ❌ CX-50 OK (cx-50-ok) - НЕ НАЙДЕНА
+  ❌ CX-7 (cx-7) - НЕ НАЙДЕНА
+  ❌ imported (cx-7-imported) - НЕ НАЙДЕНА
+  ❌ CX-8 (cx-8) - НЕ НАЙДЕНА
+  ❌ MX-5 (mx-5) - НЕ НАЙДЕНА
+  ❌ Ruiyi (ruiyi) - НЕ НАЙДЕНА
+  ❌ RX-7 (rx-7) - НЕ НАЙДЕНА
+  ❌ RX-8 (rx-8) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/24
+
+Бренд: McLaren (mclaren)
+  ❌ 12C (12c) - НЕ НАЙДЕНА
+  ❌ 540C (540c) - НЕ НАЙДЕНА
+  ❌ 570GT (570gt) - НЕ НАЙДЕНА
+  ❌ 570S (570s) - НЕ НАЙДЕНА
+  ❌ 600LT (600lt) - НЕ НАЙДЕНА
+  ❌ 625C (625c) - НЕ НАЙДЕНА
+  ❌ 650S (650s) - НЕ НАЙДЕНА
+  ❌ 675LT (675lt) - НЕ НАЙДЕНА
+  ❌ 720S (720s) - НЕ НАЙДЕНА
+  ❌ Artura (artura) - НЕ НАЙДЕНА
+  ❌ GT (gt) - НЕ НАЙДЕНА
+  ❌ P1 (p1) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/12
+
+Бренд: Mercedes-Benz (mercedes-benz)
+  ❌ imported (a-class-imported) - НЕ НАЙДЕНА
+  ❌ A-Class AMG (a-class-amg) - НЕ НАЙДЕНА
+  ❌ imported (a-class-amg-imported) - НЕ НАЙДЕНА
+  ❌ AMG GT (amg-gt) - НЕ НАЙДЕНА
+  ❌ imported (c-class-imported) - НЕ НАЙДЕНА
+  ❌ C-Class AMG (c-class-amg) - НЕ НАЙДЕНА
+  ❌ C-Class AMG PHEV (c-class-amg-phev) - НЕ НАЙДЕНА
+  ❌ C-Class PHEV (c-class-phev) - НЕ НАЙДЕНА
+  ❌ CLS-Class AMG (cls-class-amg) - НЕ НАЙДЕНА
+  ❌ E-Class (e-class) - НЕ НАЙДЕНА
+  ❌ imported (e-class-imported) - НЕ НАЙДЕНА
+  ❌ E-Class AMG (e-class-amg) - НЕ НАЙДЕНА
+  ❌ E-Class PHEV (e-class-phev) - НЕ НАЙДЕНА
+  ❌ EQB (eqb) - НЕ НАЙДЕНА
+  ❌ EQC (eqc) - НЕ НАЙДЕНА
+  ❌ EQE (eqe) - НЕ НАЙДЕНА
+  ❌ EQE AMG (eqe-amg) - НЕ НАЙДЕНА
+  ❌ EQE SUV (eqe-suv) - НЕ НАЙДЕНА
+  ❌ EQS (eqs) - НЕ НАЙДЕНА
+  ❌ EQS AMG (eqs-amg) - НЕ НАЙДЕНА
+  ❌ EQS SUV (eqs-suv) - НЕ НАЙДЕНА
+  ❌ G-Class (g-class) - НЕ НАЙДЕНА
+  ❌ G-Class AMG (g-class-amg) - НЕ НАЙДЕНА
+  ❌ GL-Class AMG (gl-class-amg) - НЕ НАЙДЕНА
+  ❌ GLA (gla) - НЕ НАЙДЕНА
+  ❌ imported (gla-imported) - НЕ НАЙДЕНА
+  ❌ GLA AMG (gla-amg) - НЕ НАЙДЕНА
+  ❌ GLB (glb) - НЕ НАЙДЕНА
+  ❌ GLB AMG (glb-amg) - НЕ НАЙДЕНА
+  ❌ GLC (glc) - НЕ НАЙДЕНА
+  ❌ GLC AMG (glc-amg) - НЕ НАЙДЕНА
+  ❌ GLC Coupe (glc-coupe) - НЕ НАЙДЕНА
+  ❌ GLC Coupe AMG (glc-coupe-amg) - НЕ НАЙДЕНА
+  ❌ GLC PHEV (glc-phev) - НЕ НАЙДЕНА
+  ❌ GLE (gle) - НЕ НАЙДЕНА
+  ❌ GLE AMG (gle-amg) - НЕ НАЙДЕНА
+  ❌ GLE Coupe (gle-coupe) - НЕ НАЙДЕНА
+  ❌ GLE Coupe AMG (gle-coupe-amg) - НЕ НАЙДЕНА
+  ❌ GLE Coupe PHEV (gle-coupe-phev) - НЕ НАЙДЕНА
+  ❌ GLE PHEV (gle-phev) - НЕ НАЙДЕНА
+  ❌ imported (glk-class-imported) - НЕ НАЙДЕНА
+  ❌ GLS AMG (gls-amg) - НЕ НАЙДЕНА
+  ❌ M-Class AMG (m-class-amg) - НЕ НАЙДЕНА
+  ❌ Maybach GLS (maybach-gls) - НЕ НАЙДЕНА
+  ❌ Maybach S-Class (maybach-s-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz A Class (mercedes-benz-a-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz B Class (mercedes-benz-b-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz C Class (mercedes-benz-c-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz CLE Class (mercedes-benz-cle-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz CLK Class (mercedes-benz-clk-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz CLS (mercedes-benz-cls) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz EQA (mercedes-benz-eqa) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz G Class (mercedes-benz-g-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz GL Class (mercedes-benz-gl-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz GLK Class (mercedes-benz-glk-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz GLS (mercedes-benz-gls) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz M Class (mercedes-benz-m-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz S Class (mercedes-benz-s-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz SLC Class (mercedes-benz-slc-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz SLK Class (mercedes-benz-slk-class) - НЕ НАЙДЕНА
+  ❌ Mercedes Benz V Class (mercedes-benz-v-class) - НЕ НАЙДЕНА
+  ❌ Mercedes CLA (mercedes-cla) - НЕ НАЙДЕНА
+  ❌ Mercedes CLA AMG (mercedes-cla-amg) - НЕ НАЙДЕНА
+  ❌ R-Class (r-class) - НЕ НАЙДЕНА
+  ❌ S-Class AMG (s-class-amg) - НЕ НАЙДЕНА
+  ❌ S-Class AMG PHEV (s-class-amg-phev) - НЕ НАЙДЕНА
+  ❌ S-Class PHEV (s-class-phev) - НЕ НАЙДЕНА
+  ❌ SL Class (sl-class) - НЕ НАЙДЕНА
+  ❌ SL-Class AMG (sl-class-amg) - НЕ НАЙДЕНА
+  ❌ SLS-Class AMG (sls-class-amg) - НЕ НАЙДЕНА
+  ❌ Sprinter (sprinter) - НЕ НАЙДЕНА
+  ❌ Viano (viano) - НЕ НАЙДЕНА
+  ❌ imported (viano-imported) - НЕ НАЙДЕНА
+  ❌ Vito (vito) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/74
+
+Бренд: MINI (mini)
+  ❌ CLUBMAN (clubman) - НЕ НАЙДЕНА
+  ❌ COUNTRYMAN (countryman) - НЕ НАЙДЕНА
+  ❌ COUPE (coupe) - НЕ НАЙДЕНА
+  ❌ ELECTRIC  ACEMAN (electric-aceman) - НЕ НАЙДЕНА
+  ❌ ELECTRIC  COOPER (electric-cooper) - НЕ НАЙДЕНА
+  ❌ JCW (jcw) - НЕ НАЙДЕНА
+  ❌ JCW CLUBMAN (jcw-clubman) - НЕ НАЙДЕНА
+  ❌ JCW COUNTRYMAN (jcw-countryman) - НЕ НАЙДЕНА
+  ❌ JCW PACEMAN (jcw-paceman) - НЕ НАЙДЕНА
+  ❌ MINI (mini) - НЕ НАЙДЕНА
+  ❌ PACEMAN (paceman) - НЕ НАЙДЕНА
+  ❌ ROADSTER (roadster) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/12
+
+Бренд: Mitsubishi (mitsubishi)
+  ❌ AIRTREK (airtrek) - НЕ НАЙДЕНА
+  ❌ Yi Ge (yi-ge) - НЕ НАЙДЕНА
+  ❌ Ecolis (ecolis) - НЕ НАЙДЕНА
+  ❌ Galan (galan) - НЕ НАЙДЕНА
+  ❌ Jinxuan ASX (jinxuan-asx) - НЕ НАЙДЕНА
+  ❌ imported (jinxuan-asx-imported) - НЕ НАЙДЕНА
+  ❌ Junge (junge) - НЕ НАЙДЕНА
+  ❌ LANCER (lancer) - НЕ НАЙДЕНА
+  ❌ Outlander (outlander) - НЕ НАЙДЕНА
+  ❌ imported (outlander-imported) - НЕ НАЙДЕНА
+  ❌ Pajero (pajero) - НЕ НАЙДЕНА
+  ❌ imported (pajero-imported) - НЕ НАЙДЕНА
+  ❌ Pajero Jinchang (pajero-jinchang) - НЕ НАЙДЕНА
+  ❌ imported (pajero-jinchang-imported) - НЕ НАЙДЕНА
+  ❌ Winged God (winged-god) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/15
+
+Бренд: Mitsuoka (mitsuoka)
+  ❌ Queen (queen) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Mustang cars (mustang-cars)
+  ❌ Bojun (bojun) - НЕ НАЙДЕНА
+  ❌ Mustang T70 (mustang-t70) - НЕ НАЙДЕНА
+  ❌ Mustang T80 (mustang-t80) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Nazhijie (nazhijie)
+  ❌ Da 7 MPV (da-7-mpv) - НЕ НАЙДЕНА
+  ❌ Da7 SUV (da7-suv) - НЕ НАЙДЕНА
+  ❌ Na5 (na5) - НЕ НАЙДЕНА
+  ❌ U5 SUV (u5-suv) - НЕ НАЙДЕНА
+  ❌ You6 SUV (you6-suv) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: NETA (neta)
+  ❌ Nezha AYA (nezha-aya) - НЕ НАЙДЕНА
+  ❌ Nezha GT (nezha-gt) - НЕ НАЙДЕНА
+  ❌ Nezha L (nezha-l) - НЕ НАЙДЕНА
+  ❌ Nezha N01 (nezha-n01) - НЕ НАЙДЕНА
+  ❌ Nezha S (nezha-s) - НЕ НАЙДЕНА
+  ❌ Nezha V (nezha-v) - НЕ НАЙДЕНА
+  ❌ NezhaU (nezhau) - НЕ НАЙДЕНА
+  ❌ NezhaX (nezhax) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: New Geo (new-geo)
+  ❌ Geooteng (geooteng) - НЕ НАЙДЕНА
+  ❌ Gio Shuailing (gio-shuailing) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: New Longma (new-longma)
+  ❌ Automobile Qiteng EX80 (automobile-qiteng-ex80) - НЕ НАЙДЕНА
+  ❌ Automobile Qiteng M70 EV (automobile-qiteng-m70-ev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Nissan (nissan)
+  ❌ 350Z (350z) - НЕ НАЙДЕНА
+  ❌ 370Z (370z) - НЕ НАЙДЕНА
+  ❌ Teana (teana) - НЕ НАЙДЕНА
+  ❌ ARIYA (ariya) - НЕ НАЙДЕНА
+  ❌ Bilian (bilian) - НЕ НАЙДЕНА
+  ❌ Bluebird (bluebird) - НЕ НАЙДЕНА
+  ❌ D22 (d22) - НЕ НАЙДЕНА
+  ❌ Explore the land (explore-the-land) - НЕ НАЙДЕНА
+  ❌ GT-R (gt-r) - НЕ НАЙДЕНА
+  ❌ Jinke (jinke) - НЕ НАЙДЕНА
+  ❌ Junyi (junyi) - НЕ НАЙДЕНА
+  ❌ Li Wei (li-wei) - НЕ НАЙДЕНА
+  ❌ March (march) - НЕ НАЙДЕНА
+  ❌ Loulan (loulan) - НЕ НАЙДЕНА
+  ❌ N7 (n7) - НЕ НАЙДЕНА
+  ❌ Navara (navara) - НЕ НАЙДЕНА
+  ❌ Nobleman (nobleman) - НЕ НАЙДЕНА
+  ❌ NV200 (nv200) - НЕ НАЙДЕНА
+  ❌ Paladin (paladin) - НЕ НАЙДЕНА
+  ❌ Patrol (patrol) - НЕ НАЙДЕНА
+  ❌ Qashqai (qashqai) - НЕ НАЙДЕНА
+  ❌ Sima (sima) - НЕ НАЙДЕНА
+  ❌ Sunlight (sunlight) - НЕ НАЙДЕНА
+  ❌ Sylphy (sylphy) - НЕ НАЙДЕНА
+  ❌ Sylphy·Pure Electric (sylphy-pure-electric) - НЕ НАЙДЕНА
+  ❌ Tiida (tiida) - НЕ НАЙДЕНА
+  ❌ Tuda (tuda) - НЕ НАЙДЕНА
+  ❌ Qijun (qijun) - НЕ НАЙДЕНА
+  ❌ ZN van (zn-van) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/29
+
+Бренд: Opel (opel)
+  ❌ Andra (andra) - НЕ НАЙДЕНА
+  ❌ Astra (astra) - НЕ НАЙДЕНА
+  ❌ Yingsuya (yingsuya) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Peugeot (peugeot)
+  ❌ 2008 (2008) - НЕ НАЙДЕНА
+  ❌ 207 (207) - НЕ НАЙДЕНА
+  ❌ imported (207-imported) - НЕ НАЙДЕНА
+  ❌ 3008 (3008) - НЕ НАЙДЕНА
+  ❌ imported (3008-imported) - НЕ НАЙДЕНА
+  ❌ 301 (301) - НЕ НАЙДЕНА
+  ❌ 307 (307) - НЕ НАЙДЕНА
+  ❌ imported (307-imported) - НЕ НАЙДЕНА
+  ❌ 308 (308) - НЕ НАЙДЕНА
+  ❌ imported (308-imported) - НЕ НАЙДЕНА
+  ❌ 308S (308s) - НЕ НАЙДЕНА
+  ❌ 4008 (4008) - НЕ НАЙДЕНА
+  ❌ imported (4008-imported) - НЕ НАЙДЕНА
+  ❌ 408 (408) - НЕ НАЙДЕНА
+  ❌ 408X (408x) - НЕ НАЙДЕНА
+  ❌ 5008 (5008) - НЕ НАЙДЕНА
+  ❌ 508 (508) - НЕ НАЙДЕНА
+  ❌ 508L (508l) - НЕ НАЙДЕНА
+  ❌ e-2008 (e-2008) - НЕ НАЙДЕНА
+  ❌ RCZ (rcz) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/20
+
+Бренд: Porsche (porsche)
+  ❌ 718 (718) - НЕ НАЙДЕНА
+  ❌ 911 (911) - НЕ НАЙДЕНА
+  ❌ 918 Spyder (918-spyder) - НЕ НАЙДЕНА
+  ❌ Boxster (boxster) - НЕ НАЙДЕНА
+  ❌ Cayenne (cayenne) - НЕ НАЙДЕНА
+  ❌ Cayenne Coupe (cayenne-coupe) - НЕ НАЙДЕНА
+  ❌ Cayenne Coupé E-Hybrid (cayenne-coup-e-hybrid) - НЕ НАЙДЕНА
+  ❌ Cayenne E-Hybrid (cayenne-e-hybrid) - НЕ НАЙДЕНА
+  ❌ Cayman (cayman) - НЕ НАЙДЕНА
+  ❌ Macan (macan) - НЕ НАЙДЕНА
+  ❌ Macan EV (macan-ev) - НЕ НАЙДЕНА
+  ❌ Panamera (panamera) - НЕ НАЙДЕНА
+  ❌ Panamera E-Hybrid (panamera-e-hybrid) - НЕ НАЙДЕНА
+  ❌ Taycan (taycan) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/14
+
+Бренд: Promise (promise)
+  ❌ Zinoro 60H (zinoro-60h) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Punk car (punk-car)
+  ❌ Punk a lot (punk-a-lot) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Qiling (qiling)
+  ❌ T3 (t3) - НЕ НАЙДЕНА
+  ❌ T5 (t5) - НЕ НАЙДЕНА
+  ❌ T7 (t7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Qoros (qoros)
+  ❌ 3 (3) - НЕ НАЙДЕНА
+  ❌ 5 (5) - НЕ НАЙДЕНА
+  ❌ 7 (7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Remote (remote)
+  ❌ E5 (e5) - НЕ НАЙДЕНА
+  ❌ E6 (e6) - НЕ НАЙДЕНА
+  ❌ Geely  FX (geely-fx) - НЕ НАЙДЕНА
+  ❌ Star Rewards V (star-rewards-v) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: Renault (renault)
+  ❌ imported (cardboard-imported) - НЕ НАЙДЕНА
+  ❌ eNo (eno) - НЕ НАЙДЕНА
+  ❌ Espace classic (espace-classic) - НЕ НАЙДЕНА
+  ❌ Fenglang (fenglang) - НЕ НАЙДЕНА
+  ❌ Koleos (koleos) - НЕ НАЙДЕНА
+  ❌ imported (koleos-imported) - НЕ НАЙДЕНА
+  ❌ Korega (korega) - НЕ НАЙДЕНА
+  ❌ Korrebin (korrebin) - НЕ НАЙДЕНА
+  ❌ Landscape classic (landscape-classic) - НЕ НАЙДЕНА
+  ❌ Latitude (latitude) - НЕ НАЙДЕНА
+  ❌ Megane (megane) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/11
+
+Бренд: Rich (rich)
+  ❌ EC35 (ec35) - НЕ НАЙДЕНА
+  ❌ EC55 (ec55) - НЕ НАЙДЕНА
+  ❌ EC75 (ec75) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Rolls Royce (rolls-royce)
+  ❌ Cullinan (cullinan) - НЕ НАЙДЕНА
+  ❌ Ghost (ghost) - НЕ НАЙДЕНА
+  ❌ Phantom (phantom) - НЕ НАЙДЕНА
+  ❌ The Shining (the-shining) - НЕ НАЙДЕНА
+  ❌ Yao Ying (yao-ying) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Ruilan (ruilan)
+  ❌ Maple Leaf 30X (maple-leaf-30x) - НЕ НАЙДЕНА
+  ❌ Maple Leaf 60s (maple-leaf-60s) - НЕ НАЙДЕНА
+  ❌ Maple Leaf 80v (maple-leaf-80v) - НЕ НАЙДЕНА
+  ❌ Maple Leaf 80v PRO (maple-leaf-80v-pro) - НЕ НАЙДЕНА
+  ❌ Rui Lan 7 (rui-lan-7) - НЕ НАЙДЕНА
+  ❌ Rui Lan 9 (rui-lan-9) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/6
+
+Бренд: Saab (saab)
+  ❌ 9-3 (9-3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: SEAT (seat)
+  ❌ LEON (leon) - НЕ НАЙДЕНА
+  ❌ Ou Yuebo (ou-yuebo) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Skoda (skoda)
+  ❌ Comek (comek) - НЕ НАЙДЕНА
+  ❌ Haorui (haorui) - НЕ НАЙДЕНА
+  ❌ Jing Rui (jing-rui) - НЕ НАЙДЕНА
+  ❌ Karoq (karoq) - НЕ НАЙДЕНА
+  ❌ Kodiak (kodiak) - НЕ НАЙДЕНА
+  ❌ Kodiak GT (kodiak-gt) - НЕ НАЙДЕНА
+  ❌ Komic GT (komic-gt) - НЕ НАЙДЕНА
+  ❌ Octavia (octavia) - НЕ НАЙДЕНА
+  ❌ Speedy (speedy) - НЕ НАЙДЕНА
+  ❌ Suzun (suzun) - НЕ НАЙДЕНА
+  ❌ Xin Dong (xin-dong) - НЕ НАЙДЕНА
+  ❌ Xin Rui (xin-rui) - НЕ НАЙДЕНА
+  ❌ Yeti (yeti) - НЕ НАЙДЕНА
+  ❌ imported (yeti-imported) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/14
+
+Бренд: Skyrim (skyrim)
+  ❌ ME5 (me5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Skyworth Commercial Vehicle (skyworth-commercial-vehicle)
+  ❌ Skyworth D10 (skyworth-d10) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Smart (smart)
+  ❌ elf #1 (elf-1) - НЕ НАЙДЕНА
+  ❌ elf #3 (elf-3) - НЕ НАЙДЕНА
+  ❌ Elf #5 (elf-5) - НЕ НАЙДЕНА
+  ❌ forfour (forfour) - НЕ НАЙДЕНА
+  ❌ fortwo (fortwo) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: SOUEAST (soueast)
+  ❌ Delica (delica) - НЕ НАЙДЕНА
+  ❌ Siwan (siwan) - НЕ НАЙДЕНА
+  ❌ Southeast DX3 (southeast-dx3) - НЕ НАЙДЕНА
+  ❌ Southeast DX3 EV (southeast-dx3-ev) - НЕ НАЙДЕНА
+  ❌ Southeast DX5 (southeast-dx5) - НЕ НАЙДЕНА
+  ❌ Southeast DX7 (southeast-dx7) - НЕ НАЙДЕНА
+  ❌ Southeast DX8S (southeast-dx8s) - НЕ НАЙДЕНА
+  ❌ V3 Lingyue (v3-lingyue) - НЕ НАЙДЕНА
+  ❌ V5 Lingzhi (v5-lingzhi) - НЕ НАЙДЕНА
+  ❌ V6 Lingshi (v6-lingshi) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/10
+
+Бренд: SRM Jinhaishi (srm-jinhaishi)
+  ❌ Golden sea lion (golden-sea-lion) - НЕ НАЙДЕНА
+  ❌ Golden Sea Lion M (golden-sea-lion-m) - НЕ НАЙДЕНА
+  ❌ Good luck (good-luck) - НЕ НАЙДЕНА
+  ❌ Good Luck No. 1 (good-luck-no-1) - НЕ НАЙДЕНА
+  ❌ Hiace EV (hiace-ev) - НЕ НАЙДЕНА
+  ❌ Little sea lion EV (little-sea-lion-ev) - НЕ НАЙДЕНА
+  ❌ New Hiace X30L (new-hiace-x30l) - НЕ НАЙДЕНА
+  ❌ Xinyuan E3L (xinyuan-e3l) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/8
+
+Бренд: Ssangyong (ssangyong)
+  ❌ Actium (actium) - НЕ НАЙДЕНА
+  ❌ Enjoy (enjoy) - НЕ НАЙДЕНА
+  ❌ Korando (korando) - НЕ НАЙДЕНА
+  ❌ Rest (rest) - НЕ НАЙДЕНА
+  ❌ Rest W (rest-w) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Subaru (subaru)
+  ❌ BRZ (brz) - НЕ НАЙДЕНА
+  ❌ CROSSTREK Xubao (crosstrek-xubao) - НЕ НАЙДЕНА
+  ❌ Forester (forester) - НЕ НАЙДЕНА
+  ❌ Impreza (impreza) - НЕ НАЙДЕНА
+  ❌ LEGACY (legacy) - НЕ НАЙДЕНА
+  ❌ Outback (outback) - НЕ НАЙДЕНА
+  ❌ TRIBECA Chi Peng (tribeca-chi-peng) - НЕ НАЙДЕНА
+  ❌ WRX (wrx) - НЕ НАЙДЕНА
+  ❌ XV (xv) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: Suzuki (suzuki)
+  ❌ Alto (alto) - НЕ НАЙДЕНА
+  ❌ Antelope (antelope) - НЕ НАЙДЕНА
+  ❌ Beidou Star X5 (beidou-star-x5) - НЕ НАЙДЕНА
+  ❌ Big Dipper (big-dipper) - НЕ НАЙДЕНА
+  ❌ Feng Yu (feng-yu) - НЕ НАЙДЕНА
+  ❌ imported (jimny-imported) - НЕ НАЙДЕНА
+  ❌ Kaisersei (kaisersei) - НЕ НАЙДЕНА
+  ❌ Langdi (langdi) - НЕ НАЙДЕНА
+  ❌ Liana (liana) - НЕ НАЙДЕНА
+  ❌ Liana A6 (liana-a6) - НЕ НАЙДЕНА
+  ❌ Paixi (paixi) - НЕ НАЙДЕНА
+  ❌ Qiyue (qiyue) - НЕ НАЙДЕНА
+  ❌ Speedy Special (speedy-special) - НЕ НАЙДЕНА
+  ❌ Super vitra (super-vitra) - НЕ НАЙДЕНА
+  ❌ Swift (swift) - НЕ НАЙДЕНА
+  ❌ Tianyu Shangyue (tianyu-shangyue) - НЕ НАЙДЕНА
+  ❌ Tianyu SX4 (tianyu-sx4) - НЕ НАЙДЕНА
+  ❌ Vitra (vitra) - НЕ НАЙДЕНА
+  ❌ Xiaotu (xiaotu) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/19
+
+Бренд: SWM (swm)
+  ❌ Iron Man (iron-man) - НЕ НАЙДЕНА
+  ❌ SWG01 (swg01) - НЕ НАЙДЕНА
+  ❌ SWG05 (swg05) - НЕ НАЙДЕНА
+  ❌ SWX3 (swx3) - НЕ НАЙДЕНА
+  ❌ SWX7 (swx7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Tesla (tesla)
+  ❌ Model 3 (model-3) - НЕ НАЙДЕНА
+  ❌ imported (model-3-imported) - НЕ НАЙДЕНА
+  ❌ Model S (model-s) - НЕ НАЙДЕНА
+  ❌ Model X (model-x) - НЕ НАЙДЕНА
+  ❌ Model Y (model-y) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/5
+
+Бренд: Toyota (toyota)
+  ❌ 86 (86) - НЕ НАЙДЕНА
+  ❌ Elfa (elfa) - НЕ НАЙДЕНА
+  ❌ Asiatic lion (asiatic-lion) - НЕ НАЙДЕНА
+  ❌ Asian dragon (asian-dragon) - НЕ НАЙДЕНА
+  ❌ bZ3 (bz3) - НЕ НАЙДЕНА
+  ❌ C-HR (c-hr) - НЕ НАЙДЕНА
+  ❌ C-HR EV (c-hr-ev) - НЕ НАЙДЕНА
+  ❌ Yize IZOA (yize-izoa) - НЕ НАЙДЕНА
+  ❌ Camry (camry) - НЕ НАЙДЕНА
+  ❌ Corolla (corolla) - НЕ НАЙДЕНА
+  ❌ Corolla Cross (corolla-cross) - НЕ НАЙДЕНА
+  ❌ Corolla Dual Engine E+ (corolla-dual-engine-e) - НЕ НАЙДЕНА
+  ❌ Corolla Sharp (corolla-sharp) - НЕ НАЙДЕНА
+  ❌ Costa (costa) - НЕ НАЙДЕНА
+  ❌ Crown (crown) - НЕ НАЙДЕНА
+  ❌ imported (crown-imported) - НЕ НАЙДЕНА
+  ❌ Crown Kluger (crown-kluger) - НЕ НАЙДЕНА
+  ❌ Crown SportCross (crown-sportcross) - НЕ НАЙДЕНА
+  ❌ Wilfa (wilfa) - НЕ НАЙДЕНА
+  ❌ FAW  bZ4X (faw-bz4x) - НЕ НАЙДЕНА
+  ❌ FJ Cruiser (fj-cruiser) - НЕ НАЙДЕНА
+  ❌ Fortuner (fortuner) - НЕ НАЙДЕНА
+  ❌ Frontlander (frontlander) - НЕ НАЙДЕНА
+  ❌ GAC  bZ4X (gac-bz4x) - НЕ НАЙДЕНА
+  ❌ GAC  Platinum 3x (gac-platinum-3x) - НЕ НАЙДЕНА
+  ❌ Granvia (granvia) - НЕ НАЙДЕНА
+  ❌ Harrier (harrier) - НЕ НАЙДЕНА
+  ❌ HiAce (hiace) - НЕ НАЙДЕНА
+  ❌ Highlander (highlander) - НЕ НАЙДЕНА
+  ❌ imported (highlander-imported) - НЕ НАЙДЕНА
+  ❌ Jie Luchi (jie-luchi) - НЕ НАЙДЕНА
+  ❌ Land Cruiser (land-cruiser) - НЕ НАЙДЕНА
+  ❌ imported (land-cruiser-imported) - НЕ НАЙДЕНА
+  ❌ Lei Ling (lei-ling) - НЕ НАЙДЕНА
+  ❌ Ling Shang (ling-shang) - НЕ НАЙДЕНА
+  ❌ Prado (prado) - НЕ НАЙДЕНА
+  ❌ imported (prado-imported) - НЕ НАЙДЕНА
+  ❌ Previa (previa) - НЕ НАЙДЕНА
+  ❌ Prius (prius) - НЕ НАЙДЕНА
+  ❌ Ralink Shuangqing E+ (ralink-shuangqing-e) - НЕ НАЙДЕНА
+  ❌ RAV4 (rav4) - НЕ НАЙДЕНА
+  ❌ imported (rav4-imported) - НЕ НАЙДЕНА
+  ❌ RAV4 Rongfang PHEV (rav4-rongfang-phev) - НЕ НАЙДЕНА
+  ❌ Ruizhi (ruizhi) - НЕ НАЙДЕНА
+  ❌ Sequoia (sequoia) - НЕ НАЙДЕНА
+  ❌ Sienna (sienna) - НЕ НАЙДЕНА
+  ❌ Smooth road (smooth-road) - НЕ НАЙДЕНА
+  ❌ Supra (supra) - НЕ НАЙДЕНА
+  ❌ Wei Sa (wei-sa) - НЕ НАЙДЕНА
+  ❌ Vios (vios) - НЕ НАЙДЕНА
+  ❌ Vios FS (vios-fs) - НЕ НАЙДЕНА
+  ❌ Wildlander PHEV (wildlander-phev) - НЕ НАЙДЕНА
+  ❌ Willanda (willanda) - НЕ НАЙДЕНА
+  ❌ Yaris (yaris) - НЕ НАЙДЕНА
+  ❌ YARiS L Enjoy (yaris-l-enjoy) - НЕ НАЙДЕНА
+  ❌ YARiS L to dazzle (yaris-l-to-dazzle) - НЕ НАЙДЕНА
+  ❌ Yize E Jin Qing (yize-e-jin-qing) - НЕ НАЙДЕНА
+  ❌ Yizhi (yizhi) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/58
+
+Бренд: Traum (traum)
+  ❌ Junma S70 (junma-s70) - НЕ НАЙДЕНА
+  ❌ SEEK 5 (junma-seek-5-seek-5) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: VGV (vgv)
+  ❌ U70 (u70) - НЕ НАЙДЕНА
+  ❌ VX7 (vx7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Volkswagen (volkswagen)
+  ❌ Beetle (beetle) - НЕ НАЙДЕНА
+  ❌ Bora (bora) - НЕ НАЙДЕНА
+  ❌ Bora·Pure Electric (bora-pure-electric) - НЕ НАЙДЕНА
+  ❌ C-TREK Weiling (c-trek-weiling) - НЕ НАЙДЕНА
+  ❌ CC (cc) - НЕ НАЙДЕНА
+  ❌ imported (cc-imported) - НЕ НАЙДЕНА
+  ❌ Eos (eos) - НЕ НАЙДЕНА
+  ❌ Explore the shadows (explore-the-shadows) - НЕ НАЙДЕНА
+  ❌ Golf (golf) - НЕ НАЙДЕНА
+  ❌ imported (golf-imported) - НЕ НАЙДЕНА
+  ❌ Golf GTI (golf-gti) - НЕ НАЙДЕНА
+  ❌ Golf·Jialu (golf-jialu) - НЕ НАЙДЕНА
+  ❌ Golf·Pure Electric (golf-pure-electric) - НЕ НАЙДЕНА
+  ❌ Hui Ang (hui-ang) - НЕ НАЙДЕНА
+  ❌ ID.3 (id-3) - НЕ НАЙДЕНА
+  ❌ ID.4 CROZZ (id-4-crozz) - НЕ НАЙДЕНА
+  ❌ ID.4X (id-4x) - НЕ НАЙДЕНА
+  ❌ ID.6 CROZZ (id-6-crozz) - НЕ НАЙДЕНА
+  ❌ ID.6X (id-6x) - НЕ НАЙДЕНА
+  ❌ ID.7 VIZZION (id-7-vizzion) - НЕ НАЙДЕНА
+  ❌ Jetta (jetta) - НЕ НАЙДЕНА
+  ❌ Kailuwei (kailuwei) - НЕ НАЙДЕНА
+  ❌ Lan Jing (lan-jing) - НЕ НАЙДЕНА
+  ❌ Langjing (langjing) - НЕ НАЙДЕНА
+  ❌ Langxing (langxing) - НЕ НАЙДЕНА
+  ❌ Lavida (lavida) - НЕ НАЙДЕНА
+  ❌ Lavida pure electric (lavida-pure-electric) - НЕ НАЙДЕНА
+  ❌ Lingdu (lingdu) - НЕ НАЙДЕНА
+  ❌ Magotan (magotan) - НЕ НАЙДЕНА
+  ❌ imported (magotan-imported) - НЕ НАЙДЕНА
+  ❌ Magotan GTE (magotan-gte) - НЕ НАЙДЕНА
+  ❌ Metroway (metroway) - НЕ НАЙДЕНА
+  ❌ Passat (passat) - НЕ НАЙДЕНА
+  ❌ Passat PHEV (passat-phev) - НЕ НАЙДЕНА
+  ❌ Patrol (patrol) - НЕ НАЙДЕНА
+  ❌ Phaeton (phaeton) - НЕ НАЙДЕНА
+  ❌ Polo (polo) - НЕ НАЙДЕНА
+  ❌ Sagitar (sagitar) - НЕ НАЙДЕНА
+  ❌ Santana (santana) - НЕ НАЙДЕНА
+  ❌ Santana Classic (santana-classic) - НЕ НАЙДЕНА
+  ❌ Santana Zhijun (santana-zhijun) - НЕ НАЙДЕНА
+  ❌ Scirocco (scirocco) - НЕ НАЙДЕНА
+  ❌ Sharon (sharon) - НЕ НАЙДЕНА
+  ❌ TANG (tang) - НЕ НАЙДЕНА
+  ❌ Tanyue (tanyue) - НЕ НАЙДЕНА
+  ❌ Tanyue GTE (tanyue-gte) - НЕ НАЙДЕНА
+  ❌ TanyueX (tanyuex) - НЕ НАЙДЕНА
+  ❌ Teramont (teramont) - НЕ НАЙДЕНА
+  ❌ The public is up! (the-public-is-up) - НЕ НАЙДЕНА
+  ❌ Tiguan (tiguan) - НЕ НАЙДЕНА
+  ❌ Tiguan L (tiguan-l) - НЕ НАЙДЕНА
+  ❌ Tiguan L PHEV (tiguan-l-phev) - НЕ НАЙДЕНА
+  ❌ TiguanX (tiguanx) - НЕ НАЙДЕНА
+  ❌ Touareg (touareg) - НЕ НАЙДЕНА
+  ❌ Touareg PHEV (touareg-phev) - НЕ НАЙДЕНА
+  ❌ Touran (touran) - НЕ НАЙДЕНА
+  ❌ Touran L (touran-l) - НЕ НАЙДЕНА
+  ❌ Tu Kai (tu-kai) - НЕ НАЙДЕНА
+  ❌ Tuyue (tuyue) - НЕ НАЙДЕНА
+  ❌ Tuyue EV (tuyue-ev) - НЕ НАЙДЕНА
+  ❌ Wei Lan (wei-lan) - НЕ НАЙДЕНА
+  ❌ Weilan PHEV (weilan-phev) - НЕ НАЙДЕНА
+  ❌ Weiran (weiran) - НЕ НАЙДЕНА
+  ❌ With the crowd06 (with-the-crowd06) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/64
+
+Бренд: Volvo (volvo)
+  ❌ C30 (c30) - НЕ НАЙДЕНА
+  ❌ C40 EV (c40-ev) - НЕ НАЙДЕНА
+  ❌ C70 (c70) - НЕ НАЙДЕНА
+  ❌ EM90 (em90) - НЕ НАЙДЕНА
+  ❌ EX30 (ex30) - НЕ НАЙДЕНА
+  ❌ S40 (s40) - НЕ НАЙДЕНА
+  ❌ S60 (s60) - НЕ НАЙДЕНА
+  ❌ imported (s60-imported) - НЕ НАЙДЕНА
+  ❌ S60 PHEV (s60-phev) - НЕ НАЙДЕНА
+  ❌ S80L (s80l) - НЕ НАЙДЕНА
+  ❌ S90 (s90) - НЕ НАЙДЕНА
+  ❌ imported (s90-imported) - НЕ НАЙДЕНА
+  ❌ S90 PHEV (s90-phev) - НЕ НАЙДЕНА
+  ❌ V40 (v40) - НЕ НАЙДЕНА
+  ❌ V60 (v60) - НЕ НАЙДЕНА
+  ❌ V90 (v90) - НЕ НАЙДЕНА
+  ❌ XC Classic (xc-classic) - НЕ НАЙДЕНА
+  ❌ XC40 (xc40) - НЕ НАЙДЕНА
+  ❌ imported (xc40-imported) - НЕ НАЙДЕНА
+  ❌ XC40 EV (xc40-ev) - НЕ НАЙДЕНА
+  ❌ XC60 (xc60) - НЕ НАЙДЕНА
+  ❌ imported (xc60-imported) - НЕ НАЙДЕНА
+  ❌ XC60 PHEV (xc60-phev) - НЕ НАЙДЕНА
+  ❌ XC90 (xc90) - НЕ НАЙДЕНА
+  ❌ XC90 PHEV (xc90-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/25
+
+Бренд: Wey (wey)
+  ❌ Blue Mountain (blue-mountain) - НЕ НАЙДЕНА
+  ❌ Latte DHT (latte-dht) - НЕ НАЙДЕНА
+  ❌ Latte PHEV (latte-phev) - НЕ НАЙДЕНА
+  ❌ Macchiato DHT (macchiato-dht) - НЕ НАЙДЕНА
+  ❌ Macchiato DHT-PHEV (macchiato-dht-phev) - НЕ НАЙДЕНА
+  ❌ Mocha (mocha) - НЕ НАЙДЕНА
+  ❌ Mocha PHEV (mocha-phev) - НЕ НАЙДЕНА
+  ❌ Mountains (mountains) - НЕ НАЙДЕНА
+  ❌ Wei brand P8 (wei-brand-p8) - НЕ НАЙДЕНА
+  ❌ Wei brand VV5 (wei-brand-vv5) - НЕ НАЙДЕНА
+  ❌ Wei brand VV6 (wei-brand-vv6) - НЕ НАЙДЕНА
+  ❌ Wei brand VV7 (wei-brand-vv7) - НЕ НАЙДЕНА
+  ❌ Wei brand VV7 GT (wei-brand-vv7-gt) - НЕ НАЙДЕНА
+  ❌ Wei brand VV7 PHEV (wei-brand-vv7-phev) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/14
+
+Бренд: WOWSEN (wowsen)
+  ❌ Juntian Dark Knight Youth (juntian-dark-knight-youth) - НЕ НАЙДЕНА
+  ❌ The Warrior of Heaven (the-warrior-of-heaven) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Xiaomi car (xiaomi-car)
+  ❌ Xiaomi SU7 (xiaomi-su7) - НЕ НАЙДЕНА
+  ❌ Xiaomi SU7 Ultra (xiaomi-su7-ultra) - НЕ НАЙДЕНА
+  ❌ Xiaomi YU7 (xiaomi-yu7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Yema (yema)
+  ❌ Bojun (bojun) - НЕ НАЙДЕНА
+  ❌ Mustang T70 (mustang-t70) - НЕ НАЙДЕНА
+  ❌ Spica (spica) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: Yu Sheng (yu-sheng)
+  ❌ Yusheng S330 (yusheng-s330) - НЕ НАЙДЕНА
+  ❌ Yusheng S350 (yusheng-s350) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Yuanhang (yuanhang)
+  ❌ H8 (h8) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Yudo (yudo)
+  ❌ Cloud Rabbit (cloud-rabbit) - НЕ НАЙДЕНА
+  ❌ Cloud π1 (cloud-1) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: Zhidou (zhidou)
+  ❌ Rainbow (rainbow) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: Zhiji (zhiji)
+  ❌ L6 (l6) - НЕ НАЙДЕНА
+  ❌ L7 (l7) - НЕ НАЙДЕНА
+  ❌ LS6 (ls6) - НЕ НАЙДЕНА
+  ❌ LS7 (ls7) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/4
+
+Бренд: ZX Auto (zx-auto)
+  ❌ Great lord (great-lord) - НЕ НАЙДЕНА
+  ❌ Powerful Tiger (powerful-tiger) - НЕ НАЙДЕНА
+  ❌ ZTE C3 (zte-c3) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+

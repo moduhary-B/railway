@@ -1,0 +1,927 @@
+[
+  {
+    "id": "aito",
+    "name": "AITO",
+    "models": []
+  },
+  {
+    "id": "avatr",
+    "name": "AVATR",
+    "models": []
+  },
+  {
+    "id": "baic",
+    "name": "BAIC",
+    "models": []
+  },
+  {
+    "id": "byd",
+    "name": "BYD",
+    "models": []
+  },
+  {
+    "id": "changan",
+    "name": "Changan",
+    "models": []
+  },
+  {
+    "id": "chery",
+    "name": "Chery",
+    "models": []
+  },
+  {
+    "id": "denza",
+    "name": "Denza",
+    "models": []
+  },
+  {
+    "id": "dongfeng",
+    "name": "Dongfeng",
+    "models": []
+  },
+  {
+    "id": "exeed",
+    "name": "Exeed",
+    "models": []
+  },
+  {
+    "id": "faw",
+    "name": "FAW",
+    "models": []
+  },
+  {
+    "id": "forthing",
+    "name": "Forthing",
+    "models": []
+  },
+  {
+    "id": "foton",
+    "name": "Foton",
+    "models": []
+  },
+  {
+    "id": "gac",
+    "name": "GAC",
+    "models": []
+  },
+  {
+    "id": "geely",
+    "name": "Geely",
+    "models": []
+  },
+  {
+    "id": "great-wall",
+    "name": "Great Wall",
+    "models": []
+  },
+  {
+    "id": "haval",
+    "name": "Haval",
+    "models": []
+  },
+  {
+    "id": "hiphi",
+    "name": "HiPhi",
+    "models": []
+  },
+  {
+    "id": "hongqi",
+    "name": "Hongqi",
+    "models": []
+  },
+  {
+    "id": "jac",
+    "name": "JAC",
+    "models": []
+  },
+  {
+    "id": "jetour",
+    "name": "Jetour",
+    "models": []
+  },
+  {
+    "id": "kaiyi",
+    "name": "Kaiyi",
+    "models": []
+  },
+  {
+    "id": "li",
+    "name": "Lixiang (Li)",
+    "models": []
+  },
+  {
+    "id": "lifan",
+    "name": "Lifan",
+    "models": []
+  },
+  {
+    "id": "lotus",
+    "name": "Lotus",
+    "models": []
+  },
+  {
+    "id": "lynk-amp-co",
+    "name": "Lynk &amp; Co",
+    "models": []
+  },
+  {
+    "id": "maxus",
+    "name": "Maxus",
+    "models": []
+  },
+  {
+    "id": "mg",
+    "name": "MG",
+    "models": []
+  },
+  {
+    "id": "nio",
+    "name": "NIO",
+    "models": []
+  },
+  {
+    "id": "omoda",
+    "name": "Omoda",
+    "models": []
+  },
+  {
+    "id": "ora",
+    "name": "ORA",
+    "models": []
+  },
+  {
+    "id": "oshan",
+    "name": "Oshan",
+    "models": []
+  },
+  {
+    "id": "polestar",
+    "name": "Polestar",
+    "models": []
+  },
+  {
+    "id": "rising-auto",
+    "name": "Rising Auto",
+    "models": []
+  },
+  {
+    "id": "roewe",
+    "name": "Roewe",
+    "models": []
+  },
+  {
+    "id": "seres",
+    "name": "SERES",
+    "models": []
+  },
+  {
+    "id": "skywell",
+    "name": "Skywell",
+    "models": []
+  },
+  {
+    "id": "tank",
+    "name": "Tank",
+    "models": []
+  },
+  {
+    "id": "voyah",
+    "name": "Voyah",
+    "models": []
+  },
+  {
+    "id": "weltmeister",
+    "name": "Weltmeister",
+    "models": []
+  },
+  {
+    "id": "wuling",
+    "name": "Wuling",
+    "models": []
+  },
+  {
+    "id": "xpeng",
+    "name": "Xpeng",
+    "models": []
+  },
+  {
+    "id": "zeekr",
+    "name": "ZEEKR",
+    "models": []
+  },
+  {
+    "id": "zotye",
+    "name": "Zotye",
+    "models": []
+  },
+  {
+    "id": "firefly",
+    "name": "firefly",
+    "models": []
+  },
+  {
+    "id": "212",
+    "name": "212",
+    "models": []
+  },
+  {
+    "id": "acura",
+    "name": "Acura",
+    "models": []
+  },
+  {
+    "id": "aion",
+    "name": "AION",
+    "models": []
+  },
+  {
+    "id": "aiways",
+    "name": "AIWAYS",
+    "models": []
+  },
+  {
+    "id": "alfa-romeo",
+    "name": "Alfa romeo",
+    "models": []
+  },
+  {
+    "id": "arcfox-extreme-fox",
+    "name": "ARCFOX Extreme Fox",
+    "models": []
+  },
+  {
+    "id": "aston-martin",
+    "name": "Aston Martin",
+    "models": []
+  },
+  {
+    "id": "audi",
+    "name": "Audi",
+    "models": []
+  },
+  {
+    "id": "baizhi",
+    "name": "Baizhi",
+    "models": []
+  },
+  {
+    "id": "baojun",
+    "name": "Baojun",
+    "models": []
+  },
+  {
+    "id": "baw",
+    "name": "BAW",
+    "models": []
+  },
+  {
+    "id": "bentley",
+    "name": "Bentley",
+    "models": []
+  },
+  {
+    "id": "bmw",
+    "name": "BMW",
+    "models": []
+  },
+  {
+    "id": "borgward",
+    "name": "Borgward",
+    "models": []
+  },
+  {
+    "id": "brilliance",
+    "name": "Brilliance",
+    "models": []
+  },
+  {
+    "id": "buick",
+    "name": "Buick",
+    "models": []
+  },
+  {
+    "id": "byd-leopard",
+    "name": "BYD Leopard",
+    "models": []
+  },
+  {
+    "id": "cadillac",
+    "name": "Cadillac",
+    "models": []
+  },
+  {
+    "id": "carrier",
+    "name": "Carrier",
+    "models": []
+  },
+  {
+    "id": "changan-kaicene",
+    "name": "Changan Kaicene",
+    "models": []
+  },
+  {
+    "id": "changan-span",
+    "name": "Changan span",
+    "models": []
+  },
+  {
+    "id": "cheetah-cars",
+    "name": "Cheetah cars",
+    "models": []
+  },
+  {
+    "id": "chery-fengyun",
+    "name": "Chery Fengyun",
+    "models": []
+  },
+  {
+    "id": "chevrolet",
+    "name": "Chevrolet",
+    "models": []
+  },
+  {
+    "id": "chrysler",
+    "name": "Chrysler",
+    "models": []
+  },
+  {
+    "id": "citro-n",
+    "name": "Citroën",
+    "models": []
+  },
+  {
+    "id": "daihatsu-motor",
+    "name": "Daihatsu Motor",
+    "models": []
+  },
+  {
+    "id": "dayun",
+    "name": "Dayun",
+    "models": []
+  },
+  {
+    "id": "deepal",
+    "name": "Deepal",
+    "models": []
+  },
+  {
+    "id": "dodge",
+    "name": "Dodge",
+    "models": []
+  },
+  {
+    "id": "ds",
+    "name": "DS",
+    "models": []
+  },
+  {
+    "id": "electric-house",
+    "name": "Electric House",
+    "models": []
+  },
+  {
+    "id": "enjoy-the-world",
+    "name": "Enjoy the world",
+    "models": []
+  },
+  {
+    "id": "extreme",
+    "name": "Extreme",
+    "models": []
+  },
+  {
+    "id": "ferrari",
+    "name": "Ferrari",
+    "models": []
+  },
+  {
+    "id": "fiat",
+    "name": "Fiat",
+    "models": []
+  },
+  {
+    "id": "foday",
+    "name": "Foday",
+    "models": []
+  },
+  {
+    "id": "ford",
+    "name": "Ford",
+    "models": []
+  },
+  {
+    "id": "gac-haobo",
+    "name": "GAC Haobo",
+    "models": []
+  },
+  {
+    "id": "genesis",
+    "name": "Genesis",
+    "models": []
+  },
+  {
+    "id": "global-hawk",
+    "name": "Global Hawk",
+    "models": []
+  },
+  {
+    "id": "gmc",
+    "name": "GMC",
+    "models": []
+  },
+  {
+    "id": "golden-cup",
+    "name": "Golden cup",
+    "models": []
+  },
+  {
+    "id": "golden-dragon",
+    "name": "Golden dragon",
+    "models": []
+  },
+  {
+    "id": "guangtong-bus",
+    "name": "Guangtong Bus",
+    "models": []
+  },
+  {
+    "id": "haima",
+    "name": "HAIMA",
+    "models": []
+  },
+  {
+    "id": "hanteng",
+    "name": "Hanteng",
+    "models": []
+  },
+  {
+    "id": "hawtai",
+    "name": "Hawtai",
+    "models": []
+  },
+  {
+    "id": "honda",
+    "name": "Honda",
+    "models": []
+  },
+  {
+    "id": "hua-song",
+    "name": "Hua Song",
+    "models": []
+  },
+  {
+    "id": "huanghai",
+    "name": "Huanghai",
+    "models": []
+  },
+  {
+    "id": "hummer",
+    "name": "Hummer",
+    "models": []
+  },
+  {
+    "id": "hycan",
+    "name": "HYCAN",
+    "models": []
+  },
+  {
+    "id": "hyundai",
+    "name": "Hyundai",
+    "models": []
+  },
+  {
+    "id": "icar",
+    "name": "ICAR",
+    "models": []
+  },
+  {
+    "id": "infiniti",
+    "name": "Infiniti",
+    "models": []
+  },
+  {
+    "id": "inge-motors",
+    "name": "Inge Motors",
+    "models": []
+  },
+  {
+    "id": "insightful",
+    "name": "Insightful",
+    "models": []
+  },
+  {
+    "id": "isuzu",
+    "name": "Isuzu",
+    "models": []
+  },
+  {
+    "id": "iveco",
+    "name": "Iveco",
+    "models": []
+  },
+  {
+    "id": "jac-sihao",
+    "name": "JAC (Sihao)",
+    "models": []
+  },
+  {
+    "id": "jaguar",
+    "name": "Jaguar",
+    "models": []
+  },
+  {
+    "id": "jeep",
+    "name": "Jeep",
+    "models": []
+  },
+  {
+    "id": "jetta",
+    "name": "Jetta",
+    "models": []
+  },
+  {
+    "id": "jianghuai",
+    "name": "Jianghuai",
+    "models": []
+  },
+  {
+    "id": "jiangling",
+    "name": "Jiangling",
+    "models": []
+  },
+  {
+    "id": "jiangxi",
+    "name": "Jiangxi",
+    "models": []
+  },
+  {
+    "id": "jietu-shanhai",
+    "name": "Jietu Shanhai",
+    "models": []
+  },
+  {
+    "id": "joylong",
+    "name": "Joylong",
+    "models": []
+  },
+  {
+    "id": "kai-chen",
+    "name": "Kai Chen",
+    "models": []
+  },
+  {
+    "id": "kia",
+    "name": "Kia",
+    "models": []
+  },
+  {
+    "id": "lamborghini",
+    "name": "Lamborghini",
+    "models": []
+  },
+  {
+    "id": "land-rover",
+    "name": "Land Rover",
+    "models": []
+  },
+  {
+    "id": "leapmotor",
+    "name": "Leapmotor",
+    "models": []
+  },
+  {
+    "id": "ledao",
+    "name": "Ledao",
+    "models": []
+  },
+  {
+    "id": "letin",
+    "name": "LETIN",
+    "models": []
+  },
+  {
+    "id": "levc-yizhen-automobile",
+    "name": "LEVC Yizhen Automobile",
+    "models": []
+  },
+  {
+    "id": "lexus",
+    "name": "Lexus",
+    "models": []
+  },
+  {
+    "id": "lincoln",
+    "name": "Lincoln",
+    "models": []
+  },
+  {
+    "id": "lingbao",
+    "name": "Lingbao",
+    "models": []
+  },
+  {
+    "id": "linxys",
+    "name": "LINXYS",
+    "models": []
+  },
+  {
+    "id": "lotus-cars",
+    "name": "Lotus cars",
+    "models": []
+  },
+  {
+    "id": "lotus-sports-car",
+    "name": "Lotus sports car",
+    "models": []
+  },
+  {
+    "id": "lu-feng",
+    "name": "Lu Feng",
+    "models": []
+  },
+  {
+    "id": "luxeed",
+    "name": "Luxeed",
+    "models": []
+  },
+  {
+    "id": "lynk-co",
+    "name": "Lynk & Co",
+    "models": []
+  },
+  {
+    "id": "maple",
+    "name": "Maple",
+    "models": []
+  },
+  {
+    "id": "maserati",
+    "name": "Maserati",
+    "models": []
+  },
+  {
+    "id": "maybach",
+    "name": "Maybach",
+    "models": []
+  },
+  {
+    "id": "mazda",
+    "name": "Mazda",
+    "models": []
+  },
+  {
+    "id": "mclaren",
+    "name": "McLaren",
+    "models": []
+  },
+  {
+    "id": "mercedes-benz",
+    "name": "Mercedes-Benz",
+    "models": []
+  },
+  {
+    "id": "mini",
+    "name": "MINI",
+    "models": []
+  },
+  {
+    "id": "mitsubishi",
+    "name": "Mitsubishi",
+    "models": []
+  },
+  {
+    "id": "mitsuoka",
+    "name": "Mitsuoka",
+    "models": []
+  },
+  {
+    "id": "mustang-cars",
+    "name": "Mustang cars",
+    "models": []
+  },
+  {
+    "id": "nazhijie",
+    "name": "Nazhijie",
+    "models": []
+  },
+  {
+    "id": "neta",
+    "name": "NETA",
+    "models": []
+  },
+  {
+    "id": "new-geo",
+    "name": "New Geo",
+    "models": []
+  },
+  {
+    "id": "new-longma",
+    "name": "New Longma",
+    "models": []
+  },
+  {
+    "id": "nissan",
+    "name": "Nissan",
+    "models": []
+  },
+  {
+    "id": "opel",
+    "name": "Opel",
+    "models": []
+  },
+  {
+    "id": "peugeot",
+    "name": "Peugeot",
+    "models": []
+  },
+  {
+    "id": "porsche",
+    "name": "Porsche",
+    "models": []
+  },
+  {
+    "id": "promise",
+    "name": "Promise",
+    "models": []
+  },
+  {
+    "id": "punk-car",
+    "name": "Punk car",
+    "models": []
+  },
+  {
+    "id": "qiling",
+    "name": "Qiling",
+    "models": []
+  },
+  {
+    "id": "qoros",
+    "name": "Qoros",
+    "models": []
+  },
+  {
+    "id": "remote",
+    "name": "Remote",
+    "models": []
+  },
+  {
+    "id": "renault",
+    "name": "Renault",
+    "models": []
+  },
+  {
+    "id": "rich",
+    "name": "Rich",
+    "models": []
+  },
+  {
+    "id": "rolls-royce",
+    "name": "Rolls Royce",
+    "models": []
+  },
+  {
+    "id": "ruilan",
+    "name": "Ruilan",
+    "models": []
+  },
+  {
+    "id": "saab",
+    "name": "Saab",
+    "models": []
+  },
+  {
+    "id": "seat",
+    "name": "SEAT",
+    "models": []
+  },
+  {
+    "id": "skoda",
+    "name": "Skoda",
+    "models": []
+  },
+  {
+    "id": "skyrim",
+    "name": "Skyrim",
+    "models": []
+  },
+  {
+    "id": "skyworth-commercial-vehicle",
+    "name": "Skyworth Commercial Vehicle",
+    "models": []
+  },
+  {
+    "id": "smart",
+    "name": "Smart",
+    "models": []
+  },
+  {
+    "id": "soueast",
+    "name": "SOUEAST",
+    "models": []
+  },
+  {
+    "id": "srm-jinhaishi",
+    "name": "SRM Jinhaishi",
+    "models": []
+  },
+  {
+    "id": "ssangyong",
+    "name": "Ssangyong",
+    "models": []
+  },
+  {
+    "id": "subaru",
+    "name": "Subaru",
+    "models": []
+  },
+  {
+    "id": "suzuki",
+    "name": "Suzuki",
+    "models": []
+  },
+  {
+    "id": "swm",
+    "name": "SWM",
+    "models": []
+  },
+  {
+    "id": "tesla",
+    "name": "Tesla",
+    "models": []
+  },
+  {
+    "id": "toyota",
+    "name": "Toyota",
+    "models": []
+  },
+  {
+    "id": "traum",
+    "name": "Traum",
+    "models": []
+  },
+  {
+    "id": "vgv",
+    "name": "VGV",
+    "models": []
+  },
+  {
+    "id": "volkswagen",
+    "name": "Volkswagen",
+    "models": []
+  },
+  {
+    "id": "volvo",
+    "name": "Volvo",
+    "models": []
+  },
+  {
+    "id": "wey",
+    "name": "Wey",
+    "models": []
+  },
+  {
+    "id": "wowsen",
+    "name": "WOWSEN",
+    "models": []
+  },
+  {
+    "id": "xiaomi-car",
+    "name": "Xiaomi car",
+    "models": []
+  },
+  {
+    "id": "yema",
+    "name": "Yema",
+    "models": []
+  },
+  {
+    "id": "yu-sheng",
+    "name": "Yu Sheng",
+    "models": []
+  },
+  {
+    "id": "yuanhang",
+    "name": "Yuanhang",
+    "models": []
+  },
+  {
+    "id": "yudo",
+    "name": "Yudo",
+    "models": []
+  },
+  {
+    "id": "zhidou",
+    "name": "Zhidou",
+    "models": []
+  },
+  {
+    "id": "zhiji",
+    "name": "Zhiji",
+    "models": []
+  },
+  {
+    "id": "zx-auto",
+    "name": "ZX Auto",
+    "models": []
+  }
+]

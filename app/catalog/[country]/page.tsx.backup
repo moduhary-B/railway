@@ -1,0 +1,637 @@
+'use client';
+
+console.log('=== ФАЙЛ ЗАГРУЖЕН ===');
+console.log('=== НАЧАЛО ИМПОРТОВ ===');
+
+import { useState, useEffect } from 'react';
+import { useParams, useSearchParams, useRouter } from 'next/navigation';
+import { Grid, List, Filter, SortAsc, SortDesc } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import CarCard, { Car } from '@/components/car-card';
+import { CatalogFilters, FilterValues } from '@/components/catalog-filters';
+import { logger } from '@/lib/logger';
+
+// Моковые данные для демонстрации
+const mockCars: Car[] = [
+  {
+    id: '1',
+    name: 'Toyota Camry',
+    brand: 'Toyota',
+    model: 'Camry',
+    year: 2022,
+    price: 2500000,
+    mileage: 45000,
+    engineVolume: 2500,
+    fuelType: 'Бензин',
+    transmission: 'Автомат',
+    bodyType: 'Седан',
+    color: 'Белый',
+    location: 'Япония',
+    images: ['/images/cars/camry-1.jpg', '/images/cars/camry-2.jpg'],
+    rating: 4.5,
+    isHit: true,
+    creditFrom: 25000,
+    url: '/cars/1'
+  },
+  {
+    id: '2',
+    name: 'Honda CR-V',
+    brand: 'Honda',
+    model: 'CR-V',
+    year: 2021,
+    price: 3200000,
+    mileage: 32000,
+    engineVolume: 2000,
+    fuelType: 'Бензин',
+    transmission: 'Автомат',
+    bodyType: 'Кроссовер',
+    color: 'Серебристый',
+    location: 'Япония',
+    images: ['/images/cars/crv-1.jpg'],
+    rating: 4.8,
+    isNew: true,
+    creditFrom: 32000,
+    url: '/cars/2'
+  },
+  {
+    id: '3',
+    name: 'Nissan Qashqai',
+    brand: 'Nissan',
+    model: 'Qashqai',
+    year: 2023,
+    price: 2800000,
+    mileage: 15000,
+    engineVolume: 1600,
+    fuelType: 'Бензин',
+    transmission: 'Вариатор',
+    bodyType: 'Кроссовер',
+    color: 'Черный',
+    location: 'Япония',
+    images: ['/images/cars/qashqai-1.jpg'],
+    rating: 4.3,
+    creditFrom: 28000,
+    url: '/cars/3'
+  }
+];
+
+const brands = [
+  { id: '0', name: 'Любая' },
+  { id: 'toyota', name: 'Toyota' },
+  { id: 'honda', name: 'Honda' },
+  { id: 'nissan', name: 'Nissan' },
+  { id: 'mazda', name: 'Mazda' },
+  { id: 'subaru', name: 'Subaru' },
+  { id: 'mitsubishi', name: 'Mitsubishi' },
+  { id: 'suzuki', name: 'Suzuki' },
+  { id: 'lexus', name: 'Lexus' },
+  { id: 'infiniti', name: 'Infiniti' },
+  { id: 'acura', name: 'Acura' }
+];
+
+const fuelTypes = [
+  { id: '0', name: 'Любое' },
+  { id: 'gasoline', name: 'Бензин' },
+  { id: 'diesel', name: 'Дизель' },
+  { id: 'hybrid', name: 'Гибрид' },
+  { id: 'electric', name: 'Электро' },
+  { id: 'lpg', name: 'LPG' }
+];
+
+const transmissions = [
+  { id: '0', name: 'Любая' },
+  { id: 'AT', name: 'Автомат' },
+  { id: 'MT', name: 'Механика' },
+  { id: 'CVT', name: 'Вариатор' },
+  { id: 'DCT', name: 'Робот' }
+];
+
+const bodyTypes = [
+  { id: '0', name: 'Любой' },
+  { id: 'sedan', name: 'Седан' },
+  { id: 'suv', name: 'Кроссовер' },
+  { id: 'hatchback', name: 'Хэтчбек' },
+  { id: 'wagon', name: 'Универсал' },
+  { id: 'minivan', name: 'Минивэн' },
+  { id: 'pickup', name: 'Пикап' }
+];
+
+const locations = [
+  { id: '0', name: 'Любое' },
+  { id: 'japan', name: 'Япония' },
+  { id: 'korea', name: 'Корея' },
+  { id: 'china', name: 'Китай' }
+];
+
+const models = [
+  { id: '0', name: 'Любая' },
+  { id: 'camry', name: 'Camry' },
+  { id: 'corolla', name: 'Corolla' },
+  { id: 'rav4', name: 'RAV4' },
+  { id: 'cr-v', name: 'CR-V' },
+  { id: 'qashqai', name: 'Qashqai' }
+];
+
+const countryNames = {
+  japan: 'Японии',
+  korea: 'Кореи',
+  china: 'Китая'
+};
+
+const countryColors = {
+  japan: 'text-red-500',
+  korea: 'text-blue-500',
+  china: 'text-red-600'
+};
+
+export default function CountryCatalogPage() {
+  console.log('=== КОМПОНЕНТ ЗАГРУЖЕН ===');
+  console.log('=== ФУНКЦИЯ КОМПОНЕНТА ВЫЗВАНА ===');
+  
+  const params = useParams();
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const country = params.country as string;
+  
+  console.log('Страна из параметров:', country);
+  console.log('Params object:', params);
+  console.log('Search params:', searchParams);
+  console.log('Router:', router);
+  
+  const [cars, setCars] = useState<Car[]>([]);
+  const [filteredCars, setFilteredCars] = useState<Car[]>([]);
+  const [filters, setFilters] = useState<FilterValues>({});
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
+  const [sortBy, setSortBy] = useState<string>('price_asc');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [loading, setLoading] = useState(true);
+
+  // Принудительный вызов loadCars при загрузке компонента
+  console.log('=== ПРИНУДИТЕЛЬНЫЙ ВЫЗОВ LOADCARS ===');
+  console.log('Country в момент вызова:', country);
+  
+  // Логируем загрузку страницы
+  useEffect(() => {
+    console.log('=== USE EFFECT ВЫЗВАН ===');
+    console.log('Страна:', country);
+    console.log('URL:', `/catalog/${country}`);
+    
+    if (country) {
+      console.log('=== ВЫЗЫВАЕМ LOADCARS ===');
+      loadCars();
+    } else {
+      console.log('=== СТРАНА НЕ ОПРЕДЕЛЕНА ===');
+    }
+  }, [country]);
+
+  // Применение фильтров
+  useEffect(() => {
+    let filtered = [...cars];
+
+    // Фильтрация по цене
+    if (filters.priceMin !== undefined) {
+      filtered = filtered.filter(car => car.price >= filters.priceMin!);
+    }
+    if (filters.priceMax !== undefined) {
+      filtered = filtered.filter(car => car.price <= filters.priceMax!);
+    }
+
+    // Фильтрация по году
+    if (filters.yearMin !== undefined) {
+      filtered = filtered.filter(car => car.year >= filters.yearMin!);
+    }
+    if (filters.yearMax !== undefined) {
+      filtered = filtered.filter(car => car.year <= filters.yearMax!);
+    }
+
+    // Фильтрация по пробегу
+    if (filters.mileageMin !== undefined) {
+      filtered = filtered.filter(car => car.mileage >= filters.mileageMin!);
+    }
+    if (filters.mileageMax !== undefined) {
+      filtered = filtered.filter(car => car.mileage <= filters.mileageMax!);
+    }
+
+    // Фильтрация по марке
+    if (filters.brand && filters.brand !== '0') {
+      filtered = filtered.filter(car => car.brand.toLowerCase() === filters.brand!.toLowerCase());
+    }
+
+    // Фильтрация по типу топлива
+    if (filters.fuelType && filters.fuelType !== '0') {
+      filtered = filtered.filter(car => car.fuelType.toLowerCase() === filters.fuelType!.toLowerCase());
+    }
+
+    // Фильтрация по коробке передач
+    if (filters.transmission && filters.transmission !== '0') {
+      filtered = filtered.filter(car => car.transmission.toLowerCase() === filters.transmission!.toLowerCase());
+    }
+
+    // Фильтрация по типу кузова
+    if (filters.bodyType && filters.bodyType !== '0') {
+      filtered = filtered.filter(car => car.bodyType.toLowerCase() === filters.bodyType!.toLowerCase());
+    }
+
+    // Сортировка
+    switch (sortBy) {
+      case 'price_asc':
+        filtered.sort((a, b) => a.price - b.price);
+        break;
+      case 'price_desc':
+        filtered.sort((a, b) => b.price - a.price);
+        break;
+      case 'year_asc':
+        filtered.sort((a, b) => a.year - b.year);
+        break;
+      case 'year_desc':
+        filtered.sort((a, b) => b.year - a.year);
+        break;
+      case 'mileage_asc':
+        filtered.sort((a, b) => a.mileage - b.mileage);
+        break;
+      case 'mileage_desc':
+        filtered.sort((a, b) => b.mileage - a.mileage);
+        break;
+    }
+
+    setFilteredCars(filtered);
+    setCurrentPage(1);
+  }, [cars, filters, sortBy]);
+
+  const handleFiltersChange = (newFilters: FilterValues) => {
+    console.log('=== ИЗМЕНЕНИЕ ФИЛЬТРОВ ===');
+    console.log('Старые фильтры:', filters);
+    console.log('Новые фильтры:', newFilters);
+    console.log('Страна:', country);
+    setFilters(newFilters);
+  };
+
+  const handleSortChange = (value: string) => {
+    console.log('=== ИЗМЕНЕНИЕ СОРТИРОВКИ ===');
+    console.log('Старая сортировка:', sortBy);
+    console.log('Новая сортировка:', value);
+    console.log('Страна:', country);
+    setSortBy(value);
+  };
+
+  const handleViewModeChange = (mode: 'grid' | 'list') => {
+    console.log('=== ИЗМЕНЕНИЕ РЕЖИМА ПРОСМОТРА ===');
+    console.log('Старый режим:', viewMode);
+    console.log('Новый режим:', mode);
+    setViewMode(mode);
+  };
+
+  const loadCars = async () => {
+    console.log('=== ФУНКЦИЯ LOADCARS ВЫЗВАНА ===');
+    console.log('=== НАЧАЛО ЗАГРУЗКИ МАШИН ===');
+    setLoading(true);
+    const startTime = Date.now();
+    
+    try {
+      console.log('=== TRY БЛОК НАЧАЛСЯ ===');
+      // Подготовка параметров для API
+      const apiParams = new URLSearchParams();
+      
+      if (filters.priceMin) apiParams.append('priceMin', filters.priceMin.toString());
+      if (filters.priceMax) apiParams.append('priceMax', filters.priceMax.toString());
+      if (filters.yearMin) apiParams.append('yearMin', filters.yearMin.toString());
+      if (filters.yearMax) apiParams.append('yearMax', filters.yearMax.toString());
+      if (filters.mileageMin) apiParams.append('mileageMin', filters.mileageMin.toString());
+      if (filters.mileageMax) apiParams.append('mileageMax', filters.mileageMax.toString());
+      if (filters.engineVolumeMin) apiParams.append('engineVolumeMin', filters.engineVolumeMin.toString());
+      if (filters.engineVolumeMax) apiParams.append('engineVolumeMax', filters.engineVolumeMax.toString());
+      if (filters.brand) apiParams.append('brand', filters.brand);
+      if (filters.model) apiParams.append('model', filters.model);
+      if (filters.fuelType) apiParams.append('fuelType', filters.fuelType);
+      if (filters.transmission) apiParams.append('transmission', filters.transmission);
+      if (filters.bodyType) apiParams.append('bodyType', filters.bodyType);
+      if (filters.color) apiParams.append('color', filters.color);
+      if (filters.location) apiParams.append('location', filters.location);
+      
+      apiParams.append('page', currentPage.toString());
+      apiParams.append('sort', sortBy);
+
+      const apiUrl = `/api/cars/${country}?${apiParams}`;
+      
+      // Логируем запрос
+      console.log('=== API ЗАПРОС ===');
+      console.log('URL:', apiUrl);
+      console.log('Страна:', country);
+      console.log('Параметры:', {
+        country,
+        filters,
+        page: currentPage,
+        sort: sortBy
+      });
+
+      console.log('=== ПЕРЕД FETCH ===');
+      console.log('Fetch URL:', apiUrl);
+      console.log('Fetch options:', { signal: 'AbortSignal.timeout(90000)' });
+      
+      const response = await fetch(apiUrl, {
+        signal: AbortSignal.timeout(90000), // 90 секунд таймаут
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
+      });
+      console.log('=== ПОСЛЕ FETCH ===');
+      console.log('Response status:', response.status);
+      console.log('Response ok:', response.ok);
+      console.log('Response headers:', Object.fromEntries(response.headers.entries()));
+      
+      const endTime = Date.now();
+      const duration = endTime - startTime;
+      
+      console.log('=== API ОТВЕТ ===');
+      console.log('Статус:', response.status);
+      console.log('Время выполнения:', `${duration}ms`);
+      
+      if (!response.ok) {
+        const errorText = await response.text();
+        console.log('ОШИБКА API:', errorText);
+        console.log('=== ОШИБКА API - НЕ ПЕРЕХОДИМ К МОК ДАННЫМ ===');
+        setCars([]);
+        return;
+      }
+      
+      const responseText = await response.text();
+      console.log('=== СЫРОЙ ОТВЕТ ===');
+      console.log('Response text (first 1000 chars):', responseText.substring(0, 1000));
+      console.log('Response text length:', responseText.length);
+      
+      let data;
+      try {
+        data = JSON.parse(responseText);
+        console.log('=== ПАРСИНГ JSON УСПЕШЕН ===');
+        console.log('Данные ответа:', data);
+      } catch (parseError) {
+        console.log('=== ОШИБКА ПАРСИНГА JSON ===');
+        console.log('Parse error:', parseError);
+        console.log('Response text:', responseText);
+        setCars([]);
+        return;
+      }
+      
+      if (data.success) {
+        console.log('=== ПРЕОБРАЗОВАНИЕ ДАННЫХ ===');
+        console.log('Количество машин:', data.data.length);
+        console.log('Страна:', country);
+        
+        // Преобразуем данные из парсера в формат компонента
+        const transformedCars = data.data.map((car: any, index: number) => {
+          const transformed = {
+            id: car.id || car.detail_url || Math.random().toString(),
+            name: car.name || `${car.brand || ''} ${car.model || ''}`.trim(),
+            brand: car.brand || '',
+            model: car.model || '',
+            year: car.year || 2024,
+            price: car.price || 0,
+            mileage: car.mileage || 0,
+            engineVolume: car.engine_volume || car.engineVolume || 0,
+            fuelType: car.engine_type || car.fuelType || 'Бензин',
+            transmission: car.transmission || 'Автомат',
+            bodyType: car.body || car.bodyType || 'Седан',
+            color: car.color || 'Не указан',
+            location: car.location || country,
+            images: Array.isArray(car.images) ? car.images : [car.images || '/placeholder-car.jpg'],
+            rating: car.rating || undefined,
+            isHit: car.isHit || false,
+            isNew: car.isNew || false,
+            creditFrom: car.creditFrom || Math.floor((car.price || 0) / 60),
+            url: `/cars/${country}/${car.id || car.detail_url || Math.random().toString()}`
+          };
+          
+          // Логируем каждую загруженную машину
+          console.log(`=== МАШИНА ${index + 1} ===`);
+          console.log('ID:', transformed.id);
+          console.log('Название:', transformed.name);
+          console.log('Марка:', transformed.brand);
+          console.log('Модель:', transformed.model);
+          console.log('Цена:', transformed.price);
+          console.log('Год:', transformed.year);
+          console.log('Пробег:', transformed.mileage);
+          console.log('Объем двигателя:', transformed.engineVolume);
+          console.log('Тип топлива:', transformed.fuelType);
+          console.log('Коробка передач:', transformed.transmission);
+          console.log('Тип кузова:', transformed.bodyType);
+          console.log('Цвет:', transformed.color);
+          console.log('Расположение:', transformed.location);
+          console.log('Изображения:', transformed.images);
+          console.log('Рейтинг:', transformed.rating);
+          console.log('Хит:', transformed.isHit);
+          console.log('Новая:', transformed.isNew);
+          console.log('Кредит от:', transformed.creditFrom);
+          console.log('URL:', transformed.url);
+          console.log('Полный объект машины:', transformed);
+          return transformed;
+        });
+        
+        console.log('=== УСПЕШНАЯ ЗАГРУЗКА ===');
+        console.log('Количество машин:', transformedCars.length);
+        console.log('Страна:', country);
+        console.log('Время выполнения:', `${duration}ms`);
+        
+        setCars(transformedCars);
+      } else {
+        console.log('=== ОШИБКА API ===');
+        console.log('Ошибка:', data.error);
+        console.log('=== ОШИБКА API - НЕ ПЕРЕХОДИМ К МОК ДАННЫМ ===');
+        setCars([]);
+      }
+    } catch (error) {
+      console.log('=== CATCH БЛОК ВЫЗВАН ===');
+      const endTime = Date.now();
+      const duration = endTime - startTime;
+      
+      console.log('=== КРИТИЧЕСКАЯ ОШИБКА ===');
+      console.log('Ошибка:', error);
+      console.log('Время выполнения:', `${duration}ms`);
+      console.log('=== КРИТИЧЕСКАЯ ОШИБКА - НЕ ПЕРЕХОДИМ К МОК ДАННЫМ ===');
+      setCars([]);
+    } finally {
+      console.log('=== FINALLY БЛОК ВЫЗВАН ===');
+      setLoading(false);
+      console.log('=== КОНЕЦ ЗАГРУЗКИ МАШИН ===');
+    }
+  };
+
+  useEffect(() => {
+    loadCars();
+  }, [country]);
+
+  if (!country || !countryNames[country as keyof typeof countryNames]) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-white mb-4">Страна не найдена</h1>
+          <p className="text-gray-400">Выбранная страна не существует в каталоге.</p>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
+      <script dangerouslySetInnerHTML={{
+        __html: `
+          console.log('=== КОМПОНЕНТ РЕНДЕРИТСЯ ===');
+          console.log('Страна:', '${country}');
+          
+          // Попытка получить данные через fetch
+          fetch('/api/cars/${country}?page=1&sort=price_asc')
+            .then(response => response.json())
+            .then(data => {
+              console.log('=== API ОТВЕТ ===');
+              console.log('Полные данные:', JSON.stringify(data, null, 2));
+              console.log('Количество машин:', data.data ? data.data.length : 0);
+              if (data.data && data.data.length > 0) {
+                console.log('Первая машина:', JSON.stringify(data.data[0], null, 2));
+              }
+            })
+            .catch(error => {
+              console.log('=== ОШИБКА API ===');
+              console.log('Ошибка:', error);
+            });
+        `
+      }} />
+      <div className="container mx-auto px-4 py-8">
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+            Автомобили из {countryNames[country as keyof typeof countryNames]}
+          </h1>
+          <p className="text-white/70">
+            Найдено {filteredCars.length} автомобилей
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+          {/* Filters Sidebar */}
+          <div className="lg:col-span-1">
+            <CatalogFilters
+              filters={filters}
+              onFiltersChange={handleFiltersChange}
+              brands={brands}
+              models={models}
+              fuelTypes={fuelTypes}
+              transmissions={transmissions}
+              bodyTypes={bodyTypes}
+              locations={locations}
+            />
+          </div>
+
+          {/* Cars Grid */}
+          <div className="lg:col-span-3">
+            {/* Controls */}
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
+              <div className="flex items-center gap-2">
+                <Button
+                  variant={viewMode === 'grid' ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => handleViewModeChange('grid')}
+                  className={viewMode === 'grid' 
+                    ? 'bg-gradient-to-r from-[#c9a86e] to-[#d4b876] text-[#0e1720] font-semibold' 
+                    : 'bg-[#1a2332]/80 border border-[#c9a86e]/20 text-white hover:bg-[#c9a86e]/10'
+                  }
+                >
+                  <Grid className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant={viewMode === 'list' ? 'default' : 'outline'}
+                  size="sm"
+                  onClick={() => handleViewModeChange('list')}
+                  className={viewMode === 'list' 
+                    ? 'bg-gradient-to-r from-[#c9a86e] to-[#d4b876] text-[#0e1720] font-semibold' 
+                    : 'bg-[#1a2332]/80 border border-[#c9a86e]/20 text-white hover:bg-[#c9a86e]/10'
+                  }
+                >
+                  <List className="w-4 h-4" />
+                </Button>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span className="text-white/70 text-sm">Сортировка:</span>
+                <Select value={sortBy} onValueChange={handleSortChange}>
+                  <SelectTrigger className="w-48 bg-[#0e1720] border-[#c9a86e]/30 text-white focus:border-[#c9a86e]">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent className="bg-[#0e1720] border-[#c9a86e]/30">
+                    <SelectItem value="price_asc" className="text-white hover:bg-[#c9a86e]/10">
+                      Цена (по возрастанию)
+                    </SelectItem>
+                    <SelectItem value="price_desc" className="text-white hover:bg-[#c9a86e]/10">
+                      Цена (по убыванию)
+                    </SelectItem>
+                    <SelectItem value="year_desc" className="text-white hover:bg-[#c9a86e]/10">
+                      Год (новые первыми)
+                    </SelectItem>
+                    <SelectItem value="year_asc" className="text-white hover:bg-[#c9a86e]/10">
+                      Год (старые первыми)
+                    </SelectItem>
+                    <SelectItem value="mileage_asc" className="text-white hover:bg-[#c9a86e]/10">
+                      Пробег (по возрастанию)
+                    </SelectItem>
+                    <SelectItem value="mileage_desc" className="text-white hover:bg-[#c9a86e]/10">
+                      Пробег (по убыванию)
+                    </SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </div>
+
+            {/* Cars Grid/List */}
+            {loading ? (
+              <div className="flex items-center justify-center py-12">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-[#c9a86e]"></div>
+              </div>
+            ) : filteredCars.length === 0 ? (
+              <div className="text-center py-12">
+                <h3 className="text-xl font-semibold text-white mb-2">Автомобили не найдены</h3>
+                <p className="text-white/60">Попробуйте изменить параметры фильтров</p>
+              </div>
+            ) : (
+              <div className={
+                viewMode === 'grid' 
+                  ? 'grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6'
+                  : 'space-y-4'
+              }>
+                {filteredCars.map((car) => (
+                  <CarCard
+                    key={car.id}
+                    car={car}
+                    className={viewMode === 'list' ? 'flex-row' : ''}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/* Pagination */}
+            {filteredCars.length > 0 && (
+              <div className="flex justify-center mt-8">
+                <div className="flex items-center gap-2">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    disabled={currentPage === 1}
+                    className="border-[#c9a86e]/30 text-white/70 hover:bg-[#c9a86e]/10 disabled:opacity-50"
+                  >
+                    Назад
+                  </Button>
+                  <span className="text-white/70 px-4">Страница {currentPage}</span>
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="border-[#c9a86e]/30 text-white/70 hover:bg-[#c9a86e]/10"
+                  >
+                    Вперед
+                  </Button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+} 

@@ -1,0 +1,841 @@
+Лог проверки корейских моделей
+==================================================
+
+Бренд: ASTON MARTIN (aston-martin)
+  - Нет моделей
+Бренд: AUDI (audi)
+  ✅ A3 (a3) - НАЙДЕНА
+  ✅ A4 (a4) - НАЙДЕНА
+  ❌ A4 B9 (a4-b9) - НЕ НАЙДЕНА
+  ❌ A5 (a5) - НЕ НАЙДЕНА
+  ❌ A5 F5 (a5-f5) - НЕ НАЙДЕНА
+  ✅ A6 (a6) - НАЙДЕНА
+  ❌ A6 C8 (a6-c8) - НЕ НАЙДЕНА
+  ✅ A7 (a7) - НАЙДЕНА
+  ✅ A8 (a8) - НАЙДЕНА
+  ❌ A8 D5 (a8-d5) - НЕ НАЙДЕНА
+  ✅ E-TRON (e-tron) - НАЙДЕНА
+  ✅ Q3 (q3) - НАЙДЕНА
+  ✅ Q5 (q5) - НАЙДЕНА
+  ❌ Q7 (q7) - НЕ НАЙДЕНА
+  ❌ Q7 4M (q7-4m) - НЕ НАЙДЕНА
+  ❌ RSQ8 (rsq8) - НЕ НАЙДЕНА
+  ❌ S4 B9 (s4-b9) - НЕ НАЙДЕНА
+  ❌ S6 (s6) - НЕ НАЙДЕНА
+  ❌ S6 C8 (s6-c8) - НЕ НАЙДЕНА
+  ❌ S7 (s7) - НЕ НАЙДЕНА
+  ❌ S8 (s8) - НЕ НАЙДЕНА
+  ❌ S8 D5 (s8-d5) - НЕ НАЙДЕНА
+  ✅ SQ5 (sq5) - НАЙДЕНА
+  ❌ SQ5 FY (sq5-fy) - НЕ НАЙДЕНА
+  ❌ SQ8 (sq8) - НЕ НАЙДЕНА
+  ❌ TT (tt) - НЕ НАЙДЕНА
+  ❌ TTS (tts) - НЕ НАЙДЕНА
+  Итого валидных моделей: 9/27
+
+Бренд: BENTLEY (bentley)
+  ✅ Bentayga (bentayga) - НАЙДЕНА
+  ✅ Mulsanne (mulsanne) - НАЙДЕНА
+  ❌ Continental (continental) - НЕ НАЙДЕНА
+  Итого валидных моделей: 2/3
+
+Бренд: BMW (bmw)
+  ❌ 1-SERIES E82 (1-series-e82) - НЕ НАЙДЕНА
+  ❌ 1-SERIES F20 (1-series-f20) - НЕ НАЙДЕНА
+  ❌ 1-SERIES F40 (1-series-f40) - НЕ НАЙДЕНА
+  ❌ 2-SERIES ACTIVE TOURER F45 (2-series-active-tourer-f45) - НЕ НАЙДЕНА
+  ❌ 2-SERIES ACTIVE TOURER U06 (2-series-active-tourer-u06) - НЕ НАЙДЕНА
+  ❌ 2-SERIES F22 (2-series-f22) - НЕ НАЙДЕНА
+  ❌ 2-SERIES G42 (2-series-g42) - НЕ НАЙДЕНА
+  ❌ 2-SERIES GRAN COUPE F44 (2-series-gran-coupe-f44) - НЕ НАЙДЕНА
+  ❌ 3-SERIES E90 (3-series-e90) - НЕ НАЙДЕНА
+  ❌ 3-SERIES F30 (3-series-f30) - НЕ НАЙДЕНА
+  ❌ 3-SERIES G20 (3-series-g20) - НЕ НАЙДЕНА
+  ❌ 3-SERIES GT F34 (3-series-gt-f34) - НЕ НАЙДЕНА
+  ❌ 4-SERIES F32 (4-series-f32) - НЕ НАЙДЕНА
+  ❌ 4-SERIES G22 (4-series-g22) - НЕ НАЙДЕНА
+  ❌ 5-SERIES E60 (5-series-e60) - НЕ НАЙДЕНА
+  ❌ 5-SERIES F10 (5-series-f10) - НЕ НАЙДЕНА
+  ❌ 5-SERIES G30 (5-series-g30) - НЕ НАЙДЕНА
+  ❌ 5-SERIES GT F07 (5-series-gt-f07) - НЕ НАЙДЕНА
+  ❌ 6-SERIES F12 (6-series-f12) - НЕ НАЙДЕНА
+  ❌ 6-SERIES GT G32 (6-series-gt-g32) - НЕ НАЙДЕНА
+  ❌ 7-SERIES F01 (7-series-f01) - НЕ НАЙДЕНА
+  ❌ 7-SERIES G11 (7-series-g11) - НЕ НАЙДЕНА
+  ❌ 8-SERIES G15 (8-series-g15) - НЕ НАЙДЕНА
+  ✅ I3 (i3) - НАЙДЕНА
+  ✅ IX (ix) - НАЙДЕНА
+  ❌ M2 F87 (m2-f87) - НЕ НАЙДЕНА
+  ❌ M3 E90 (m3-e90) - НЕ НАЙДЕНА
+  ❌ M3 F80 (m3-f80) - НЕ НАЙДЕНА
+  ❌ M4 F82 (m4-f82) - НЕ НАЙДЕНА
+  ❌ X1 E84 (x1-e84) - НЕ НАЙДЕНА
+  ❌ X2 F39 F39 (x2-f39-f39) - НЕ НАЙДЕНА
+  ❌ X3 E83 (x3-e83) - НЕ НАЙДЕНА
+  ❌ X3 F25 (x3-f25) - НЕ НАЙДЕНА
+  ❌ X3 G01 (x3-g01) - НЕ НАЙДЕНА
+  ❌ X4 F26 (x4-f26) - НЕ НАЙДЕНА
+  ❌ X5 E70 (x5-e70) - НЕ НАЙДЕНА
+  ❌ X5 F15 (x5-f15) - НЕ НАЙДЕНА
+  ❌ X5 G05 (x5-g05) - НЕ НАЙДЕНА
+  ❌ X6 E71 (x6-e71) - НЕ НАЙДЕНА
+  ❌ X6 F16 (x6-f16) - НЕ НАЙДЕНА
+  ❌ X6 G06 (x6-g06) - НЕ НАЙДЕНА
+  ❌ X7 G07 (x7-g07) - НЕ НАЙДЕНА
+  ❌ Z4 E89 (z4-e89) - НЕ НАЙДЕНА
+  ❌ Z4 G29 (z4-g29) - НЕ НАЙДЕНА
+  Итого валидных моделей: 2/44
+
+Бренд: CADILLAC (cadillac)
+  ✅ Cts (cts) - НАЙДЕНА
+  ✅ Escalade (escalade) - НАЙДЕНА
+  ✅ Ct5 (ct5) - НАЙДЕНА
+  ✅ Xt5 (xt5) - НАЙДЕНА
+  ✅ Ats (ats) - НАЙДЕНА
+  Итого валидных моделей: 5/5
+
+Бренд: CHEVROLET (chevrolet)
+  ✅ Silverado (silverado) - НАЙДЕНА
+  ✅ Corvette (corvette) - НАЙДЕНА
+  ✅ Surburban (surburban) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: CHRYSLER (chrysler)
+  ❌ 300 (300) - НЕ НАЙДЕНА
+  ❌ Ypsilon (ypsilon) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: CITROEN (citroen)
+  ❌ Berlingo (berlingo) - НЕ НАЙДЕНА
+  ❌ Ds5 (ds5) - НЕ НАЙДЕНА
+  ❌ C3 (c3) - НЕ НАЙДЕНА
+  ❌ C6 (c6) - НЕ НАЙДЕНА
+  ❌ Ds7 (ds7) - НЕ НАЙДЕНА
+  ❌ C4 (c4) - НЕ НАЙДЕНА
+  ❌ Ds3 (ds3) - НЕ НАЙДЕНА
+  ❌ C5 (c5) - НЕ НАЙДЕНА
+  ❌ Ds4 (ds4) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/9
+
+Бренд: DAEWOO (daewoo)
+  ❌ ALPHEON (alpheon) - НЕ НАЙДЕНА
+  ❌ AMAZING NEW CRUISE 5 (amazing-new-cruise-5) - НЕ НАЙДЕНА
+  ❌ AVEO HATCHBACK (aveo-hatchback) - НЕ НАЙДЕНА
+  ❌ AVEO SEDAN (aveo-sedan) - НЕ НАЙДЕНА
+  ✅ BOLT (bolt) - НАЙДЕНА
+  ✅ CAMARO (camaro) - НАЙДЕНА
+  ✅ CAPTIVA (captiva) - НАЙДЕНА
+  ✅ COLORADO (colorado) - НАЙДЕНА
+  ✅ CRUZE (cruze) - НАЙДЕНА
+  ❌ CRUZE 5 (cruze-5) - НЕ НАЙДЕНА
+  ❌ CRUZE AMAZING NEW (cruze-amazing-new) - НЕ НАЙДЕНА
+  ✅ DAMAS (damas) - НАЙДЕНА
+  ❌ DAMAS II (damas-ii) - НЕ НАЙДЕНА
+  ✅ EQUINOX (equinox) - НАЙДЕНА
+  ❌ EQUINOX THE NEXT (equinox-the-next) - НЕ НАЙДЕНА
+  ❌ G2X (g2x) - НЕ НАЙДЕНА
+  ❌ GENTRA (gentra) - НЕ НАЙДЕНА
+  ❌ GENTRA X (gentra-x) - НЕ НАЙДЕНА
+  ✅ IMPALA (impala) - НАЙДЕНА
+  ✅ LABO (labo) - НАЙДЕНА
+  ❌ LACETTI PREMIER (lacetti-premier) - НЕ НАЙДЕНА
+  ❌ LANOS II (lanos-ii) - НЕ НАЙДЕНА
+  ❌ MAGNUS (magnus) - НЕ НАЙДЕНА
+  ✅ MALIBU (malibu) - НАЙДЕНА
+  ❌ MATIZ (matiz) - НЕ НАЙДЕНА
+  ❌ MATIZ CLASSIC (matiz-classic) - НЕ НАЙДЕНА
+  ❌ MATIZ CREATIVE (matiz-creative) - НЕ НАЙДЕНА
+  ✅ ORLANDO (orlando) - НАЙДЕНА
+  ❌ PRINCE (prince) - НЕ НАЙДЕНА
+  ✅ SPARK (spark) - НАЙДЕНА
+  ❌ SPARK THE NEXT (spark-the-next) - НЕ НАЙДЕНА
+  ✅ TAHOE (tahoe) - НАЙДЕНА
+  ❌ TICO (tico) - НЕ НАЙДЕНА
+  ❌ TOSCA (tosca) - НЕ НАЙДЕНА
+  ❌ TOSCA PREMIUM 6 (tosca-premium-6) - НЕ НАЙДЕНА
+  ✅ TRAILBLAZER (trailblazer) - НАЙДЕНА
+  ✅ TRAVERSE (traverse) - НАЙДЕНА
+  ✅ TRAX (trax) - НАЙДЕНА
+  ❌ VERITAS (veritas) - НЕ НАЙДЕНА
+  ✅ VOLT (volt) - НАЙДЕНА
+  ❌ VOLT EUV (volt-euv) - НЕ НАЙДЕНА
+  ❌ WINSTORM (winstorm) - НЕ НАЙДЕНА
+  ❌ WINSTORM MAX (winstorm-max) - НЕ НАЙДЕНА
+  Итого валидных моделей: 17/43
+
+Бренд: DAIHATSU (daihatsu)
+  ❌ Altis (altis) - НЕ НАЙДЕНА
+  ❌ Bego (bego) - НЕ НАЙДЕНА
+  ❌ Boon (boon) - НЕ НАЙДЕНА
+  ❌ Cast (cast) - НЕ НАЙДЕНА
+  ❌ Coo (coo) - НЕ НАЙДЕНА
+  ❌ Copen (copen) - НЕ НАЙДЕНА
+  ❌ Esse (esse) - НЕ НАЙДЕНА
+  ❌ Mebius (mebius) - НЕ НАЙДЕНА
+  ❌ Mira (mira) - НЕ НАЙДЕНА
+  ❌ Move (move) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Rocky (rocky) - НЕ НАЙДЕНА
+  ❌ Sonica (sonica) - НЕ НАЙДЕНА
+  ❌ Taft (taft) - НЕ НАЙДЕНА
+  ❌ Tanto (tanto) - НЕ НАЙДЕНА
+  ❌ Thor (thor) - НЕ НАЙДЕНА
+  ❌ Wake (wake) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/17
+
+Бренд: DFSK (dfsk)
+  ✅ C35 (c35) - НАЙДЕНА
+  Итого валидных моделей: 1/1
+
+Бренд: DODGE (dodge)
+  ✅ Challenger (challenger) - НАЙДЕНА
+  ❌ Charger (charger) - НЕ НАЙДЕНА
+  ❌ Magnum (magnum) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  Итого валидных моделей: 1/4
+
+Бренд: FERRARI (ferrari)
+  ✅ Portofino (portofino) - НАЙДЕНА
+  ✅ Roma (roma) - НАЙДЕНА
+  ❌ 488 (488) - НЕ НАЙДЕНА
+  Итого валидных моделей: 2/3
+
+Бренд: FIAT (fiat)
+  ✅ 500x (500x) - НАЙДЕНА
+  ✅ 500 (500) - НАЙДЕНА
+  ❌ Punto (punto) - НЕ НАЙДЕНА
+  ❌ 500c (500c) - НЕ НАЙДЕНА
+  ❌ Doblo (doblo) - НЕ НАЙДЕНА
+  ❌ 500e (500e) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ 500s (500s) - НЕ НАЙДЕНА
+  ❌ Panda (panda) - НЕ НАЙДЕНА
+  Итого валидных моделей: 2/9
+
+Бренд: FORD (ford)
+  ✅ Mustang (mustang) - НАЙДЕНА
+  ✅ Explorer (explorer) - НАЙДЕНА
+  ✅ F150 (f150) - НАЙДЕНА
+  ✅ Bronco (bronco) - НАЙДЕНА
+  ✅ Ranger (ranger) - НАЙДЕНА
+  ✅ Mondeo (mondeo) - НАЙДЕНА
+  ❌ Ecosport (ecosport) - НЕ НАЙДЕНА
+  ✅ Focus (focus) - НАЙДЕНА
+  ❌ Escape (escape) - НЕ НАЙДЕНА
+  ✅ Kuga (kuga) - НАЙДЕНА
+  ❌ Fiesta (fiesta) - НЕ НАЙДЕНА
+  Итого валидных моделей: 8/11
+
+Бренд: GENESIS (genesis)
+  ✅ G70 (g70) - НАЙДЕНА
+  ✅ G90 (g90) - НАЙДЕНА
+  ✅ Gv70 (gv70) - НАЙДЕНА
+  ✅ Gv80 (gv80) - НАЙДЕНА
+  ✅ Eq900 (eq900) - НАЙДЕНА
+  ✅ G80 (g80) - НАЙДЕНА
+  Итого валидных моделей: 6/6
+
+Бренд: GMC (gmc)
+  ✅ Sierra (sierra) - НАЙДЕНА
+  Итого валидных моделей: 1/1
+
+Бренд: HONDA (honda)
+  ✅ Accord (accord) - НАЙДЕНА
+  ✅ Pilot (pilot) - НАЙДЕНА
+  ✅ Odyssey (odyssey) - НАЙДЕНА
+  ✅ S660 (s660) - НАЙДЕНА
+  ✅ Cr V (cr-v) - НАЙДЕНА
+  ❌ Airwave (airwave) - НЕ НАЙДЕНА
+  ❌ Civic (civic) - НЕ НАЙДЕНА
+  ❌ Cr Z (cr-z) - НЕ НАЙДЕНА
+  ❌ Crossroad (crossroad) - НЕ НАЙДЕНА
+  ❌ E (e) - НЕ НАЙДЕНА
+  ❌ Edix (edix) - НЕ НАЙДЕНА
+  ❌ Elysion (elysion) - НЕ НАЙДЕНА
+  ❌ Fit (fit) - НЕ НАЙДЕНА
+  ❌ Freed (freed) - НЕ НАЙДЕНА
+  ❌ Grace (grace) - НЕ НАЙДЕНА
+  ❌ Insight (insight) - НЕ НАЙДЕНА
+  ❌ Inspire (inspire) - НЕ НАЙДЕНА
+  ❌ Jade (jade) - НЕ НАЙДЕНА
+  ❌ Legend (legend) - НЕ НАЙДЕНА
+  ❌ Life (life) - НЕ НАЙДЕНА
+  ❌ Mobilio (mobilio) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Partner (partner) - НЕ НАЙДЕНА
+  ❌ Shuttle (shuttle) - НЕ НАЙДЕНА
+  ❌ Spike (spike) - НЕ НАЙДЕНА
+  ❌ Stream (stream) - НЕ НАЙДЕНА
+  ❌ Vamos (vamos) - НЕ НАЙДЕНА
+  ❌ Vezel (vezel) - НЕ НАЙДЕНА
+  ❌ Wr V (wr-v) - НЕ НАЙДЕНА
+  ❌ Zest (zest) - НЕ НАЙДЕНА
+  ❌ Zr V (zr-v) - НЕ НАЙДЕНА
+  Итого валидных моделей: 5/31
+
+Бренд: HUMMER (hummer)
+  - Нет моделей
+Бренд: HYUNDAI (hyundai)
+  ❌ ACCENT NEW (accent-new) - НЕ НАЙДЕНА
+  ✅ ASLAN (aslan) - НАЙДЕНА
+  ❌ AVANTE (avante) - НЕ НАЙДЕНА
+  ❌ AVANTE AD (avante-ad) - НЕ НАЙДЕНА
+  ❌ AVANTE CN7 (avante-cn7) - НЕ НАЙДЕНА
+  ❌ AVANTE COUPE (avante-coupe) - НЕ НАЙДЕНА
+  ❌ AVANTE HD (avante-hd) - НЕ НАЙДЕНА
+  ❌ AVANTE HYBRID (avante-hybrid) - НЕ НАЙДЕНА
+  ❌ AVANTE HYBRID CN7 (avante-hybrid-cn7) - НЕ НАЙДЕНА
+  ❌ AVANTE MD (avante-md) - НЕ НАЙДЕНА
+  ✅ CASPER (casper) - НАЙДЕНА
+  ❌ EQUUS NEW (equus-new) - НЕ НАЙДЕНА
+  ❌ GENESIS (genesis) - НЕ НАЙДЕНА
+  ❌ GENESIS COUPE (genesis-coupe) - НЕ НАЙДЕНА
+  ❌ GENESIS DH (genesis-dh) - НЕ НАЙДЕНА
+  ❌ GRANDEUR HG (grandeur-hg) - НЕ НАЙДЕНА
+  ❌ GRANDEUR HG HYBRID (grandeur-hg-hybrid) - НЕ НАЙДЕНА
+  ❌ GRANDEUR HYBRID GN7 (grandeur-hybrid-gn7) - НЕ НАЙДЕНА
+  ❌ GRANDEUR IG (grandeur-ig) - НЕ НАЙДЕНА
+  ❌ GRANDEUR IG HYBRID (grandeur-ig-hybrid) - НЕ НАЙДЕНА
+  ❌ GRANDEUR NEW LUXURY (grandeur-new-luxury) - НЕ НАЙДЕНА
+  ❌ GRANDEUR TG (grandeur-tg) - НЕ НАЙДЕНА
+  ❌ GRANDEUR THE LUXURY (grandeur-the-luxury) - НЕ НАЙДЕНА
+  ✅ I30 (i30) - НАЙДЕНА
+  ❌ I30 NEW (i30-new) - НЕ НАЙДЕНА
+  ❌ I30 PD (i30-pd) - НЕ НАЙДЕНА
+  ✅ I40 (i40) - НАЙДЕНА
+  ❌ I40 SALOON (i40-saloon) - НЕ НАЙДЕНА
+  ❌ IONIQ ELECTRIC (ioniq-electric) - НЕ НАЙДЕНА
+  ❌ IONIQ HYBRID (ioniq-hybrid) - НЕ НАЙДЕНА
+  ✅ IONIQ5 (ioniq5) - НАЙДЕНА
+  ✅ IONIQ6 (ioniq6) - НАЙДЕНА
+  ✅ KONA (kona) - НАЙДЕНА
+  ❌ KONA ELECTRIC (kona-electric) - НЕ НАЙДЕНА
+  ❌ KONA HYBRID (kona-hybrid) - НЕ НАЙДЕНА
+  ❌ LF SONATA HYBRID (lf-sonata-hybrid) - НЕ НАЙДЕНА
+  ✅ MAXCRUZ (maxcruz) - НАЙДЕНА
+  ✅ NEXO (nexo) - НАЙДЕНА
+  ❌ NF SONATA TRANSFORM (nf-sonata-transform) - НЕ НАЙДЕНА
+  ✅ PALISADE (palisade) - НАЙДЕНА
+  ✅ SANTAFE (santafe) - НАЙДЕНА
+  ❌ SANTAFE CM (santafe-cm) - НЕ НАЙДЕНА
+  ❌ SANTAFE DM (santafe-dm) - НЕ НАЙДЕНА
+  ❌ SANTAFE THE PRIME (santafe-the-prime) - НЕ НАЙДЕНА
+  ❌ SANTAFE TM (santafe-tm) - НЕ НАЙДЕНА
+  ✅ SOLATI (solati) - НАЙДЕНА
+  ❌ SONATA DN8 (sonata-dn8) - НЕ НАЙДЕНА
+  ❌ SONATA HYBRID (sonata-hybrid) - НЕ НАЙДЕНА
+  ❌ SONATA HYBRID DN8 (sonata-hybrid-dn8) - НЕ НАЙДЕНА
+  ❌ SONATA LF (sonata-lf) - НЕ НАЙДЕНА
+  ❌ SONATA NEW RISE (sonata-new-rise) - НЕ НАЙДЕНА
+  ❌ SONATA NEW RISE HYBRID (sonata-new-rise-hybrid) - НЕ НАЙДЕНА
+  ❌ SONATA THE BRILLIANT (sonata-the-brilliant) - НЕ НАЙДЕНА
+  ❌ SONATA YF (sonata-yf) - НЕ НАЙДЕНА
+  ❌ STAREX GRAND (starex-grand) - НЕ НАЙДЕНА
+  ✅ STARIA (staria) - НАЙДЕНА
+  ✅ TUCSON (tucson) - НАЙДЕНА
+  ❌ TUCSON IX (tucson-ix) - НЕ НАЙДЕНА
+  ❌ TUCSON NX4 (tucson-nx4) - НЕ НАЙДЕНА
+  ✅ VELOSTER (veloster) - НАЙДЕНА
+  ❌ VELOSTER JS (veloster-js) - НЕ НАЙДЕНА
+  ✅ VENUE (venue) - НАЙДЕНА
+  ❌ VERACRUZ (veracruz) - НЕ НАЙДЕНА
+  ❌ VERNA TRANSFORM (verna-transform) - НЕ НАЙДЕНА
+  Итого валидных моделей: 16/64
+
+Бренд: INFINITI (infiniti)
+  ✅ Q50 (q50) - НАЙДЕНА
+  ✅ Qx30 (qx30) - НАЙДЕНА
+  ✅ Q30 (q30) - НАЙДЕНА
+  ✅ Qx60 (qx60) - НАЙДЕНА
+  ✅ Q70 (q70) - НАЙДЕНА
+  ✅ Qx50 (qx50) - НАЙДЕНА
+  ✅ Qx70 (qx70) - НАЙДЕНА
+  Итого валидных моделей: 7/7
+
+Бренд: JAGUAR (jaguar)
+  ✅ Xe (xe) - НАЙДЕНА
+  ✅ F Type (f-type) - НАЙДЕНА
+  ✅ F Pace (f-pace) - НАЙДЕНА
+  ✅ E Pace (e-pace) - НАЙДЕНА
+  Итого валидных моделей: 4/4
+
+Бренд: JEEP (jeep)
+  ✅ Compass (compass) - НАЙДЕНА
+  ✅ Avenger (avenger) - НАЙДЕНА
+  ✅ Renegade (renegade) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: KIA (kia)
+  ✅ CARNIVAL (carnival) - НАЙДЕНА
+  ✅ CARENS (carens) - НАЙДЕНА
+  ❌ CERATO (cerato) - НЕ НАЙДЕНА
+  ❌ CREDOS (credos) - НЕ НАЙДЕНА
+  ❌ ELAN (elan) - НЕ НАЙДЕНА
+  ❌ ENTERPRISE (enterprise) - НЕ НАЙДЕНА
+  ✅ EV6 (ev6) - НАЙДЕНА
+  ✅ K3 (k3) - НАЙДЕНА
+  ❌ K3 KOUP (k3-koup) - НЕ НАЙДЕНА
+  ✅ K5 (k5) - НАЙДЕНА
+  ❌ K5 HYBRID (k5-hybrid) - НЕ НАЙДЕНА
+  ✅ K7 (k7) - НАЙДЕНА
+  ❌ K7 HYBRID (k7-hybrid) - НЕ НАЙДЕНА
+  ❌ K7 PREMIER (k7-premier) - НЕ НАЙДЕНА
+  ❌ K7 PREMIER HYBRID (k7-premier-hybrid) - НЕ НАЙДЕНА
+  ❌ K7 THE PRESTIGE (k7-the-prestige) - НЕ НАЙДЕНА
+  ✅ K8 (k8) - НАЙДЕНА
+  ❌ K8 HYBRID (k8-hybrid) - НЕ НАЙДЕНА
+  ✅ K9 (k9) - НАЙДЕНА
+  ✅ MOHAVE (mohave) - НАЙДЕНА
+  ❌ MOHAVE THE MASTER (mohave-the-master) - НЕ НАЙДЕНА
+  ✅ MORNING (morning) - НАЙДЕНА
+  ❌ MORNING JA (morning-ja) - НЕ НАЙДЕНА
+  ❌ MORNING URBAN JA (morning-urban-ja) - НЕ НАЙДЕНА
+  ✅ NIRO (niro) - НАЙДЕНА
+  ❌ NIRO EV (niro-ev) - НЕ НАЙДЕНА
+  ❌ NIRO PLUS (niro-plus) - НЕ НАЙДЕНА
+  ❌ OPIRUS (opirus) - НЕ НАЙДЕНА
+  ❌ OPIRUS PREMIUM (opirus-premium) - НЕ НАЙДЕНА
+  ❌ PARKTOWN (parktown) - НЕ НАЙДЕНА
+  ❌ PORTE (porte) - НЕ НАЙДЕНА
+  ❌ PORTE HATCHBACK (porte-hatchback) - НЕ НАЙДЕНА
+  ❌ PORTE KOUP (porte-koup) - НЕ НАЙДЕНА
+  ❌ POTENTIA (potentia) - НЕ НАЙДЕНА
+  ✅ PRIDE (pride) - НАЙДЕНА
+  ❌ PRIDE NEW (pride-new) - НЕ НАЙДЕНА
+  ✅ RAY (ray) - НАЙДЕНА
+  ✅ SELTOS (seltos) - НАЙДЕНА
+  ✅ SORENTO (sorento) - НАЙДЕНА
+  ❌ SORENTO R (sorento-r) - НЕ НАЙДЕНА
+  ✅ SOUL (soul) - НАЙДЕНА
+  ❌ SOUL BOOSTER (soul-booster) - НЕ НАЙДЕНА
+  ❌ SOUL BOOSTER EV (soul-booster-ev) - НЕ НАЙДЕНА
+  ✅ SPORTAGE (sportage) - НАЙДЕНА
+  ❌ SPORTAGE  HYBRID (sportage-hybrid) - НЕ НАЙДЕНА
+  ❌ SPORTAGE R (sportage-r) - НЕ НАЙДЕНА
+  ❌ SPORTAGE THE BOLD (sportage-the-bold) - НЕ НАЙДЕНА
+  ✅ STINGER (stinger) - НАЙДЕНА
+  ❌ STINGER MEISTER (stinger-meister) - НЕ НАЙДЕНА
+  ✅ STONIC (stonic) - НАЙДЕНА
+  Итого валидных моделей: 19/50
+
+Бренд: LAMBORGHINI (lamborghini)
+  ✅ Urus (urus) - НАЙДЕНА
+  ✅ Aventador (aventador) - НАЙДЕНА
+  ✅ Huracan (huracan) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: LAND ROVER (land-rover)
+  - Нет моделей
+Бренд: LEXUS (lexus)
+  ✅ Es300h (es300h) - НАЙДЕНА
+  ✅ Ls500 (ls500) - НАЙДЕНА
+  ✅ Nx300h (nx300h) - НАЙДЕНА
+  ✅ Ls500h (ls500h) - НАЙДЕНА
+  ✅ Rx450h (rx450h) - НАЙДЕНА
+  ✅ Ux250h (ux250h) - НАЙДЕНА
+  ✅ Ux300e (ux300e) - НАЙДЕНА
+  ✅ Lc (lc) - НАЙДЕНА
+  ✅ Gs200t (gs200t) - НАЙДЕНА
+  ❌ Ct (ct) - НЕ НАЙДЕНА
+  ❌ Is (is) - НЕ НАЙДЕНА
+  ❌ Ls (ls) - НЕ НАЙДЕНА
+  ❌ Rx (rx) - НЕ НАЙДЕНА
+  ❌ Es (es) - НЕ НАЙДЕНА
+  ❌ Lbx (lbx) - НЕ НАЙДЕНА
+  ❌ Lx (lx) - НЕ НАЙДЕНА
+  ❌ Ux (ux) - НЕ НАЙДЕНА
+  ❌ Gs (gs) - НЕ НАЙДЕНА
+  ❌ Nx (nx) - НЕ НАЙДЕНА
+  ❌ Hs (hs) - НЕ НАЙДЕНА
+  ✅ Lm (lm) - НАЙДЕНА
+  ❌ Rc (rc) - НЕ НАЙДЕНА
+  Итого валидных моделей: 10/22
+
+Бренд: LINCOLN (lincoln)
+  ✅ Mkz (mkz) - НАЙДЕНА
+  ✅ Mkx (mkx) - НАЙДЕНА
+  ✅ Nautilus (nautilus) - НАЙДЕНА
+  ✅ Navigator (navigator) - НАЙДЕНА
+  ✅ Aviator (aviator) - НАЙДЕНА
+  ✅ Corsair (corsair) - НАЙДЕНА
+  Итого валидных моделей: 6/6
+
+Бренд: LOTUS (lotus)
+  ❌ Other (other) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/1
+
+Бренд: MASERATI (maserati)
+  ✅ Ghibli (ghibli) - НАЙДЕНА
+  ✅ Levante (levante) - НАЙДЕНА
+  ✅ Quattroporte (quattroporte) - НАЙДЕНА
+  ✅ Granturismo (granturismo) - НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  Итого валидных моделей: 4/5
+
+Бренд: MAYBACH (maybach)
+  - Нет моделей
+Бренд: MCLAREN (mclaren)
+  ✅ 570s (570s) - НАЙДЕНА
+  ✅ 570gt (570gt) - НАЙДЕНА
+  ✅ 720s (720s) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: MERCEDES BENZ (mercedes-benz)
+  ❌ A-CLASS W176 (a-class-w176) - НЕ НАЙДЕНА
+  ❌ A-CLASS W177 (a-class-w177) - НЕ НАЙДЕНА
+  ❌ AMG GT (amg-gt) - НЕ НАЙДЕНА
+  ❌ B-CLASS W245 (b-class-w245) - НЕ НАЙДЕНА
+  ❌ B-CLASS W246 (b-class-w246) - НЕ НАЙДЕНА
+  ❌ C-CLASS W204 (c-class-w204) - НЕ НАЙДЕНА
+  ❌ C-CLASS W205 (c-class-w205) - НЕ НАЙДЕНА
+  ❌ CLA-CLASS C117 (cla-class-c117) - НЕ НАЙДЕНА
+  ❌ CLA-CLASS C118 (cla-class-c118) - НЕ НАЙДЕНА
+  ❌ CLK-CLASS C209 (clk-class-c209) - НЕ НАЙДЕНА
+  ❌ CLS-CLASS C257 (cls-class-c257) - НЕ НАЙДЕНА
+  ❌ CLS-CLASS W218 (cls-class-w218) - НЕ НАЙДЕНА
+  ❌ CLS-CLASS W219 (cls-class-w219) - НЕ НАЙДЕНА
+  ❌ E-CLASS W212 (e-class-w212) - НЕ НАЙДЕНА
+  ❌ E-CLASS W213 (e-class-w213) - НЕ НАЙДЕНА
+  ❌ EQA H243 (eqa-h243) - НЕ НАЙДЕНА
+  ❌ EQB X243 (eqb-x243) - НЕ НАЙДЕНА
+  ❌ EQC N293 (eqc-n293) - НЕ НАЙДЕНА
+  ❌ EQE V295 (eqe-v295) - НЕ НАЙДЕНА
+  ❌ EQS V297 (eqs-v297) - НЕ НАЙДЕНА
+  ❌ G-CLASS W463 (g-class-w463) - НЕ НАЙДЕНА
+  ❌ G-CLASS W463B (g-class-w463b) - НЕ НАЙДЕНА
+  ❌ GLA-CLASS H247 (gla-class-h247) - НЕ НАЙДЕНА
+  ❌ GLA-CLASS X156 (gla-class-x156) - НЕ НАЙДЕНА
+  ❌ GLB-CLASS X247 (glb-class-x247) - НЕ НАЙДЕНА
+  ❌ GLC-CLASS X253 (glc-class-x253) - НЕ НАЙДЕНА
+  ❌ GLE-CLASS W166 (gle-class-w166) - НЕ НАЙДЕНА
+  ❌ GLE-CLASS W167 (gle-class-w167) - НЕ НАЙДЕНА
+  ❌ GLK-CLASS X204 (glk-class-x204) - НЕ НАЙДЕНА
+  ❌ GLS-CLASS X167 (gls-class-x167) - НЕ НАЙДЕНА
+  ❌ M-CLASS W166 (m-class-w166) - НЕ НАЙДЕНА
+  ❌ S-CLASS W221 (s-class-w221) - НЕ НАЙДЕНА
+  ❌ S-CLASS W222 (s-class-w222) - НЕ НАЙДЕНА
+  ❌ S-CLASS W223 (s-class-w223) - НЕ НАЙДЕНА
+  ❌ SL-CLASS (sl-class) - НЕ НАЙДЕНА
+  ❌ SLC-CLASS R172 (slc-class-r172) - НЕ НАЙДЕНА
+  ❌ SLK-CLASS (slk-class) - НЕ НАЙДЕНА
+  ❌ SPRINTER (sprinter) - НЕ НАЙДЕНА
+  ❌ V-CLASS (v-class) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/39
+
+Бренд: MINI (mini)
+  ✅ Cooper (cooper) - НАЙДЕНА
+  Итого валидных моделей: 1/1
+
+Бренд: MITSUBISHI (mitsubishi)
+  ❌ Bus (bus) - НЕ НАЙДЕНА
+  ❌ Canter (canter) - НЕ НАЙДЕНА
+  ❌ Colt (colt) - НЕ НАЙДЕНА
+  ❌ Delica (delica) - НЕ НАЙДЕНА
+  ❌ Grandis (grandis) - НЕ НАЙДЕНА
+  ❌ I (i) - НЕ НАЙДЕНА
+  ❌ I Miev (i-miev) - НЕ НАЙДЕНА
+  ❌ Lancer (lancer) - НЕ НАЙДЕНА
+  ❌ Minica (minica) - НЕ НАЙДЕНА
+  ❌ Mirage (mirage) - НЕ НАЙДЕНА
+  ❌ Outlander (outlander) - НЕ НАЙДЕНА
+  ❌ Pajero (pajero) - НЕ НАЙДЕНА
+  ❌ Proudia (proudia) - НЕ НАЙДЕНА
+  ❌ Rosa (rosa) - НЕ НАЙДЕНА
+  ❌ Rvr (rvr) - НЕ НАЙДЕНА
+  ❌ Toppo (toppo) - НЕ НАЙДЕНА
+  ❌ Townbox (townbox) - НЕ НАЙДЕНА
+  ❌ Triton (triton) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/18
+
+Бренд: NISSAN (nissan)
+  ✅ X Trail (x-trail) - НАЙДЕНА
+  ✅ Altima (altima) - НАЙДЕНА
+  ✅ Pathfinder (pathfinder) - НАЙДЕНА
+  ❌ Ad (ad) - НЕ НАЙДЕНА
+  ❌ Ariya (ariya) - НЕ НАЙДЕНА
+  ❌ Atlas (atlas) - НЕ НАЙДЕНА
+  ❌ Aura (aura) - НЕ НАЙДЕНА
+  ❌ Caravan (caravan) - НЕ НАЙДЕНА
+  ❌ Cedric (cedric) - НЕ НАЙДЕНА
+  ❌ Cima (cima) - НЕ НАЙДЕНА
+  ❌ Civilian (civilian) - НЕ НАЙДЕНА
+  ❌ Condor (condor) - НЕ НАЙДЕНА
+  ❌ Cube (cube) - НЕ НАЙДЕНА
+  ❌ Cubecubic (cubecubic) - НЕ НАЙДЕНА
+  ❌ Dayz (dayz) - НЕ НАЙДЕНА
+  ❌ Dualis (dualis) - НЕ НАЙДЕНА
+  ❌ Elgrand (elgrand) - НЕ НАЙДЕНА
+  ❌ Fairladyz (fairladyz) - НЕ НАЙДЕНА
+  ❌ Fuga (fuga) - НЕ НАЙДЕНА
+  ❌ Gt R (gt-r) - НЕ НАЙДЕНА
+  ❌ Infiniti (infiniti) - НЕ НАЙДЕНА
+  ✅ Juke (juke) - НАЙДЕНА
+  ❌ Kix (kix) - НЕ НАЙДЕНА
+  ❌ Lafesta (lafesta) - НЕ НАЙДЕНА
+  ❌ Latio (latio) - НЕ НАЙДЕНА
+  ❌ Leaf (leaf) - НЕ НАЙДЕНА
+  ❌ March (march) - НЕ НАЙДЕНА
+  ❌ Micra (micra) - НЕ НАЙДЕНА
+  ❌ Moco (moco) - НЕ НАЙДЕНА
+  ❌ Murano (murano) - НЕ НАЙДЕНА
+  ❌ Note (note) - НЕ НАЙДЕНА
+  ❌ Nv200 (nv200) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Otti (otti) - НЕ НАЙДЕНА
+  ❌ Pino (pino) - НЕ НАЙДЕНА
+  ❌ Presage (presage) - НЕ НАЙДЕНА
+  ❌ Quon (quon) - НЕ НАЙДЕНА
+  ❌ Roox (roox) - НЕ НАЙДЕНА
+  ❌ Sakura (sakura) - НЕ НАЙДЕНА
+  ❌ Serena (serena) - НЕ НАЙДЕНА
+  ❌ Skyline (skyline) - НЕ НАЙДЕНА
+  ❌ Sylphy (sylphy) - НЕ НАЙДЕНА
+  ❌ Teana (teana) - НЕ НАЙДЕНА
+  ❌ Tiida (tiida) - НЕ НАЙДЕНА
+  ❌ Truck (truck) - НЕ НАЙДЕНА
+  ❌ Wingroad (wingroad) - НЕ НАЙДЕНА
+  Итого валидных моделей: 4/46
+
+Бренд: PEUGEOT (peugeot)
+  ✅ 3008 (3008) - НАЙДЕНА
+  ✅ 2008 (2008) - НАЙДЕНА
+  ✅ 508 (508) - НАЙДЕНА
+  ✅ 208 (208) - НАЙДЕНА
+  ✅ 5008 (5008) - НАЙДЕНА
+  ✅ 408 (408) - НАЙДЕНА
+  ✅ 308 (308) - НАЙДЕНА
+  ✅ E 2008 (e-2008) - НАЙДЕНА
+  ❌ 207 (207) - НЕ НАЙДЕНА
+  ❌ E 208 (e-208) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Rcz (rcz) - НЕ НАЙДЕНА
+  Итого валидных моделей: 8/12
+
+Бренд: POLESTAR (polestar)
+  - Нет моделей
+Бренд: PORSCHE (porsche)
+  ✅ Macan (macan) - НАЙДЕНА
+  ✅ Cayenne (cayenne) - НАЙДЕНА
+  ✅ 911 (911) - НАЙДЕНА
+  ✅ Boxster (boxster) - НАЙДЕНА
+  ✅ Panamera (panamera) - НАЙДЕНА
+  ✅ Taycan (taycan) - НАЙДЕНА
+  ❌ Cayman (cayman) - НЕ НАЙДЕНА
+  Итого валидных моделей: 6/7
+
+Бренд: ROLLS ROYCE (rolls-royce)
+  - Нет моделей
+Бренд: SAMSUNG (samsung)
+  ✅ CAPTUR (captur) - НАЙДЕНА
+  ✅ CILO (cilo) - НАЙДЕНА
+  ✅ MASTER (master) - НАЙДЕНА
+  ✅ QM3 (qm3) - НАЙДЕНА
+  ❌ QM5 (qm5) - НЕ НАЙДЕНА
+  ❌ QM5 NEO (qm5-neo) - НЕ НАЙДЕНА
+  ✅ QM6 (qm6) - НАЙДЕНА
+  ❌ SM3 (sm3) - НЕ НАЙДЕНА
+  ❌ SM3 NEO (sm3-neo) - НЕ НАЙДЕНА
+  ❌ SM3 NEW GENERATION (sm3-new-generation) - НЕ НАЙДЕНА
+  ❌ SM3 Z.E. (sm3-ze) - НЕ НАЙДЕНА
+  ❌ SM5 (sm5) - НЕ НАЙДЕНА
+  ❌ SM5 NEW (sm5-new) - НЕ НАЙДЕНА
+  ❌ SM5 NEW IMPRESSION (sm5-new-impression) - НЕ НАЙДЕНА
+  ❌ SM5 NOVA (sm5-nova) - НЕ НАЙДЕНА
+  ❌ SM5 PLATINUM (sm5-platinum) - НЕ НАЙДЕНА
+  ✅ SM6 (sm6) - НАЙДЕНА
+  ❌ SM7 (sm7) - НЕ НАЙДЕНА
+  ❌ SM7 NEW ART (sm7-new-art) - НЕ НАЙДЕНА
+  ❌ SM7 NOVA (sm7-nova) - НЕ НАЙДЕНА
+  ✅ TWIZY (twizy) - НАЙДЕНА
+  ✅ XM3 (xm3) - НАЙДЕНА
+  ✅ ZOE (zoe) - НАЙДЕНА
+  Итого валидных моделей: 9/23
+
+Бренд: SMART (smart)
+  ❌ Forfour (forfour) - НЕ НАЙДЕНА
+  ❌ Fortwo (fortwo) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/2
+
+Бренд: SSANGYONG (ssangyong)
+  ✅ ACTYON (actyon) - НАЙДЕНА
+  ❌ ACTYON SPORTS (actyon-sports) - НЕ НАЙДЕНА
+  ❌ CHAIRMAN (chairman) - НЕ НАЙДЕНА
+  ❌ CHAIRMAN H (chairman-h) - НЕ НАЙДЕНА
+  ❌ CHAIRMAN H NEW CLASSIC (chairman-h-new-classic) - НЕ НАЙДЕНА
+  ❌ CHAIRMAN W (chairman-w) - НЕ НАЙДЕНА
+  ❌ KORANDO (korando) - НЕ НАЙДЕНА
+  ❌ KORANDO BEAUTIFUL (korando-beautiful) - НЕ НАЙДЕНА
+  ❌ KORANDO C (korando-c) - НЕ НАЙДЕНА
+  ❌ KORANDO JEEP (korando-jeep) - НЕ НАЙДЕНА
+  ❌ KORANDO SPORTS (korando-sports) - НЕ НАЙДЕНА
+  ❌ KORANDO TURISMO (korando-turismo) - НЕ НАЙДЕНА
+  ❌ KYRON (kyron) - НЕ НАЙДЕНА
+  ✅ REXTON (rexton) - НАЙДЕНА
+  ❌ REXTON G4 (rexton-g4) - НЕ НАЙДЕНА
+  ❌ REXTON II (rexton-ii) - НЕ НАЙДЕНА
+  ❌ REXTON SPORTS (rexton-sports) - НЕ НАЙДЕНА
+  ❌ REXTON SPORTS CAR (rexton-sports-car) - НЕ НАЙДЕНА
+  ❌ REXTON SUPER (rexton-super) - НЕ НАЙДЕНА
+  ❌ REXTON W (rexton-w) - НЕ НАЙДЕНА
+  ❌ STYLE KORANDO C (style-korando-c) - НЕ НАЙДЕНА
+  ❌ TIBOLI (tiboli) - НЕ НАЙДЕНА
+  ❌ TIBOLI AIR (tiboli-air) - НЕ НАЙДЕНА
+  ❌ TIBOLI ARMOR (tiboli-armor) - НЕ НАЙДЕНА
+  ❌ TIBOLI VERY NEW (tiboli-very-new) - НЕ НАЙДЕНА
+  ✅ TORRES (torres) - НАЙДЕНА
+  Итого валидных моделей: 3/26
+
+Бренд: SUBARU (subaru)
+  ❌ Brz (brz) - НЕ НАЙДЕНА
+  ❌ Chiffon (chiffon) - НЕ НАЙДЕНА
+  ❌ Crosstrek (crosstrek) - НЕ НАЙДЕНА
+  ❌ Dex (dex) - НЕ НАЙДЕНА
+  ❌ Exiga (exiga) - НЕ НАЙДЕНА
+  ❌ Forester (forester) - НЕ НАЙДЕНА
+  ❌ Impreza (impreza) - НЕ НАЙДЕНА
+  ❌ Justy (justy) - НЕ НАЙДЕНА
+  ❌ Legacy (legacy) - НЕ НАЙДЕНА
+  ❌ Levorg (levorg) - НЕ НАЙДЕНА
+  ❌ Lucra (lucra) - НЕ НАЙДЕНА
+  ❌ Pleo (pleo) - НЕ НАЙДЕНА
+  ❌ R1 (r1) - НЕ НАЙДЕНА
+  ❌ R2 (r2) - НЕ НАЙДЕНА
+  ❌ Rex (rex) - НЕ НАЙДЕНА
+  ❌ Rocky (rocky) - НЕ НАЙДЕНА
+  ❌ Sambar (sambar) - НЕ НАЙДЕНА
+  ❌ Solterra (solterra) - НЕ НАЙДЕНА
+  ❌ Stella (stella) - НЕ НАЙДЕНА
+  ❌ Trezia (trezia) - НЕ НАЙДЕНА
+  ❌ Wrx (wrx) - НЕ НАЙДЕНА
+  ❌ Xv (xv) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/22
+
+Бренд: SUZUKI (suzuki)
+  ✅ Ignis (ignis) - НАЙДЕНА
+  ✅ Hustler (hustler) - НАЙДЕНА
+  ✅ Jimny (jimny) - НАЙДЕНА
+  ❌ Alto (alto) - НЕ НАЙДЕНА
+  ❌ Baleno (baleno) - НЕ НАЙДЕНА
+  ❌ Cervo (cervo) - НЕ НАЙДЕНА
+  ❌ Escudo (escudo) - НЕ НАЙДЕНА
+  ❌ Every (every) - НЕ НАЙДЕНА
+  ❌ Fronx (fronx) - НЕ НАЙДЕНА
+  ❌ Kei (kei) - НЕ НАЙДЕНА
+  ❌ Kizashi (kizashi) - НЕ НАЙДЕНА
+  ❌ Landy (landy) - НЕ НАЙДЕНА
+  ❌ Mrwagon (mrwagon) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Palette (palette) - НЕ НАЙДЕНА
+  ❌ Seniocar (seniocar) - НЕ НАЙДЕНА
+  ❌ Solio (solio) - НЕ НАЙДЕНА
+  ❌ Spacia (spacia) - НЕ НАЙДЕНА
+  ❌ Splash (splash) - НЕ НАЙДЕНА
+  ❌ Swift (swift) - НЕ НАЙДЕНА
+  ❌ Sx 4 (sx-4) - НЕ НАЙДЕНА
+  ❌ Xbee (xbee) - НЕ НАЙДЕНА
+  Итого валидных моделей: 3/22
+
+Бренд: TESLA (tesla)
+  ❌ Model3 (model3) - НЕ НАЙДЕНА
+  ❌ Models (models) - НЕ НАЙДЕНА
+  ❌ Modely (modely) - НЕ НАЙДЕНА
+  Итого валидных моделей: 0/3
+
+Бренд: TOYOTA (toyota)
+  ✅ Rav4 (rav4) - НАЙДЕНА
+  ✅ Highlander (highlander) - НАЙДЕНА
+  ✅ Alphard (alphard) - НАЙДЕНА
+  ✅ Sienna (sienna) - НАЙДЕНА
+  ✅ Prius (prius) - НАЙДЕНА
+  ✅ Camry (camry) - НАЙДЕНА
+  ❌ Allion (allion) - НЕ НАЙДЕНА
+  ❌ Aqua (aqua) - НЕ НАЙДЕНА
+  ❌ Auris (auris) - НЕ НАЙДЕНА
+  ❌ Bb (bb) - НЕ НАЙДЕНА
+  ❌ Belta (belta) - НЕ НАЙДЕНА
+  ❌ Blade (blade) - НЕ НАЙДЕНА
+  ❌ Bz4x (bz4x) - НЕ НАЙДЕНА
+  ❌ C Hr (c-hr) - НЕ НАЙДЕНА
+  ❌ Coaster (coaster) - НЕ НАЙДЕНА
+  ❌ Comfort (comfort) - НЕ НАЙДЕНА
+  ❌ Copen (copen) - НЕ НАЙДЕНА
+  ✅ Corolla (corolla) - НАЙДЕНА
+  ❌ Crown (crown) - НЕ НАЙДЕНА
+  ❌ Dyna (dyna) - НЕ НАЙДЕНА
+  ❌ Esquire (esquire) - НЕ НАЙДЕНА
+  ❌ Estima (estima) - НЕ НАЙДЕНА
+  ❌ Forklift (forklift) - НЕ НАЙДЕНА
+  ❌ Granace (granace) - НЕ НАЙДЕНА
+  ❌ Harrier (harrier) - НЕ НАЙДЕНА
+  ❌ Hiace (hiace) - НЕ НАЙДЕНА
+  ❌ Hilux (hilux) - НЕ НАЙДЕНА
+  ❌ Ipsum (ipsum) - НЕ НАЙДЕНА
+  ❌ Iq (iq) - НЕ НАЙДЕНА
+  ❌ Isis (isis) - НЕ НАЙДЕНА
+  ❌ Ist (ist) - НЕ НАЙДЕНА
+  ❌ Mirai (mirai) - НЕ НАЙДЕНА
+  ❌ Mr2 (mr2) - НЕ НАЙДЕНА
+  ❌ Noah (noah) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ Passo (passo) - НЕ НАЙДЕНА
+  ❌ Porte (porte) - НЕ НАЙДЕНА
+  ❌ Premio (premio) - НЕ НАЙДЕНА
+  ❌ Probox (probox) - НЕ НАЙДЕНА
+  ❌ Ractis (ractis) - НЕ НАЙДЕНА
+  ❌ Raize (raize) - НЕ НАЙДЕНА
+  ❌ Raum (raum) - НЕ НАЙДЕНА
+  ❌ Roomy (roomy) - НЕ НАЙДЕНА
+  ❌ Rush (rush) - НЕ НАЙДЕНА
+  ❌ Sai (sai) - НЕ НАЙДЕНА
+  ❌ Sienta (sienta) - НЕ НАЙДЕНА
+  ❌ Spade (spade) - НЕ НАЙДЕНА
+  ❌ Succeed (succeed) - НЕ НАЙДЕНА
+  ❌ Supra (supra) - НЕ НАЙДЕНА
+  ❌ Tank (tank) - НЕ НАЙДЕНА
+  ❌ Toyoace (toyoace) - НЕ НАЙДЕНА
+  ❌ Vanguard (vanguard) - НЕ НАЙДЕНА
+  ❌ Vellfire (vellfire) - НЕ НАЙДЕНА
+  ❌ Vitz (vitz) - НЕ НАЙДЕНА
+  ❌ Voxy (voxy) - НЕ НАЙДЕНА
+  ❌ Wish (wish) - НЕ НАЙДЕНА
+  ❌ Yaris (yaris) - НЕ НАЙДЕНА
+  ✅ 86 (86) - НАЙДЕНА
+  Итого валидных моделей: 8/58
+
+Бренд: VOLKSWAGEN (volkswagen)
+  ✅ Jetta (jetta) - НАЙДЕНА
+  ✅ Golf (golf) - НАЙДЕНА
+  ✅ Arteon (arteon) - НАЙДЕНА
+  ✅ Touareg (touareg) - НАЙДЕНА
+  ✅ Tiguan (tiguan) - НАЙДЕНА
+  ✅ Cc (cc) - НАЙДЕНА
+  ❌ E Golf (e-golf) - НЕ НАЙДЕНА
+  ❌ Eos (eos) - НЕ НАЙДЕНА
+  ✅ Passat (passat) - НАЙДЕНА
+  ❌ Polo (polo) - НЕ НАЙДЕНА
+  ❌ Scirocco (scirocco) - НЕ НАЙДЕНА
+  ❌ Sharan (sharan) - НЕ НАЙДЕНА
+  ❌ T Cross (t-cross) - НЕ НАЙДЕНА
+  ✅ T Roc (t-roc) - НАЙДЕНА
+  ❌ Up (up) - НЕ НАЙДЕНА
+  Итого валидных моделей: 8/15
+
+Бренд: VOLVO (volvo)
+  ✅ S90 (s90) - НАЙДЕНА
+  ✅ Xc40 (xc40) - НАЙДЕНА
+  ✅ Xc90 (xc90) - НАЙДЕНА
+  ✅ S60 (s60) - НАЙДЕНА
+  ✅ Xc60 (xc60) - НАЙДЕНА
+  ✅ V60 (v60) - НАЙДЕНА
+  ❌ C30 (c30) - НЕ НАЙДЕНА
+  ❌ C40 (c40) - НЕ НАЙДЕНА
+  ❌ Other (other) - НЕ НАЙДЕНА
+  ❌ S40 (s40) - НЕ НАЙДЕНА
+  ❌ S80 (s80) - НЕ НАЙДЕНА
+  ✅ V40 (v40) - НАЙДЕНА
+  ❌ V50 (v50) - НЕ НАЙДЕНА
+  ❌ V70 (v70) - НЕ НАЙДЕНА
+  ❌ V90 (v90) - НЕ НАЙДЕНА
+  ❌ Xc70 (xc70) - НЕ НАЙДЕНА
+  Итого валидных моделей: 7/16
+

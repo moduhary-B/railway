@@ -1,0 +1,705 @@
+Лог проверки японских моделей
+==================================================
+
+Бренд: ALFAROMEO (alfaromeo)
+  ✅ Mito (mito) - НАЙДЕНА
+  ✅ Giulia (giulia) - НАЙДЕНА
+  ✅ Stelvio (stelvio) - НАЙДЕНА
+  ✅ Giulietta (giulietta) - НАЙДЕНА
+  ✅ Tonale (tonale) - НАЙДЕНА
+  ✅ 147 (147) - НАЙДЕНА
+  ✅ Brera (brera) - НАЙДЕНА
+  ✅ Gt (gt) - НАЙДЕНА
+  ✅ 159 (159) - НАЙДЕНА
+  Итого валидных моделей: 9/9
+
+Бренд: BENTLEY (bentley)
+  ✅ Bentayga (bentayga) - НАЙДЕНА
+  ✅ Continental (continental) - НАЙДЕНА
+  Итого валидных моделей: 2/2
+
+Бренд: CHRYSLER (chrysler)
+  ✅ 300 (300) - НАЙДЕНА
+  ✅ Ypsilon (ypsilon) - НАЙДЕНА
+  Итого валидных моделей: 2/2
+
+Бренд: CITROEN (citroen)
+  ✅ C3 (c3) - НАЙДЕНА
+  ✅ Ds5 (ds5) - НАЙДЕНА
+  ✅ Ds7 (ds7) - НАЙДЕНА
+  ✅ C4 (c4) - НАЙДЕНА
+  ✅ C5 (c5) - НАЙДЕНА
+  ✅ Berlingo (berlingo) - НАЙДЕНА
+  ✅ Ds3 (ds3) - НАЙДЕНА
+  ✅ Ds4 (ds4) - НАЙДЕНА
+  ✅ C6 (c6) - НАЙДЕНА
+  Итого валидных моделей: 9/9
+
+Бренд: CADILLAC (cadillac)
+  - Нет моделей
+Бренд: CHEVROLET (chevrolet)
+  - Нет моделей
+Бренд: DAEWOO (daewoo)
+  - Нет моделей
+Бренд: DODGE (dodge)
+  ✅ Charger (charger) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Magnum (magnum) - НАЙДЕНА
+  ✅ Challenger (challenger) - НАЙДЕНА
+  Итого валидных моделей: 4/4
+
+Бренд: DFSK (dfsk)
+  - Нет моделей
+Бренд: FIAT (fiat)
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Panda (panda) - НАЙДЕНА
+  ✅ 500 (500) - НАЙДЕНА
+  ✅ 500x (500x) - НАЙДЕНА
+  ✅ Punto (punto) - НАЙДЕНА
+  ✅ 500s (500s) - НАЙДЕНА
+  ✅ 500c (500c) - НАЙДЕНА
+  ✅ Doblo (doblo) - НАЙДЕНА
+  ✅ 500e (500e) - НАЙДЕНА
+  Итого валидных моделей: 9/9
+
+Бренд: FORD (ford)
+  ✅ Explorer (explorer) - НАЙДЕНА
+  ✅ Mustang (mustang) - НАЙДЕНА
+  ✅ Fiesta (fiesta) - НАЙДЕНА
+  ✅ Escape (escape) - НАЙДЕНА
+  ✅ Ecosport (ecosport) - НАЙДЕНА
+  ✅ Kuga (kuga) - НАЙДЕНА
+  ✅ Focus (focus) - НАЙДЕНА
+  Итого валидных моделей: 7/7
+
+Бренд: FERRARI (ferrari)
+  ✅ 488 (488) - НАЙДЕНА
+  ✅ Roma (roma) - НАЙДЕНА
+  ✅ Portofino (portofino) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: GM (gm)
+  - Нет моделей
+Бренд: GMC (gmc)
+  - Нет моделей
+Бренд: GENESIS (genesis)
+  - Нет моделей
+Бренд: HINO (hino)
+  ✅ Truck (truck) - НАЙДЕНА
+  ✅ Profia (profia) - НАЙДЕНА
+  ✅ Liesse (liesse) - НАЙДЕНА
+  ✅ Dutro (dutro) - НАЙДЕНА
+  ✅ Bus (bus) - НАЙДЕНА
+  ✅ Ranger (ranger) - НАЙДЕНА
+  Итого валидных моделей: 6/6
+
+Бренд: HYUNDAI (hyundai)
+  - Нет моделей
+Бренд: HITACHI (hitachi)
+  ✅ Zx55ur 3 (zx55ur-3) - НАЙДЕНА
+  ✅ Zx75usk 5b (zx75usk-5b) - НАЙДЕНА
+  ✅ Zx75us 5b (zx75us-5b) - НАЙДЕНА
+  ✅ Zx75us 3 (zx75us-3) - НАЙДЕНА
+  ✅ Zx40u 5a (zx40u-5a) - НАЙДЕНА
+  ✅ Zx40u 2 (zx40u-2) - НАЙДЕНА
+  ✅ Zx135usk 5b (zx135usk-5b) - НАЙДЕНА
+  ✅ Zx120 3 (zx120-3) - НАЙДЕНА
+  ✅ Zx110 3 (zx110-3) - НАЙДЕНА
+  ✅ Zw310 6 (zw310-6) - НАЙДЕНА
+  ✅ Zx40u 5b (zx40u-5b) - НАЙДЕНА
+  ✅ Zx30u 5a (zx30u-5a) - НАЙДЕНА
+  ✅ Zx70 3 (zx70-3) - НАЙДЕНА
+  ✅ Zx35u 3 (zx35u-3) - НАЙДЕНА
+  ✅ Zx135usl 3 (zx135usl-3) - НАЙДЕНА
+  ✅ Zw250 5b (zw250-5b) - НАЙДЕНА
+  ✅ Zx225usr 3 (zx225usr-3) - НАЙДЕНА
+  ✅ Zw40 5b (zw40-5b) - НАЙДЕНА
+  ✅ Zx40ur 3 (zx40ur-3) - НАЙДЕНА
+  ✅ Zx55ur 3d (zx55ur-3d) - НАЙДЕНА
+  ✅ Zv550w (zv550w) - НАЙДЕНА
+  ✅ Zw30 5b (zw30-5b) - НАЙДЕНА
+  ✅ Zx130k 3 (zx130k-3) - НАЙДЕНА
+  ✅ Zx8u 2 (zx8u-2) - НАЙДЕНА
+  ✅ Zx30ur 3 (zx30ur-3) - НАЙДЕНА
+  ✅ Zx40ur 5b (zx40ur-5b) - НАЙДЕНА
+  ✅ Zv650w (zv650w) - НАЙДЕНА
+  Итого валидных моделей: 27/27
+
+Бренд: ISUZU (isuzu)
+  ✅ Elf (elf) - НАЙДЕНА
+  ✅ Giga (giga) - НАЙДЕНА
+  ✅ Forward (forward) - НАЙДЕНА
+  ✅ Como (como) - НАЙДЕНА
+  ✅ Truck (truck) - НАЙДЕНА
+  Итого валидных моделей: 5/5
+
+Бренд: INFINITI (infiniti)
+  - Нет моделей
+Бренд: JAGUAR (jaguar)
+  ✅ E Pace (e-pace) - НАЙДЕНА
+  ✅ Xe (xe) - НАЙДЕНА
+  ✅ F Pace (f-pace) - НАЙДЕНА
+  ✅ F Type (f-type) - НАЙДЕНА
+  Итого валидных моделей: 4/4
+
+Бренд: JEEP (jeep)
+  - Нет моделей
+Бренд: KIA (kia)
+  - Нет моделей
+Бренд: KOBELCO (kobelco)
+  ✅ Sk10sr 2 (sk10sr-2) - НАЙДЕНА
+  ✅ Sk17sr 3 (sk17sr-3) - НАЙДЕНА
+  ✅ Sk27sr 5 (sk27sr-5) - НАЙДЕНА
+  ✅ Sk20ur 2 (sk20ur-2) - НАЙДЕНА
+  ✅ Sk50sr 5 (sk50sr-5) - НАЙДЕНА
+  ✅ Sk135sr 2 (sk135sr-2) - НАЙДЕНА
+  ✅ Sk35sr 6 (sk35sr-6) - НАЙДЕНА
+  ✅ Sk35sr 5 (sk35sr-5) - НАЙДЕНА
+  ✅ Sk75sr 3 (sk75sr-3) - НАЙДЕНА
+  ✅ Sk30sr 6 (sk30sr-6) - НАЙДЕНА
+  ✅ Sk125sr (sk125sr) - НАЙДЕНА
+  ✅ Sk135sr 3 (sk135sr-3) - НАЙДЕНА
+  ✅ Sk70sr 2 (sk70sr-2) - НАЙДЕНА
+  Итого валидных моделей: 13/13
+
+Бренд: KOMATSU (komatsu)
+  ✅ Pc30uu 5 (pc30uu-5) - НАЙДЕНА
+  ✅ Pc120 8 (pc120-8) - НАЙДЕНА
+  ✅ Pc01 1a (pc01-1a) - НАЙДЕНА
+  ✅ Pc30mr 5 (pc30mr-5) - НАЙДЕНА
+  ✅ Pc55mr 3 (pc55mr-3) - НАЙДЕНА
+  ✅ Wa40 8n0 (wa40-8n0) - НАЙДЕНА
+  ✅ Sd25 6 (sd25-6) - НАЙДЕНА
+  ✅ Wr12 6 (wr12-6) - НАЙДЕНА
+  ✅ D31pll 21 (d31pll-21) - НАЙДЕНА
+  ✅ Pc30uuc 6 (pc30uuc-6) - НАЙДЕНА
+  ✅ Wa30 6e0 (wa30-6e0) - НАЙДЕНА
+  ✅ Pc58uu 6n0 (pc58uu-6n0) - НАЙДЕНА
+  ✅ Pc20mr 3 (pc20mr-3) - НАЙДЕНА
+  ✅ Pc200 8n1 (pc200-8n1) - НАЙДЕНА
+  ✅ Sd30 6 (sd30-6) - НАЙДЕНА
+  ✅ Pc30uu 6n0 (pc30uu-6n0) - НАЙДЕНА
+  ✅ Pc30mr 3 (pc30mr-3) - НАЙДЕНА
+  ✅ Pc138us 11 (pc138us-11) - НАЙДЕНА
+  ✅ Wa100 5 (wa100-5) - НАЙДЕНА
+  ✅ Pc78us 8 (pc78us-8) - НАЙДЕНА
+  ✅ Pc38uu 5 (pc38uu-5) - НАЙДЕНА
+  ✅ Pc128us 10 (pc128us-10) - НАЙДЕНА
+  ✅ Pc45mr 5 (pc45mr-5) - НАЙДЕНА
+  ✅ Wa40 6n0 (wa40-6n0) - НАЙДЕНА
+  ✅ Pc228us 3t3 (pc228us-3t3) - НАЙДЕНА
+  ✅ Pc138us 8 (pc138us-8) - НАЙДЕНА
+  ✅ Pc45mr 5n0 (pc45mr-5n0) - НАЙДЕНА
+  ✅ Pc38uu 6 (pc38uu-6) - НАЙДЕНА
+  ✅ Pc128us 8 (pc128us-8) - НАЙДЕНА
+  ✅ Pc58uu 5 (pc58uu-5) - НАЙДЕНА
+  ✅ D21p 8 (d21p-8) - НАЙДЕНА
+  ✅ Pc30uu 3 (pc30uu-3) - НАЙДЕНА
+  ✅ Wa30 6 (wa30-6) - НАЙДЕНА
+  ✅ Pc20uu 5 (pc20uu-5) - НАЙДЕНА
+  ✅ Pc40mr 3 (pc40mr-3) - НАЙДЕНА
+  Итого валидных моделей: 35/35
+
+Бренд: KUBOTA (kubota)
+  ✅ Rx 306 (rx-306) - НАЙДЕНА
+  ✅ U 30 5 (u-30-5) - НАЙДЕНА
+  ✅ Rx 306e (rx-306e) - НАЙДЕНА
+  ✅ U 10 3 (u-10-3) - НАЙДЕНА
+  ✅ Rx 505 (rx-505) - НАЙДЕНА
+  ✅ Rx 203s (rx-203s) - НАЙДЕНА
+  ✅ Rx406 (rx406) - НАЙДЕНА
+  ✅ U 20 3s (u-20-3s) - НАЙДЕНА
+  ✅ U 30 6a (u-30-6a) - НАЙДЕНА
+  ✅ Rx 205 (rx-205) - НАЙДЕНА
+  ✅ Rx 406 (rx-406) - НАЙДЕНА
+  ✅ Rx 153s (rx-153s) - НАЙДЕНА
+  ✅ Rx 406e (rx-406e) - НАЙДЕНА
+  ✅ U 17 (u-17) - НАЙДЕНА
+  ✅ U 30 6 (u-30-6) - НАЙДЕНА
+  ✅ U 35 5 (u-35-5) - НАЙДЕНА
+  Итого валидных моделей: 16/16
+
+Бренд: LINCOLN (lincoln)
+  - Нет моделей
+Бренд: LAMBORGHINI (lamborghini)
+  ✅ Urus (urus) - НАЙДЕНА
+  Итого валидных моделей: 1/1
+
+Бренд: LOTUS (lotus)
+  ✅ Other (other) - НАЙДЕНА
+  Итого валидных моделей: 1/1
+
+Бренд: MITSUOKA (mitsuoka)
+  ✅ Viewt (viewt) - НАЙДЕНА
+  ✅ Himiko (himiko) - НАЙДЕНА
+  Итого валидных моделей: 2/2
+
+Бренд: MASERATI (maserati)
+  ✅ Levante (levante) - НАЙДЕНА
+  ✅ Ghibli (ghibli) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Quattroporte (quattroporte) - НАЙДЕНА
+  Итого валидных моделей: 4/4
+
+Бренд: MINI (mini)
+  - Нет моделей
+Бренд: MCLAREN (mclaren)
+  - Нет моделей
+Бренд: OTHERS (others)
+  ✅ Tacoma (tacoma) - НАЙДЕНА
+  ✅ Cat (cat) - НАЙДЕНА
+  ✅ Sakai (sakai) - НАЙДЕНА
+  ✅ Jlg (jlg) - НАЙДЕНА
+  ✅ Mikasa (mikasa) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Kato (kato) - НАЙДЕНА
+  ✅ Bomag (bomag) - НАЙДЕНА
+  Итого валидных моделей: 8/8
+
+Бренд: OTHER (other)
+  - Нет моделей
+Бренд: PEUGEOT (peugeot)
+  ✅ 208 (208) - НАЙДЕНА
+  ✅ 3008 (3008) - НАЙДЕНА
+  ✅ 2008 (2008) - НАЙДЕНА
+  ✅ 308 (308) - НАЙДЕНА
+  ✅ 207 (207) - НАЙДЕНА
+  ✅ 5008 (5008) - НАЙДЕНА
+  ✅ E 2008 (e-2008) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Rcz (rcz) - НАЙДЕНА
+  ✅ 508 (508) - НАЙДЕНА
+  ✅ E 208 (e-208) - НАЙДЕНА
+  ✅ 408 (408) - НАЙДЕНА
+  Итого валидных моделей: 12/12
+
+Бренд: PORSCHE (porsche)
+  ✅ Macan (macan) - НАЙДЕНА
+  ✅ Cayenne (cayenne) - НАЙДЕНА
+  ✅ Cayman (cayman) - НАЙДЕНА
+  ✅ Panamera (panamera) - НАЙДЕНА
+  ✅ Taycan (taycan) - НАЙДЕНА
+  ✅ 911 (911) - НАЙДЕНА
+  ✅ Boxster (boxster) - НАЙДЕНА
+  Итого валидных моделей: 7/7
+
+Бренд: POLESTAR (polestar)
+  - Нет моделей
+Бренд: RENAULT (renault)
+  ✅ Kangoo (kangoo) - НАЙДЕНА
+  ✅ Lutecia (lutecia) - НАЙДЕНА
+  ✅ Megane (megane) - НАЙДЕНА
+  ✅ Captur (captur) - НАЙДЕНА
+  ✅ Twingo (twingo) - НАЙДЕНА
+  ✅ Koleos (koleos) - НАЙДЕНА
+  ✅ Alpine (alpine) - НАЙДЕНА
+  Итого валидных моделей: 7/7
+
+Бренд: ROVER (rover)
+  ✅ Discovery (discovery) - НАЙДЕНА
+  ✅ Defender (defender) - НАЙДЕНА
+  ✅ Freelander2 (freelander2) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: SAAB (saab)
+  - Нет моделей
+Бренд: SSANGYONG (ssangyong)
+  - Нет моделей
+Бренд: SMART (smart)
+  ✅ Forfour (forfour) - НАЙДЕНА
+  ✅ Fortwo (fortwo) - НАЙДЕНА
+  Итого валидных моделей: 2/2
+
+Бренд: SUMITOMO (sumitomo)
+  ✅ Sh135x 3b (sh135x-3b) - НАЙДЕНА
+  ✅ Sh75x 6a (sh75x-6a) - НАЙДЕНА
+  ✅ Sh75x 3 (sh75x-3) - НАЙДЕНА
+  ✅ Sh125x 3b (sh125x-3b) - НАЙДЕНА
+  ✅ Sh200 5 (sh200-5) - НАЙДЕНА
+  ✅ Hw41vwh 2 (hw41vwh-2) - НАЙДЕНА
+  Итого валидных моделей: 6/6
+
+Бренд: SAMSUNG (samsung)
+  - Нет моделей
+Бренд: TESLA (tesla)
+  ✅ Models (models) - НАЙДЕНА
+  ✅ Model3 (model3) - НАЙДЕНА
+  ✅ Modely (modely) - НАЙДЕНА
+  Итого валидных моделей: 3/3
+
+Бренд: VOLKSWAGEN (volkswagen)
+  ✅ Tiguan (tiguan) - НАЙДЕНА
+  ✅ T Cross (t-cross) - НАЙДЕНА
+  ✅ Arteon (arteon) - НАЙДЕНА
+  ✅ Up (up) - НАЙДЕНА
+  ✅ T Roc (t-roc) - НАЙДЕНА
+  ✅ Golf (golf) - НАЙДЕНА
+  ✅ Polo (polo) - НАЙДЕНА
+  ✅ Sharan (sharan) - НАЙДЕНА
+  ✅ Cc (cc) - НАЙДЕНА
+  ✅ E Golf (e-golf) - НАЙДЕНА
+  ✅ Eos (eos) - НАЙДЕНА
+  ✅ Jetta (jetta) - НАЙДЕНА
+  ✅ Passat (passat) - НАЙДЕНА
+  ✅ Scirocco (scirocco) - НАЙДЕНА
+  ✅ Touareg (touareg) - НАЙДЕНА
+  Итого валидных моделей: 15/15
+
+Бренд: VOLVO (volvo)
+  ✅ V60 (v60) - НАЙДЕНА
+  ✅ V40 (v40) - НАЙДЕНА
+  ✅ S60 (s60) - НАЙДЕНА
+  ✅ Xc40 (xc40) - НАЙДЕНА
+  ✅ V70 (v70) - НАЙДЕНА
+  ✅ Xc90 (xc90) - НАЙДЕНА
+  ✅ Xc60 (xc60) - НАЙДЕНА
+  ✅ V90 (v90) - НАЙДЕНА
+  ✅ C30 (c30) - НАЙДЕНА
+  ✅ Xc70 (xc70) - НАЙДЕНА
+  ✅ V50 (v50) - НАЙДЕНА
+  ✅ S40 (s40) - НАЙДЕНА
+  ✅ C40 (c40) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ S80 (s80) - НАЙДЕНА
+  ✅ S90 (s90) - НАЙДЕНА
+  Итого валидных моделей: 16/16
+
+Бренд: YANMAR (yanmar)
+  ✅ C50r 3c (c50r-3c) - НАЙДЕНА
+  ✅ Vio30 6 (vio30-6) - НАЙДЕНА
+  ✅ Vio20 3 (vio20-3) - НАЙДЕНА
+  ✅ B6 6a (b6-6a) - НАЙДЕНА
+  ✅ Vio17 (vio17) - НАЙДЕНА
+  ✅ B4 6a (b4-6a) - НАЙДЕНА
+  ✅ Vio70 3 (vio70-3) - НАЙДЕНА
+  ✅ B3 6a (b3-6a) - НАЙДЕНА
+  ✅ Vio30 6c (vio30-6c) - НАЙДЕНА
+  ✅ V2 3b (v2-3b) - НАЙДЕНА
+  ✅ V3 7s (v3-7s) - НАЙДЕНА
+  ✅ Vio40 5b (vio40-5b) - НАЙДЕНА
+  ✅ Vio35 5b (vio35-5b) - НАЙДЕНА
+  ✅ C12r B (c12r-b) - НАЙДЕНА
+  ✅ C30r 2b (c30r-2b) - НАЙДЕНА
+  ✅ B30u (b30u) - НАЙДЕНА
+  Итого валидных моделей: 16/16
+
+Бренд: Toyota (toyota)
+  ✅ Voxy (voxy) - НАЙДЕНА
+  ✅ Raize (raize) - НАЙДЕНА
+  ✅ Tank (tank) - НАЙДЕНА
+  ✅ C Hr (c-hr) - НАЙДЕНА
+  ✅ Aqua (aqua) - НАЙДЕНА
+  ✅ Wish (wish) - НАЙДЕНА
+  ✅ Premio (premio) - НАЙДЕНА
+  ✅ Passo (passo) - НАЙДЕНА
+  ✅ Yaris (yaris) - НАЙДЕНА
+  ✅ Prius (prius) - НАЙДЕНА
+  ✅ Roomy (roomy) - НАЙДЕНА
+  ✅ Sienta (sienta) - НАЙДЕНА
+  ✅ Harrier (harrier) - НАЙДЕНА
+  ✅ Camry (camry) - НАЙДЕНА
+  ✅ Corolla (corolla) - НАЙДЕНА
+  ✅ Noah (noah) - НАЙДЕНА
+  ✅ Vellfire (vellfire) - НАЙДЕНА
+  ✅ Alphard (alphard) - НАЙДЕНА
+  ✅ Allion (allion) - НАЙДЕНА
+  ✅ Auris (auris) - НАЙДЕНА
+  ✅ Bb (bb) - НАЙДЕНА
+  ✅ Belta (belta) - НАЙДЕНА
+  ✅ Blade (blade) - НАЙДЕНА
+  ✅ Bz4x (bz4x) - НАЙДЕНА
+  ✅ Coaster (coaster) - НАЙДЕНА
+  ✅ Comfort (comfort) - НАЙДЕНА
+  ✅ Copen (copen) - НАЙДЕНА
+  ✅ Crown (crown) - НАЙДЕНА
+  ✅ Dyna (dyna) - НАЙДЕНА
+  ✅ Esquire (esquire) - НАЙДЕНА
+  ✅ Estima (estima) - НАЙДЕНА
+  ✅ Forklift (forklift) - НАЙДЕНА
+  ✅ Granace (granace) - НАЙДЕНА
+  ✅ Hiace (hiace) - НАЙДЕНА
+  ✅ Hilux (hilux) - НАЙДЕНА
+  ✅ Ipsum (ipsum) - НАЙДЕНА
+  ✅ Iq (iq) - НАЙДЕНА
+  ✅ Isis (isis) - НАЙДЕНА
+  ✅ Ist (ist) - НАЙДЕНА
+  ✅ Mirai (mirai) - НАЙДЕНА
+  ✅ Mr2 (mr2) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Porte (porte) - НАЙДЕНА
+  ✅ Probox (probox) - НАЙДЕНА
+  ✅ Ractis (ractis) - НАЙДЕНА
+  ✅ Raum (raum) - НАЙДЕНА
+  ✅ Rav4 (rav4) - НАЙДЕНА
+  ✅ Rush (rush) - НАЙДЕНА
+  ✅ Sai (sai) - НАЙДЕНА
+  ✅ Spade (spade) - НАЙДЕНА
+  ✅ Succeed (succeed) - НАЙДЕНА
+  ✅ Supra (supra) - НАЙДЕНА
+  ✅ Toyoace (toyoace) - НАЙДЕНА
+  ✅ Vanguard (vanguard) - НАЙДЕНА
+  ✅ Vitz (vitz) - НАЙДЕНА
+  ✅ 86 (86) - НАЙДЕНА
+  Итого валидных моделей: 56/56
+
+Бренд: Nissan (nissan)
+  ✅ Civilian (civilian) - НАЙДЕНА
+  ✅ Dayz (dayz) - НАЙДЕНА
+  ✅ Roox (roox) - НАЙДЕНА
+  ✅ Nv200 (nv200) - НАЙДЕНА
+  ✅ Kix (kix) - НАЙДЕНА
+  ✅ X Trail (x-trail) - НАЙДЕНА
+  ✅ Ad (ad) - НАЙДЕНА
+  ✅ Cima (cima) - НАЙДЕНА
+  ✅ Caravan (caravan) - НАЙДЕНА
+  ✅ Atlas (atlas) - НАЙДЕНА
+  ✅ Note (note) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Truck (truck) - НАЙДЕНА
+  ✅ Serena (serena) - НАЙДЕНА
+  ✅ March (march) - НАЙДЕНА
+  ✅ Elgrand (elgrand) - НАЙДЕНА
+  ✅ Fairladyz (fairladyz) - НАЙДЕНА
+  ✅ Sylphy (sylphy) - НАЙДЕНА
+  ✅ Ariya (ariya) - НАЙДЕНА
+  ✅ Aura (aura) - НАЙДЕНА
+  ✅ Cedric (cedric) - НАЙДЕНА
+  ✅ Condor (condor) - НАЙДЕНА
+  ✅ Cube (cube) - НАЙДЕНА
+  ✅ Cubecubic (cubecubic) - НАЙДЕНА
+  ✅ Dualis (dualis) - НАЙДЕНА
+  ✅ Fuga (fuga) - НАЙДЕНА
+  ✅ Gt R (gt-r) - НАЙДЕНА
+  ✅ Infiniti (infiniti) - НАЙДЕНА
+  ✅ Juke (juke) - НАЙДЕНА
+  ✅ Lafesta (lafesta) - НАЙДЕНА
+  ✅ Latio (latio) - НАЙДЕНА
+  ✅ Leaf (leaf) - НАЙДЕНА
+  ✅ Micra (micra) - НАЙДЕНА
+  ✅ Moco (moco) - НАЙДЕНА
+  ✅ Murano (murano) - НАЙДЕНА
+  ✅ Otti (otti) - НАЙДЕНА
+  ✅ Pino (pino) - НАЙДЕНА
+  ✅ Presage (presage) - НАЙДЕНА
+  ✅ Quon (quon) - НАЙДЕНА
+  ✅ Sakura (sakura) - НАЙДЕНА
+  ✅ Skyline (skyline) - НАЙДЕНА
+  ✅ Teana (teana) - НАЙДЕНА
+  ✅ Tiida (tiida) - НАЙДЕНА
+  ✅ Wingroad (wingroad) - НАЙДЕНА
+  Итого валидных моделей: 44/44
+
+Бренд: Honda (honda)
+  ✅ Vezel (vezel) - НАЙДЕНА
+  ✅ Fit (fit) - НАЙДЕНА
+  ✅ Insight (insight) - НАЙДЕНА
+  ✅ Vamos (vamos) - НАЙДЕНА
+  ✅ Life (life) - НАЙДЕНА
+  ✅ Freed (freed) - НАЙДЕНА
+  ✅ Civic (civic) - НАЙДЕНА
+  ✅ Zr V (zr-v) - НАЙДЕНА
+  ✅ Odyssey (odyssey) - НАЙДЕНА
+  ✅ Accord (accord) - НАЙДЕНА
+  ✅ Grace (grace) - НАЙДЕНА
+  ✅ Airwave (airwave) - НАЙДЕНА
+  ✅ Cr V (cr-v) - НАЙДЕНА
+  ✅ Cr Z (cr-z) - НАЙДЕНА
+  ✅ Crossroad (crossroad) - НАЙДЕНА
+  ✅ E (e) - НАЙДЕНА
+  ✅ Edix (edix) - НАЙДЕНА
+  ✅ Elysion (elysion) - НАЙДЕНА
+  ✅ Inspire (inspire) - НАЙДЕНА
+  ✅ Jade (jade) - НАЙДЕНА
+  ✅ Legend (legend) - НАЙДЕНА
+  ✅ Mobilio (mobilio) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Partner (partner) - НАЙДЕНА
+  ✅ S660 (s660) - НАЙДЕНА
+  ✅ Shuttle (shuttle) - НАЙДЕНА
+  ✅ Spike (spike) - НАЙДЕНА
+  ✅ Stream (stream) - НАЙДЕНА
+  ✅ Wr V (wr-v) - НАЙДЕНА
+  ✅ Zest (zest) - НАЙДЕНА
+  Итого валидных моделей: 30/30
+
+Бренд: Mazda (mazda)
+  ✅ Cx 5 (cx-5) - НАЙДЕНА
+  ✅ Biante (biante) - НАЙДЕНА
+  ✅ Premacy (premacy) - НАЙДЕНА
+  ✅ Demio (demio) - НАЙДЕНА
+  ✅ Carol (carol) - НАЙДЕНА
+  ✅ Axela (axela) - НАЙДЕНА
+  ✅ Scrum (scrum) - НАЙДЕНА
+  ✅ Flair (flair) - НАЙДЕНА
+  ✅ Cx 30 (cx-30) - НАЙДЕНА
+  ✅ Titan (titan) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Bongo (bongo) - НАЙДЕНА
+  ✅ Mazda2 (mazda2) - НАЙДЕНА
+  ✅ Cx 60 (cx-60) - НАЙДЕНА
+  ✅ Rx 8 (rx-8) - НАЙДЕНА
+  ✅ Cx 8 (cx-8) - НАЙДЕНА
+  ✅ 6 (6) - НАЙДЕНА
+  ✅ Mazda3 (mazda3) - НАЙДЕНА
+  ✅ Roadster (roadster) - НАЙДЕНА
+  ✅ Az Offroad (az-offroad) - НАЙДЕНА
+  ✅ Cx 3 (cx-3) - НАЙДЕНА
+  ✅ Cx 7 (cx-7) - НАЙДЕНА
+  ✅ Mpv (mpv) - НАЙДЕНА
+  ✅ Mx 30 (mx-30) - НАЙДЕНА
+  ✅ Spiano (spiano) - НАЙДЕНА
+  ✅ Verisa (verisa) - НАЙДЕНА
+  Итого валидных моделей: 26/26
+
+Бренд: Mitsubishi (mitsubishi)
+  ✅ Rosa (rosa) - НАЙДЕНА
+  ✅ Rvr (rvr) - НАЙДЕНА
+  ✅ Canter (canter) - НАЙДЕНА
+  ✅ Bus (bus) - НАЙДЕНА
+  ✅ Colt (colt) - НАЙДЕНА
+  ✅ Delica (delica) - НАЙДЕНА
+  ✅ Grandis (grandis) - НАЙДЕНА
+  ✅ I (i) - НАЙДЕНА
+  ✅ I Miev (i-miev) - НАЙДЕНА
+  ✅ Lancer (lancer) - НАЙДЕНА
+  ✅ Minica (minica) - НАЙДЕНА
+  ✅ Mirage (mirage) - НАЙДЕНА
+  ✅ Outlander (outlander) - НАЙДЕНА
+  ✅ Pajero (pajero) - НАЙДЕНА
+  ✅ Proudia (proudia) - НАЙДЕНА
+  ✅ Toppo (toppo) - НАЙДЕНА
+  ✅ Townbox (townbox) - НАЙДЕНА
+  ✅ Triton (triton) - НАЙДЕНА
+  Итого валидных моделей: 18/18
+
+Бренд: Subaru (subaru)
+  ✅ Impreza (impreza) - НАЙДЕНА
+  ✅ Forester (forester) - НАЙДЕНА
+  ✅ Levorg (levorg) - НАЙДЕНА
+  ✅ Xv (xv) - НАЙДЕНА
+  ✅ Legacy (legacy) - НАЙДЕНА
+  ✅ Lucra (lucra) - НАЙДЕНА
+  ✅ Sambar (sambar) - НАЙДЕНА
+  ✅ Stella (stella) - НАЙДЕНА
+  ✅ Brz (brz) - НАЙДЕНА
+  ✅ Trezia (trezia) - НАЙДЕНА
+  ✅ Exiga (exiga) - НАЙДЕНА
+  ✅ Chiffon (chiffon) - НАЙДЕНА
+  ✅ Crosstrek (crosstrek) - НАЙДЕНА
+  ✅ Dex (dex) - НАЙДЕНА
+  ✅ Justy (justy) - НАЙДЕНА
+  ✅ Pleo (pleo) - НАЙДЕНА
+  ✅ R1 (r1) - НАЙДЕНА
+  ✅ R2 (r2) - НАЙДЕНА
+  ✅ Rex (rex) - НАЙДЕНА
+  ✅ Rocky (rocky) - НАЙДЕНА
+  ✅ Solterra (solterra) - НАЙДЕНА
+  ✅ Wrx (wrx) - НАЙДЕНА
+  Итого валидных моделей: 22/22
+
+Бренд: Suzuki (suzuki)
+  ✅ Xbee (xbee) - НАЙДЕНА
+  ✅ Spacia (spacia) - НАЙДЕНА
+  ✅ Escudo (escudo) - НАЙДЕНА
+  ✅ Ignis (ignis) - НАЙДЕНА
+  ✅ Swift (swift) - НАЙДЕНА
+  ✅ Every (every) - НАЙДЕНА
+  ✅ Solio (solio) - НАЙДЕНА
+  ✅ Jimny (jimny) - НАЙДЕНА
+  ✅ Palette (palette) - НАЙДЕНА
+  ✅ Alto (alto) - НАЙДЕНА
+  ✅ Landy (landy) - НАЙДЕНА
+  ✅ Mrwagon (mrwagon) - НАЙДЕНА
+  ✅ Baleno (baleno) - НАЙДЕНА
+  ✅ Cervo (cervo) - НАЙДЕНА
+  ✅ Fronx (fronx) - НАЙДЕНА
+  ✅ Hustler (hustler) - НАЙДЕНА
+  ✅ Kei (kei) - НАЙДЕНА
+  ✅ Kizashi (kizashi) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Seniocar (seniocar) - НАЙДЕНА
+  ✅ Splash (splash) - НАЙДЕНА
+  ✅ Sx 4 (sx-4) - НАЙДЕНА
+  Итого валидных моделей: 22/22
+
+Бренд: Lexus (lexus)
+  ✅ Gs (gs) - НАЙДЕНА
+  ✅ Hs (hs) - НАЙДЕНА
+  ✅ Ct (ct) - НАЙДЕНА
+  ✅ Ux (ux) - НАЙДЕНА
+  ✅ Is (is) - НАЙДЕНА
+  ✅ Rx (rx) - НАЙДЕНА
+  ✅ Nx (nx) - НАЙДЕНА
+  ✅ Lx (lx) - НАЙДЕНА
+  ✅ Rc (rc) - НАЙДЕНА
+  ✅ Ls (ls) - НАЙДЕНА
+  ✅ Es (es) - НАЙДЕНА
+  ✅ Lbx (lbx) - НАЙДЕНА
+  ✅ Lc (lc) - НАЙДЕНА
+  ✅ Lm (lm) - НАЙДЕНА
+  Итого валидных моделей: 14/14
+
+Бренд: BMW (bmw)
+  ✅ X3 (x3) - НАЙДЕНА
+  ✅ X1 (x1) - НАЙДЕНА
+  ✅ Mini (mini) - НАЙДЕНА
+  ✅ Ix (ix) - НАЙДЕНА
+  ✅ X7 (x7) - НАЙДЕНА
+  ✅ X2 (x2) - НАЙДЕНА
+  ✅ M2 (m2) - НАЙДЕНА
+  ✅ M3 (m3) - НАЙДЕНА
+  ✅ Alpina (alpina) - НАЙДЕНА
+  ✅ I4 (i4) - НАЙДЕНА
+  ✅ I7 (i7) - НАЙДЕНА
+  ✅ I8 (i8) - НАЙДЕНА
+  ✅ Ix1 (ix1) - НАЙДЕНА
+  ✅ Ix3 (ix3) - НАЙДЕНА
+  ✅ M4 (m4) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ X4 (x4) - НАЙДЕНА
+  ✅ X6 (x6) - НАЙДЕНА
+  ✅ Z4 (z4) - НАЙДЕНА
+  ✅ I3 (i3) - НАЙДЕНА
+  ✅ I5 (i5) - НАЙДЕНА
+  Итого валидных моделей: 21/21
+
+Бренд: Daihatsu (daihatsu)
+  ✅ Move (move) - НАЙДЕНА
+  ✅ Tanto (tanto) - НАЙДЕНА
+  ✅ Taft (taft) - НАЙДЕНА
+  ✅ Cast (cast) - НАЙДЕНА
+  ✅ Mira (mira) - НАЙДЕНА
+  ✅ Altis (altis) - НАЙДЕНА
+  ✅ Bego (bego) - НАЙДЕНА
+  ✅ Boon (boon) - НАЙДЕНА
+  ✅ Coo (coo) - НАЙДЕНА
+  ✅ Copen (copen) - НАЙДЕНА
+  ✅ Esse (esse) - НАЙДЕНА
+  ✅ Mebius (mebius) - НАЙДЕНА
+  ✅ Other (other) - НАЙДЕНА
+  ✅ Rocky (rocky) - НАЙДЕНА
+  ✅ Sonica (sonica) - НАЙДЕНА
+  ✅ Thor (thor) - НАЙДЕНА
+  ✅ Wake (wake) - НАЙДЕНА
+  Итого валидных моделей: 17/17
+
+Бренд: Changan (changan)
+  - Нет моделей
+Бренд: Exeed (exeed)
+  - Нет моделей
+Бренд: Geely (geely)
+  - Нет моделей
+Бренд: Chery (chery)
+  - Нет моделей
+Бренд: Haval (haval)
+  - Нет моделей
+Бренд: FAW (faw)
+  - Нет моделей
+Бренд: BYD (byd)
+  - Нет моделей
+Бренд: JAC (jac)
+  - Нет моделей
+Бренд: Lifan (lifan)
+  - Нет моделей
+Бренд: DongFeng (dongfeng)
+  - Нет моделей

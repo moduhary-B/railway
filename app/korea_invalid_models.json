@@ -1,0 +1,3008 @@
+[
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "A4 B9",
+    "model_id": "a4-b9"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "A5",
+    "model_id": "a5"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "A5 F5",
+    "model_id": "a5-f5"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "A6 C8",
+    "model_id": "a6-c8"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "A8 D5",
+    "model_id": "a8-d5"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "Q7",
+    "model_id": "q7"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "Q7 4M",
+    "model_id": "q7-4m"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "RSQ8",
+    "model_id": "rsq8"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S4 B9",
+    "model_id": "s4-b9"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S6",
+    "model_id": "s6"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S6 C8",
+    "model_id": "s6-c8"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S7",
+    "model_id": "s7"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S8",
+    "model_id": "s8"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "S8 D5",
+    "model_id": "s8-d5"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "SQ5 FY",
+    "model_id": "sq5-fy"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "SQ8",
+    "model_id": "sq8"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "TT",
+    "model_id": "tt"
+  },
+  {
+    "brand": "AUDI",
+    "brand_id": "audi",
+    "model": "TTS",
+    "model_id": "tts"
+  },
+  {
+    "brand": "BENTLEY",
+    "brand_id": "bentley",
+    "model": "Continental",
+    "model_id": "continental"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "1-SERIES E82",
+    "model_id": "1-series-e82"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "1-SERIES F20",
+    "model_id": "1-series-f20"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "1-SERIES F40",
+    "model_id": "1-series-f40"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "2-SERIES ACTIVE TOURER F45",
+    "model_id": "2-series-active-tourer-f45"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "2-SERIES ACTIVE TOURER U06",
+    "model_id": "2-series-active-tourer-u06"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "2-SERIES F22",
+    "model_id": "2-series-f22"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "2-SERIES G42",
+    "model_id": "2-series-g42"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "2-SERIES GRAN COUPE F44",
+    "model_id": "2-series-gran-coupe-f44"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "3-SERIES E90",
+    "model_id": "3-series-e90"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "3-SERIES F30",
+    "model_id": "3-series-f30"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "3-SERIES G20",
+    "model_id": "3-series-g20"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "3-SERIES GT F34",
+    "model_id": "3-series-gt-f34"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "4-SERIES F32",
+    "model_id": "4-series-f32"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "4-SERIES G22",
+    "model_id": "4-series-g22"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "5-SERIES E60",
+    "model_id": "5-series-e60"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "5-SERIES F10",
+    "model_id": "5-series-f10"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "5-SERIES G30",
+    "model_id": "5-series-g30"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "5-SERIES GT F07",
+    "model_id": "5-series-gt-f07"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "6-SERIES F12",
+    "model_id": "6-series-f12"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "6-SERIES GT G32",
+    "model_id": "6-series-gt-g32"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "7-SERIES F01",
+    "model_id": "7-series-f01"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "7-SERIES G11",
+    "model_id": "7-series-g11"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "8-SERIES G15",
+    "model_id": "8-series-g15"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "M2 F87",
+    "model_id": "m2-f87"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "M3 E90",
+    "model_id": "m3-e90"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "M3 F80",
+    "model_id": "m3-f80"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "M4 F82",
+    "model_id": "m4-f82"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X1 E84",
+    "model_id": "x1-e84"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X2 F39 F39",
+    "model_id": "x2-f39-f39"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X3 E83",
+    "model_id": "x3-e83"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X3 F25",
+    "model_id": "x3-f25"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X3 G01",
+    "model_id": "x3-g01"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X4 F26",
+    "model_id": "x4-f26"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X5 E70",
+    "model_id": "x5-e70"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X5 F15",
+    "model_id": "x5-f15"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X5 G05",
+    "model_id": "x5-g05"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X6 E71",
+    "model_id": "x6-e71"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X6 F16",
+    "model_id": "x6-f16"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X6 G06",
+    "model_id": "x6-g06"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "X7 G07",
+    "model_id": "x7-g07"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "Z4 E89",
+    "model_id": "z4-e89"
+  },
+  {
+    "brand": "BMW",
+    "brand_id": "bmw",
+    "model": "Z4 G29",
+    "model_id": "z4-g29"
+  },
+  {
+    "brand": "CHRYSLER",
+    "brand_id": "chrysler",
+    "model": "300",
+    "model_id": "300"
+  },
+  {
+    "brand": "CHRYSLER",
+    "brand_id": "chrysler",
+    "model": "Ypsilon",
+    "model_id": "ypsilon"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "Berlingo",
+    "model_id": "berlingo"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "Ds5",
+    "model_id": "ds5"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "C3",
+    "model_id": "c3"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "C6",
+    "model_id": "c6"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "Ds7",
+    "model_id": "ds7"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "C4",
+    "model_id": "c4"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "Ds3",
+    "model_id": "ds3"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "C5",
+    "model_id": "c5"
+  },
+  {
+    "brand": "CITROEN",
+    "brand_id": "citroen",
+    "model": "Ds4",
+    "model_id": "ds4"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "ALPHEON",
+    "model_id": "alpheon"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "AMAZING NEW CRUISE 5",
+    "model_id": "amazing-new-cruise-5"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "AVEO HATCHBACK",
+    "model_id": "aveo-hatchback"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "AVEO SEDAN",
+    "model_id": "aveo-sedan"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "CRUZE 5",
+    "model_id": "cruze-5"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "CRUZE AMAZING NEW",
+    "model_id": "cruze-amazing-new"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "DAMAS II",
+    "model_id": "damas-ii"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "EQUINOX THE NEXT",
+    "model_id": "equinox-the-next"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "G2X",
+    "model_id": "g2x"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "GENTRA",
+    "model_id": "gentra"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "GENTRA X",
+    "model_id": "gentra-x"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "LACETTI PREMIER",
+    "model_id": "lacetti-premier"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "LANOS II",
+    "model_id": "lanos-ii"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "MAGNUS",
+    "model_id": "magnus"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "MATIZ",
+    "model_id": "matiz"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "MATIZ CLASSIC",
+    "model_id": "matiz-classic"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "MATIZ CREATIVE",
+    "model_id": "matiz-creative"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "PRINCE",
+    "model_id": "prince"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "SPARK THE NEXT",
+    "model_id": "spark-the-next"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "TICO",
+    "model_id": "tico"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "TOSCA",
+    "model_id": "tosca"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "TOSCA PREMIUM 6",
+    "model_id": "tosca-premium-6"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "VERITAS",
+    "model_id": "veritas"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "VOLT EUV",
+    "model_id": "volt-euv"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "WINSTORM",
+    "model_id": "winstorm"
+  },
+  {
+    "brand": "DAEWOO",
+    "brand_id": "daewoo",
+    "model": "WINSTORM MAX",
+    "model_id": "winstorm-max"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Altis",
+    "model_id": "altis"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Bego",
+    "model_id": "bego"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Boon",
+    "model_id": "boon"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Cast",
+    "model_id": "cast"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Coo",
+    "model_id": "coo"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Copen",
+    "model_id": "copen"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Esse",
+    "model_id": "esse"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Mebius",
+    "model_id": "mebius"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Mira",
+    "model_id": "mira"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Move",
+    "model_id": "move"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Rocky",
+    "model_id": "rocky"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Sonica",
+    "model_id": "sonica"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Taft",
+    "model_id": "taft"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Tanto",
+    "model_id": "tanto"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Thor",
+    "model_id": "thor"
+  },
+  {
+    "brand": "DAIHATSU",
+    "brand_id": "daihatsu",
+    "model": "Wake",
+    "model_id": "wake"
+  },
+  {
+    "brand": "DODGE",
+    "brand_id": "dodge",
+    "model": "Charger",
+    "model_id": "charger"
+  },
+  {
+    "brand": "DODGE",
+    "brand_id": "dodge",
+    "model": "Magnum",
+    "model_id": "magnum"
+  },
+  {
+    "brand": "DODGE",
+    "brand_id": "dodge",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "FERRARI",
+    "brand_id": "ferrari",
+    "model": "488",
+    "model_id": "488"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "Punto",
+    "model_id": "punto"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "500c",
+    "model_id": "500c"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "Doblo",
+    "model_id": "doblo"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "500e",
+    "model_id": "500e"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "500s",
+    "model_id": "500s"
+  },
+  {
+    "brand": "FIAT",
+    "brand_id": "fiat",
+    "model": "Panda",
+    "model_id": "panda"
+  },
+  {
+    "brand": "FORD",
+    "brand_id": "ford",
+    "model": "Ecosport",
+    "model_id": "ecosport"
+  },
+  {
+    "brand": "FORD",
+    "brand_id": "ford",
+    "model": "Escape",
+    "model_id": "escape"
+  },
+  {
+    "brand": "FORD",
+    "brand_id": "ford",
+    "model": "Fiesta",
+    "model_id": "fiesta"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Airwave",
+    "model_id": "airwave"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Civic",
+    "model_id": "civic"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Cr Z",
+    "model_id": "cr-z"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Crossroad",
+    "model_id": "crossroad"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "E",
+    "model_id": "e"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Edix",
+    "model_id": "edix"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Elysion",
+    "model_id": "elysion"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Fit",
+    "model_id": "fit"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Freed",
+    "model_id": "freed"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Grace",
+    "model_id": "grace"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Insight",
+    "model_id": "insight"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Inspire",
+    "model_id": "inspire"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Jade",
+    "model_id": "jade"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Legend",
+    "model_id": "legend"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Life",
+    "model_id": "life"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Mobilio",
+    "model_id": "mobilio"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Partner",
+    "model_id": "partner"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Shuttle",
+    "model_id": "shuttle"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Spike",
+    "model_id": "spike"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Stream",
+    "model_id": "stream"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Vamos",
+    "model_id": "vamos"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Vezel",
+    "model_id": "vezel"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Wr V",
+    "model_id": "wr-v"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Zest",
+    "model_id": "zest"
+  },
+  {
+    "brand": "HONDA",
+    "brand_id": "honda",
+    "model": "Zr V",
+    "model_id": "zr-v"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "ACCENT NEW",
+    "model_id": "accent-new"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE",
+    "model_id": "avante"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE AD",
+    "model_id": "avante-ad"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE CN7",
+    "model_id": "avante-cn7"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE COUPE",
+    "model_id": "avante-coupe"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE HD",
+    "model_id": "avante-hd"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE HYBRID",
+    "model_id": "avante-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE HYBRID CN7",
+    "model_id": "avante-hybrid-cn7"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "AVANTE MD",
+    "model_id": "avante-md"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "EQUUS NEW",
+    "model_id": "equus-new"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GENESIS",
+    "model_id": "genesis"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GENESIS COUPE",
+    "model_id": "genesis-coupe"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GENESIS DH",
+    "model_id": "genesis-dh"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR HG",
+    "model_id": "grandeur-hg"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR HG HYBRID",
+    "model_id": "grandeur-hg-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR HYBRID GN7",
+    "model_id": "grandeur-hybrid-gn7"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR IG",
+    "model_id": "grandeur-ig"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR IG HYBRID",
+    "model_id": "grandeur-ig-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR NEW LUXURY",
+    "model_id": "grandeur-new-luxury"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR TG",
+    "model_id": "grandeur-tg"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "GRANDEUR THE LUXURY",
+    "model_id": "grandeur-the-luxury"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "I30 NEW",
+    "model_id": "i30-new"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "I30 PD",
+    "model_id": "i30-pd"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "I40 SALOON",
+    "model_id": "i40-saloon"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "IONIQ ELECTRIC",
+    "model_id": "ioniq-electric"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "IONIQ HYBRID",
+    "model_id": "ioniq-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "KONA ELECTRIC",
+    "model_id": "kona-electric"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "KONA HYBRID",
+    "model_id": "kona-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "LF SONATA HYBRID",
+    "model_id": "lf-sonata-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "NF SONATA TRANSFORM",
+    "model_id": "nf-sonata-transform"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SANTAFE CM",
+    "model_id": "santafe-cm"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SANTAFE DM",
+    "model_id": "santafe-dm"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SANTAFE THE PRIME",
+    "model_id": "santafe-the-prime"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SANTAFE TM",
+    "model_id": "santafe-tm"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA DN8",
+    "model_id": "sonata-dn8"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA HYBRID",
+    "model_id": "sonata-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA HYBRID DN8",
+    "model_id": "sonata-hybrid-dn8"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA LF",
+    "model_id": "sonata-lf"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA NEW RISE",
+    "model_id": "sonata-new-rise"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA NEW RISE HYBRID",
+    "model_id": "sonata-new-rise-hybrid"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA THE BRILLIANT",
+    "model_id": "sonata-the-brilliant"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "SONATA YF",
+    "model_id": "sonata-yf"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "STAREX GRAND",
+    "model_id": "starex-grand"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "TUCSON IX",
+    "model_id": "tucson-ix"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "TUCSON NX4",
+    "model_id": "tucson-nx4"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "VELOSTER JS",
+    "model_id": "veloster-js"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "VERACRUZ",
+    "model_id": "veracruz"
+  },
+  {
+    "brand": "HYUNDAI",
+    "brand_id": "hyundai",
+    "model": "VERNA TRANSFORM",
+    "model_id": "verna-transform"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "CERATO",
+    "model_id": "cerato"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "CREDOS",
+    "model_id": "credos"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "ELAN",
+    "model_id": "elan"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "ENTERPRISE",
+    "model_id": "enterprise"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K3 KOUP",
+    "model_id": "k3-koup"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K5 HYBRID",
+    "model_id": "k5-hybrid"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K7 HYBRID",
+    "model_id": "k7-hybrid"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K7 PREMIER",
+    "model_id": "k7-premier"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K7 PREMIER HYBRID",
+    "model_id": "k7-premier-hybrid"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K7 THE PRESTIGE",
+    "model_id": "k7-the-prestige"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "K8 HYBRID",
+    "model_id": "k8-hybrid"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "MOHAVE THE MASTER",
+    "model_id": "mohave-the-master"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "MORNING JA",
+    "model_id": "morning-ja"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "MORNING URBAN JA",
+    "model_id": "morning-urban-ja"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "NIRO EV",
+    "model_id": "niro-ev"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "NIRO PLUS",
+    "model_id": "niro-plus"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "OPIRUS",
+    "model_id": "opirus"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "OPIRUS PREMIUM",
+    "model_id": "opirus-premium"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "PARKTOWN",
+    "model_id": "parktown"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "PORTE",
+    "model_id": "porte"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "PORTE HATCHBACK",
+    "model_id": "porte-hatchback"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "PORTE KOUP",
+    "model_id": "porte-koup"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "POTENTIA",
+    "model_id": "potentia"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "PRIDE NEW",
+    "model_id": "pride-new"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SORENTO R",
+    "model_id": "sorento-r"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SOUL BOOSTER",
+    "model_id": "soul-booster"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SOUL BOOSTER EV",
+    "model_id": "soul-booster-ev"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SPORTAGE  HYBRID",
+    "model_id": "sportage-hybrid"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SPORTAGE R",
+    "model_id": "sportage-r"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "SPORTAGE THE BOLD",
+    "model_id": "sportage-the-bold"
+  },
+  {
+    "brand": "KIA",
+    "brand_id": "kia",
+    "model": "STINGER MEISTER",
+    "model_id": "stinger-meister"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Ct",
+    "model_id": "ct"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Is",
+    "model_id": "is"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Ls",
+    "model_id": "ls"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Rx",
+    "model_id": "rx"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Es",
+    "model_id": "es"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Lbx",
+    "model_id": "lbx"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Lx",
+    "model_id": "lx"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Ux",
+    "model_id": "ux"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Gs",
+    "model_id": "gs"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Nx",
+    "model_id": "nx"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Hs",
+    "model_id": "hs"
+  },
+  {
+    "brand": "LEXUS",
+    "brand_id": "lexus",
+    "model": "Rc",
+    "model_id": "rc"
+  },
+  {
+    "brand": "LOTUS",
+    "brand_id": "lotus",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "MASERATI",
+    "brand_id": "maserati",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "A-CLASS W176",
+    "model_id": "a-class-w176"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "A-CLASS W177",
+    "model_id": "a-class-w177"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "AMG GT",
+    "model_id": "amg-gt"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "B-CLASS W245",
+    "model_id": "b-class-w245"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "B-CLASS W246",
+    "model_id": "b-class-w246"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "C-CLASS W204",
+    "model_id": "c-class-w204"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "C-CLASS W205",
+    "model_id": "c-class-w205"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLA-CLASS C117",
+    "model_id": "cla-class-c117"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLA-CLASS C118",
+    "model_id": "cla-class-c118"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLK-CLASS C209",
+    "model_id": "clk-class-c209"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLS-CLASS C257",
+    "model_id": "cls-class-c257"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLS-CLASS W218",
+    "model_id": "cls-class-w218"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "CLS-CLASS W219",
+    "model_id": "cls-class-w219"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "E-CLASS W212",
+    "model_id": "e-class-w212"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "E-CLASS W213",
+    "model_id": "e-class-w213"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "EQA H243",
+    "model_id": "eqa-h243"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "EQB X243",
+    "model_id": "eqb-x243"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "EQC N293",
+    "model_id": "eqc-n293"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "EQE V295",
+    "model_id": "eqe-v295"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "EQS V297",
+    "model_id": "eqs-v297"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "G-CLASS W463",
+    "model_id": "g-class-w463"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "G-CLASS W463B",
+    "model_id": "g-class-w463b"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLA-CLASS H247",
+    "model_id": "gla-class-h247"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLA-CLASS X156",
+    "model_id": "gla-class-x156"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLB-CLASS X247",
+    "model_id": "glb-class-x247"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLC-CLASS X253",
+    "model_id": "glc-class-x253"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLE-CLASS W166",
+    "model_id": "gle-class-w166"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLE-CLASS W167",
+    "model_id": "gle-class-w167"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLK-CLASS X204",
+    "model_id": "glk-class-x204"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "GLS-CLASS X167",
+    "model_id": "gls-class-x167"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "M-CLASS W166",
+    "model_id": "m-class-w166"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "S-CLASS W221",
+    "model_id": "s-class-w221"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "S-CLASS W222",
+    "model_id": "s-class-w222"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "S-CLASS W223",
+    "model_id": "s-class-w223"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "SL-CLASS",
+    "model_id": "sl-class"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "SLC-CLASS R172",
+    "model_id": "slc-class-r172"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "SLK-CLASS",
+    "model_id": "slk-class"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "SPRINTER",
+    "model_id": "sprinter"
+  },
+  {
+    "brand": "MERCEDES BENZ",
+    "brand_id": "mercedes-benz",
+    "model": "V-CLASS",
+    "model_id": "v-class"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Bus",
+    "model_id": "bus"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Canter",
+    "model_id": "canter"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Colt",
+    "model_id": "colt"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Delica",
+    "model_id": "delica"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Grandis",
+    "model_id": "grandis"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "I",
+    "model_id": "i"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "I Miev",
+    "model_id": "i-miev"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Lancer",
+    "model_id": "lancer"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Minica",
+    "model_id": "minica"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Mirage",
+    "model_id": "mirage"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Outlander",
+    "model_id": "outlander"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Pajero",
+    "model_id": "pajero"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Proudia",
+    "model_id": "proudia"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Rosa",
+    "model_id": "rosa"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Rvr",
+    "model_id": "rvr"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Toppo",
+    "model_id": "toppo"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Townbox",
+    "model_id": "townbox"
+  },
+  {
+    "brand": "MITSUBISHI",
+    "brand_id": "mitsubishi",
+    "model": "Triton",
+    "model_id": "triton"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Ad",
+    "model_id": "ad"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Ariya",
+    "model_id": "ariya"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Atlas",
+    "model_id": "atlas"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Aura",
+    "model_id": "aura"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Caravan",
+    "model_id": "caravan"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Cedric",
+    "model_id": "cedric"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Cima",
+    "model_id": "cima"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Civilian",
+    "model_id": "civilian"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Condor",
+    "model_id": "condor"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Cube",
+    "model_id": "cube"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Cubecubic",
+    "model_id": "cubecubic"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Dayz",
+    "model_id": "dayz"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Dualis",
+    "model_id": "dualis"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Elgrand",
+    "model_id": "elgrand"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Fairladyz",
+    "model_id": "fairladyz"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Fuga",
+    "model_id": "fuga"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Gt R",
+    "model_id": "gt-r"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Infiniti",
+    "model_id": "infiniti"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Kix",
+    "model_id": "kix"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Lafesta",
+    "model_id": "lafesta"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Latio",
+    "model_id": "latio"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Leaf",
+    "model_id": "leaf"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "March",
+    "model_id": "march"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Micra",
+    "model_id": "micra"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Moco",
+    "model_id": "moco"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Murano",
+    "model_id": "murano"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Note",
+    "model_id": "note"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Nv200",
+    "model_id": "nv200"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Otti",
+    "model_id": "otti"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Pino",
+    "model_id": "pino"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Presage",
+    "model_id": "presage"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Quon",
+    "model_id": "quon"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Roox",
+    "model_id": "roox"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Sakura",
+    "model_id": "sakura"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Serena",
+    "model_id": "serena"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Skyline",
+    "model_id": "skyline"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Sylphy",
+    "model_id": "sylphy"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Teana",
+    "model_id": "teana"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Tiida",
+    "model_id": "tiida"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Truck",
+    "model_id": "truck"
+  },
+  {
+    "brand": "NISSAN",
+    "brand_id": "nissan",
+    "model": "Wingroad",
+    "model_id": "wingroad"
+  },
+  {
+    "brand": "PEUGEOT",
+    "brand_id": "peugeot",
+    "model": "207",
+    "model_id": "207"
+  },
+  {
+    "brand": "PEUGEOT",
+    "brand_id": "peugeot",
+    "model": "E 208",
+    "model_id": "e-208"
+  },
+  {
+    "brand": "PEUGEOT",
+    "brand_id": "peugeot",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "PEUGEOT",
+    "brand_id": "peugeot",
+    "model": "Rcz",
+    "model_id": "rcz"
+  },
+  {
+    "brand": "PORSCHE",
+    "brand_id": "porsche",
+    "model": "Cayman",
+    "model_id": "cayman"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "QM5",
+    "model_id": "qm5"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "QM5 NEO",
+    "model_id": "qm5-neo"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM3",
+    "model_id": "sm3"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM3 NEO",
+    "model_id": "sm3-neo"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM3 NEW GENERATION",
+    "model_id": "sm3-new-generation"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM3 Z.E.",
+    "model_id": "sm3-ze"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM5",
+    "model_id": "sm5"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM5 NEW",
+    "model_id": "sm5-new"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM5 NEW IMPRESSION",
+    "model_id": "sm5-new-impression"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM5 NOVA",
+    "model_id": "sm5-nova"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM5 PLATINUM",
+    "model_id": "sm5-platinum"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM7",
+    "model_id": "sm7"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM7 NEW ART",
+    "model_id": "sm7-new-art"
+  },
+  {
+    "brand": "SAMSUNG",
+    "brand_id": "samsung",
+    "model": "SM7 NOVA",
+    "model_id": "sm7-nova"
+  },
+  {
+    "brand": "SMART",
+    "brand_id": "smart",
+    "model": "Forfour",
+    "model_id": "forfour"
+  },
+  {
+    "brand": "SMART",
+    "brand_id": "smart",
+    "model": "Fortwo",
+    "model_id": "fortwo"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "ACTYON SPORTS",
+    "model_id": "actyon-sports"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "CHAIRMAN",
+    "model_id": "chairman"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "CHAIRMAN H",
+    "model_id": "chairman-h"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "CHAIRMAN H NEW CLASSIC",
+    "model_id": "chairman-h-new-classic"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "CHAIRMAN W",
+    "model_id": "chairman-w"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO",
+    "model_id": "korando"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO BEAUTIFUL",
+    "model_id": "korando-beautiful"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO C",
+    "model_id": "korando-c"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO JEEP",
+    "model_id": "korando-jeep"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO SPORTS",
+    "model_id": "korando-sports"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KORANDO TURISMO",
+    "model_id": "korando-turismo"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "KYRON",
+    "model_id": "kyron"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON G4",
+    "model_id": "rexton-g4"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON II",
+    "model_id": "rexton-ii"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON SPORTS",
+    "model_id": "rexton-sports"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON SPORTS CAR",
+    "model_id": "rexton-sports-car"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON SUPER",
+    "model_id": "rexton-super"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "REXTON W",
+    "model_id": "rexton-w"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "STYLE KORANDO C",
+    "model_id": "style-korando-c"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "TIBOLI",
+    "model_id": "tiboli"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "TIBOLI AIR",
+    "model_id": "tiboli-air"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "TIBOLI ARMOR",
+    "model_id": "tiboli-armor"
+  },
+  {
+    "brand": "SSANGYONG",
+    "brand_id": "ssangyong",
+    "model": "TIBOLI VERY NEW",
+    "model_id": "tiboli-very-new"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Brz",
+    "model_id": "brz"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Chiffon",
+    "model_id": "chiffon"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Crosstrek",
+    "model_id": "crosstrek"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Dex",
+    "model_id": "dex"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Exiga",
+    "model_id": "exiga"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Forester",
+    "model_id": "forester"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Impreza",
+    "model_id": "impreza"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Justy",
+    "model_id": "justy"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Legacy",
+    "model_id": "legacy"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Levorg",
+    "model_id": "levorg"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Lucra",
+    "model_id": "lucra"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Pleo",
+    "model_id": "pleo"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "R1",
+    "model_id": "r1"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "R2",
+    "model_id": "r2"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Rex",
+    "model_id": "rex"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Rocky",
+    "model_id": "rocky"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Sambar",
+    "model_id": "sambar"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Solterra",
+    "model_id": "solterra"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Stella",
+    "model_id": "stella"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Trezia",
+    "model_id": "trezia"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Wrx",
+    "model_id": "wrx"
+  },
+  {
+    "brand": "SUBARU",
+    "brand_id": "subaru",
+    "model": "Xv",
+    "model_id": "xv"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Alto",
+    "model_id": "alto"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Baleno",
+    "model_id": "baleno"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Cervo",
+    "model_id": "cervo"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Escudo",
+    "model_id": "escudo"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Every",
+    "model_id": "every"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Fronx",
+    "model_id": "fronx"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Kei",
+    "model_id": "kei"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Kizashi",
+    "model_id": "kizashi"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Landy",
+    "model_id": "landy"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Mrwagon",
+    "model_id": "mrwagon"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Palette",
+    "model_id": "palette"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Seniocar",
+    "model_id": "seniocar"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Solio",
+    "model_id": "solio"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Spacia",
+    "model_id": "spacia"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Splash",
+    "model_id": "splash"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Swift",
+    "model_id": "swift"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Sx 4",
+    "model_id": "sx-4"
+  },
+  {
+    "brand": "SUZUKI",
+    "brand_id": "suzuki",
+    "model": "Xbee",
+    "model_id": "xbee"
+  },
+  {
+    "brand": "TESLA",
+    "brand_id": "tesla",
+    "model": "Model3",
+    "model_id": "model3"
+  },
+  {
+    "brand": "TESLA",
+    "brand_id": "tesla",
+    "model": "Models",
+    "model_id": "models"
+  },
+  {
+    "brand": "TESLA",
+    "brand_id": "tesla",
+    "model": "Modely",
+    "model_id": "modely"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Allion",
+    "model_id": "allion"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Aqua",
+    "model_id": "aqua"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Auris",
+    "model_id": "auris"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Bb",
+    "model_id": "bb"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Belta",
+    "model_id": "belta"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Blade",
+    "model_id": "blade"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Bz4x",
+    "model_id": "bz4x"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "C Hr",
+    "model_id": "c-hr"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Coaster",
+    "model_id": "coaster"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Comfort",
+    "model_id": "comfort"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Copen",
+    "model_id": "copen"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Crown",
+    "model_id": "crown"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Dyna",
+    "model_id": "dyna"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Esquire",
+    "model_id": "esquire"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Estima",
+    "model_id": "estima"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Forklift",
+    "model_id": "forklift"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Granace",
+    "model_id": "granace"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Harrier",
+    "model_id": "harrier"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Hiace",
+    "model_id": "hiace"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Hilux",
+    "model_id": "hilux"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Ipsum",
+    "model_id": "ipsum"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Iq",
+    "model_id": "iq"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Isis",
+    "model_id": "isis"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Ist",
+    "model_id": "ist"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Mirai",
+    "model_id": "mirai"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Mr2",
+    "model_id": "mr2"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Noah",
+    "model_id": "noah"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Passo",
+    "model_id": "passo"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Porte",
+    "model_id": "porte"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Premio",
+    "model_id": "premio"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Probox",
+    "model_id": "probox"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Ractis",
+    "model_id": "ractis"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Raize",
+    "model_id": "raize"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Raum",
+    "model_id": "raum"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Roomy",
+    "model_id": "roomy"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Rush",
+    "model_id": "rush"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Sai",
+    "model_id": "sai"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Sienta",
+    "model_id": "sienta"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Spade",
+    "model_id": "spade"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Succeed",
+    "model_id": "succeed"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Supra",
+    "model_id": "supra"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Tank",
+    "model_id": "tank"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Toyoace",
+    "model_id": "toyoace"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Vanguard",
+    "model_id": "vanguard"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Vellfire",
+    "model_id": "vellfire"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Vitz",
+    "model_id": "vitz"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Voxy",
+    "model_id": "voxy"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Wish",
+    "model_id": "wish"
+  },
+  {
+    "brand": "TOYOTA",
+    "brand_id": "toyota",
+    "model": "Yaris",
+    "model_id": "yaris"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "E Golf",
+    "model_id": "e-golf"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "Eos",
+    "model_id": "eos"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "Polo",
+    "model_id": "polo"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "Scirocco",
+    "model_id": "scirocco"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "Sharan",
+    "model_id": "sharan"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "T Cross",
+    "model_id": "t-cross"
+  },
+  {
+    "brand": "VOLKSWAGEN",
+    "brand_id": "volkswagen",
+    "model": "Up",
+    "model_id": "up"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "C30",
+    "model_id": "c30"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "C40",
+    "model_id": "c40"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "Other",
+    "model_id": "other"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "S40",
+    "model_id": "s40"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "S80",
+    "model_id": "s80"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "V50",
+    "model_id": "v50"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "V70",
+    "model_id": "v70"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "V90",
+    "model_id": "v90"
+  },
+  {
+    "brand": "VOLVO",
+    "brand_id": "volvo",
+    "model": "Xc70",
+    "model_id": "xc70"
+  }
+]
