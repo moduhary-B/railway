@@ -2686,42 +2686,45 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 bg-gradient-to-r from-[#0a0f1a] via-[#0e1720] to-[#0a0f1a] border-t border-[#c9a86e]/20">
+      {/* Footer — msg_22: уменьшенное лого, копирайт 2024–2026, иконки у телефона/почты */}
+      <footer className="py-10 bg-gradient-to-r from-[#0a0f1a] via-[#0e1720] to-[#0a0f1a] border-t border-[#c9a86e]/20">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
-            <div className="text-center lg:text-left">
+          <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-6 md:gap-8">
+            {/* Лого — слева */}
+            <div className="flex justify-center md:justify-start">
               <Image
-                src="logo-new.png"
+                src="/logo-new.png"
                 alt="Orient Auto"
-                width={270}
-                height={90}
-                className="h-16 w-auto mx-auto lg:mx-0 mb-4"
+                width={160}
+                height={54}
+                className="h-10 w-auto"
               />
-              {/* <p className="text-white/70">Премиальные автомобили из Азии</p> */}
             </div>
 
+            {/* Копирайт — по центру */}
             <div className="text-center">
-              <p className="text-white/70 mb-4">© 2026 Orient Auto. Все права защищены.</p>
-              <div className="flex flex-wrap justify-center gap-6">
-                <a href="/privacy-policy" className="text-white/50 hover:text-[#c9a86e] transition-colors text-sm underline">
-                  Политика конфиденциальности
-                </a>
-              </div>
+              <p className="text-white/70 mb-2 text-sm">© 2024 – 2026 Orient Auto. Все права защищены.</p>
+              <a href="/privacy-policy" className="text-white/50 hover:text-[#c9a86e] transition-colors text-xs underline underline-offset-2">
+                Политика конфиденциальности
+              </a>
             </div>
 
-            <div className="text-center lg:text-right">
-              <div className="flex flex-col gap-2">
-                <a
-                  href="tel:+79958689768"
-                  className="text-[#c9a86e] font-semibold hover:text-[#d4b876] transition-colors"
-                >
-                  +7 (995) 868−97−68
-                </a>
-                <a href="mailto:orient.cars@mail.ru" className="text-white/70 hover:text-white transition-colors">
-                  orient.cars@mail.ru
-                </a>
-              </div>
+            {/* Контакты — справа, с иконками */}
+            <div className="flex flex-col gap-2 items-center md:items-end">
+              <a
+                href="tel:+79958689768"
+                className="text-[#c9a86e] font-semibold hover:text-[#d4b876] transition-colors flex items-center gap-2"
+              >
+                <Phone className="w-4 h-4" />
+                +7 (995) 868−97−68
+              </a>
+              <a
+                href="mailto:orient.cars@mail.ru"
+                className="text-white/70 hover:text-white transition-colors text-sm flex items-center gap-2"
+              >
+                <Mail className="w-4 h-4" />
+                orient.cars@mail.ru
+              </a>
             </div>
           </div>
         </div>
