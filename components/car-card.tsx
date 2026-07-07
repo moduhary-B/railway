@@ -158,7 +158,9 @@ export default function CarCard({ car, className = '', country }: CarCardProps) 
       const adjusted = Math.max(0, basePrice - subtractCnyRub - 100000);
       const commission = calculateCommission(adjusted);
       const broker = getBrokerCost(country || null);
-      return adjusted + commission + broker;
+      // Клиентская наценка на все авто из Китая (правка msg_7)
+      const CHINA_MARKUP_RUB = 150000;
+      return adjusted + commission + broker + CHINA_MARKUP_RUB;
     }
     if ((country || '').toLowerCase() === 'japan') {
       const isSanctioned = Boolean((car as any).sanctions);
