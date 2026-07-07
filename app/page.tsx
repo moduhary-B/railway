@@ -1,5 +1,9 @@
 "use client"
 
+// Главная страница полностью клиентская (SmartWidgets, karus, framer-motion, модалка) —
+// SSR-prerender бессмыслен и в Next 15 иногда роняет билд на webpack-runtime.
+export const dynamic = "force-dynamic"
+
 console.log('=== ГЛАВНАЯ СТРАНИЦА ЗАГРУЖЕНА ===');
 
 import { useState, useRef, useEffect, createRef } from "react"
@@ -1212,8 +1216,9 @@ export default function Home() {
         </div>
       </section>
 
-      {/* После Hero Section вставляю marquee: */}
-      <section className="py-24 w-full bg-[#0a0f1a] relative overflow-hidden">
+      {/* Marquee галерея выданных авто клиентам — msg_5: поднять фото выше
+          (уменьшены отступы py-24 → py-8) */}
+      <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden">
         <div className="relative w-full overflow-hidden shadow-xl border-y border-[#c9a86e]/20 bg-[#0a0f1a]">
           <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#0a0f1a] to-transparent"></div>
           <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[#0a0f1a] to-transparent"></div>
@@ -1715,31 +1720,171 @@ export default function Home() {
         </div>
       )}
 
-      {/* Video Section - Vertical Videos */}
-      <section className="py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden">
-        <div className="container mx-auto px-12 max-w-full">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-16">
-            <h2 className="text-white text-4xl md:text-5xl font-light tracking-wide mb-6 md:mb-0">
-              Полезные видео о нас и импорте
+      {/* Video Section — msg_12+13: 3D-карусель слева + виджет соцсетей справа,
+          убраны иконки соцсетей из правого верхнего угла, убраны описания под видео,
+          новый заголовок в акцентном стиле */}
+      <section className="py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden orient-pattern">
+        <div className="container mx-auto px-4 max-w-7xl relative">
+          {/* Новый заголовок в акцентном стиле (msg_12: "выглядит скучно" → добавлен подзаголовок и подчёркивание) */}
+          <div className="text-center mb-14">
+            <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm mb-3">
+              Наш YouTube и Telegram
+            </span>
+            <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-light tracking-wide">
+              Полезные видео <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">о нас и импорте</span>
             </h2>
-            <div className="flex items-center gap-4 relative">
-              <a href="https://www.instagram.com/orientauto.ru?igsh=MTl0ZXk4ZDZ4YTB6aw==" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#c9a86e] transition-colors"><Instagram className="w-8 h-8" /></a>
-              <a href="https://youtube.com/@orientauto_ru" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#c9a86e] transition-colors"><Youtube className="w-8 h-8" /></a>
-              <a href="https://t.me/orientauto_ru" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#c9a86e] transition-colors">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.25l-2.173 10.244c-.168.78-.621.936-1.26.578l-3.478-2.568-1.68 1.614c-.189.182-.345.336-.708.336l.257-3.596 6.531-5.903c.285-.248-.062-.384-.441-.136L7.926 13.8l-3.475-1.086c-.755-.236-.77-.755.157-1.118l13.563-5.229c.631-.231 1.178.349.891 1.883z" />
-                </svg>
-              </a>
-              <a href="https://wa.me/79958689768" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#c9a86e] transition-colors">
-                <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106" />
-                </svg>
-              </a>
+            <div className="h-1 w-24 mx-auto mt-5 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+          </div>
+
+          {/* Grid: слева 3D-карусель, справа виджет соцсетей */}
+          <div className="grid lg:grid-cols-[1.55fr_1fr] gap-8 lg:gap-12 items-center">
+            {/* 3D-карусель видео (desktop + mobile) */}
+            <div className="relative">
+              {/* Градиенты по краям — обрезка боковых видео */}
+              <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 md:w-24 z-20 bg-gradient-to-r from-[#0e1720] to-transparent" />
+              <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 md:w-24 z-20 bg-gradient-to-l from-[#0e1720] to-transparent" />
+
+              {/* Центральная область: 3 карточки (боковые уменьшены), можно перелистывать */}
+              <div className="relative h-[440px] md:h-[520px] flex items-center justify-center overflow-hidden">
+                {videoSlides.map((slide, idx) => {
+                  const total = videoSlides.length
+                  let offset = idx - activeVideoSlide
+                  // wrap
+                  if (offset > total / 2) offset -= total
+                  if (offset < -total / 2) offset += total
+                  const abs = Math.abs(offset)
+                  const isCenter = offset === 0
+                  const visible = abs <= 2
+                  const scale = isCenter ? 1 : abs === 1 ? 0.78 : 0.62
+                  const translateX = offset * (isCenter ? 0 : 55) // %
+                  const opacity = visible ? (isCenter ? 1 : abs === 1 ? 0.55 : 0.25) : 0
+                  const blur = isCenter ? 0 : abs === 1 ? 1 : 3
+                  const z = 30 - abs * 5
+                  return (
+                    <div
+                      key={idx}
+                      className="absolute top-1/2 left-1/2 transition-all duration-500 ease-out cursor-pointer"
+                      style={{
+                        transform: `translate(-50%, -50%) translateX(${translateX}%) scale(${scale})`,
+                        opacity,
+                        zIndex: z,
+                        filter: `blur(${blur}px)`,
+                        pointerEvents: visible ? "auto" : "none",
+                      }}
+                      onClick={() => {
+                        if (!isCenter) {
+                          setActiveVideoSlide((idx + total) % total)
+                          return
+                        }
+                        setSelectedVideo({ src: slide.video, title: slide.title, car: "" })
+                      }}
+                    >
+                      <div className="relative w-[240px] md:w-[280px] aspect-[9/16] rounded-2xl overflow-hidden bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/25 shadow-2xl">
+                        <Image
+                          src={slide.preview || "/placeholder.svg?height=430&width=240"}
+                          alt={slide.title}
+                          width={360}
+                          height={640}
+                          className="w-full h-full object-cover"
+                        />
+                        {/* Play в центре только на активном */}
+                        {isCenter && (
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-xl transition-transform hover:scale-110">
+                              <Play className="w-7 h-7 text-white ml-1" />
+                            </div>
+                          </div>
+                        )}
+                        <div className="absolute inset-0 bg-gradient-to-t from-[#0e1720]/70 to-transparent" />
+                      </div>
+                    </div>
+                  )
+                })}
+              </div>
+
+              {/* Кнопки навигации */}
+              <div className="flex justify-center gap-4 mt-4">
+                <button
+                  onClick={() => setActiveVideoSlide((activeVideoSlide - 1 + videoSlides.length) % videoSlides.length)}
+                  className="w-11 h-11 rounded-full bg-[#1a2332] hover:bg-[#0e1720] border border-[#c9a86e]/30 hover:border-[#c9a86e]/60 flex items-center justify-center transition-colors z-30"
+                  aria-label="Предыдущее видео"
+                >
+                  <ChevronLeft className="w-5 h-5 text-white" />
+                </button>
+                <button
+                  onClick={() => setActiveVideoSlide((activeVideoSlide + 1) % videoSlides.length)}
+                  className="w-11 h-11 rounded-full bg-[#1a2332] hover:bg-[#0e1720] border border-[#c9a86e]/30 hover:border-[#c9a86e]/60 flex items-center justify-center transition-colors z-30"
+                  aria-label="Следующее видео"
+                >
+                  <ChevronRight className="w-5 h-5 text-white" />
+                </button>
+              </div>
+            </div>
+
+            {/* Правый виджет: 4 крупные кнопки соцсетей (msg_12) */}
+            <div className="w-full">
+              <div className="bg-gradient-to-br from-[#1a2332]/80 to-[#0e1720]/80 border border-[#c9a86e]/25 rounded-2xl p-6 md:p-8 backdrop-blur-sm shadow-xl">
+                <h3 className="text-white text-xl md:text-2xl font-semibold mb-2">Следим за контентом</h3>
+                <p className="text-white/60 text-sm mb-6">
+                  Свежие обзоры и полезная информация — в наших каналах
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {/* Порядок из msg_12: Telegram → Instagram → MAX → YouTube */}
+                  <a
+                    href="https://t.me/orientauto_ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-[#26A5E4]/10 border border-[#26A5E4]/40 hover:bg-[#26A5E4]/20 hover:border-[#26A5E4]/70 transition-all group"
+                  >
+                    <SocialIcon network="telegram" size={30} />
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white text-sm font-semibold">Telegram</div>
+                      <div className="text-white/60 text-xs truncate">@orientauto_ru</div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/orientauto.ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-[#d6249f]/10 border border-[#d6249f]/40 hover:bg-[#d6249f]/20 hover:border-[#d6249f]/70 transition-all group"
+                  >
+                    <SocialIcon network="instagram" size={30} />
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white text-sm font-semibold">Instagram</div>
+                      <div className="text-white/60 text-xs truncate">@orientauto.ru</div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://max.ru/id253401357515_biz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-[#5E3FE3]/10 border border-[#5E3FE3]/40 hover:bg-[#5E3FE3]/20 hover:border-[#5E3FE3]/70 transition-all group"
+                  >
+                    <SocialIcon network="max" size={30} />
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white text-sm font-semibold">MAX</div>
+                      <div className="text-white/60 text-xs truncate">Канал</div>
+                    </div>
+                  </a>
+                  <a
+                    href="https://youtube.com/@orientauto_ru"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 p-4 rounded-xl bg-[#FF0000]/10 border border-[#FF0000]/40 hover:bg-[#FF0000]/20 hover:border-[#FF0000]/70 transition-all group"
+                  >
+                    <SocialIcon network="youtube" size={30} />
+                    <div className="flex-1 min-w-0">
+                      <div className="text-white text-sm font-semibold">YouTube</div>
+                      <div className="text-white/60 text-xs truncate">@orientauto_ru</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* Desktop Version - скрыта на мобильных */}
-          <div className="hidden md:block relative">
+          {/* Скрытая старая версия — сохранена в hidden для возможного отката */}
+          <div className="hidden">
             <div className="reviews-container overflow-hidden md:w-[70%] md:mx-auto">
               <div
                 className={`reviews-track flex ${videoWithTransition ? 'transition-transform duration-500 ease-in-out' : ''}`}
@@ -2192,24 +2337,77 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Reviews Section */}
-      <section className="py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden">
-        <div className="container mx-auto px-4 max-w-full">
+      {/* Video Reviews Section — msg_18: убрана карусель, вместо неё грид-плитка
+          с эффектным заголовком, рамкой и паттерном лого в фоне */}
+      <section className="py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden orient-pattern">
+        <div className="container mx-auto px-4 max-w-7xl relative">
+          {/* Новый заголовок в стиле с "фреймом" и рамкой */}
           <div className="text-center mb-16">
-            <h2 className="text-white text-4xl md:text-5xl font-light tracking-wide mb-6">
-              <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-medium">
-                ORIENT AUTO{" "}
+            <div className="inline-flex flex-col items-center gap-4">
+              <span className="text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm">
+                Видео-отзывы
               </span>
-              глазами клиентов
-            </h2>
-
-            <p className="text-white/70 text-lg max-w-3xl mx-auto">
-              Послушайте, что говорят наши клиенты о работе с Orient Auto и качестве приобретенных автомобилей
-            </p>
+              <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-tight">
+                <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">
+                  ORIENT AUTO
+                </span>
+                <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 text-white/85">
+                  глазами клиентов
+                </span>
+              </h2>
+              <div className="flex items-center gap-3 mt-2">
+                <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[#c9a86e]" />
+                <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+              </div>
+              <p className="text-white/70 text-base md:text-lg max-w-2xl mt-4">
+                Послушайте, что говорят наши клиенты о работе с Orient Auto и качестве приобретенных автомобилей
+              </p>
+            </div>
           </div>
 
-          {/* Десктопная версия */}
-          <div className="hidden md:block relative">
+          {/* Grid-плитка — msg_18: не карусель */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-5">
+            {videoReviews.slice(0, 8).map((review, i) => (
+              <motion.div
+                key={review.video}
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-60px" }}
+                transition={{ duration: 0.5, delay: (i % 4) * 0.08 }}
+                className="group cursor-pointer"
+                onClick={() => {
+                  reviewPreviewVideoRefs.current.forEach(v => v && v.pause());
+                  setSelectedVideo({ src: review.video, title: review.clientName, car: review.carModel });
+                }}
+              >
+                <div className="relative overflow-hidden rounded-2xl aspect-[9/16] bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 group-hover:border-[#c9a86e]/60 group-hover:shadow-2xl group-hover:shadow-[#c9a86e]/20 transition-all duration-300 group-hover:-translate-y-1">
+                  <Image
+                    src={review.preview || "/placeholder.svg?height=430&width=240"}
+                    alt={review.clientName}
+                    width={360}
+                    height={640}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0e1720]/90 via-transparent to-transparent"></div>
+                  {/* Play кнопка */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center group-hover:bg-[#c9a86e]/90 transition-all duration-300 group-hover:scale-110 border border-white/30">
+                      <Play className="w-6 h-6 md:w-8 md:h-8 text-white ml-1" />
+                    </div>
+                  </div>
+                  {/* Подписи */}
+                  <div className="absolute left-0 bottom-0 w-full flex flex-col items-start p-3 md:p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                    <span className="text-white text-xs md:text-sm font-semibold drop-shadow-md line-clamp-1">{review.clientName}</span>
+                    <span className="text-[#c9a86e] text-xs md:text-sm drop-shadow-md">{review.carModel}</span>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Скрытый блок легаси-каруселей (не рендерится) — оставлен для быстрого отката, если клиент передумает */}
+          <div className="hidden">
             <div className="reviews-container overflow-hidden md:w-[70%] md:mx-auto">
               <div
                 className={`reviews-track flex ${reviewWithTransition ? 'transition-transform duration-500 ease-in-out' : ''}`}

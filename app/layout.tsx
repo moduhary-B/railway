@@ -18,16 +18,19 @@ export const metadata = {
   description:
     "Автомобили из Азии с гарантией качества. Прямой импортер. Более 1000 довольных клиентов. Создаем прозрачные и удобные условия для Вас.",
   generator: 'turov',
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-    userScalable: false,
-  },
   icons: {
     icon: "/logo-orient.png",
     shortcut: "/logo-orient.png"
   }
+}
+
+// Next 15 требует отдельного экспорта viewport (не в metadata)
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  // Пользователь должен иметь возможность зумить (a11y) — не отключаем масштабирование
+  maximumScale: 5,
+  userScalable: true,
 }
 
 export default function RootLayout({
