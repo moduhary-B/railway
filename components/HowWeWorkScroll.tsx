@@ -28,9 +28,15 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
   // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
   const [progress, setProgress] = useState(0)
+  // Фаза пина: 'before' (ещё не доскроллили), 'pinned' (контент зафиксирован
+  // на весь экран через position:fixed), 'after' (проскроллили дальше).
+  // Используем fixed вместо sticky — sticky ломается от overflow у предков,
+  // а fixed от него не зависит (у предков нет transform/filter → containing
+  // block = viewport).
+  const [phase, setPhase] = useState<"before" | "pinned" | "after">("before")
 
-  // Прямой расчёт прогресса по скроллу (без framer useScroll, который не
-  // цеплялся к ref). wrapRef всегда в DOM → getBoundingClientRect работает.
+  // Прямой расчёт по скроллу. wrapRef — «высокий» спейсер, держит место
+  // прокрутки; сам контент выдёргивается в fixed на время пина.
   useEffect(() => {
     const el = wrapRef.current
     if (!el) return
@@ -39,12 +45,16 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       raf = 0
       const rect = el.getBoundingClientRect()
       const vh = window.innerHeight
-      // Пин активен, пока верх враппера ушёл вверх, а низ ещё не достиг низа
-      // экрана. Диапазон прокрутки внутри пина = (высота враппера - 1 экран).
-      const total = el.offsetHeight - vh
+      const total = el.offsetHeight - vh // диапазон прокрутки внутри пина
       const scrolled = Math.min(Math.max(-rect.top, 0), total)
       const p = total > 0 ? scrolled / total : 0
       setProgress(p)
+
+      // Определяем фазу пина по положению враппера.
+      if (rect.top > 0) setPhase("before")
+      else if (-rect.top >= total) setPhase("after")
+      else setPhase("pinned")
+
       const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
       setActive((prev) => {
         if (idx !== prev) setDir(idx > prev ? 1 : -1)
@@ -78,7 +88,19 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
     <section className="w-full bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow">
       {/* ==================== ДЕСКТОП: scroll-pin ==================== */}
       <div ref={wrapRef} className="relative hidden lg:block" style={{ height: wrapHeight }}>
-        <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
+        {/* Контент фиксируется на весь экран во время фазы pinned (position:
+            fixed → не зависит от overflow предков, в отличие от sticky).
+            До/после — прижат к верху/низу спейсера. */}
+        <div
+          className={
+            "left-0 right-0 h-screen overflow-hidden flex flex-col justify-center " +
+            (phase === "pinned"
+              ? "fixed top-0 z-30"
+              : phase === "after"
+              ? "absolute bottom-0"
+              : "absolute top-0")
+          }
+        >
           <div className="container mx-auto px-4 max-w-6xl w-full">
             {/* Заголовок — виден на всём протяжении пина */}
             <div className="text-center mb-10">
