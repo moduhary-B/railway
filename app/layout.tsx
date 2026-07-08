@@ -1,6 +1,6 @@
 import type React from "react"
 import "./globals.css"
-import { Inter, Cormorant_Garamond, JetBrains_Mono } from "next/font/google"
+import { Inter, Cormorant_Garamond } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ConsultationModalProvider } from "@/components/consultation-modal"
 import CookieBanner from "@/components/CookieBanner"
@@ -22,13 +22,7 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 })
 
-// Моно — только для цифр (счётчики, статистика, номера шагов)
-const jbMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  variable: "--font-mono",
-  display: "swap",
-})
+// JetBrains Mono больше не грузится — все цифры через tabular-nums Inter.
 
 export const metadata = {
   title: "Авто из Китая, Кореи и Японии - Orient Auto",
@@ -56,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${cormorant.variable} ${jbMono.variable}`}>
+    <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${cormorant.variable}`}>
       <head>
         {/* Fail-safe: если через 3 секунды после загрузки страницы остаются
             элементы с inline opacity:0 (framer-motion не гидратировался,

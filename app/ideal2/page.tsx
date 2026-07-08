@@ -1,16 +1,14 @@
 "use client"
 
-// Форк главной — /ideal — премиум-редакция:
-// - редакционный сериф Cormorant Garamond для акцентных слов
-// - JetBrains Mono для цифр/kicker/section-index
-// - kicker с чёрточкой слева, section-counter "01 / КАТАЛОГ"
-// - shadow-lux (inset блик + тёплая тень) вместо shadow-xl
-// - btn-sweep с movement-градиентом
-// - grain overlay на всей странице
-// - softened top-edge между секциями
+// Форк /ideal → /ideal2 — редакция «убираем кашу из шрифтов»:
+// - единая типографическая система (класс .ideal2): Inter + ОДИН сериф-акцент
+// - убран JetBrains Mono как третий шрифт (источник «каши»)
+// - убраны транслит-лейблы (VYDANO / SHAGOV / SPECIALISTOV) и лишний трекинг
+// - единый вес и обработка акцентных слов в заголовках
+// - выровненный вертикальный ритм секций
 export const dynamic = "force-dynamic"
 
-console.log('=== ГЛАВНАЯ /ideal ЗАГРУЖЕНА ===');
+console.log('=== ГЛАВНАЯ /ideal2 ЗАГРУЖЕНА ===');
 
 import { useState, useRef, useEffect, createRef } from "react"
 import Image from "next/image"
@@ -841,7 +839,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-hidden w-full grain-overlay">
+    <div className="ideal2 flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-hidden w-full grain-overlay">
       <DebugBreakpoints />
       {/* Modern Header — уменьшенный лого, меню сдвинуто правее (ml-auto),
           вместо CSS-иконок соцсетей — MAX/WhatsApp/Telegram в бренд-цветах (msg_1) */}
@@ -1277,7 +1275,7 @@ export default function Home() {
       <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden section-soft-top">
         <div className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6">
           <span className="section-index">02 / КЛИЕНТЫ</span>
-          <span className="section-index hidden md:inline font-mono-num">500+ VYDANO</span>
+          <span className="section-index hidden md:inline">500+ выдано</span>
         </div>
         <div className="relative w-full overflow-hidden shadow-lux border-y border-[#c9a86e]/15 bg-[#0a0f1a]">
           <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#0a0f1a] to-transparent"></div>
@@ -1306,7 +1304,7 @@ export default function Home() {
       <section className="py-16 md:py-24 bg-[#0a0f1a] w-full overflow-hidden orient-glow section-soft-top">
         <div className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6">
           <span className="section-index">03 / О НАС</span>
-          <span className="section-index hidden md:inline font-mono-num">EST. 2019</span>
+          <span className="section-index hidden md:inline">с 2019 года</span>
         </div>
         {/* Контейнер с текстом и цифрами */}
         <div className="mx-auto px-4 max-w-7xl relative">
@@ -1324,9 +1322,9 @@ export default function Home() {
               <div className="space-y-6 leading-relaxed">
                 <p className="text-2xl md:text-3xl font-light text-white leading-snug">
                   Профессиональный подбор и доставка автомобилей из{" "}
-                  <span className="font-serif-display italic text-[#c9a86e]">Японии</span>,{" "}
-                  <span className="font-serif-display italic text-[#c9a86e]">Китая</span> и{" "}
-                  <span className="font-serif-display italic text-[#c9a86e]">Кореи</span>.
+                  <span className="font-serif-display italic font-medium text-[#c9a86e]">Японии</span>,{" "}
+                  <span className="font-serif-display italic font-medium text-[#c9a86e]">Китая</span> и{" "}
+                  <span className="font-serif-display italic font-medium text-[#c9a86e]">Кореи</span>.
                 </p>
                 <p className="text-lg md:text-xl text-white/70 leading-relaxed">
                   Работаем{" "}
@@ -1364,7 +1362,7 @@ export default function Home() {
                     transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
                     className={"text-center px-3 py-2 " + (i === 0 ? "pl-0" : "")}
                   >
-                    <div className="font-mono-num text-3xl md:text-4xl font-light text-[#c9a86e]">
+                    <div className="font-mono-num text-3xl md:text-4xl font-light bg-gradient-to-b from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                       {s.value}
                     </div>
                     <div className="text-white/50 text-[10px] md:text-xs mt-2 leading-tight uppercase tracking-[0.2em] font-mono-num">
@@ -1566,7 +1564,7 @@ export default function Home() {
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight">
               Каталог{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 автомобилей
               </span>
             </h2>
@@ -1756,7 +1754,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl mb-8 text-center md:text-left font-light leading-[1.05]">
               Чат{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 менеджеров
               </span>
             </h2>
@@ -1871,9 +1869,9 @@ export default function Home() {
             <div className="flex justify-center mb-5">
               <span className="kicker kicker--center">Наш YouTube и Telegram</span>
             </div>
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+            <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Полезные видео{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 о нас и импорте
               </span>
             </h2>
@@ -2304,14 +2302,14 @@ export default function Home() {
           >
             <div className="flex justify-between items-center text-white/40 mb-8">
               <span className="section-index">06 / ПРОЦЕСС</span>
-              <span className="section-index hidden md:inline font-mono-num">6 SHAGOV</span>
+              <span className="section-index hidden md:inline font-mono-num">6 шагов</span>
             </div>
             <div className="flex justify-center mb-5">
               <span className="kicker kicker--center">Всего 6 шагов</span>
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Как мы{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 работаем
               </span>
             </h2>
@@ -2442,7 +2440,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Отзывы{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 наших клиентов
               </span>
             </h2>
@@ -2572,7 +2570,7 @@ export default function Home() {
               <span className="kicker kicker--center">Видео-отзывы</span>
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 Orient Auto
               </span>{" "}
               глазами клиентов
@@ -2820,7 +2818,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-white/40 mb-8">
             <span className="section-index">09 / КОМАНДА</span>
-            <span className="section-index hidden md:inline font-mono-num">10 SPECIALISTOV</span>
+            <span className="section-index hidden md:inline font-mono-num">10 специалистов</span>
           </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -2833,7 +2831,7 @@ export default function Home() {
               <span className="kicker kicker--center">Наши люди</span>
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 Команда
               </span>{" "}
               Orient Auto
@@ -3074,7 +3072,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Наши{" "}
-              <span className="font-serif-display italic text-[#c9a86e]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                 контакты
               </span>
             </h2>

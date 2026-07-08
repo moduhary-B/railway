@@ -573,20 +573,24 @@ textarea:focus {
    Design system — премиум-детали для форка /ideal
    ============================================================ */
 
-/* Sereif акцент через переменную из next/font */
+/* Sereif акцент через переменную из next/font.
+   Используется ТОЛЬКО для акцентных слов в заголовках больших секций,
+   в тандеме с основным Inter — принцип двух шрифтов, а не трёх. */
 .font-serif-display {
   font-family: var(--font-serif), Georgia, "Times New Roman", serif;
   font-feature-settings: "liga", "kern";
   letter-spacing: -0.01em;
 }
 
-/* Моно только для цифр */
+/* .font-mono-num — раньше был JetBrains Mono, но клиент сказал "каша из шрифтов".
+   Теперь просто основной Inter с tabular-nums для ровных цифр, без второй кириллицы. */
 .font-mono-num {
-  font-family: var(--font-mono), "SF Mono", Consolas, monospace;
   font-feature-settings: "tnum", "zero";
+  font-variant-numeric: tabular-nums;
 }
 
-/* Kicker — тонкий редакционный label с чёрточкой слева */
+/* Kicker — тонкий редакционный label с чёрточкой слева.
+   Тоже Inter (наследуется от body), просто с трекингом. */
 .kicker {
   display: inline-flex;
   align-items: center;
@@ -680,10 +684,72 @@ textarea:focus {
   padding-bottom: 4px;
 }
 
-/* Section counter — 01 / 02 в углу */
+/* Section counter — 01 / 02 в углу. Тоже Inter, не mono. */
 .section-index {
-  font-family: var(--font-mono), monospace;
   font-size: 11px;
   letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 0.35);
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+/* ============================================================
+   /ideal2 — единая типографика (лечим «кашу из шрифтов»).
+   Оставляем ДВА семейства: Inter (базовый) + Cormorant (акцент).
+   JetBrains Mono больше не отдельный шрифт: цифры и технические
+   лейблы рендерятся в Inter с табличными фигурами — визуально это
+   одно семейство, но цифры по-прежнему выровнены по ширине.
+   Всё под .ideal2, чтобы /ideal остался нетронутым.
+   ============================================================ */
+.ideal2 .font-mono-num,
+.ideal2 .section-index {
+  font-family: inherit;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+}
+.ideal2 .section-index {
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.32);
+}
+/* Kicker — чуть спокойнее трекинг, чтобы не «сыпался» */
+.ideal2 .kicker {
+  letter-spacing: 0.26em;
+  font-weight: 600;
+}
+.ideal2 .kicker::before,
+.ideal2 .kicker--center::after {
+  width: 28px;
+}
+
+/* Акцентный сериф — единая обработка по всей странице:
+   ровный оптический вес и одинаковый наклон, без разнобоя. */
+.ideal2 .font-serif-display {
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+/* Единый вертикальный ритм заголовков секций:
+   базовый вес заголовков — 300 (light) + акцент серифом.
+   Это убирает ощущение «разных шрифтов» между блоками. */
+.ideal2 h1,
+.ideal2 h2,
+.ideal2 h3 {
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+/* Разделитель между секциями — тонкая золотая линия по центру,
+   даёт мягкий переход вместо «пустого стыка» (жалоба клиента). */
+.ideal2 .section-soft-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(220px, 42vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 110, 0.45), transparent);
+  z-index: 2;
+}
+.ideal2 .section-soft-top {
+  position: relative;
 }
