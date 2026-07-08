@@ -11,13 +11,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import {
-  motion,
-  AnimatePresence,
-  useScroll,
-  useMotionValueEvent,
-  useTransform,
-} from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
 
 export interface WorkStep {
@@ -31,32 +25,48 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
   const [dir, setDir] = useState(1)
+  // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
+  // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
+  const [progress, setProgress] = useState(0)
 
-  // Прокрутку нельзя измерить на сервере → интерактивный pin-блок рендерим
-  // только после монтирования. Это убирает hydration mismatch (SSR и первый
-  // клиентский кадр отдают одинаковую разметку — статический список).
-  const [mounted, setMounted] = useState(false)
-  useEffect(() => setMounted(true), [])
-
-  // Прогресс прокрутки внутри «высокого» враппера: 0 — начало пина, 1 — конец.
-  const { scrollYProgress } = useScroll({
-    target: wrapRef,
-    offset: ["start start", "end end"],
-  })
-
-  // Плавная вертикальная шкала прогресса справа от фото.
-  const railScale = useTransform(scrollYProgress, [0, 1], [0.04, 1])
-
-  useMotionValueEvent(scrollYProgress, "change", (v) => {
-    const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(v * steps.length)))
-    setActive((prev) => {
-      if (idx !== prev) setDir(idx > prev ? 1 : -1)
-      return idx
-    })
-  })
+  // Прямой расчёт прогресса по скроллу (без framer useScroll, который не
+  // цеплялся к ref). wrapRef всегда в DOM → getBoundingClientRect работает.
+  useEffect(() => {
+    const el = wrapRef.current
+    if (!el) return
+    let raf = 0
+    const compute = () => {
+      raf = 0
+      const rect = el.getBoundingClientRect()
+      const vh = window.innerHeight
+      // Пин активен, пока верх враппера ушёл вверх, а низ ещё не достиг низа
+      // экрана. Диапазон прокрутки внутри пина = (высота враппера - 1 экран).
+      const total = el.offsetHeight - vh
+      const scrolled = Math.min(Math.max(-rect.top, 0), total)
+      const p = total > 0 ? scrolled / total : 0
+      setProgress(p)
+      const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
+      setActive((prev) => {
+        if (idx !== prev) setDir(idx > prev ? 1 : -1)
+        return idx
+      })
+    }
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(compute)
+    }
+    compute()
+    window.addEventListener("scroll", onScroll, { passive: true })
+    window.addEventListener("resize", onScroll)
+    return () => {
+      window.removeEventListener("scroll", onScroll)
+      window.removeEventListener("resize", onScroll)
+      if (raf) cancelAnimationFrame(raf)
+    }
+  }, [steps.length])
 
   // Высота враппера: 100vh на сам пин + по ~62vh скролла на каждый доп. шаг.
   const wrapHeight = `${100 + (steps.length - 1) * 62}vh`
+  const railScale = 0.04 + progress * 0.96
 
   const cur = steps[active]
   const CurIcon = cur.Icon
@@ -66,10 +76,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
 
   return (
     <section className="w-full bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow">
-      {/* ==================== ДЕСКТОП: scroll-pin ====================
-          Рендерим только после монтирования (mounted) — иначе SSR и клиент
-          расходятся по style (framer-motion useScroll/useTransform). */}
-      {mounted && (
+      {/* ==================== ДЕСКТОП: scroll-pin ==================== */}
       <div ref={wrapRef} className="relative hidden lg:block" style={{ height: wrapHeight }}>
         <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
           <div className="container mx-auto px-4 max-w-6xl w-full">
@@ -180,7 +187,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
           </div>
         </div>
       </div>
-      )}
 
       {/* ==================== МОБИЛКА: обычный список ==================== */}
       <div className="lg:hidden py-16 px-4">
