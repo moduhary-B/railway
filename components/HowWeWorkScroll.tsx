@@ -27,6 +27,8 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
   // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
   const [progress, setProgress] = useState(0)
+  // Дробная позиция по шагам (0..N-1) — для плавного скольжения 3D-колоды.
+  const [pos, setPos] = useState(0)
   // Фаза пина: 'before' (ещё не доскроллили), 'pinned' (контент зафиксирован
   // на весь экран через position:fixed), 'after' (проскроллили дальше).
   // Используем fixed вместо sticky — sticky ломается от overflow у предков,
@@ -54,7 +56,12 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       else if (-rect.top >= total) setPhase("after")
       else setPhase("pinned")
 
-      const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
+      // Дробная позиция: карточки скользят непрерывно, а не прыгают по индексу.
+      // Небольшой «плоский» участок по краям каждого шага (через smooth-step),
+      // чтобы активная карточка задерживалась в фокусе, а переход был резче.
+      const raw = p * (steps.length - 1)
+      setPos(raw)
+      const idx = Math.min(steps.length - 1, Math.max(0, Math.round(raw)))
       setActive(idx)
     }
     const onScroll = () => {
@@ -86,10 +93,12 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
         <div
           className={
             "left-0 right-0 h-screen overflow-hidden flex flex-col justify-center " +
-            // Собственный непрозрачный фон + orient-glow → во время пина панель
-            // полностью перекрывает то, что скроллится позади, и фон визуально
-            // стоит на месте (без «плывущего» градиента).
-            "bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow " +
+            // Собственный непрозрачный фон → во время пина панель полностью
+            // перекрывает то, что скроллится позади (фон визуально неподвижен).
+            // ВАЖНО: НЕ используем класс .orient-glow — он задаёт position:relative
+            // и (из-за порядка в CSS) перебивает position:fixed, ломая фиксацию.
+            // Свечение делаем дочерними div-ами ниже.
+            "bg-gradient-to-b from-[#0e1720] to-[#1a2332] " +
             (phase === "pinned"
               ? "fixed top-0 z-30"
               : phase === "after"
@@ -97,7 +106,13 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               : "absolute top-0")
           }
         >
-          <div className="container mx-auto px-4 max-w-6xl w-full">
+          {/* Декоративное свечение (замена orient-glow, без position:relative) */}
+          <div className="pointer-events-none absolute inset-0 overflow-hidden">
+            <div className="absolute -top-24 left-[6%] w-[42vw] h-[42vw] rounded-full bg-[#c9a86e]/[0.07] blur-[130px]" />
+            <div className="absolute -bottom-28 right-[4%] w-[38vw] h-[38vw] rounded-full bg-[#c9a86e]/[0.05] blur-[130px]" />
+          </div>
+
+          <div className="container relative mx-auto px-4 max-w-6xl w-full">
             {/* Заголовок — виден на всём протяжении пина */}
             <div className="text-center mb-10">
               <div className="flex justify-between items-center text-white/40 mb-6">
@@ -152,74 +167,114 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 </div>
               </div>
 
-              {/* Правая колонка: вертикальная лента карточек. Все шаги всегда
-                  в DOM; лента плавно съезжает к активному (никаких появлений
-                  «из ниоткуда» — только скольжение). Соседние карточки видны
-                  полупрозрачными сверху/снизу, зигзаг — сдвигом по X. */}
-              <div className="relative h-[340px] overflow-hidden">
-                <motion.div
-                  animate={{ y: `-${(active * 100) / steps.length}%` }}
-                  transition={{ type: "spring", stiffness: 90, damping: 20, mass: 0.6 }}
-                  className="absolute inset-x-0 top-0"
-                  style={{ height: `${steps.length * 100}%` }}
+              {/* Правая колонка: 3D-колода карточек. Всегда видно как минимум
+                  предыдущую → текущую → следующую. Активная в фокусе по центру,
+                  соседние отодвинуты вглубь (Z), с наклоном, затемнением и
+                  размытием. Карточки не появляются из ниоткуда — переезжают
+                  по колоде по мере скролла (позиция pos дробная). */}
+              <div
+                className="relative h-[440px]"
+                style={{ perspective: "1600px" }}
+              >
+                <div
+                  className="absolute inset-0"
+                  style={{ transformStyle: "preserve-3d" }}
                 >
                   {steps.map((s, i) => {
                     const StepIcon = s.Icon
-                    const isActive = i === active
-                    const right = i % 2 === 0
+                    const offset = i - pos // 0 = в фокусе; ± = выше/ниже по колоде
+                    const abs = Math.abs(offset)
+                    // Рендерим только ближайшие 3 уровня (перф + чистый вид).
+                    if (abs > 2.6) return null
+                    const sign = offset === 0 ? 0 : offset > 0 ? 1 : -1
+                    const clamped = Math.min(abs, 2)
+                    // Геометрия колоды
+                    const y = offset * 118 // вертикальный разнос карточек, px
+                    const z = -clamped * 180 // вглубь
+                    const rotX = sign * -18 * Math.min(clamped, 1.4) // наклон
+                    const scale = 1 - clamped * 0.12
+                    const opacity = abs > 2 ? 0 : 1 - clamped * 0.42
+                    const blur = clamped * 1.6
+                    const isActive = abs < 0.5
                     return (
-                      <div
+                      <motion.div
                         key={i}
-                        className="flex items-center"
-                        style={{ height: `${100 / steps.length}%` }}
+                        className="absolute left-1/2 top-1/2 w-[92%] max-w-md"
+                        style={{
+                          zIndex: 100 - Math.round(abs * 10),
+                          x: "-50%",
+                          y: `calc(-50% + ${y}px)`,
+                          z,
+                          rotateX: rotX,
+                          scale,
+                          opacity,
+                          filter: `blur(${blur}px)`,
+                          transformStyle: "preserve-3d",
+                        }}
+                        transition={{ type: "tween", duration: 0 }}
                       >
-                        <motion.div
-                          animate={{
-                            opacity: isActive ? 1 : 0.28,
-                            scale: isActive ? 1 : 0.9,
-                            x: isActive ? 0 : right ? 24 : -24,
-                            filter: isActive ? "blur(0px)" : "blur(2px)",
-                          }}
-                          transition={{ type: "spring", stiffness: 120, damping: 22 }}
-                          className={`w-[88%] max-w-md ${right ? "ml-auto" : "mr-auto"}`}
+                        <div
+                          className={
+                            "relative rounded-[26px] border p-8 backdrop-blur-sm transition-colors duration-300 " +
+                            (isActive
+                              ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a]/95 to-[#0e1720]/95 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85),0_0_0_1px_rgba(201,168,110,0.15),0_0_60px_-10px_rgba(201,168,110,0.25)]"
+                              : "border-white/[0.08] bg-gradient-to-br from-[#182234]/90 to-[#0e1720]/90 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
+                          }
                         >
-                          <div className="relative rounded-3xl border border-[#c9a86e]/25 bg-gradient-to-br from-[#1a2332]/90 to-[#0e1720]/90 backdrop-blur-sm shadow-lux p-8">
-                            <div className="flex items-center gap-4 mb-5">
-                              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-[0_0_24px_rgba(201,168,110,0.35)]">
+                          {/* Верхний блик */}
+                          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent rounded-t-[26px]" />
+                          <div className="flex items-center justify-between mb-5">
+                            <div className="flex items-center gap-4">
+                              <div
+                                className={
+                                  "w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 " +
+                                  (isActive
+                                    ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] shadow-[0_0_28px_rgba(201,168,110,0.45)]"
+                                    : "bg-white/[0.06] text-[#c9a86e]")
+                                }
+                              >
                                 <StepIcon className="w-6 h-6" />
                               </div>
                               <span className="text-[#c9a86e]/80 text-[11px] uppercase tracking-[0.35em] font-mono-num">
                                 Шаг {s.step.padStart(2, "0")}
                               </span>
                             </div>
-                            <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
-                              {s.title}
-                            </h3>
-                            <p className="text-white/60 text-[15px] leading-relaxed">
-                              {s.description}
-                            </p>
+                            {/* Крупный полупрозрачный номер */}
+                            <span className="font-mono-num text-white/[0.06] text-6xl font-extrabold leading-none select-none">
+                              {s.step.padStart(2, "0")}
+                            </span>
                           </div>
-                        </motion.div>
-                      </div>
+                          <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
+                            {s.title}
+                          </h3>
+                          <p className="text-white/60 text-[15px] leading-relaxed">
+                            {s.description}
+                          </p>
+                        </div>
+                      </motion.div>
                     )
                   })}
-                </motion.div>
-
-                {/* Точки-прогресс шагов */}
-                <div className="absolute bottom-1 left-0 right-0 flex justify-center gap-2.5 z-10">
-                  {steps.map((_, i) => (
-                    <span
-                      key={i}
-                      className={`h-1.5 rounded-full transition-all duration-400 ${
-                        i === active
-                          ? "w-8 bg-[#c9a86e]"
-                          : i < active
-                          ? "w-1.5 bg-[#c9a86e]/50"
-                          : "w-1.5 bg-white/15"
-                      }`}
-                    />
-                  ))}
                 </div>
+
+                {/* Мягкие тени сверху/снизу — колода «уходит» за края */}
+                <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0e1720] to-transparent z-[120]" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#1a2332] to-transparent z-[120]" />
+              </div>
+
+              {/* Точки-прогресс шагов */}
+              <div className="col-span-full flex justify-center gap-2.5 mt-8">
+                {steps.map((_, i) => (
+                  <span
+                    key={i}
+                    className={`h-1.5 rounded-full transition-all duration-400 ${
+                      i === active
+                        ? "w-8 bg-[#c9a86e]"
+                        : i < active
+                        ? "w-1.5 bg-[#c9a86e]/50"
+                        : "w-1.5 bg-white/15"
+                    }`}
+                  />
+                ))}
               </div>
             </div>
           </div>
