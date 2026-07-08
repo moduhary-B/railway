@@ -1203,7 +1203,7 @@ export default function Home() {
               <motion.div
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, margin: "-60px" }}
+                viewport={{ once: true, margin: "-20px" }}
                 variants={{
                   hidden: {},
                   visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } },
@@ -1300,7 +1300,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-80px" }}
+              viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.7 }}
               className="space-y-8 w-full"
             >
@@ -1532,7 +1532,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
@@ -1608,7 +1608,7 @@ export default function Home() {
                 key={country.id}
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-80px" }}
+                viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.6, delay: cIdx * 0.12, ease: "easeOut" }}
                 className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 hover:border-[#c9a86e]/40 transition-all duration-300 group hover:shadow-2xl hover:shadow-[#c9a86e]/10 transform hover:-translate-y-2 rounded-xl overflow-hidden"
               >
@@ -1703,7 +1703,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.7 }}
             className="flex-1 flex flex-col items-center md:items-start overflow-visible"
           >
@@ -1753,7 +1753,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-80px" }}
+            viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.7, delay: 0.15 }}
             className="hidden md:block flex-1"
           >
@@ -2217,7 +2217,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-6"
           >
@@ -2234,7 +2234,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="relative mx-auto mb-20 md:mb-24 max-w-3xl"
           >
@@ -2272,7 +2272,7 @@ export default function Home() {
                       aria-hidden
                       initial={{ scale: 0, opacity: 0 }}
                       whileInView={{ scale: 1, opacity: 1 }}
-                      viewport={{ once: true, margin: "-80px" }}
+                      viewport={{ once: true, margin: "-40px" }}
                       transition={{ duration: 0.4, delay: 0.15 }}
                       className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-[#c9a86e] shadow-[0_0_0_6px_rgba(201,168,110,0.12)] items-center justify-center z-20"
                     />
@@ -2287,7 +2287,7 @@ export default function Home() {
                       <motion.div
                         initial={{ opacity: 0, x: isLeft ? -50 : 50, y: 20 }}
                         whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        viewport={{ once: true, margin: "-80px" }}
+                        viewport={{ once: true, margin: "-40px" }}
                         transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                         className={
                           "pl-12 md:pl-0 " +
@@ -2334,7 +2334,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -2499,7 +2499,7 @@ export default function Home() {
                 key={review.video}
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-60px" }}
+                viewport={{ once: true, margin: "-20px" }}
                 transition={{ duration: 0.5, delay: (i % 4) * 0.08 }}
                 className="group cursor-pointer"
                 onClick={() => {
@@ -2731,7 +2731,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
@@ -2965,7 +2965,7 @@ export default function Home() {
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, margin: "-20px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
@@ -2980,7 +2980,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ duration: 0.6 }}
               className="space-y-8"
             >
@@ -3062,7 +3062,7 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: 40 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-60px" }}
+              viewport={{ once: true, margin: "-20px" }}
               transition={{ duration: 0.6, delay: 0.15 }}
             >
               <div className="relative h-96 w-full bg-gradient-to-br from-[#1a2332] to-[#0e1720] rounded-xl border border-[#c9a86e]/20 mb-6 overflow-hidden">

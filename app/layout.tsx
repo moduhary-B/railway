@@ -57,6 +57,38 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${cormorant.variable} ${jbMono.variable}`}>
+      <head>
+        {/* Fail-safe: если через 3 секунды после загрузки страницы остаются
+            элементы с inline opacity:0 (framer-motion не гидратировался,
+            IntersectionObserver не сработал, есть prefers-reduced-motion),
+            принудительно показываем их и сбрасываем transform. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+(function(){
+  function reveal(){
+    try {
+      var nodes = document.querySelectorAll('[style*="opacity:0"], [style*="opacity: 0"]');
+      for (var i = 0; i < nodes.length; i++) {
+        nodes[i].style.opacity = '1';
+        nodes[i].style.transform = 'none';
+        nodes[i].style.filter = 'none';
+      }
+    } catch(e) {}
+  }
+  if (document.readyState === 'complete') setTimeout(reveal, 3000);
+  else window.addEventListener('load', function(){ setTimeout(reveal, 3000); });
+})();
+            `.trim(),
+          }}
+        />
+        {/* Для пользователей без JS — сразу показываем всё */}
+        <noscript>
+          <style>{`
+[style*="opacity:0"], [style*="opacity: 0"] { opacity: 1 !important; transform: none !important; }
+          `}</style>
+        </noscript>
+      </head>
       <body className={`${inter.className} overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <ConsultationModalProvider>
