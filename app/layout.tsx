@@ -1,28 +1,30 @@
 import type React from "react"
 import "./globals.css"
-import { Inter, Cormorant_Garamond } from "next/font/google"
+import { Manrope, Playfair_Display } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ConsultationModalProvider } from "@/components/consultation-modal"
 import CookieBanner from "@/components/CookieBanner"
 
 console.log('=== LAYOUT ЗАГРУЖЕН ===');
 
-const inter = Inter({
+// Тело / UI / цифры — Manrope: тёплый геометрический гротеск с отличной
+// кириллицей и табличными фигурами. Один санс на весь интерфейс.
+const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 })
 
-// Редакционный сериф — для акцентных заголовков ("Азии", "работаем", "команда")
-const cormorant = Cormorant_Garamond({
+// Заголовки — Playfair Display: высококонтрастный редакционный сериф
+// (luxury / fashion). Используется на ВЕСЬ заголовок целиком, а не как
+// вставка в строку, — поэтому мешанины шрифтов в строке не возникает.
+const playfair = Playfair_Display({
   subsets: ["latin", "cyrillic"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "800", "900"],
   style: ["normal", "italic"],
   variable: "--font-serif",
   display: "swap",
 })
-
-// JetBrains Mono больше не грузится — все цифры через tabular-nums Inter.
 
 export const metadata = {
   title: "Авто из Китая, Кореи и Японии - Orient Auto",
@@ -50,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${cormorant.variable}`}>
+    <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${playfair.variable}`}>
       <head>
         {/* Fail-safe: если через 3 секунды после загрузки страницы остаются
             элементы с inline opacity:0 (framer-motion не гидратировался,
@@ -83,7 +85,7 @@ export default function RootLayout({
           `}</style>
         </noscript>
       </head>
-      <body className={`${inter.className} overflow-x-hidden`}>
+      <body className={`${manrope.className} overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <ConsultationModalProvider>
             {children}

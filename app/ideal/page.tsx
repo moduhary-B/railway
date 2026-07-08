@@ -1031,7 +1031,7 @@ export default function Home() {
                     из-за которого при непогрузке шрифта был "невидимый" текст) */}
                 <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]">
                   Автомобили из{" "}
-                  <span className="text-[#c9a86e] font-normal">
+                  <span className="text-[#c9a86e] italic font-normal">
                     Японии, Кореи и&nbsp;Китая
                   </span>{" "}
                   <span className="block mt-1 text-white/90 text-3xl md:text-5xl lg:text-6xl">
@@ -1324,9 +1324,9 @@ export default function Home() {
               <div className="space-y-6 leading-relaxed">
                 <p className="text-2xl md:text-3xl font-light text-white leading-snug">
                   Профессиональный подбор и доставка автомобилей из{" "}
-                  <span className="text-[#c9a86e] font-normal">Японии</span>,{" "}
-                  <span className="text-[#c9a86e] font-normal">Китая</span> и{" "}
-                  <span className="text-[#c9a86e] font-normal">Кореи</span>.
+                  <span className="text-[#c9a86e] italic font-normal">Японии</span>,{" "}
+                  <span className="text-[#c9a86e] italic font-normal">Китая</span> и{" "}
+                  <span className="text-[#c9a86e] italic font-normal">Кореи</span>.
                 </p>
                 <p className="text-lg md:text-xl text-white/70 leading-relaxed">
                   Работаем{" "}
@@ -1566,7 +1566,7 @@ export default function Home() {
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight">
               Каталог{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 автомобилей
               </span>
             </h2>
@@ -1756,7 +1756,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl mb-8 text-center md:text-left font-light leading-[1.05]">
               Чат{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 менеджеров
               </span>
             </h2>
@@ -1873,7 +1873,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Полезные видео{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 о нас и импорте
               </span>
             </h2>
@@ -1980,7 +1980,7 @@ export default function Home() {
                   </div>
                   <h3 className="text-white text-3xl md:text-4xl font-light leading-[1.1] mb-3">
                     Следим за{" "}
-                    <span className="text-[#c9a86e] font-normal">
+                    <span className="text-[#c9a86e] italic font-normal">
                       контентом
                     </span>
                   </h3>
@@ -2311,7 +2311,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Как мы{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 работаем
               </span>
             </h2>
@@ -2406,7 +2406,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Отзывы{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 наших клиентов
               </span>
             </h2>
@@ -2544,7 +2544,7 @@ export default function Home() {
               <span className="kicker kicker--center">Видео-отзывы</span>
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 Orient Auto
               </span>{" "}
               глазами клиентов
@@ -2805,7 +2805,7 @@ export default function Home() {
               <span className="kicker kicker--center">Наши люди</span>
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 Команда
               </span>{" "}
               Orient Auto
@@ -3046,7 +3046,7 @@ export default function Home() {
             </div>
             <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
               Наши{" "}
-              <span className="text-[#c9a86e] font-normal">
+              <span className="text-[#c9a86e] italic font-normal">
                 контакты
               </span>
             </h2>
