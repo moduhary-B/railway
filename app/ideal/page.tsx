@@ -1584,7 +1584,7 @@ export default function Home() {
                 name: 'Япония',
                 nameLat: 'JAPAN',
                 description: 'Надёжные автомобили из Японии',
-                accent: '#e53935', // красный круг флага
+                accent: '#eef1f5', // белый — по указанию клиента (msg_7: Япония/белый)
                 pattern: 'sakura',
                 stats: { cars: '3000+', brands: '12', avgPrice: '3.2M ₽' },
                 features: [
