@@ -58,6 +58,7 @@ import SmartWidgetsLoader from "@/components/smart-widgets-loader";
 import ReviewsWidget from "@/components/reviews-widget";
 import FloatingContactWidget from "@/components/floating-contact-widget";
 import CountryPattern from "@/components/country-pattern";
+import HowWeWorkScroll from "@/components/HowWeWorkScroll";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -2288,104 +2289,11 @@ export default function Home() {
       )}
       */}
 
-      {/* How to Order — msg_14+15: полностью переверстано.
-          Слева — фото Kia K5 (заглушка до финального от клиента, /placeholder-car.jpg),
-          справа — вертикальный список этапов с анимацией по скроллу.
-          Заголовок в новом стиле (двухсоставный, с золотым акцентом). */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] w-full overflow-hidden orient-glow">
-        <div className="container mx-auto px-4 max-w-6xl relative">
-          {/* Заголовок */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-12 md:mb-16"
-          >
-            <div className="flex justify-between items-center text-white/40 mb-8">
-              <span className="section-index">06 / ПРОЦЕСС</span>
-              <span className="section-index hidden md:inline font-mono-num">6 SHAGOV</span>
-            </div>
-            <div className="flex justify-center mb-5">
-              <span className="kicker kicker--center">Всего 6 шагов</span>
-            </div>
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
-              Как мы{" "}
-              <span className="text-[#c9a86e] font-extrabold">
-                работаем
-              </span>
-            </h2>
-          </motion.div>
-
-          {/* Двухколоночный компактный layout: фото слева (sticky на десктопе),
-              вертикальный список этапов справа (msg_14+15). Раньше блок был
-              слишком длинным из-за full-width фото + зигзаг space-y-16. */}
-          <div className="grid lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-8 lg:gap-14 items-start">
-            {/* Фото авто — заглушка до финальной вырезки Kia K5 */}
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-20px" }}
-              transition={{ duration: 0.9, ease: "easeOut" }}
-              className="relative lg:sticky lg:top-28"
-            >
-              <div className="absolute inset-x-10 bottom-2 h-24 bg-[#c9a86e]/25 rounded-full blur-3xl pointer-events-none" />
-              <div className="relative rounded-3xl overflow-hidden border border-white/[0.06] shadow-lux">
-                <Image
-                  src="/p/r1.jpg"
-                  alt="Пример автомобиля из наших доставок (заглушка — клиент пришлёт вырезку Kia K5 2024)"
-                  width={1000}
-                  height={640}
-                  className="w-full h-auto object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0e1720]/70 via-transparent to-transparent pointer-events-none" />
-                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-              </div>
-            </motion.div>
-
-            {/* Вертикальный список этапов — компактно, с осью слева */}
-            <div className="relative">
-              <div
-                aria-hidden
-                className="absolute left-5 top-3 bottom-3 w-px bg-gradient-to-b from-[#c9a86e]/0 via-[#c9a86e]/40 to-[#c9a86e]/0"
-              />
-              <div className="space-y-5">
-                {orderSteps.map((item, idx) => {
-                  const Icon = item.Icon
-                  return (
-                    <motion.div
-                      key={idx}
-                      initial={{ opacity: 0, x: 30 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true, margin: "-30px" }}
-                      transition={{ duration: 0.5, delay: idx * 0.06, ease: [0.16, 1, 0.3, 1] }}
-                      className="relative pl-14"
-                    >
-                      {/* Иконка-точка на оси */}
-                      <div className="absolute left-0 top-0 w-10 h-10 rounded-xl bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-[0_0_0_5px_rgba(10,15,26,1),0_0_18px_rgba(201,168,110,0.35)] z-10">
-                        <Icon className="w-4 h-4" />
-                      </div>
-                      <div className="group rounded-2xl border border-[#c9a86e]/12 hover:border-[#c9a86e]/40 bg-white/[0.02] hover:bg-white/[0.035] transition-all duration-400 p-5">
-                        <div className="flex items-baseline gap-3 mb-1.5">
-                          <span className="text-[#c9a86e]/70 text-[10px] uppercase tracking-[0.35em] font-mono-num">
-                            Шаг 0{item.step}
-                          </span>
-                        </div>
-                        <h3 className="text-white text-lg lg:text-xl font-light mb-1.5 group-hover:text-[#c9a86e] transition-colors">
-                          {item.title}
-                        </h3>
-                        <p className="text-white/55 text-sm leading-relaxed">
-                          {item.description}
-                        </p>
-                      </div>
-                    </motion.div>
-                  )
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* How to Order — msg_14+15. Scroll-pin вариант: секция «прилипает»
+          на десктопе, шаги сменяются по прокрутке, активная карточка
+          чередуется лево/право (зигзаг). Реализовано в отдельном компоненте
+          HowWeWorkScroll — прежний статичный список сохранён в git для отката. */}
+      <HowWeWorkScroll steps={orderSteps} />
 
       {/* Reviews Section - Grid with Animation */}
       <section id="reviews" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#1a2332] scroll-mt-24 section-soft-top">
