@@ -48,12 +48,14 @@ import {
 } from "lucide-react"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import ChatIllustration from '@/components/ChatIllustration';
+import ChatIllustrationIdeal from '@/components/ChatIllustrationIdeal';
 import YandexMap from "@/components/YandexMap";
 import DebugBreakpoints from "@/components/DebugBreakpoints";
 import { SocialIcon, SocialLinkButton, ORIENT_SOCIALS } from "@/components/social-icons";
 import { useConsultationModal } from "@/components/consultation-modal";
 import SmartWidgetsLoader from "@/components/smart-widgets-loader";
+import ReviewsWidget from "@/components/reviews-widget";
+import FloatingContactWidget from "@/components/floating-contact-widget";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -1042,7 +1044,7 @@ export default function Home() {
                   <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent gold-underline">
                     Азии
                   </span>
-                  <br className="hidden md:inline" />
+                  {" "}
                   <span className="text-white/90">с гарантией качества</span>
                 </motion.h1>
 
@@ -1772,27 +1774,40 @@ export default function Home() {
                 напрямую от менеджеров компании.
               </p>
             </div>
-            {/* Две кнопки в бренд-цветах, MAX первая */}
-            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            {/* Две кнопки — стеклянные, с брендовой левой полосой; MAX первая */}
+            <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
                 href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-6 py-4 md:px-8 md:py-4 rounded-2xl bg-gradient-to-br from-[#4CC1FF] via-[#5E3FE3] to-[#9333EA] text-white text-base md:text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-300"
+                className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#5E3FE3]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"
               >
-                <SocialIcon network="max" size={28} />
-                Перейти в MAX-чат
-                <ArrowRight className="w-5 h-5" />
+                {/* Левая брендовая полоса */}
+                <span className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-[#4CC1FF] via-[#5E3FE3] to-[#9333EA]" />
+                <span className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#4CC1FF]/15 to-[#9333EA]/15 flex items-center justify-center flex-shrink-0">
+                  <SocialIcon network="max" size={22} />
+                </span>
+                <span className="flex flex-col text-left">
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-mono-num">Написать в</span>
+                  <span className="text-white text-base font-medium">MAX-чат</span>
+                </span>
+                <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-white/80 group-hover:translate-x-1 transition-all ml-2" />
               </a>
               <a
                 href="https://t.me/orientauto_chat"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-3 px-6 py-4 md:px-8 md:py-4 rounded-2xl bg-[#26A5E4] hover:bg-[#1F8DC7] text-white text-base md:text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-300"
+                className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#26A5E4]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"
               >
-                <SocialIcon network="telegram" size={26} colored={false} />
-                Перейти в Telegram-чат
-                <ArrowRight className="w-5 h-5" />
+                <span className="absolute left-0 top-0 bottom-0 w-1 bg-[#26A5E4]" />
+                <span className="w-10 h-10 rounded-lg bg-[#26A5E4]/15 flex items-center justify-center flex-shrink-0">
+                  <SocialIcon network="telegram" size={22} />
+                </span>
+                <span className="flex flex-col text-left">
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-mono-num">Написать в</span>
+                  <span className="text-white text-base font-medium">Telegram-чат</span>
+                </span>
+                <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-white/80 group-hover:translate-x-1 transition-all ml-2" />
               </a>
             </div>
           </motion.div>
@@ -1804,7 +1819,7 @@ export default function Home() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="hidden md:block flex-1"
           >
-            <ChatIllustration />
+            <ChatIllustrationIdeal />
           </motion.div>
         </div>
       </section>
@@ -1948,64 +1963,60 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Правый виджет: 4 крупные кнопки соцсетей (msg_12) */}
-            <div className="w-full">
-              <div className="bg-gradient-to-br from-[#1a2332]/80 to-[#0e1720]/80 border border-[#c9a86e]/25 rounded-2xl p-6 md:p-8 backdrop-blur-sm shadow-xl">
-                <h3 className="text-white text-xl md:text-2xl font-semibold mb-2">Следим за контентом</h3>
-                <p className="text-white/60 text-sm mb-6">
-                  Свежие обзоры и полезная информация — в наших каналах
+            {/* Правый виджет: вертикальный список 4 соцсетей в редакционном стиле (msg_12) */}
+            <div className="w-full self-stretch flex flex-col">
+              {/* Верх — тонкий kicker */}
+              <div className="mb-6">
+                <span className="kicker">Свежие обзоры</span>
+                <h3 className="text-white text-2xl md:text-3xl font-light mt-3 leading-tight">
+                  Следим за{" "}
+                  <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                    контентом
+                  </span>
+                </h3>
+                <p className="text-white/50 text-sm mt-2 leading-relaxed">
+                  Полезная информация и разборы — в наших каналах
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {/* Порядок из msg_12: Telegram → Instagram → MAX → YouTube */}
+              </div>
+
+              {/* Порядок из msg_12: Telegram → Instagram → MAX → YouTube.
+                  Каждая строка — как элемент списка, левая полоса в бренд-цвете,
+                  цифры подписчиков mono справа. */}
+              <div className="flex-1 flex flex-col divide-y divide-white/[0.05] border-y border-white/[0.05]">
+                {[
+                  { href: "https://t.me/orientauto_ru", net: "telegram" as const, label: "Telegram", handle: "@orientauto_ru", color: "#26A5E4" },
+                  { href: "https://www.instagram.com/orientauto.ru", net: "instagram" as const, label: "Instagram", handle: "@orientauto.ru", color: "#d6249f" },
+                  { href: "https://max.ru/id253401357515_biz", net: "max" as const, label: "MAX", handle: "orientauto", color: "#5E3FE3" },
+                  { href: "https://youtube.com/@orientauto_ru", net: "youtube" as const, label: "YouTube", handle: "@orientauto_ru", color: "#FF0000" },
+                ].map((s, i) => (
                   <a
-                    href="https://t.me/orientauto_ru"
+                    key={s.label}
+                    href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-[#26A5E4]/10 border border-[#26A5E4]/40 hover:bg-[#26A5E4]/20 hover:border-[#26A5E4]/70 transition-all group"
+                    className="group relative flex items-center gap-4 py-4 pl-4 pr-3 hover:bg-white/[0.02] transition-colors focus-lux rounded-md"
                   >
-                    <SocialIcon network="telegram" size={30} />
+                    {/* Левая брендовая полоса при hover */}
+                    <span
+                      className="absolute left-0 top-2 bottom-2 w-[2px] rounded opacity-30 group-hover:opacity-100 transition-opacity"
+                      style={{ background: s.color }}
+                    />
+                    <span
+                      className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
+                      style={{ background: `${s.color}15`, border: `1px solid ${s.color}40` }}
+                    >
+                      <SocialIcon network={s.net} size={22} />
+                    </span>
                     <div className="flex-1 min-w-0">
-                      <div className="text-white text-sm font-semibold">Telegram</div>
-                      <div className="text-white/60 text-xs truncate">@orientauto_ru</div>
+                      <div className="text-white text-[15px] font-medium leading-tight">{s.label}</div>
+                      <div className="text-white/40 text-xs mt-0.5 font-mono-num truncate">{s.handle}</div>
                     </div>
+                    <span className="text-[10px] uppercase tracking-[0.25em] text-white/30 font-mono-num mr-1 hidden sm:inline">
+                      0{i + 1}
+                    </span>
+                    <ArrowRight className="w-4 h-4 text-white/30 group-hover:text-white/80 group-hover:translate-x-1 transition-all" />
                   </a>
-                  <a
-                    href="https://www.instagram.com/orientauto.ru"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-[#d6249f]/10 border border-[#d6249f]/40 hover:bg-[#d6249f]/20 hover:border-[#d6249f]/70 transition-all group"
-                  >
-                    <SocialIcon network="instagram" size={30} />
-                    <div className="flex-1 min-w-0">
-                      <div className="text-white text-sm font-semibold">Instagram</div>
-                      <div className="text-white/60 text-xs truncate">@orientauto.ru</div>
-                    </div>
-                  </a>
-                  <a
-                    href="https://max.ru/id253401357515_biz"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-[#5E3FE3]/10 border border-[#5E3FE3]/40 hover:bg-[#5E3FE3]/20 hover:border-[#5E3FE3]/70 transition-all group"
-                  >
-                    <SocialIcon network="max" size={30} />
-                    <div className="flex-1 min-w-0">
-                      <div className="text-white text-sm font-semibold">MAX</div>
-                      <div className="text-white/60 text-xs truncate">Канал</div>
-                    </div>
-                  </a>
-                  <a
-                    href="https://youtube.com/@orientauto_ru"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-4 rounded-xl bg-[#FF0000]/10 border border-[#FF0000]/40 hover:bg-[#FF0000]/20 hover:border-[#FF0000]/70 transition-all group"
-                  >
-                    <SocialIcon network="youtube" size={30} />
-                    <div className="flex-1 min-w-0">
-                      <div className="text-white text-sm font-semibold">YouTube</div>
-                      <div className="text-white/60 text-xs truncate">@orientauto_ru</div>
-                    </div>
-                  </a>
-                </div>
+                ))}
               </div>
             </div>
           </div>
@@ -2289,96 +2300,99 @@ export default function Home() {
             </h2>
           </motion.div>
 
-          {/* Фото Kia K5 — крупно вверху секции (заглушка до финальной вырезки от клиента) */}
+          {/* Фото авто — крупно между заголовком и timeline (заглушка до финальной вырезки Kia K5) */}
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="relative mx-auto mb-20 md:mb-24 max-w-3xl"
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            className="relative mx-auto mt-6 mb-16 md:mb-20 max-w-4xl"
           >
-            <div className="absolute inset-x-10 -bottom-6 h-24 bg-[#c9a86e]/25 rounded-full blur-3xl" />
-            <Image
-              src="/placeholder-car.jpg"
-              alt="Kia K5 — заглушка (клиент пришлёт вырезку)"
-              width={900}
-              height={520}
-              className="relative w-full h-auto object-contain drop-shadow-2xl"
-            />
+            {/* Мягкое золотое свечение под фото */}
+            <div className="absolute inset-x-16 bottom-4 h-32 bg-[#c9a86e]/30 rounded-full blur-3xl" />
+            <div className="relative rounded-3xl overflow-hidden border border-white/[0.06] shadow-lux">
+              <Image
+                src="/p/r1.jpg"
+                alt="Пример автомобиля из наших доставок (заглушка — клиент пришлёт вырезку Kia K5 2024)"
+                width={1200}
+                height={700}
+                className="w-full h-auto object-cover"
+              />
+              {/* Vignette + reflection strip */}
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#0e1720]/60 pointer-events-none" />
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+            </div>
           </motion.div>
 
-          {/* Timeline с центральной осью — на десктопе зигзаг, на мобилке одна колонка */}
-          <div className="relative">
-            {/* Центральная линия */}
+          {/* Timeline с центральной осью — точки идеально по центру линии,
+              карточки по разные стороны в зигзаг */}
+          <div className="relative pt-6">
+            {/* Центральная линия — с ровным началом/концом на первой и последней точке */}
             <div
               aria-hidden
-              className="hidden md:block absolute left-1/2 top-2 bottom-2 -translate-x-1/2 w-px bg-gradient-to-b from-transparent via-[#c9a86e]/40 to-transparent"
+              className="hidden md:block absolute left-1/2 top-8 bottom-8 -translate-x-1/2 w-px bg-gradient-to-b from-[#c9a86e]/0 via-[#c9a86e]/50 to-[#c9a86e]/0"
             />
-            {/* Мобильная линия — слева */}
+            {/* Мобильная линия слева */}
             <div
               aria-hidden
-              className="md:hidden absolute left-6 top-2 bottom-2 w-px bg-gradient-to-b from-transparent via-[#c9a86e]/40 to-transparent"
+              className="md:hidden absolute left-4 top-8 bottom-8 w-px bg-gradient-to-b from-[#c9a86e]/0 via-[#c9a86e]/50 to-[#c9a86e]/0"
             />
 
-            <div className="space-y-8 md:space-y-14">
+            <div className="space-y-10 md:space-y-16">
               {orderSteps.map((item, idx) => {
                 const isLeft = idx % 2 === 0
                 const Icon = item.Icon
                 return (
-                  <div key={idx} className="relative md:min-h-[110px]">
-                    {/* Точка на линии — десктоп */}
-                    <motion.div
-                      aria-hidden
-                      initial={{ scale: 0, opacity: 0 }}
-                      whileInView={{ scale: 1, opacity: 1 }}
-                      viewport={{ once: true, margin: "-40px" }}
-                      transition={{ duration: 0.4, delay: 0.15 }}
-                      className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 w-4 h-4 rounded-full bg-[#c9a86e] shadow-[0_0_0_6px_rgba(201,168,110,0.12)] items-center justify-center z-20"
-                    />
+                  <div key={idx} className="relative md:min-h-[130px] md:grid md:grid-cols-[1fr_40px_1fr] md:gap-0 md:items-center">
+                    {/* Точка на линии — десктоп: в центральной колонке, идеально совпадает с осью */}
+                    <div className="hidden md:flex md:col-start-2 md:row-start-1 items-center justify-center relative z-20">
+                      <motion.div
+                        aria-hidden
+                        initial={{ scale: 0, opacity: 0 }}
+                        whileInView={{ scale: 1, opacity: 1 }}
+                        viewport={{ once: true, margin: "-40px" }}
+                        transition={{ duration: 0.5, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
+                        className="w-4 h-4 rounded-full bg-[#c9a86e] shadow-[0_0_0_8px_rgba(201,168,110,0.12),0_0_20px_rgba(201,168,110,0.4)]"
+                      />
+                    </div>
                     {/* Точка на линии — мобилка */}
-                    <div className="md:hidden absolute left-6 -translate-x-1/2 top-6 w-3 h-3 rounded-full bg-[#c9a86e] shadow-[0_0_0_5px_rgba(201,168,110,0.15)] z-20" />
+                    <div className="md:hidden absolute left-4 -translate-x-1/2 top-8 w-3 h-3 rounded-full bg-[#c9a86e] shadow-[0_0_0_6px_rgba(201,168,110,0.15)] z-20" />
 
-                    <div
+                    {/* Карточка — слева или справа */}
+                    <motion.div
+                      initial={{ opacity: 0, x: isLeft ? -40 : 40 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, margin: "-40px" }}
+                      transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                       className={
-                        "grid md:grid-cols-2 md:gap-12 " + (isLeft ? "" : "md:[&>*:first-child]:col-start-2")
+                        "pl-12 md:pl-0 md:row-start-1 " +
+                        (isLeft
+                          ? "md:col-start-1 md:pr-8 md:text-right"
+                          : "md:col-start-3 md:pl-8")
                       }
                     >
-                      <motion.div
-                        initial={{ opacity: 0, x: isLeft ? -50 : 50, y: 20 }}
-                        whileInView={{ opacity: 1, x: 0, y: 0 }}
-                        viewport={{ once: true, margin: "-40px" }}
-                        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                        className={
-                          "pl-12 md:pl-0 " +
-                          (isLeft ? "md:pr-10 md:text-right" : "md:pl-10")
-                        }
-                      >
-                        <div className="group relative bg-gradient-to-br from-[#1a2332]/90 to-[#0e1720]/90 border border-[#c9a86e]/20 hover:border-[#c9a86e]/60 rounded-2xl p-6 lg:p-7 transition-all duration-300 hover:shadow-2xl hover:shadow-[#c9a86e]/10 backdrop-blur-sm">
-                          {/* Мягкое свечение при hover */}
-                          <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-[#c9a86e]/0 via-[#c9a86e]/0 to-[#c9a86e]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-
-                          <div
-                            className={
-                              "flex items-center gap-3 mb-3 " +
-                              (isLeft ? "md:justify-end" : "")
-                            }
-                          >
-                            <span className="text-[#c9a86e]/70 text-xs uppercase tracking-[0.3em] font-medium font-mono-num">
-                              0{item.step} · Шаг
-                            </span>
-                            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-lg">
-                              <Icon className="w-5 h-5" />
-                            </div>
+                      <div className="group relative bg-gradient-to-br from-[#1a2332]/80 to-[#0e1720]/80 border border-[#c9a86e]/15 hover:border-[#c9a86e]/50 rounded-2xl p-6 lg:p-7 transition-all duration-500 shadow-lux shadow-lux-hover backdrop-blur-sm">
+                        <div
+                          className={
+                            "flex items-center gap-3 mb-3 " +
+                            (isLeft ? "md:justify-end md:flex-row-reverse" : "")
+                          }
+                        >
+                          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-lg">
+                            <Icon className="w-5 h-5" />
                           </div>
-                          <h3 className="text-white text-xl lg:text-2xl font-semibold mb-2 group-hover:text-[#c9a86e] transition-colors">
-                            {item.title}
-                          </h3>
-                          <p className="text-white/70 text-sm lg:text-base leading-relaxed">
-                            {item.description}
-                          </p>
+                          <span className="text-[#c9a86e]/70 text-[10px] uppercase tracking-[0.35em] font-mono-num">
+                            0{item.step} · Шаг
+                          </span>
                         </div>
-                      </motion.div>
-                    </div>
+                        <h3 className="text-white text-xl lg:text-2xl font-light mb-3 group-hover:text-[#c9a86e] transition-colors">
+                          {item.title}
+                        </h3>
+                        <p className="text-white/60 text-sm lg:text-[15px] leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    </motion.div>
                   </div>
                 )
               })}
@@ -2514,16 +2528,13 @@ export default function Home() {
           </div>
           */}
           
-          {/* Виджет отзывов SmartWidgets — обёрнут в рамку, чтобы убрать "пустоту" (msg_16).
-              Скрипт грузится через <SmartWidgetsLoader /> ниже (useEffect), а не сырым
-              <script> в JSX — иначе React 19 бросает hydration mismatch.
-              Настройка вкладок (убрать Vl.ru, добавить Яндекс, порядок 2ГИС → Яндекс)
-              делается в личном кабинете SmartWidgets.
-              Yandex Maps: https://yandex.ru/maps/-/CPxsbY1c */}
-          <SmartWidgetsLoader />
-          <div className="w-full rounded-2xl border border-[#c9a86e]/20 bg-gradient-to-br from-[#1a2332]/60 to-[#0e1720]/60 p-4 md:p-6 backdrop-blur-sm shadow-xl">
-            <div className="sw-app" data-app="7b48850d9c7da346aae2677ecfa009b1"></div>
-          </div>
+          {/* Собственный виджет отзывов с API-hook.
+              apiUrl не задан → используются mock-данные из reviews-widget.tsx.
+              Когда клиент напишет /api/reviews (обновляется раз в день), достаточно
+              передать: <ReviewsWidget apiUrl="/api/reviews" />.
+              Ожидаемый формат ответа:
+              { rating: number, count: number, reviews: Review[] } */}
+          <ReviewsWidget />
 
 
 
@@ -3210,7 +3221,9 @@ export default function Home() {
         </div>
       </footer>
 
-      
+      {/* Плавающий виджет обратной связи в правом нижнем углу — msg_11
+          (клиент прислал 5 референсов) */}
+      <FloatingContactWidget />
     </div>
   )
 }
