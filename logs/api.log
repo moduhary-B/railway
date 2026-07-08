@@ -1,0 +1,4 @@
+{"timestamp":"2026-07-07T15:59:32.410Z","level":"info","message":"API Request: GET /api/cars/china","source":"api","data":{"method":"GET","url":"/api/cars/china","params":{"country":"china","searchParams":{"page":"1"}}},"requestId":"v99sab6s6"}
+{"timestamp":"2026-07-07T15:59:32.411Z","level":"info","message":"Начало обработки запроса для страны: china","source":"api","data":{"country":"china","searchParams":{"page":"1"}},"requestId":"pqea912iw"}
+{"timestamp":"2026-07-07T15:59:32.792Z","level":"info","message":"API Request: GET /api/cars/china","source":"api","data":{"method":"GET","url":"/api/cars/china","params":{"country":"china","searchParams":{"page":"1"}}},"requestId":"i333aij8z"}
+{"timestamp":"2026-07-07T15:59:32.792Z","level":"info","message":"Начало обработки запроса для страны: china","source":"api","data":{"country":"china","searchParams":{"page":"1"}},"requestId":"i1nyrz8f5"}

@@ -32,7 +32,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={cn("relative w-full", bg, padY, patterned && "orient-pattern", className)}
+      className={cn("relative w-full", bg, padY, patterned && "orient-glow", className)}
       {...rest}
     >
       <div

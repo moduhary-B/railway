@@ -1,10 +1,16 @@
 "use client"
 
-// Главная страница полностью клиентская (SmartWidgets, karus, framer-motion, модалка) —
-// SSR-prerender бессмыслен и в Next 15 иногда роняет билд на webpack-runtime.
+// Форк главной — /ideal — премиум-редакция:
+// - редакционный сериф Cormorant Garamond для акцентных слов
+// - JetBrains Mono для цифр/kicker/section-index
+// - kicker с чёрточкой слева, section-counter "01 / КАТАЛОГ"
+// - shadow-lux (inset блик + тёплая тень) вместо shadow-xl
+// - btn-sweep с movement-градиентом
+// - grain overlay на всей странице
+// - softened top-edge между секциями
 export const dynamic = "force-dynamic"
 
-console.log('=== ГЛАВНАЯ СТРАНИЦА ЗАГРУЖЕНА ===');
+console.log('=== ГЛАВНАЯ /ideal ЗАГРУЖЕНА ===');
 
 import { useState, useRef, useEffect, createRef } from "react"
 import Image from "next/image"
@@ -42,9 +48,9 @@ import {
 } from "lucide-react"
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
-import ChatIllustration from '../components/ChatIllustration';
-import YandexMap from "../components/YandexMap";
-import DebugBreakpoints from "../components/DebugBreakpoints";
+import ChatIllustration from '@/components/ChatIllustration';
+import YandexMap from "@/components/YandexMap";
+import DebugBreakpoints from "@/components/DebugBreakpoints";
 import { SocialIcon, SocialLinkButton, ORIENT_SOCIALS } from "@/components/social-icons";
 import { useConsultationModal } from "@/components/consultation-modal";
 import SmartWidgetsLoader from "@/components/smart-widgets-loader";
@@ -832,7 +838,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-hidden w-full">
+    <div className="flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-hidden w-full grain-overlay">
       <DebugBreakpoints />
       {/* Modern Header — уменьшенный лого, меню сдвинуто правее (ml-auto),
           вместо CSS-иконок соцсетей — MAX/WhatsApp/Telegram в бренд-цветах (msg_1) */}
@@ -1020,23 +1026,24 @@ export default function Home() {
                   className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-[#c9a86e]/10 border border-[#c9a86e]/30 backdrop-blur-sm"
                 >
                   <span className="w-2 h-2 rounded-full bg-[#c9a86e] animate-pulse" />
-                  <span className="text-[#c9a86e] text-xs md:text-sm uppercase tracking-[0.3em] font-medium">
+                  <span className="text-[#c9a86e] text-xs md:text-sm uppercase tracking-[0.3em] font-medium font-mono-num">
                     Прямой импорт с 2019
                   </span>
                 </motion.div>
 
-                {/* Hero заголовок — анимация вылета справа (msg_2) */}
+                {/* Hero заголовок — редакционный: санс + сериф италик на "Азии" с underline */}
                 <motion.h1
-                  initial={{ x: 120, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-white leading-tight"
+                  initial={{ y: 40, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]"
                 >
                   Автомобили из{" "}
-                  <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">
+                  <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent gold-underline">
                     Азии
-                  </span>{" "}
-                  с гарантией качества
+                  </span>
+                  <br className="hidden md:inline" />
+                  <span className="text-white/90">с гарантией качества</span>
                 </motion.h1>
 
                 {/* Подзаголовок — вылет снизу (msg_2) */}
@@ -1044,28 +1051,36 @@ export default function Home() {
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
-                  className="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto lg:mx-0"
+                  className="text-white/70 text-base md:text-lg mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
                 >
-                  Мы специализируемся на подборе и доставке автомобилей из Японии, Кореи и Китая с полным
-                  сопровождением сделки.
+                  Профессиональный подбор и доставка автомобилей из Японии, Кореи и Китая —{" "}
+                  <span className="text-white/95">от аукциона до передачи ключей</span>.
                 </motion.p>
 
-                {/* Одна кнопка "Оставить заявку" по центру, с подсветкой-пульсацией (msg_2) */}
+                {/* Кнопка "Оставить заявку" — sweep-градиент, translateY hover, тёплая тень */}
                 <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.7 }}
-                  className="flex justify-center lg:justify-start mb-10"
+                  className="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start mb-10"
                 >
                   <button
                     type="button"
                     onClick={() => consultation.open("hero")}
-                    className="relative group bg-gradient-to-r from-[#c9a86e] to-[#d4b876] hover:from-[#d4b876] hover:to-[#c9a86e] text-[#0e1720] font-bold px-8 py-4 md:px-10 md:py-5 rounded-xl transition-all duration-300 shadow-[0_0_40px_-8px_rgba(201,168,110,0.55)] hover:shadow-[0_0_60px_-8px_rgba(201,168,110,0.8)] hover:scale-105 active:scale-95 text-base md:text-lg min-h-[52px] flex items-center gap-2 uppercase tracking-wide"
+                    className="btn-sweep focus-lux text-[#0e1720] font-semibold px-8 py-4 md:px-10 md:py-4 rounded-xl min-h-[54px] flex items-center gap-3 uppercase tracking-[0.15em] text-sm md:text-base shadow-[0_0_40px_-8px_rgba(201,168,110,0.55)]"
                   >
-                    <span className="absolute inset-0 rounded-xl bg-[#c9a86e] opacity-40 blur-lg group-hover:opacity-60 transition-opacity animate-pulse -z-10" />
                     Оставить заявку
-                    <ArrowRight className="w-5 h-5" />
+                    <ArrowRight className="w-4 h-4" />
                   </button>
+                  {/* Живой счётчик — mono, редакционный */}
+                  <div className="flex flex-col items-center sm:items-start">
+                    <span className="font-mono-num text-2xl md:text-3xl font-light text-white">
+                      2 143
+                    </span>
+                    <span className="text-white/50 text-[10px] uppercase tracking-[0.3em] font-mono-num">
+                      авто доставлено
+                    </span>
+                  </div>
                 </motion.div>
 
                 {/* Для вопросов: MAX → WhatsApp → Telegram, оригинальные бренд-иконки (msg_2) */}
@@ -1265,10 +1280,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Marquee галерея выданных авто клиентам — msg_5: поднять фото выше
-          (уменьшены отступы py-16 md:py-24 → py-8) */}
-      <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden">
-        <div className="relative w-full overflow-hidden shadow-xl border-y border-[#c9a86e]/20 bg-[#0a0f1a]">
+      {/* Marquee галерея выданных авто клиентам — msg_5 */}
+      <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden section-soft-top">
+        <div className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6">
+          <span className="section-index">02 / КЛИЕНТЫ</span>
+          <span className="section-index hidden md:inline font-mono-num">500+ VYDANO</span>
+        </div>
+        <div className="relative w-full overflow-hidden shadow-lux border-y border-[#c9a86e]/15 bg-[#0a0f1a]">
           <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-[#0a0f1a] to-transparent"></div>
           <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-[#0a0f1a] to-transparent"></div>
           <div className="marquee-track flex gap-4 md:gap-8 py-8">
@@ -1291,9 +1309,12 @@ export default function Home() {
 
 
 
-      {/* Блок 'О нас' — msg_6: убран большой заголовок ORIENT AUTO,
-          однотонный фон с паттерном лого, новый текст клиента с акцентными выделениями */}
-      <section className="py-16 md:py-24 bg-[#0a0f1a] w-full overflow-hidden orient-glow">
+      {/* Блок 'О нас' — msg_6: sereif акцент, редакционная типографика */}
+      <section className="py-16 md:py-24 bg-[#0a0f1a] w-full overflow-hidden orient-glow section-soft-top">
+        <div className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6">
+          <span className="section-index">03 / О НАС</span>
+          <span className="section-index hidden md:inline font-mono-num">EST. 2019</span>
+        </div>
         {/* Контейнер с текстом и цифрами */}
         <div className="mx-auto px-4 max-w-7xl relative">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -1304,33 +1325,39 @@ export default function Home() {
               transition={{ duration: 0.7 }}
               className="space-y-8 w-full"
             >
+              <div className="mb-2">
+                <span className="kicker">Философия компании</span>
+              </div>
               <div className="space-y-6 leading-relaxed">
                 <p className="text-2xl md:text-3xl font-light text-white leading-snug">
                   Профессиональный подбор и доставка автомобилей из{" "}
-                  <span className="font-semibold text-white">Японии</span>,{" "}
-                  <span className="font-semibold text-red-400">Китая</span> и{" "}
-                  <span className="font-semibold text-blue-400">Кореи</span>.
+                  <span className="font-serif-display italic font-medium">Японии</span>,{" "}
+                  <span className="font-serif-display italic font-medium text-red-300">Китая</span> и{" "}
+                  <span className="font-serif-display italic font-medium text-blue-300">Кореи</span>.
                 </p>
-                <p className="text-lg md:text-xl text-white/80">
+                <p className="text-lg md:text-xl text-white/70 leading-relaxed">
                   Работаем{" "}
-                  <span className="text-[#c9a86e] font-medium">напрямую</span> с
-                  аукционами и дилерами, сопровождая клиента на всех этапах —{" "}
+                  <span className="text-[#c9a86e] font-medium">напрямую</span> с аукционами и дилерами,
+                  сопровождая клиента на всех этапах —{" "}
                   <span className="text-white/95">от подбора автомобиля до передачи ключей</span>.
                 </p>
                 <div className="flex flex-wrap gap-3 pt-2">
-                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
-                    Просто
-                  </span>
-                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
-                    Надёжно
-                  </span>
-                  <span className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/80 border border-[#c9a86e]/30 text-[#c9a86e] font-medium tracking-wide">
-                    Прозрачно
-                  </span>
+                  {["Просто", "Надёжно", "Прозрачно"].map((tag, i) => (
+                    <motion.span
+                      key={tag}
+                      initial={{ opacity: 0, y: 10 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.4, delay: 0.4 + i * 0.1 }}
+                      className="inline-flex items-center px-4 py-2 rounded-full bg-[#1a2332]/60 border border-[#c9a86e]/25 text-[#c9a86e] font-medium tracking-[0.15em] text-sm uppercase shadow-lux"
+                    >
+                      {tag}
+                    </motion.span>
+                  ))}
                 </div>
               </div>
-              {/* Статистика в карточках с разделителями */}
-              <div className="grid grid-cols-3 gap-3 md:gap-4 pt-4">
+              {/* Статистика — mono цифры, редакционный стиль */}
+              <div className="grid grid-cols-3 gap-0 pt-6 divide-x divide-white/[0.06]">
                 {[
                   { value: "500+", label: "Довольных клиентов" },
                   { value: "5+", label: "Лет опыта" },
@@ -1342,12 +1369,12 @@ export default function Home() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
                     transition={{ duration: 0.5, delay: 0.2 + i * 0.1 }}
-                    className="text-center px-2 py-4 rounded-xl bg-[#1a2332]/40 border border-[#c9a86e]/15 backdrop-blur-sm"
+                    className={"text-center px-3 py-2 " + (i === 0 ? "pl-0" : "")}
                   >
-                    <div className="text-3xl md:text-4xl font-bold bg-gradient-to-b from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                    <div className="font-mono-num text-3xl md:text-4xl font-light bg-gradient-to-b from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
                       {s.value}
                     </div>
-                    <div className="text-white/60 text-xs md:text-sm mt-1 leading-tight">
+                    <div className="text-white/50 text-[10px] md:text-xs mt-2 leading-tight uppercase tracking-[0.2em] font-mono-num">
                       {s.label}
                     </div>
                   </motion.div>
@@ -1527,8 +1554,13 @@ export default function Home() {
 
       {/* Catalog Section */}
       <div id="catalog" className="relative top-8 h-0 pointer-events-none"></div>
-      <section className="scroll-mt-0 bg-gradient-to-b from-[#0e1720] to-[#0e1720] relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10 pt-16 md:pt-24">
+      <section className="scroll-mt-0 bg-gradient-to-b from-[#0e1720] to-[#0e1720] relative overflow-hidden section-soft-top">
+        {/* Section index в верхнем углу */}
+        <div className="container mx-auto px-4 pt-8 flex justify-between items-center text-white/40">
+          <span className="section-index">01 / КАТАЛОГ</span>
+          <span className="section-index hidden md:inline">JAPAN · CHINA · KOREA</span>
+        </div>
+        <div className="container mx-auto px-4 relative z-10 pt-8 md:pt-14">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1536,13 +1568,18 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-white mb-4">
-              Каталог автомобилей
-            </h1>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Три рынка · Один подбор</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-white leading-tight">
+              Каталог{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                автомобилей
+              </span>
+            </h2>
+            <p className="text-lg text-white/60 max-w-2xl mx-auto mt-5 leading-relaxed">
               Выберите страну происхождения и найдите идеальный автомобиль для себя
             </p>
-            <div className="h-1 w-24 mx-auto mt-6 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
           </motion.div>
 
           {/* Countries Grid — msg_7: порядок Япония → Китай → Корея,
@@ -1609,10 +1646,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 60 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-80px" }}
-                transition={{ duration: 0.6, delay: cIdx * 0.12, ease: "easeOut" }}
-                className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 hover:border-[#c9a86e]/40 transition-all duration-300 group hover:shadow-2xl hover:shadow-[#c9a86e]/10 transform hover:-translate-y-2 rounded-xl overflow-hidden"
+                transition={{ duration: 0.6, delay: cIdx * 0.12, ease: [0.16, 1, 0.3, 1] }}
+                className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/15 hover:border-[#c9a86e]/45 transition-all duration-500 group shadow-lux shadow-lux-hover rounded-2xl overflow-hidden"
               >
-                <div className="relative overflow-hidden rounded-t-lg p-6">
+                <div className="relative overflow-hidden rounded-t-2xl p-6">
                   <div className={`absolute inset-0 bg-gradient-to-br ${country.color} opacity-90 group-hover:opacity-100 transition-opacity`} />
                   <div className="relative z-10">
                     <h3 className={`text-2xl font-bold mb-2 ${country.accent}`}>
@@ -1650,9 +1687,9 @@ export default function Home() {
 
                   {/* CTA Button */}
                   <Link href={`/catalog/${country.id}`}>
-                    <button className="w-full bg-gradient-to-r from-[#c9a86e] to-[#d4b876] hover:from-[#d4b876] hover:to-[#c9a86e] text-[#0e1720] font-semibold rounded-lg group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[#c9a86e]/25 py-3 px-4 flex items-center justify-center">
+                    <button className="btn-sweep focus-lux w-full text-[#0e1720] font-semibold rounded-lg py-3 px-4 flex items-center justify-center gap-2 uppercase tracking-[0.15em] text-sm">
                       Перейти в каталог
-                      <ChevronRight className="w-4 h-4 ml-2" />
+                      <ChevronRight className="w-4 h-4" />
                     </button>
                   </Link>
                 </div>
@@ -1697,7 +1734,11 @@ export default function Home() {
 
       {/* Chat Section — msg_9: "Чат менеджеров" (не только Telegram),
           единый шрифт, две кнопки MAX + TG в бренд-цветах, порядок MAX -> TG */}
-      <section className="py-16 md:py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] relative md:overflow-hidden overflow-visible">
+      <section className="py-16 md:py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332] relative md:overflow-hidden overflow-visible section-soft-top">
+        <div className="container mx-auto px-4 pb-4 flex justify-between items-center text-white/40 mb-6">
+          <span className="section-index">04 / СВЯЗЬ</span>
+          <span className="section-index hidden md:inline">MAX · TELEGRAM</span>
+        </div>
         <div className="absolute -top-32 md:top-24 mb:left-6 w-96 h-96 bg-gradient-to-br from-[#c9a86e]/20 to-[#d4b876]/10 rounded-full blur-3xl opacity-40 z-0"></div>
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center relative z-10 gap-12">
           <motion.div
@@ -1707,8 +1748,14 @@ export default function Home() {
             transition={{ duration: 0.7 }}
             className="flex-1 flex flex-col items-center md:items-start overflow-visible"
           >
-            <h2 className="text-white text-4xl md:text-5xl mb-8 text-center md:text-left font-bold tracking-wide drop-shadow-xl">
-              <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent">ЧАТ МЕНЕДЖЕРОВ</span>
+            <div className="mb-4">
+              <span className="kicker">Живая связь</span>
+            </div>
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl mb-8 text-center md:text-left font-light leading-[1.05]">
+              Чат{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                менеджеров
+              </span>
             </h2>
             {/* Единый шрифт (font-light для всех абзацев), цвет для смысловых акцентов */}
             <div className="max-w-2xl text-center md:text-left mb-12 space-y-4">
@@ -1799,15 +1846,21 @@ export default function Home() {
           новый заголовок в акцентном стиле */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden orient-glow">
         <div className="container mx-auto px-4 max-w-7xl relative">
-          {/* Новый заголовок в акцентном стиле (msg_12: "выглядит скучно" → добавлен подзаголовок и подчёркивание) */}
+          {/* Заголовок — сериф на акцентной части */}
           <div className="text-center mb-14">
-            <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm mb-3">
-              Наш YouTube и Telegram
-            </span>
-            <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-light tracking-wide">
-              Полезные видео <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">о нас и импорте</span>
+            <div className="flex justify-between items-center text-white/40 mb-8">
+              <span className="section-index">05 / КОНТЕНТ</span>
+              <span className="section-index hidden md:inline">YOUTUBE · TELEGRAM · MAX</span>
+            </div>
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Наш YouTube и Telegram</span>
+            </div>
+            <h2 className="text-white text-3xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              Полезные видео{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                о нас и импорте
+              </span>
             </h2>
-            <div className="h-1 w-24 mx-auto mt-5 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
           </div>
 
           {/* Grid: слева 3D-карусель, справа виджет соцсетей */}
@@ -2221,13 +2274,19 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-6"
           >
-            <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm mb-3">
-              Всего 6 шагов
-            </span>
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide">
-              Как мы <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">работаем</span>
+            <div className="flex justify-between items-center text-white/40 mb-8">
+              <span className="section-index">06 / ПРОЦЕСС</span>
+              <span className="section-index hidden md:inline font-mono-num">6 SHAGOV</span>
+            </div>
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Всего 6 шагов</span>
+            </div>
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              Как мы{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                работаем
+              </span>
             </h2>
-            <div className="h-1 w-24 mx-auto mt-4 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
           </motion.div>
 
           {/* Фото Kia K5 — крупно вверху секции (заглушка до финальной вырезки от клиента) */}
@@ -2304,8 +2363,8 @@ export default function Home() {
                               (isLeft ? "md:justify-end" : "")
                             }
                           >
-                            <span className="text-[#c9a86e]/70 text-xs uppercase tracking-[0.3em] font-medium">
-                              Шаг {item.step}
+                            <span className="text-[#c9a86e]/70 text-xs uppercase tracking-[0.3em] font-medium font-mono-num">
+                              0{item.step} · Шаг
                             </span>
                             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-lg">
                               <Icon className="w-5 h-5" />
@@ -2329,8 +2388,12 @@ export default function Home() {
       </section>
 
       {/* Reviews Section - Grid with Animation */}
-      <section id="reviews" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#1a2332] scroll-mt-24">
+      <section id="reviews" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#1a2332] scroll-mt-24 section-soft-top">
         <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center text-white/40 mb-8">
+            <span className="section-index">08 / ДОКАЗАТЕЛЬСТВА</span>
+            <span className="section-index hidden md:inline">2GIS · YANDEX</span>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -2341,13 +2404,17 @@ export default function Home() {
             <div className="flex items-center justify-center mb-6">
               <div className="flex gap-1">
                 {[1, 2, 3, 4, 5].map((star) => (
-                  <Star key={star} className="w-8 h-8 text-yellow-400 fill-current" />
+                  <Star key={star} className="w-7 h-7 text-yellow-400 fill-current drop-shadow-[0_0_8px_rgba(250,204,21,0.4)]" />
                 ))}
               </div>
-              <span className="text-white text-xl ml-4 font-medium">4.9 из 5</span>
+              <span className="font-mono-num text-white text-xl ml-4 font-light">4.9 / 5</span>
             </div>
-            <h2 className="text-white text-4xl md:text-5xl font-light tracking-wide overflow-hidden">Отзывы наших клиентов</h2>
-            <div className="h-1 w-24 mx-auto mt-6 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              Отзывы{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                наших клиентов
+              </span>
+            </h2>
           </motion.div>
 
           {/*          <div className="text-center mb-16">
@@ -2467,29 +2534,24 @@ export default function Home() {
           с эффектным заголовком, рамкой и паттерном лого в фоне */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden orient-glow">
         <div className="container mx-auto px-4 max-w-7xl relative">
-          {/* Новый заголовок в стиле с "фреймом" и рамкой */}
+          {/* Заголовок — сериф и kicker */}
           <div className="text-center mb-16">
-            <div className="inline-flex flex-col items-center gap-4">
-              <span className="text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm">
-                Видео-отзывы
-              </span>
-              <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide leading-tight">
-                <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">
-                  ORIENT AUTO
-                </span>
-                <span className="block text-2xl md:text-3xl lg:text-4xl mt-2 text-white/85">
-                  глазами клиентов
-                </span>
-              </h2>
-              <div className="flex items-center gap-3 mt-2">
-                <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[#c9a86e]" />
-                <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
-              </div>
-              <p className="text-white/70 text-base md:text-lg max-w-2xl mt-4">
-                Послушайте, что говорят наши клиенты о работе с Orient Auto и качестве приобретенных автомобилей
-              </p>
+            <div className="flex justify-between items-center text-white/40 mb-8">
+              <span className="section-index">07 / КЛИЕНТЫ</span>
+              <span className="section-index hidden md:inline">VIDEO · REAL PEOPLE</span>
             </div>
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Видео-отзывы</span>
+            </div>
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                Orient Auto
+              </span>{" "}
+              глазами клиентов
+            </h2>
+            <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+              Послушайте, что говорят наши клиенты о работе с Orient Auto и качестве приобретённых автомобилей
+            </p>
           </div>
 
           {/* Grid-плитка — msg_18: не карусель */}
@@ -2728,6 +2790,10 @@ export default function Home() {
       {/* Team Section */}
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332]">
         <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center text-white/40 mb-8">
+            <span className="section-index">09 / КОМАНДА</span>
+            <span className="section-index hidden md:inline font-mono-num">10 SPECIALISTOV</span>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -2735,13 +2801,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm mb-3">
-              Наши люди
-            </span>
-            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light tracking-wide">
-              <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">Команда</span> Orient Auto
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Наши люди</span>
+            </div>
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                Команда
+              </span>{" "}
+              Orient Auto
             </h2>
-            <div className="h-1 w-24 mx-auto mt-4 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
           </motion.div>
           {/* Desktop версия карусели */}
           <div className="hidden md:block">
@@ -2962,6 +3030,10 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contacts" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] scroll-mt-24">
         <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center text-white/40 mb-8">
+            <span className="section-index">10 / КОНТАКТЫ</span>
+            <span className="section-index hidden md:inline">VLADIVOSTOK · RUSSIA</span>
+          </div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -2969,11 +3041,15 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <span className="block text-[#c9a86e] uppercase tracking-[0.4em] text-xs md:text-sm mb-3">
-              Свяжитесь с нами
-            </span>
-            <h2 className="text-white text-4xl md:text-5xl font-light tracking-wide">Наши <span className="bg-gradient-to-r from-[#c9a86e] to-[#d4b876] bg-clip-text text-transparent font-semibold">контакты</span></h2>
-            <div className="h-1 w-24 mx-auto mt-4 bg-gradient-to-r from-transparent via-[#c9a86e] to-transparent" />
+            <div className="flex justify-center mb-5">
+              <span className="kicker kicker--center">Свяжитесь с нами</span>
+            </div>
+            <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-light leading-[1.05]">
+              Наши{" "}
+              <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
+                контакты
+              </span>
+            </h2>
           </motion.div>
 
           <div className="grid lg:grid-cols-2 gap-16">

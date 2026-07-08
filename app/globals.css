@@ -513,22 +513,177 @@ textarea:focus {
   animation-play-state: paused;
 }
 
-/* Паттерн фона из лого Orient Auto — placeholder до финального SVG-паттерна от клиента */
-.orient-pattern {
+/* Декоративный фон для больших секций — вместо тайла из лого:
+   мягкое свечение по краям + тонкая техническая сетка. Смотрится
+   современно и не отвлекает от контента. */
+.orient-glow {
   position: relative;
+  overflow: hidden;
 }
-.orient-pattern::before {
+.orient-glow::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("/logo-orient.png");
-  background-repeat: repeat;
-  background-size: 220px auto;
-  opacity: 0.04;
+  background:
+    radial-gradient(60% 40% at 15% 0%, rgba(201, 168, 110, 0.10), transparent 60%),
+    radial-gradient(50% 40% at 85% 100%, rgba(201, 168, 110, 0.08), transparent 60%);
   pointer-events: none;
   z-index: 0;
 }
-.orient-pattern > * {
+.orient-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201, 168, 110, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 110, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 70% 60% at center, black 40%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at center, black 40%, transparent 90%);
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: 0;
+}
+.orient-glow > * {
   position: relative;
   z-index: 1;
+}
+
+/* Аккуратные линии-разделители между секциями — вместо резкого стыка */
+.section-divider-top {
+  position: relative;
+}
+.section-divider-top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(240px, 40vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201, 168, 110, 0.5), transparent);
+  z-index: 2;
+}
+
+/* Легаси-класс — оставлен как no-op, чтобы старые классы orient-pattern
+   не ломали разметку, если где-то остался. */
+.orient-pattern { position: relative; }
+
+/* ============================================================
+   Design system — премиум-детали для форка /ideal
+   ============================================================ */
+
+/* Sereif акцент через переменную из next/font */
+.font-serif-display {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+  font-feature-settings: "liga", "kern";
+  letter-spacing: -0.01em;
+}
+
+/* Моно только для цифр */
+.font-mono-num {
+  font-family: var(--font-mono), "SF Mono", Consolas, monospace;
+  font-feature-settings: "tnum", "zero";
+}
+
+/* Kicker — тонкий редакционный label с чёрточкой слева */
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(201, 168, 110, 0.75);
+  font-weight: 500;
+}
+.kicker::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: rgba(201, 168, 110, 0.5);
+}
+.kicker--center {
+  justify-content: center;
+}
+.kicker--center::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 1px;
+  background: rgba(201, 168, 110, 0.5);
+}
+
+/* Премиум-тень: тонкая верхняя блик-линия + глубокая тёплая тень */
+.shadow-lux {
+  box-shadow:
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.06),
+    0 20px 60px -20px rgba(0, 0, 0, 0.8);
+}
+.shadow-lux-hover {
+  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.shadow-lux-hover:hover {
+  box-shadow:
+    inset 0 1px 0 0 rgba(201, 168, 110, 0.15),
+    0 30px 80px -20px rgba(201, 168, 110, 0.25),
+    0 0 0 1px rgba(201, 168, 110, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Softened top edge для секций — мягкое проявление вместо стыка */
+.section-soft-top {
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, black 60px);
+  mask-image: linear-gradient(180deg, transparent 0, black 60px);
+}
+
+/* Grain overlay — 1px SVG-noise, opacity 3%, поверх всего */
+.grain-overlay::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.9'/%3E%3C/svg%3E");
+  mix-blend-mode: overlay;
+}
+
+/* Sweep gradient для кнопок */
+.btn-sweep {
+  background: linear-gradient(90deg, #c9a86e 0%, #e8c98a 50%, #c9a86e 100%);
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  transition: background-position 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s ease, box-shadow 0.4s ease;
+}
+.btn-sweep:hover {
+  background-position: 100% 0%;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(201, 168, 110, 0.5);
+}
+
+/* Focus ring — золотой с отступом */
+.focus-lux:focus-visible {
+  outline: none;
+  box-shadow:
+    0 0 0 2px #0a0f1a,
+    0 0 0 4px rgba(201, 168, 110, 0.6);
+}
+
+/* Underline-swipe — тонкая линия под словом с задержкой */
+.gold-underline {
+  background-image: linear-gradient(90deg, transparent, #c9a86e 50%, transparent);
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  padding-bottom: 4px;
+}
+
+/* Section counter — 01 / 02 в углу */
+.section-index {
+  font-family: var(--font-mono), monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  color: rgba(255, 255, 255, 0.35);
 }
