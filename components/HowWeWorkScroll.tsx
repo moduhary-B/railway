@@ -9,7 +9,7 @@
 // ВАЖНО: компонент самодостаточный и легко откатывается — в page.tsx он
 // подключается одной строкой, прежний статичный вариант сохранён в git.
 
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import {
   motion,
@@ -31,6 +31,12 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
   const [dir, setDir] = useState(1)
+
+  // Прокрутку нельзя измерить на сервере → интерактивный pin-блок рендерим
+  // только после монтирования. Это убирает hydration mismatch (SSR и первый
+  // клиентский кадр отдают одинаковую разметку — статический список).
+  const [mounted, setMounted] = useState(false)
+  useEffect(() => setMounted(true), [])
 
   // Прогресс прокрутки внутри «высокого» враппера: 0 — начало пина, 1 — конец.
   const { scrollYProgress } = useScroll({
@@ -60,7 +66,10 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
 
   return (
     <section className="w-full bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow">
-      {/* ==================== ДЕСКТОП: scroll-pin ==================== */}
+      {/* ==================== ДЕСКТОП: scroll-pin ====================
+          Рендерим только после монтирования (mounted) — иначе SSR и клиент
+          расходятся по style (framer-motion useScroll/useTransform). */}
+      {mounted && (
       <div ref={wrapRef} className="relative hidden lg:block" style={{ height: wrapHeight }}>
         <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-center">
           <div className="container mx-auto px-4 max-w-6xl w-full">
@@ -171,6 +180,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
           </div>
         </div>
       </div>
+      )}
 
       {/* ==================== МОБИЛКА: обычный список ==================== */}
       <div className="lg:hidden py-16 px-4">

@@ -843,7 +843,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="ideal2 flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-hidden w-full grain-overlay">
+    <div className="ideal2 flex flex-col min-h-screen bg-gradient-to-b from-[#0a0f1a] via-[#0e1720] to-[#1a2332] overflow-x-clip w-full grain-overlay">
       {/* Modern Header — уменьшенный лого, меню сдвинуто правее (ml-auto),
           вместо CSS-иконок соцсетей — MAX/WhatsApp/Telegram в бренд-цветах (msg_1) */}
       <header className="bg-[#0a0f1a]/90 backdrop-blur-md sticky top-0 z-50 border-b border-[#c9a86e]/20 w-full overflow-hidden">
