@@ -11,7 +11,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import type { LucideIcon } from "lucide-react"
 
 export interface WorkStep {
@@ -24,7 +24,6 @@ export interface WorkStep {
 export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   const wrapRef = useRef<HTMLDivElement>(null)
   const [active, setActive] = useState(0)
-  const [dir, setDir] = useState(1)
   // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
   // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
   const [progress, setProgress] = useState(0)
@@ -56,10 +55,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       else setPhase("pinned")
 
       const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
-      setActive((prev) => {
-        if (idx !== prev) setDir(idx > prev ? 1 : -1)
-        return idx
-      })
+      setActive(idx)
     }
     const onScroll = () => {
       if (!raf) raf = requestAnimationFrame(compute)
@@ -78,11 +74,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   const wrapHeight = `${100 + (steps.length - 1) * 62}vh`
   const railScale = 0.04 + progress * 0.96
 
-  const cur = steps[active]
-  const CurIcon = cur.Icon
-  // Зигзаг: чётный активный шаг — карточка ближе к правому краю,
-  // нечётный — к левому. Плюс въезд по X в сторону движения.
-  const alignRight = active % 2 === 0
+  const cur = steps[active] // для крупного номера шага поверх фото
 
   return (
     <section className="w-full bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow">
@@ -94,6 +86,10 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
         <div
           className={
             "left-0 right-0 h-screen overflow-hidden flex flex-col justify-center " +
+            // Собственный непрозрачный фон + orient-glow → во время пина панель
+            // полностью перекрывает то, что скроллится позади, и фон визуально
+            // стоит на месте (без «плывущего» градиента).
+            "bg-gradient-to-b from-[#0e1720] to-[#1a2332] orient-glow " +
             (phase === "pinned"
               ? "fixed top-0 z-30"
               : phase === "after"
@@ -156,41 +152,61 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 </div>
               </div>
 
-              {/* Правая колонка: активная карточка (зигзаг лево/право) */}
-              <div className="relative min-h-[320px] flex items-center">
-                <div className={`w-full flex ${alignRight ? "justify-end" : "justify-start"}`}>
-                  <AnimatePresence mode="popLayout" custom={dir}>
-                    <motion.div
-                      key={active}
-                      custom={dir}
-                      initial={{ opacity: 0, x: dir * 60, filter: "blur(6px)" }}
-                      animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-                      exit={{ opacity: 0, x: dir * -60, filter: "blur(6px)" }}
-                      transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-                      className="w-[88%] max-w-md"
-                    >
-                      <div className="relative rounded-3xl border border-[#c9a86e]/25 bg-gradient-to-br from-[#1a2332]/90 to-[#0e1720]/90 backdrop-blur-sm shadow-lux p-8">
-                        <div className="flex items-center gap-4 mb-5">
-                          <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-[0_0_24px_rgba(201,168,110,0.35)]">
-                            <CurIcon className="w-6 h-6" />
+              {/* Правая колонка: вертикальная лента карточек. Все шаги всегда
+                  в DOM; лента плавно съезжает к активному (никаких появлений
+                  «из ниоткуда» — только скольжение). Соседние карточки видны
+                  полупрозрачными сверху/снизу, зигзаг — сдвигом по X. */}
+              <div className="relative h-[340px] overflow-hidden">
+                <motion.div
+                  animate={{ y: `-${(active * 100) / steps.length}%` }}
+                  transition={{ type: "spring", stiffness: 90, damping: 20, mass: 0.6 }}
+                  className="absolute inset-x-0 top-0"
+                  style={{ height: `${steps.length * 100}%` }}
+                >
+                  {steps.map((s, i) => {
+                    const StepIcon = s.Icon
+                    const isActive = i === active
+                    const right = i % 2 === 0
+                    return (
+                      <div
+                        key={i}
+                        className="flex items-center"
+                        style={{ height: `${100 / steps.length}%` }}
+                      >
+                        <motion.div
+                          animate={{
+                            opacity: isActive ? 1 : 0.28,
+                            scale: isActive ? 1 : 0.9,
+                            x: isActive ? 0 : right ? 24 : -24,
+                            filter: isActive ? "blur(0px)" : "blur(2px)",
+                          }}
+                          transition={{ type: "spring", stiffness: 120, damping: 22 }}
+                          className={`w-[88%] max-w-md ${right ? "ml-auto" : "mr-auto"}`}
+                        >
+                          <div className="relative rounded-3xl border border-[#c9a86e]/25 bg-gradient-to-br from-[#1a2332]/90 to-[#0e1720]/90 backdrop-blur-sm shadow-lux p-8">
+                            <div className="flex items-center gap-4 mb-5">
+                              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] shadow-[0_0_24px_rgba(201,168,110,0.35)]">
+                                <StepIcon className="w-6 h-6" />
+                              </div>
+                              <span className="text-[#c9a86e]/80 text-[11px] uppercase tracking-[0.35em] font-mono-num">
+                                Шаг {s.step.padStart(2, "0")}
+                              </span>
+                            </div>
+                            <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
+                              {s.title}
+                            </h3>
+                            <p className="text-white/60 text-[15px] leading-relaxed">
+                              {s.description}
+                            </p>
                           </div>
-                          <span className="text-[#c9a86e]/80 text-[11px] uppercase tracking-[0.35em] font-mono-num">
-                            Шаг {cur.step.padStart(2, "0")}
-                          </span>
-                        </div>
-                        <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
-                          {cur.title}
-                        </h3>
-                        <p className="text-white/60 text-[15px] leading-relaxed">
-                          {cur.description}
-                        </p>
+                        </motion.div>
                       </div>
-                    </motion.div>
-                  </AnimatePresence>
-                </div>
+                    )
+                  })}
+                </motion.div>
 
                 {/* Точки-прогресс шагов */}
-                <div className="absolute -bottom-2 left-0 right-0 flex justify-center gap-2.5">
+                <div className="absolute bottom-1 left-0 right-0 flex justify-center gap-2.5 z-10">
                   {steps.map((_, i) => (
                     <span
                       key={i}
