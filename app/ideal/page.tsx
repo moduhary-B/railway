@@ -1636,57 +1636,59 @@ export default function Home() {
                 {/* Цветная тонкая полоса сверху карточки — маркер страны */}
                 <div className="absolute top-0 left-0 right-0 h-1 z-20" style={{ background: country.accent }} />
 
-                {/* Шапка с национальным паттерном + белый текст везде */}
+                {/* Шапка с национальным паттерном — паттерн на первом плане,
+                    заголовок сдержанный, без ярких акцентов */}
                 <div
-                  className="relative overflow-hidden rounded-t-2xl p-6"
+                  className="relative overflow-hidden rounded-t-2xl p-6 pb-8"
                   style={{
-                    background: `linear-gradient(135deg, ${country.accent}30 0%, #0e1720 70%)`,
+                    background: `linear-gradient(160deg, ${country.accent}22 0%, #0e1720 85%)`,
                   }}
                 >
-                  {/* SVG-паттерн ассоциирующийся со страной (msg_7) */}
                   <CountryPattern kind={country.pattern as any} color={country.accent} />
+                  {/* Тёмный фильтр снизу, чтобы низ шапки был "спокойнее" */}
+                  <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-[#0e1720] via-[#0e1720]/60 to-transparent pointer-events-none" />
                   <div className="relative z-10">
-                    <div className="text-white/40 text-[10px] uppercase tracking-[0.4em] font-mono-num mb-2">
+                    <div className="text-white/35 text-[10px] uppercase tracking-[0.4em] font-mono-num mb-1.5">
                       {country.nameLat}
                     </div>
-                    <h3 className="text-white text-3xl font-light mb-2 leading-none">
-                      <span className="font-serif-display italic">{country.name}</span>
+                    <h3 className="text-white/95 text-2xl font-light leading-tight">
+                      <span className="font-serif-display">{country.name}</span>
                     </h3>
-                    <p className="text-white/70 text-sm">{country.description}</p>
+                    <p className="text-white/50 text-xs mt-1">{country.description}</p>
                   </div>
                 </div>
                 <div className="p-6">
-                  {/* Stats */}
-                  <div className="grid grid-cols-3 gap-4 mb-6">
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-[#c9a86e]">{country.stats.cars}</div>
-                      <div className="text-sm text-white/60">Автомобилей</div>
+                  {/* Stats — редакционный ряд с разделителями, mono, без жирного золота */}
+                  <div className="grid grid-cols-3 gap-0 divide-x divide-white/[0.06] mb-5">
+                    <div className="text-center px-2">
+                      <div className="font-mono-num text-xl font-light text-white/90">{country.stats.cars}</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-white/40 mt-1 font-mono-num">Авто</div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-[#c9a86e]">{country.stats.brands}</div>
-                      <div className="text-sm text-white/60">Брендов</div>
+                    <div className="text-center px-2">
+                      <div className="font-mono-num text-xl font-light text-white/90">{country.stats.brands}</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-white/40 mt-1 font-mono-num">Брендов</div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-[#c9a86e]">{country.stats.avgPrice}</div>
-                      <div className="text-sm text-white/60">Средняя цена</div>
+                    <div className="text-center px-2">
+                      <div className="font-mono-num text-xl font-light text-white/90">{country.stats.avgPrice}</div>
+                      <div className="text-[10px] uppercase tracking-[0.2em] text-white/40 mt-1 font-mono-num">Ср. цена</div>
                     </div>
                   </div>
 
-                  {/* Features */}
-                  <div className="space-y-2 mb-6">
+                  {/* Features — тихая заливка, без ярких звёздочек */}
+                  <ul className="space-y-1.5 mb-6 text-sm">
                     {country.features.map((feature, index) => (
-                      <div key={index} className="flex items-center text-white/80">
-                        <Star className="w-4 h-4 text-[#c9a86e] mr-2 flex-shrink-0" />
-                        <span className="text-sm">{feature}</span>
-                      </div>
+                      <li key={index} className="flex items-center text-white/60">
+                        <span className="w-1 h-1 rounded-full bg-[#c9a86e]/50 mr-3 flex-shrink-0" />
+                        <span>{feature}</span>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
 
-                  {/* CTA Button */}
+                  {/* CTA — тонкий outline вместо яркой sweep-плашки, чтобы не конкурировать с шапкой */}
                   <Link href={`/catalog/${country.id}`}>
-                    <button className="btn-sweep focus-lux w-full text-[#0e1720] font-semibold rounded-lg py-3 px-4 flex items-center justify-center gap-2 uppercase tracking-[0.15em] text-sm">
+                    <button className="group/btn w-full text-white/90 font-medium rounded-lg py-3 px-4 flex items-center justify-center gap-2 uppercase tracking-[0.2em] text-xs border border-[#c9a86e]/30 hover:border-[#c9a86e] hover:bg-[#c9a86e]/5 transition-all focus-lux">
                       Перейти в каталог
-                      <ChevronRight className="w-4 h-4" />
+                      <ChevronRight className="w-3.5 h-3.5 text-[#c9a86e] group-hover/btn:translate-x-0.5 transition-transform" />
                     </button>
                   </Link>
                 </div>
