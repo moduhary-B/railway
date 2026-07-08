@@ -27,8 +27,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
   // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
   const [progress, setProgress] = useState(0)
-  // Дробная позиция по шагам (0..N-1) — для плавного скольжения 3D-колоды.
-  const [pos, setPos] = useState(0)
   // Фаза пина: 'before' (ещё не доскроллили), 'pinned' (контент зафиксирован
   // на весь экран через position:fixed), 'after' (проскроллили дальше).
   // Используем fixed вместо sticky — sticky ломается от overflow у предков,
@@ -56,12 +54,9 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       else if (-rect.top >= total) setPhase("after")
       else setPhase("pinned")
 
-      // Дробная позиция: карточки скользят непрерывно, а не прыгают по индексу.
-      // Небольшой «плоский» участок по краям каждого шага (через smooth-step),
-      // чтобы активная карточка задерживалась в фокусе, а переход был резче.
-      const raw = p * (steps.length - 1)
-      setPos(raw)
-      const idx = Math.min(steps.length - 1, Math.max(0, Math.round(raw)))
+      // Активный шаг по прогрессу. Переход между шагами анимирует CSS-transition
+      // на карточках (0.5s) — плавный переезд колоды без лишних перерисовок.
+      const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
       setActive(idx)
     }
     const onScroll = () => {
@@ -167,14 +162,22 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 </div>
               </div>
 
-              {/* Правая колонка: 3D-колода карточек. Всегда видно как минимум
-                  предыдущую → текущую → следующую. Активная в фокусе по центру,
-                  соседние отодвинуты вглубь (Z), с наклоном, затемнением и
-                  размытием. Карточки не появляются из ниоткуда — переезжают
-                  по колоде по мере скролла (позиция pos дробная). */}
+              {/* Правая колонка: 3D-колода карточек. Всегда видно предыдущую →
+                  текущую → следующую. Активная в фокусе по центру, соседние
+                  отодвинуты вглубь (Z), с наклоном, затемнением и размытием.
+                  Переезд между шагами — CSS-transition 0.5s (плавно, без лага).
+                  Трансформы — чистый CSS (framer не парсит calc в transform).
+                  Края колоды растворяются маской (mask), поэтому НЕТ видимых
+                  прямоугольных границ. */}
               <div
-                className="relative h-[440px]"
-                style={{ perspective: "1600px" }}
+                className="relative h-[460px]"
+                style={{
+                  perspective: "1600px",
+                  WebkitMaskImage:
+                    "linear-gradient(to bottom, transparent 0%, #000 16%, #000 84%, transparent 100%)",
+                  maskImage:
+                    "linear-gradient(to bottom, transparent 0%, #000 16%, #000 84%, transparent 100%)",
+                }}
               >
                 <div
                   className="absolute inset-0"
@@ -182,47 +185,48 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 >
                   {steps.map((s, i) => {
                     const StepIcon = s.Icon
-                    const offset = i - pos // 0 = в фокусе; ± = выше/ниже по колоде
+                    // Отсчёт от активного шага (целое): CSS-transition 0.5s даёт
+                    // плавный переезд колоды между шагами. Дробную позицию не
+                    // используем здесь, иначе непрерывные апдейты дерутся с
+                    // transition и появляется лаг.
+                    const offset = i - active // 0 = в фокусе; ± = выше/ниже
                     const abs = Math.abs(offset)
-                    // Рендерим только ближайшие 3 уровня (перф + чистый вид).
-                    if (abs > 2.6) return null
+                    // Рендерим только ближайшие уровни (перф + чистый вид).
+                    if (abs > 2.4) return null
                     const sign = offset === 0 ? 0 : offset > 0 ? 1 : -1
                     const clamped = Math.min(abs, 2)
                     // Геометрия колоды
-                    const y = offset * 118 // вертикальный разнос карточек, px
-                    const z = -clamped * 180 // вглубь
-                    const rotX = sign * -18 * Math.min(clamped, 1.4) // наклон
-                    const scale = 1 - clamped * 0.12
-                    const opacity = abs > 2 ? 0 : 1 - clamped * 0.42
-                    const blur = clamped * 1.6
+                    const y = offset * 120 // вертикальный разнос карточек, px
+                    const z = -clamped * 190 // вглубь
+                    const rotX = sign * -16 * Math.min(clamped, 1.5) // наклон
+                    const scale = 1 - clamped * 0.1
+                    const opacity = Math.max(0, 1 - clamped * 0.4)
+                    const blur = clamped * 1.5
                     const isActive = abs < 0.5
                     return (
-                      <motion.div
+                      <div
                         key={i}
-                        className="absolute left-1/2 top-1/2 w-[92%] max-w-md"
+                        className="absolute left-1/2 top-1/2 w-[92%] max-w-md will-change-transform"
                         style={{
                           zIndex: 100 - Math.round(abs * 10),
-                          x: "-50%",
-                          y: `calc(-50% + ${y}px)`,
-                          z,
-                          rotateX: rotX,
-                          scale,
+                          transform: `translate(-50%, -50%) translateY(${y}px) translateZ(${z}px) rotateX(${rotX}deg) scale(${scale})`,
                           opacity,
-                          filter: `blur(${blur}px)`,
+                          filter: blur > 0.05 ? `blur(${blur}px)` : undefined,
                           transformStyle: "preserve-3d",
+                          transition:
+                            "transform 0.5s cubic-bezier(0.16,1,0.3,1), opacity 0.5s ease, filter 0.5s ease",
                         }}
-                        transition={{ type: "tween", duration: 0 }}
                       >
                         <div
                           className={
                             "relative rounded-[26px] border p-8 backdrop-blur-sm transition-colors duration-300 " +
                             (isActive
                               ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a]/95 to-[#0e1720]/95 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85),0_0_0_1px_rgba(201,168,110,0.15),0_0_60px_-10px_rgba(201,168,110,0.25)]"
-                              : "border-white/[0.08] bg-gradient-to-br from-[#182234]/90 to-[#0e1720]/90 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
+                              : "border-white/[0.08] bg-gradient-to-br from-[#182234]/92 to-[#0e1720]/92 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
                           }
                         >
                           {/* Верхний блик */}
-                          <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent rounded-t-[26px]" />
+                          <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
                           <div className="flex items-center justify-between mb-5">
                             <div className="flex items-center gap-4">
                               <div
@@ -251,14 +255,10 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                             {s.description}
                           </p>
                         </div>
-                      </motion.div>
+                      </div>
                     )
                   })}
                 </div>
-
-                {/* Мягкие тени сверху/снизу — колода «уходит» за края */}
-                <div className="pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-[#0e1720] to-transparent z-[120]" />
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#1a2332] to-transparent z-[120]" />
               </div>
 
               {/* Точки-прогресс шагов */}
