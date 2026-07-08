@@ -1,48 +1,58 @@
 "use client"
 
-import { useEffect, useMemo, useState } from "react"
-import { ChevronLeft, ChevronRight, Star } from "lucide-react"
+import { useEffect, useState } from "react"
+import Image from "next/image"
+import { Star, Quote, Play } from "lucide-react"
 
-export type ReviewSource = "all" | "2gis" | "yandex"
+export type ReviewSource = "2gis" | "yandex" | "youtube"
 
 export interface Review {
   id: string
-  source: Exclude<ReviewSource, "all">
+  source: ReviewSource
   author: string
   car?: string
   rating: number // 1-5
   date: string // ISO
-  text: string
+  /** Только для type=text */
+  text?: string
+  /** Для type=video — URL YouTube-видео либо MP4 */
+  videoUrl?: string
+  /** Превью для видео-отзыва */
+  poster?: string
+  type: "text" | "video"
 }
 
-// Мок-данные — будут заменены API-ответом.
-// Формат ровно такой же, как ожидает виджет: массив Review + агрегация rating.
+// Мок-данные — заменяются API. Формат ровно как ждёт виджет.
 const MOCK_REVIEWS: Review[] = [
   {
     id: "m1",
-    source: "2gis",
+    source: "yandex",
     author: "Ксения Мирясова",
     car: "Toyota Alphard",
     rating: 5,
     date: "2026-05-28",
+    type: "text",
     text: "Большое спасибо за помощь с подбором и покупкой нашей машины! Учли все наши пожелания и помогли выбрать хороший вариант. Всё прозрачно, честно и быстро.",
   },
   {
     id: "m2",
-    source: "yandex",
-    author: "Юлия Шпак-Чуй",
-    car: "Kia K5",
+    source: "youtube",
+    author: "Юлия из Приморского края",
+    car: "Lexus NX",
     rating: 5,
     date: "2026-05-15",
-    text: "Хочу выразить искреннюю благодарность компании Orient Auto, и в особенности менеджеру Алихану. Благодаря его чёткой работе получила именно то, что хотела.",
+    type: "video",
+    videoUrl: "/v-rev/o1.MOV",
+    poster: "/v-rev/previews/prew1.PNG",
   },
   {
     id: "m3",
-    source: "yandex",
+    source: "2gis",
     author: "Наталья Сапрыга",
     car: "Honda Freed",
     rating: 5,
     date: "2026-04-29",
+    type: "text",
     text: "Огромное спасибо команде Orient Auto. Обратились по рекомендации к Алихану — внимательнейший человек. Грамотно и по делу.",
   },
   {
@@ -52,16 +62,19 @@ const MOCK_REVIEWS: Review[] = [
     car: "Honda Vezel",
     rating: 5,
     date: "2026-04-12",
-    text: "Заказывал через ребят Honda Vezel. Прислали кучу вариантов на выбор с аукциона, всё разжевали. Спокойно, без давления, без спешки. Порадовало.",
+    type: "text",
+    text: "Заказывал через ребят Honda Vezel. Прислали кучу вариантов на выбор с аукциона, всё разжевали. Спокойно, без давления, без спешки.",
   },
   {
     id: "m5",
-    source: "2gis",
-    author: "Алексей Ноздрин",
+    source: "youtube",
+    author: "Алексей из Екатеринбурга",
     car: "Nissan Note",
     rating: 5,
     date: "2026-03-30",
-    text: "Работал с командой Orient Auto. Ребята работают на совесть, всё чётко по срокам, машина пришла даже раньше обещанного, документы в порядке.",
+    type: "video",
+    videoUrl: "/v-rev/o2.MOV",
+    poster: "/v-rev/previews/prew2.PNG",
   },
   {
     id: "m6",
@@ -70,6 +83,7 @@ const MOCK_REVIEWS: Review[] = [
     car: "Hyundai Santa Fe TM",
     rating: 5,
     date: "2026-03-18",
+    type: "text",
     text: "Взял Hyundai Santa Fe. Всё прошло гладко: подбор, торги, доставка. Даже мелкие моменты по СБКТС решили за меня — спасибо!",
   },
   {
@@ -79,7 +93,8 @@ const MOCK_REVIEWS: Review[] = [
     car: "Kia Mohave",
     rating: 5,
     date: "2026-02-24",
-    text: "Второй раз обращаюсь. В прошлый раз брал у них жене, сейчас взял себе. Знают своё дело, есть уверенность в том, что не подведут.",
+    type: "text",
+    text: "Второй раз обращаюсь. В прошлый раз брал у них жене, сейчас взял себе. Знают своё дело, есть уверенность что не подведут.",
   },
   {
     id: "m8",
@@ -88,43 +103,33 @@ const MOCK_REVIEWS: Review[] = [
     car: "Volkswagen Golf Alltrack",
     rating: 5,
     date: "2026-02-08",
+    type: "text",
     text: "Хороший сервис. Пригнали Golf в Екатеринбург, всё как договаривались. Спасибо Кириллу за работу.",
   },
 ]
 
 interface Props {
   /**
-   * URL API-эндпоинта, возвращающего { rating: number, count: number, reviews: Review[] }.
-   * Если не указан — используются мок-данные.
-   * Пример: /api/reviews  (клиент напишет позже, обновляется раз в день)
+   * URL API-эндпоинта — { rating, count, reviews[] }.
+   * Обновляется на бэке раз в день.
    */
   apiUrl?: string
 }
 
-/**
- * Виджет отзывов Orient Auto (msg_17 + msg_25).
- *
- * Data flow:
- *   - Если apiUrl задан — делает fetch, ожидает ответ формата {rating, count, reviews[]}.
- *   - При ошибке или отсутствии apiUrl — fallback на MOCK_REVIEWS.
- *
- * UI:
- *   - Крупный рейтинг сверху (звёзды + 4.9/5).
- *   - Вкладки Все / 2ГИС / Яндекс с оценкой каждой.
- *   - Лента карточек с pagination + arrow navigation.
- */
+const SOURCE_META: Record<ReviewSource, { label: string; color: string; bg: string; short: string }> = {
+  "2gis": { label: "2ГИС", color: "#22c55e", bg: "#22c55e15", short: "2ГИС" },
+  yandex: { label: "Яндекс", color: "#eab308", bg: "#eab30815", short: "Я" },
+  youtube: { label: "YouTube", color: "#ef4444", bg: "#ef444415", short: "YT" },
+}
+
 export default function ReviewsWidget({ apiUrl }: Props) {
   const [reviews, setReviews] = useState<Review[]>(MOCK_REVIEWS)
   const [aggregate, setAggregate] = useState({ rating: 4.9, count: 143 })
-  const [loading, setLoading] = useState(false)
-  const [activeSource, setActiveSource] = useState<ReviewSource>("all")
-  const [page, setPage] = useState(0)
+  const [openVideo, setOpenVideo] = useState<Review | null>(null)
 
-  // Fetch раз при монтировании (клиент планирует обновлять на бэке раз в день).
   useEffect(() => {
     if (!apiUrl) return
     let cancelled = false
-    setLoading(true)
     fetch(apiUrl)
       .then((r) => r.json())
       .then((data: { rating: number; count: number; reviews: Review[] }) => {
@@ -134,51 +139,22 @@ export default function ReviewsWidget({ apiUrl }: Props) {
           setAggregate({ rating: data.rating ?? 4.9, count: data.count ?? data.reviews.length })
         }
       })
-      .catch(() => {
-        /* fallback: mock */
-      })
-      .finally(() => !cancelled && setLoading(false))
+      .catch(() => {})
     return () => {
       cancelled = true
     }
   }, [apiUrl])
 
-  const filtered = useMemo(
-    () => (activeSource === "all" ? reviews : reviews.filter((r) => r.source === activeSource)),
-    [reviews, activeSource],
-  )
-
-  const perPage = 3
-  const totalPages = Math.max(1, Math.ceil(filtered.length / perPage))
-  const currentPage = Math.min(page, totalPages - 1)
-  const shown = filtered.slice(currentPage * perPage, currentPage * perPage + perPage)
-
-  useEffect(() => {
-    setPage(0)
-  }, [activeSource])
-
-  const sourceRating = (src: Exclude<ReviewSource, "all">) => {
-    const list = reviews.filter((r) => r.source === src)
-    if (!list.length) return 0
-    return list.reduce((s, r) => s + r.rating, 0) / list.length
-  }
-
-  const tabs: { key: ReviewSource; label: string; rating?: number }[] = [
-    { key: "all", label: "Все отзывы", rating: aggregate.rating },
-    { key: "2gis", label: "2ГИС", rating: sourceRating("2gis") },
-    { key: "yandex", label: "Яндекс", rating: sourceRating("yandex") },
-  ]
-
   return (
     <div className="w-full max-w-6xl mx-auto">
       {/* Сводный рейтинг */}
       <div className="text-center mb-10">
-        <div className="inline-flex items-center gap-3 mb-3">
+        <div className="inline-flex items-center gap-3 mb-2">
           <div className="flex gap-1">
             {[1, 2, 3, 4, 5].map((s) => (
               <Star
                 key={s}
-                className="w-8 h-8 text-yellow-400 fill-current drop-shadow-[0_0_10px_rgba(250,204,21,0.35)]"
+                className="w-7 h-7 text-yellow-400 fill-current drop-shadow-[0_0_10px_rgba(250,204,21,0.35)]"
               />
             ))}
           </div>
@@ -186,131 +162,174 @@ export default function ReviewsWidget({ apiUrl }: Props) {
             {aggregate.rating.toFixed(1)} <span className="text-white/40 text-lg">/ 5</span>
           </span>
         </div>
-        <p className="text-white/50 text-sm font-mono-num tracking-wider">
-          На основе {aggregate.count} оценок
+        <p className="text-white/50 text-xs font-mono-num tracking-[0.3em] uppercase">
+          На основе {aggregate.count} оценок · 2ГИС · Яндекс · YouTube
         </p>
       </div>
 
-      {/* Вкладки источников */}
-      <div className="flex flex-wrap justify-center gap-2 mb-8">
-        {tabs.map((t) => {
-          const active = activeSource === t.key
-          return (
-            <button
-              key={t.key}
-              onClick={() => setActiveSource(t.key)}
-              className={
-                "group inline-flex items-center gap-2 px-5 py-3 rounded-full transition-all duration-300 focus-lux " +
-                (active
-                  ? "bg-gradient-to-r from-[#c9a86e] to-[#d4b876] text-[#0e1720] shadow-lg"
-                  : "bg-white/[0.03] text-white/70 border border-white/[0.08] hover:bg-white/[0.06] hover:border-white/[0.15]")
-              }
-            >
-              <span className="text-sm font-medium">{t.label}</span>
-              {t.rating ? (
-                <span
-                  className={
-                    "font-mono-num text-xs " +
-                    (active ? "text-[#0e1720]/70" : "text-[#c9a86e]")
-                  }
-                >
-                  {t.rating.toFixed(1)}
-                </span>
-              ) : null}
-            </button>
-          )
-        })}
+      {/* Masonry-стиль: карточки разной высоты, микс текст/видео */}
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-5 [column-fill:_balance]">
+        {reviews.map((r) => (
+          <ReviewCard key={r.id} r={r} onOpenVideo={setOpenVideo} />
+        ))}
       </div>
 
-      {/* Карточки отзывов */}
-      {loading ? (
-        <div className="text-center py-16 text-white/40 text-sm font-mono-num">Загрузка отзывов…</div>
-      ) : (
-        <>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5 min-h-[280px]">
-            {shown.map((r) => (
-              <article
-                key={r.id}
-                className="group relative bg-gradient-to-br from-[#1a2332]/60 to-[#0e1720]/60 border border-white/[0.06] hover:border-[#c9a86e]/40 rounded-2xl p-6 backdrop-blur-sm shadow-lux shadow-lux-hover transition-all"
-              >
-                <div className="flex items-start justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#c9a86e]/70 to-[#d4b876]/70 flex items-center justify-center text-[#0e1720] font-semibold">
-                      {r.author.charAt(0)}
-                    </div>
-                    <div>
-                      <div className="text-white text-sm font-medium leading-tight">{r.author}</div>
-                      <div className="text-white/40 text-[11px] font-mono-num tracking-wider mt-0.5">
-                        {formatDate(r.date)}
-                      </div>
-                    </div>
-                  </div>
-                  <span
-                    className={
-                      "text-[9px] uppercase tracking-[0.25em] font-mono-num px-2 py-1 rounded-full border " +
-                      (r.source === "2gis"
-                        ? "text-emerald-400 border-emerald-500/30 bg-emerald-500/5"
-                        : "text-yellow-300 border-yellow-500/30 bg-yellow-500/5")
-                    }
-                  >
-                    {r.source === "2gis" ? "2ГИС" : "Яндекс"}
-                  </span>
-                </div>
-                <div className="flex gap-0.5 mb-3">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <Star
-                      key={s}
-                      className={
-                        "w-3.5 h-3.5 " +
-                        (s <= r.rating ? "text-yellow-400 fill-current" : "text-white/15")
-                      }
-                    />
-                  ))}
-                </div>
-                <p className="text-white/70 text-[13px] leading-relaxed line-clamp-5">{r.text}</p>
-                {r.car ? (
-                  <div className="mt-4 pt-3 border-t border-white/[0.05] text-[10px] uppercase tracking-[0.3em] text-[#c9a86e]/70 font-mono-num">
-                    {r.car}
-                  </div>
-                ) : null}
-              </article>
-            ))}
-            {shown.length === 0 && (
-              <div className="col-span-full text-center py-16 text-white/40 text-sm">
-                Нет отзывов в этом источнике
+      {/* Модалка видео */}
+      {openVideo && openVideo.videoUrl && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
+          onClick={() => setOpenVideo(null)}
+        >
+          <div
+            className="relative max-w-md w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setOpenVideo(null)}
+              className="absolute -top-10 right-0 text-white/70 hover:text-white text-sm"
+            >
+              Закрыть ✕
+            </button>
+            <video
+              src={openVideo.videoUrl}
+              controls
+              autoPlay
+              className="w-full rounded-2xl bg-black aspect-[9/16] shadow-2xl"
+              poster={openVideo.poster}
+            />
+            <div className="text-white/90 mt-3 text-center text-sm">
+              <span className="font-medium">{openVideo.author}</span>
+              {openVideo.car && (
+                <span className="text-[#c9a86e] ml-2">· {openVideo.car}</span>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  )
+}
+
+function ReviewCard({ r, onOpenVideo }: { r: Review; onOpenVideo: (r: Review) => void }) {
+  const meta = SOURCE_META[r.source]
+
+  if (r.type === "video" && r.videoUrl) {
+    return (
+      <article
+        className="group relative mb-5 break-inside-avoid rounded-2xl overflow-hidden bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-white/[0.06] hover:border-[#c9a86e]/40 shadow-lux shadow-lux-hover transition-all cursor-pointer"
+        onClick={() => onOpenVideo(r)}
+      >
+        <div className="relative aspect-[9/16] w-full">
+          {r.poster ? (
+            <Image
+              src={r.poster}
+              alt={r.author}
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="absolute inset-0 bg-black/60" />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-t from-[#0e1720]/95 via-transparent to-[#0e1720]/40" />
+
+          {/* Бейдж источника в углу */}
+          <div
+            className="absolute top-3 left-3 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] uppercase tracking-[0.15em] font-mono-num font-medium backdrop-blur-md"
+            style={{ background: meta.bg, color: meta.color, border: `1px solid ${meta.color}50` }}
+          >
+            <span
+              className="w-3.5 h-3.5 rounded-sm flex items-center justify-center text-[8px] font-bold"
+              style={{ background: meta.color, color: "#000" }}
+            >
+              {meta.short}
+            </span>
+            {meta.label}
+          </div>
+
+          {/* Play в центре */}
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-white/15 backdrop-blur-md flex items-center justify-center border border-white/30 shadow-xl group-hover:bg-[#c9a86e] group-hover:scale-110 transition-all">
+              <Play className="w-6 h-6 text-white ml-1 group-hover:text-[#0e1720] transition-colors" />
+            </div>
+          </div>
+
+          {/* Низ карточки */}
+          <div className="absolute inset-x-0 bottom-0 p-4">
+            <div className="flex gap-0.5 mb-2">
+              {[1, 2, 3, 4, 5].map((s) => (
+                <Star
+                  key={s}
+                  className={
+                    "w-3 h-3 " +
+                    (s <= r.rating ? "text-yellow-400 fill-current" : "text-white/25")
+                  }
+                />
+              ))}
+            </div>
+            <div className="text-white text-sm font-medium leading-tight">{r.author}</div>
+            {r.car && (
+              <div className="text-[#c9a86e] text-xs mt-1 uppercase tracking-[0.2em] font-mono-num">
+                {r.car}
               </div>
             )}
           </div>
+        </div>
+      </article>
+    )
+  }
 
-          {/* Pagination */}
-          {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-4 mt-8">
-              <button
-                onClick={() => setPage((p) => Math.max(0, p - 1))}
-                disabled={currentPage === 0}
-                aria-label="Предыдущая страница"
-                className="w-11 h-11 rounded-full bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.06] hover:border-[#c9a86e]/40 disabled:opacity-30 disabled:cursor-not-allowed transition-all flex items-center justify-center focus-lux"
-              >
-                <ChevronLeft className="w-4 h-4 text-white" />
-              </button>
-              <div className="flex items-center gap-2 font-mono-num text-sm">
-                <span className="text-white">{String(currentPage + 1).padStart(2, "0")}</span>
-                <span className="text-white/30">/</span>
-                <span className="text-white/50">{String(totalPages).padStart(2, "0")}</span>
-              </div>
-              <button
-                onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
-                disabled={currentPage === totalPages - 1}
-                aria-label="Следующая страница"
-                className="w-11 h-11 rounded-full bg-white/[0.03] border border-white/[0.08] hover:bg-white/[0.06] hover:border-[#c9a86e]/40 disabled:opacity-30 disabled:cursor-not-allowed transition-all flex items-center justify-center focus-lux"
-              >
-                <ChevronRight className="w-4 h-4 text-white" />
-              </button>
+  // Текстовая карточка
+  return (
+    <article className="relative mb-5 break-inside-avoid rounded-2xl bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-white/[0.06] hover:border-[#c9a86e]/40 shadow-lux shadow-lux-hover transition-all p-6">
+      {/* Бейдж источника в углу */}
+      <div className="flex items-start justify-between mb-4">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] font-semibold flex-shrink-0">
+            {r.author.charAt(0)}
+          </div>
+          <div>
+            <div className="text-white text-sm font-medium leading-tight">{r.author}</div>
+            <div className="text-white/40 text-[11px] font-mono-num tracking-wider mt-0.5">
+              {formatDate(r.date)}
             </div>
-          )}
-        </>
+          </div>
+        </div>
+        <div
+          className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-[10px] uppercase tracking-[0.15em] font-mono-num font-medium"
+          style={{ background: meta.bg, color: meta.color, border: `1px solid ${meta.color}40` }}
+        >
+          <span
+            className="w-3.5 h-3.5 rounded-sm flex items-center justify-center text-[8px] font-bold"
+            style={{ background: meta.color, color: "#000" }}
+          >
+            {meta.short}
+          </span>
+          {meta.label}
+        </div>
+      </div>
+
+      {/* Звёзды */}
+      <div className="flex gap-0.5 mb-3">
+        {[1, 2, 3, 4, 5].map((s) => (
+          <Star
+            key={s}
+            className={
+              "w-3.5 h-3.5 " +
+              (s <= r.rating ? "text-yellow-400 fill-current" : "text-white/15")
+            }
+          />
+        ))}
+      </div>
+
+      <Quote className="w-5 h-5 text-[#c9a86e]/30 mb-2" />
+      <p className="text-white/75 text-[13.5px] leading-relaxed">{r.text}</p>
+
+      {r.car && (
+        <div className="mt-4 pt-3 border-t border-white/[0.05] text-[10px] uppercase tracking-[0.3em] text-[#c9a86e]/70 font-mono-num">
+          {r.car}
+        </div>
       )}
-    </div>
+    </article>
   )
 }
 

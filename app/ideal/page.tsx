@@ -56,6 +56,7 @@ import { useConsultationModal } from "@/components/consultation-modal";
 import SmartWidgetsLoader from "@/components/smart-widgets-loader";
 import ReviewsWidget from "@/components/reviews-widget";
 import FloatingContactWidget from "@/components/floating-contact-widget";
+import CountryPattern from "@/components/country-pattern";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -1020,33 +1021,23 @@ export default function Home() {
           <div className="max-w-6xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
-                {/* Премиум-badge над заголовком */}
-                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6 }}
-                  className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-[#c9a86e]/10 border border-[#c9a86e]/30 backdrop-blur-sm"
-                >
-                  <span className="w-2 h-2 rounded-full bg-[#c9a86e] animate-pulse" />
-                  <span className="text-[#c9a86e] text-xs md:text-sm uppercase tracking-[0.3em] font-medium font-mono-num">
-                    Прямой импорт с 2019
-                  </span>
-                </motion.div>
+                {/* Kicker в редакционном стиле — не badge, а тонкая линия */}
+                <div className="mb-5 flex justify-center lg:justify-start">
+                  <span className="kicker">Импорт с 2019 · Владивосток → РФ</span>
+                </div>
 
-                {/* Hero заголовок — редакционный: санс + сериф италик на "Азии" с underline */}
-                <motion.h1
-                  initial={{ y: 40, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]"
-                >
+                {/* Hero заголовок. Ни один пробел не потеряется: используем flex-wrap
+                    и сплошной золотой цвет для акцентного слова (не gradient+clip-text,
+                    из-за которого при непогрузке шрифта был "невидимый" текст) */}
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]">
                   Автомобили из{" "}
-                  <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent gold-underline">
-                    Азии
+                  <span className="font-serif-display italic text-[#c9a86e]">
+                    Японии, Кореи и&nbsp;Китая
+                  </span>{" "}
+                  <span className="block mt-1 text-white/90 text-3xl md:text-5xl lg:text-6xl">
+                    с&nbsp;гарантией качества
                   </span>
-                  {" "}
-                  <span className="text-white/90">с гарантией качества</span>
-                </motion.h1>
+                </h1>
 
                 {/* Подзаголовок — вылет снизу (msg_2) */}
                 <motion.p
@@ -1591,17 +1582,14 @@ export default function Home() {
               {
                 id: 'japan',
                 name: 'Япония',
-                description: 'Надежные автомобили из Японии',
-                color: 'from-white/70 via-white/30 to-white/5',
-                accent: 'text-slate-900',
-                stats: {
-                  cars: '3000+',
-                  brands: '12',
-                  avgPrice: '3.2M ₽'
-                },
+                nameLat: 'JAPAN',
+                description: 'Надёжные автомобили из Японии',
+                accent: '#e53935', // красный круг флага
+                pattern: 'sakura',
+                stats: { cars: '3000+', brands: '12', avgPrice: '3.2M ₽' },
                 features: [
                   'Toyota, Honda, Nissan',
-                  'Высокая надежность',
+                  'Высокая надёжность',
                   'Отличная репутация',
                   'Долговечность'
                 ]
@@ -1609,14 +1597,11 @@ export default function Home() {
               {
                 id: 'china',
                 name: 'Китай',
+                nameLat: 'CHINA',
                 description: 'Доступные автомобили из Китая',
-                color: 'from-red-600 via-red-500 to-red-700',
-                accent: 'text-white',
-                stats: {
-                  cars: '2000+',
-                  brands: '8',
-                  avgPrice: '1.8M ₽'
-                },
+                accent: '#e63946', // красный флага
+                pattern: 'lanterns',
+                stats: { cars: '2000+', brands: '8', avgPrice: '1.8M ₽' },
                 features: [
                   'BYD, Chery, Geely',
                   'Современный дизайн',
@@ -1627,19 +1612,16 @@ export default function Home() {
               {
                 id: 'korea',
                 name: 'Корея',
+                nameLat: 'KOREA',
                 description: 'Качественные автомобили из Южной Кореи',
-                color: 'from-blue-700 via-blue-500 to-blue-800',
-                accent: 'text-white',
-                stats: {
-                  cars: '1500+',
-                  brands: '5',
-                  avgPrice: '2.5M ₽'
-                },
+                accent: '#0047a0', // синий флага
+                pattern: 'meander',
+                stats: { cars: '1500+', brands: '5', avgPrice: '2.5M ₽' },
                 features: [
                   'Kia, Hyundai, Genesis',
                   'Современные технологии',
                   'Высокое качество сборки',
-                  'Экономичный расход топлива'
+                  'Экономичный расход'
                 ]
               }
             ].map((country, cIdx) => (
@@ -1649,15 +1631,28 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.6, delay: cIdx * 0.12, ease: [0.16, 1, 0.3, 1] }}
-                className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/15 hover:border-[#c9a86e]/45 transition-all duration-500 group shadow-lux shadow-lux-hover rounded-2xl overflow-hidden"
+                className="relative bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/15 hover:border-[#c9a86e]/45 transition-all duration-500 group shadow-lux shadow-lux-hover rounded-2xl overflow-hidden"
               >
-                <div className="relative overflow-hidden rounded-t-2xl p-6">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${country.color} opacity-90 group-hover:opacity-100 transition-opacity`} />
+                {/* Цветная тонкая полоса сверху карточки — маркер страны */}
+                <div className="absolute top-0 left-0 right-0 h-1 z-20" style={{ background: country.accent }} />
+
+                {/* Шапка с национальным паттерном + белый текст везде */}
+                <div
+                  className="relative overflow-hidden rounded-t-2xl p-6"
+                  style={{
+                    background: `linear-gradient(135deg, ${country.accent}30 0%, #0e1720 70%)`,
+                  }}
+                >
+                  {/* SVG-паттерн ассоциирующийся со страной (msg_7) */}
+                  <CountryPattern kind={country.pattern as any} color={country.accent} />
                   <div className="relative z-10">
-                    <h3 className={`text-2xl font-bold mb-2 ${country.accent}`}>
-                      {country.name}
+                    <div className="text-white/40 text-[10px] uppercase tracking-[0.4em] font-mono-num mb-2">
+                      {country.nameLat}
+                    </div>
+                    <h3 className="text-white text-3xl font-light mb-2 leading-none">
+                      <span className="font-serif-display italic">{country.name}</span>
                     </h3>
-                    <p className={country.accent === 'text-white' ? 'text-white/85' : 'text-slate-800/80'}>{country.description}</p>
+                    <p className="text-white/70 text-sm">{country.description}</p>
                   </div>
                 </div>
                 <div className="p-6">
@@ -1963,60 +1958,76 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Правый виджет: вертикальный список 4 соцсетей в редакционном стиле (msg_12) */}
+            {/* Правый виджет — CTA-плитка (референс клиента f7e3aad08182.jpg):
+                одна крупная карточка "Следим за контентом" + крупная кнопка YouTube,
+                внизу маленькая полоска с остальными соцсетями */}
             <div className="w-full self-stretch flex flex-col">
-              {/* Верх — тонкий kicker */}
-              <div className="mb-6">
-                <span className="kicker">Свежие обзоры</span>
-                <h3 className="text-white text-2xl md:text-3xl font-light mt-3 leading-tight">
-                  Следим за{" "}
-                  <span className="font-serif-display italic font-medium bg-gradient-to-r from-[#e8c98a] to-[#c9a86e] bg-clip-text text-transparent">
-                    контентом
-                  </span>
-                </h3>
-                <p className="text-white/50 text-sm mt-2 leading-relaxed">
-                  Полезная информация и разборы — в наших каналах
-                </p>
-              </div>
+              <div className="relative flex-1 rounded-3xl overflow-hidden bg-gradient-to-br from-[#1a2332] to-[#0e1720] border border-[#c9a86e]/20 shadow-lux p-8 md:p-10 flex flex-col justify-between min-h-[440px]">
+                {/* Крупная декоративная буква на фоне */}
+                <div className="pointer-events-none absolute -right-16 -bottom-20 text-[280px] leading-none font-serif-display font-bold text-[#c9a86e]/[0.05] select-none">
+                  O
+                </div>
 
-              {/* Порядок из msg_12: Telegram → Instagram → MAX → YouTube.
-                  Каждая строка — как элемент списка, левая полоса в бренд-цвете,
-                  цифры подписчиков mono справа. */}
-              <div className="flex-1 flex flex-col divide-y divide-white/[0.05] border-y border-white/[0.05]">
-                {[
-                  { href: "https://t.me/orientauto_ru", net: "telegram" as const, label: "Telegram", handle: "@orientauto_ru", color: "#26A5E4" },
-                  { href: "https://www.instagram.com/orientauto.ru", net: "instagram" as const, label: "Instagram", handle: "@orientauto.ru", color: "#d6249f" },
-                  { href: "https://max.ru/id253401357515_biz", net: "max" as const, label: "MAX", handle: "orientauto", color: "#5E3FE3" },
-                  { href: "https://youtube.com/@orientauto_ru", net: "youtube" as const, label: "YouTube", handle: "@orientauto_ru", color: "#FF0000" },
-                ].map((s, i) => (
+                <div className="relative">
+                  <div className="mb-4">
+                    <span className="kicker">Наш контент</span>
+                  </div>
+                  <h3 className="text-white text-3xl md:text-4xl font-light leading-[1.1] mb-3">
+                    Следим за{" "}
+                    <span className="font-serif-display italic text-[#c9a86e]">
+                      контентом
+                    </span>
+                  </h3>
+                  <p className="text-white/60 text-sm md:text-base leading-relaxed max-w-sm">
+                    Самая актуальная информация из мира автоимпорта — обзоры, разборы, живые видео с аукционов
+                  </p>
+                </div>
+
+                <div className="relative mt-8 space-y-4">
+                  {/* Главная CTA — YouTube-канал (по референсу — большая красная кнопка) */}
                   <a
-                    key={s.label}
-                    href={s.href}
+                    href="https://youtube.com/@orientauto_ru"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative flex items-center gap-4 py-4 pl-4 pr-3 hover:bg-white/[0.02] transition-colors focus-lux rounded-md"
+                    className="group flex items-center justify-center gap-3 w-full py-4 rounded-xl bg-[#FF0000] hover:bg-[#e00000] text-white font-semibold shadow-[0_10px_30px_-8px_rgba(255,0,0,0.5)] hover:shadow-[0_15px_40px_-8px_rgba(255,0,0,0.7)] transition-all focus-lux"
                   >
-                    {/* Левая брендовая полоса при hover */}
-                    <span
-                      className="absolute left-0 top-2 bottom-2 w-[2px] rounded opacity-30 group-hover:opacity-100 transition-opacity"
-                      style={{ background: s.color }}
-                    />
-                    <span
-                      className="w-11 h-11 rounded-lg flex items-center justify-center flex-shrink-0"
-                      style={{ background: `${s.color}15`, border: `1px solid ${s.color}40` }}
-                    >
-                      <SocialIcon network={s.net} size={22} />
+                    <SocialIcon network="youtube" size={22} colored={false} />
+                    <span className="text-[15px] tracking-wide">Orient Auto видео</span>
+                    <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center">
+                      <ArrowRight className="w-3.5 h-3.5" />
                     </span>
-                    <div className="flex-1 min-w-0">
-                      <div className="text-white text-[15px] font-medium leading-tight">{s.label}</div>
-                      <div className="text-white/40 text-xs mt-0.5 font-mono-num truncate">{s.handle}</div>
-                    </div>
-                    <span className="text-[10px] uppercase tracking-[0.25em] text-white/30 font-mono-num mr-1 hidden sm:inline">
-                      0{i + 1}
-                    </span>
-                    <ArrowRight className="w-4 h-4 text-white/30 group-hover:text-white/80 group-hover:translate-x-1 transition-all" />
                   </a>
-                ))}
+
+                  <div className="flex items-center gap-3 pt-1">
+                    <span className="text-[10px] uppercase tracking-[0.3em] text-white/40 font-mono-num whitespace-nowrap">
+                      Также
+                    </span>
+                    <span className="flex-1 h-px bg-white/[0.08]" />
+                  </div>
+
+                  {/* Порядок msg_12: TG · Инст · MAX (YouTube главный, вынесен выше) */}
+                  <div className="grid grid-cols-3 gap-2">
+                    {[
+                      { href: "https://t.me/orientauto_ru", net: "telegram" as const, label: "Telegram", color: "#26A5E4" },
+                      { href: "https://www.instagram.com/orientauto.ru", net: "instagram" as const, label: "Instagram", color: "#d6249f" },
+                      { href: "https://max.ru/id253401357515_biz", net: "max" as const, label: "MAX", color: "#5E3FE3" },
+                    ].map((s) => (
+                      <a
+                        key={s.label}
+                        href={s.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group flex flex-col items-center justify-center gap-2 py-4 rounded-xl bg-white/[0.03] hover:bg-white/[0.06] transition-all focus-lux"
+                        style={{ borderWidth: 1, borderStyle: "solid", borderColor: `${s.color}30` }}
+                      >
+                        <SocialIcon network={s.net} size={22} />
+                        <span className="text-white/70 text-[11px] group-hover:text-white transition-colors">
+                          {s.label}
+                        </span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -66,25 +66,37 @@ export default function ChatIllustrationIdeal() {
           </div>
         </div>
 
-        {/* Иконки MAX + Telegram снизу справа */}
+        {/* Иконки MAX + Telegram снизу справа — обе кликабельны, идентичные обёртки */}
         <div className="mt-6 pt-4 border-t border-white/[0.05] flex justify-end items-center gap-3">
           <span className="text-white/40 text-xs uppercase tracking-[0.25em] font-mono-num mr-2">
             через
           </span>
-          <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#4CC1FF]/15 via-[#5E3FE3]/15 to-[#9333EA]/15 border border-white/10 flex items-center justify-center shadow-lg">
+          <a
+            href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть чат в MAX"
+            className="group w-11 h-11 rounded-xl bg-[#0e1720] border border-white/10 flex items-center justify-center shadow-lg overflow-hidden hover:border-[#5E3FE3]/60 transition-colors focus-lux"
+          >
             <Image
               src="/icons/max-mark.svg"
-              alt="MAX"
-              width={26}
-              height={26}
-              className="rounded-md"
+              alt=""
+              width={44}
+              height={44}
+              className="w-full h-full object-cover group-hover:scale-110 transition-transform"
             />
-          </div>
-          <div className="w-11 h-11 rounded-xl bg-[#26A5E4] flex items-center justify-center shadow-lg">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="#fff">
+          </a>
+          <a
+            href="https://t.me/orientauto_chat"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Открыть чат в Telegram"
+            className="group w-11 h-11 rounded-xl bg-[#26A5E4] border border-white/10 flex items-center justify-center shadow-lg overflow-hidden hover:brightness-110 transition-all focus-lux"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fff" className="group-hover:scale-110 transition-transform">
               <path d="M9.417 15.181l-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267 1.998-.931L23.86 3.821c.328-1.497-.541-2.082-1.527-1.715L1.126 10.44c-1.463.564-1.445 1.373-.253 1.741l5.516 1.721 12.808-8.062c.603-.398 1.152-.178.7.22z"/>
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </div>
