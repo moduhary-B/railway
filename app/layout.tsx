@@ -1,28 +1,19 @@
 import type React from "react"
 import "./globals.css"
-import { Manrope, Playfair_Display } from "next/font/google"
+import { Manrope } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
 import { ConsultationModalProvider } from "@/components/consultation-modal"
 import CookieBanner from "@/components/CookieBanner"
 
 console.log('=== LAYOUT ЗАГРУЖЕН ===');
 
-// Тело / UI / цифры — Manrope: тёплый геометрический гротеск с отличной
-// кириллицей и табличными фигурами. Один санс на весь интерфейс.
+// Единый шрифт всего сайта — Manrope: тёплый геометрический гротеск без
+// засечек, с отличной кириллицей и табличными фигурами. Заголовки — тот же
+// Manrope в тяжёлом весе (как на референсах клиента: жирный читаемый санс,
+// без "завихрюшек"-серифов). Одно семейство → никакой "каши из шрифтов".
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  display: "swap",
-})
-
-// Заголовки — Playfair Display: высококонтрастный редакционный сериф
-// (luxury / fashion). Используется на ВЕСЬ заголовок целиком, а не как
-// вставка в строку, — поэтому мешанины шрифтов в строке не возникает.
-const playfair = Playfair_Display({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
-  variable: "--font-serif",
   display: "swap",
 })
 
@@ -52,7 +43,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ru" suppressHydrationWarning className={`overflow-x-hidden ${playfair.variable}`}>
+    <html lang="ru" suppressHydrationWarning className="overflow-x-hidden">
       <head>
         {/* Fail-safe: если через 3 секунды после загрузки страницы остаются
             элементы с inline opacity:0 (framer-motion не гидратировался,

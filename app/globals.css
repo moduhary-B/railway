@@ -737,30 +737,29 @@ textarea:focus {
   letter-spacing: 0;
 }
 
-/* Editorial Luxury: ВСЕ заголовки секций /ideal рендерятся серифом Playfair
-   целиком. Это убирает "кашу" (в строке один шрифт) и даёт luxury-вид.
-   Тело, кнопки, цифры остаются на Manrope (наследуется от body). */
+/* Заголовки — чистый гротеск Manrope БЕЗ засечек, как на референсах клиента
+   (жирный sans, ни одной "завихрюшки", легко читается). Серив (Playfair)
+   убран: клиент показал, что хочет плотный читаемый санс.
+   Тело, кнопки, цифры — тоже Manrope (наследуется от body) → одно семейство. */
 .ideal2 h1,
 .ideal2 h2,
 .ideal2 h3 {
-  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
-  font-feature-settings: "kern" 1, "liga" 1, "dlig" 1;
-  letter-spacing: -0.015em;
-  /* Playfair тонкий на 300 ломается — задаём дисплейный вес 500.
-     Специфичность .ideal2 h2 (0,1,1) выше утилиты font-light (0,1,0),
-     поэтому вес заголовков унифицируется здесь, а не в разметке. */
-  font-weight: 500;
+  font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  letter-spacing: -0.02em;
+  /* Тяжёлый дисплейный вес. Специфичность .ideal2 h2 (0,1,1) выше утилиты
+     font-light (0,1,0), поэтому вес заголовков унифицируется здесь. */
+  font-weight: 800;
 }
-/* Playfair визуально тяжёлый — на дисплейных кеглях чуть плотнее трекинг. */
-.ideal2 h1 { letter-spacing: -0.022em; }
-.ideal2 h2 { letter-spacing: -0.018em; }
-/* Акцентное слово внутри заголовка: тот же Playfair, но italic +
-   золотой цвет. Это НЕ второй шрифт (roman+italic одного семейства) —
-   классический редакционный приём, клиентское правило не нарушается. */
+.ideal2 h1 { letter-spacing: -0.03em; }
+.ideal2 h2 { letter-spacing: -0.025em; }
+/* Акцентное слово внутри заголовка: тот же Manrope, тот же вес, но золотой
+   цвет. Никакого италика/второго шрифта — просто цветовой акцент. */
 .ideal2 h1 .italic,
 .ideal2 h2 .italic,
 .ideal2 h3 .italic {
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 800;
 }
 
 /* Разделитель между секциями — тонкая золотая линия по центру,
