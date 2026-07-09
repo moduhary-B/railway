@@ -171,20 +171,20 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </div>
 
               {/* Правая колонка: 3D-колода карточек. Всегда видно предыдущую →
-                  текущую → следующую. Активная в фокусе по центру, соседние
-                  отодвинуты вглубь (Z), с наклоном, затемнением и размытием.
-                  Переезд между шагами — CSS-transition 0.5s (плавно, без лага).
-                  Трансформы — чистый CSS (framer не парсит calc в transform).
-                  Края колоды растворяются маской (mask), поэтому НЕТ видимых
-                  прямоугольных границ. */}
+                  текущую → следующую. БЕЗ мерцания: (1) все карточки постоянно
+                  в DOM (никаких return null → нет монтирования/размонтирования);
+                  (2) НЕТ filter:blur и backdrop-blur — на 3D-слоях они моргают
+                  в браузере; затенение делаем тёмным оверлеем + прозрачностью;
+                  (3) дальние карточки не доходят до opacity 0, а прячутся за
+                  ближними по z-index. Плавность — lerp по дробной позиции. */}
               <div
                 className="relative h-[460px]"
                 style={{
                   perspective: "1600px",
                   WebkitMaskImage:
-                    "linear-gradient(to bottom, transparent 0%, #000 16%, #000 84%, transparent 100%)",
+                    "linear-gradient(to bottom, transparent 0%, #000 18%, #000 82%, transparent 100%)",
                   maskImage:
-                    "linear-gradient(to bottom, transparent 0%, #000 16%, #000 84%, transparent 100%)",
+                    "linear-gradient(to bottom, transparent 0%, #000 18%, #000 82%, transparent 100%)",
                 }}
               >
                 <div
@@ -193,50 +193,51 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 >
                   {steps.map((s, i) => {
                     const StepIcon = s.Icon
-                    // Дробное смещение от текущей (сглаженной) позиции: карточки
-                    // перетекают непрерывно. Плавность даёт lerp в rAF-цикле,
-                    // поэтому CSS-transition тут НЕ нужен (иначе двойное
-                    // сглаживание = лаг).
                     const offset = i - pos // 0 = в фокусе; ± = выше/ниже
-                    const abs = Math.abs(offset)
-                    // Рендерим только ближайшие уровни (перф + чистый вид).
-                    if (abs > 2.4) return null
-                    const clamped = Math.min(abs, 2)
-                    // Геометрия колоды (всё непрерывно по offset)
-                    const y = offset * 122 // вертикальный разнос карточек, px
-                    const z = -clamped * 190 // вглубь
-                    const rotX = -offset * 12 // наклон в сторону движения
-                    const scale = 1 - clamped * 0.1
-                    const opacity = Math.max(0, 1 - clamped * 0.42)
-                    const blur = clamped * 1.4
+                    const abs = Math.min(Math.abs(offset), 3)
+                    // Геометрия колоды (всё непрерывно по offset — нет прыжков)
+                    const y = offset * 116 // вертикальный разнос, px
+                    const z = -abs * 160 // вглубь
+                    const rotX = Math.max(-30, Math.min(30, -offset * 11)) // наклон
+                    const scale = Math.max(0.7, 1 - abs * 0.09)
+                    // Прозрачность самой карточки держим высокой (не мерцает),
+                    // «уводим вдаль» затемняющим оверлеем ниже.
+                    const cardOpacity = Math.max(0.15, 1 - abs * 0.18)
+                    const shade = Math.min(0.72, abs * 0.34) // тёмный оверлей
                     const isActive = abs < 0.5
                     return (
                       <div
                         key={i}
-                        className="absolute left-1/2 top-1/2 w-[92%] max-w-md will-change-transform"
+                        className="absolute left-1/2 top-1/2 w-[92%] max-w-md"
                         style={{
                           zIndex: 100 - Math.round(abs * 10),
-                          transform: `translate(-50%, -50%) translateY(${y}px) translateZ(${z}px) rotateX(${rotX}deg) scale(${scale})`,
-                          opacity,
-                          filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined,
+                          transform: `translate3d(-50%, -50%, 0) translateY(${y}px) translateZ(${z}px) rotateX(${rotX}deg) scale(${scale})`,
+                          opacity: cardOpacity,
                           transformStyle: "preserve-3d",
+                          backfaceVisibility: "hidden",
                         }}
                       >
                         <div
                           className={
-                            "relative rounded-[26px] border p-8 backdrop-blur-sm transition-colors duration-300 " +
+                            "relative rounded-[26px] border p-8 " +
                             (isActive
-                              ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a]/95 to-[#0e1720]/95 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85),0_0_0_1px_rgba(201,168,110,0.15),0_0_60px_-10px_rgba(201,168,110,0.25)]"
-                              : "border-white/[0.08] bg-gradient-to-br from-[#182234]/92 to-[#0e1720]/92 shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
+                              ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85),0_0_0_1px_rgba(201,168,110,0.15),0_0_60px_-10px_rgba(201,168,110,0.25)]"
+                              : "border-white/[0.08] bg-gradient-to-br from-[#182234] to-[#0e1720] shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
                           }
                         >
+                          {/* Затемняющий оверлей для дальних карточек (вместо
+                              blur — не мерцает). Плавно исчезает у активной. */}
+                          <div
+                            className="pointer-events-none absolute inset-0 rounded-[26px] bg-[#0a0f1a]"
+                            style={{ opacity: shade }}
+                          />
                           {/* Верхний блик */}
                           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-                          <div className="flex items-center justify-between mb-5">
+                          <div className="relative flex items-center justify-between mb-5">
                             <div className="flex items-center gap-4">
                               <div
                                 className={
-                                  "w-14 h-14 rounded-2xl flex items-center justify-center transition-all duration-300 " +
+                                  "w-14 h-14 rounded-2xl flex items-center justify-center " +
                                   (isActive
                                     ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] shadow-[0_0_28px_rgba(201,168,110,0.45)]"
                                     : "bg-white/[0.06] text-[#c9a86e]")
@@ -253,10 +254,10 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                               {s.step.padStart(2, "0")}
                             </span>
                           </div>
-                          <h3 className="text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
+                          <h3 className="relative text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
                             {s.title}
                           </h3>
-                          <p className="text-white/60 text-[15px] leading-relaxed">
+                          <p className="relative text-white/60 text-[15px] leading-relaxed">
                             {s.description}
                           </p>
                         </div>
