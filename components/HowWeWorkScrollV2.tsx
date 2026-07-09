@@ -21,8 +21,13 @@ export interface WorkStep {
 export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
   const sectionRef = useRef<HTMLDivElement>(null)
   const itemRefs = useRef<(HTMLDivElement | null)[]>([])
+  const nodeRefs = useRef<(HTMLDivElement | null)[]>([]) // узлы на оси
   // Прогресс заполнения оси 0..1 (по положению блока в вьюпорте).
   const [fill, setFill] = useState(0)
+  // Геометрия оси в px относительно контейнера таймлайна: центр первого узла
+  // (top) и расстояние до центра последнего (span). Полоска и точка живут
+  // строго между первым и последним шагом.
+  const [axis, setAxis] = useState({ top: 0, span: 0 })
   // Индекс «текущего» шага — ближайшего к центру экрана.
   const [current, setCurrent] = useState(0)
   // Какие шаги уже показались (появились при доскролле). Изначально виден
@@ -44,8 +49,24 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
     const readDiscrete = () => {
       const vh = window.innerHeight
       const centerY = vh / 2
-      const rect = section.getBoundingClientRect()
-      targetFill = Math.min(1, Math.max(0, (centerY - rect.top) / rect.height))
+      const sRect = section.getBoundingClientRect()
+
+      // Ось строго между центрами первого и последнего узлов.
+      const first = nodeRefs.current[0]
+      const last = nodeRefs.current[steps.length - 1]
+      if (first && last) {
+        const fr = first.getBoundingClientRect()
+        const lr = last.getBoundingClientRect()
+        const topPx = fr.top + fr.height / 2 - sRect.top // отн. контейнера
+        const bottomPx = lr.top + lr.height / 2 - sRect.top
+        setAxis({ top: topPx, span: Math.max(1, bottomPx - topPx) })
+
+        // Прогресс: 0 когда центр экрана у первого узла, 1 — у последнего.
+        const firstMid = fr.top + fr.height / 2
+        const lastMid = lr.top + lr.height / 2
+        const denom = Math.max(1, lastMid - firstMid)
+        targetFill = Math.min(1, Math.max(0, (centerY - firstMid) / denom))
+      }
 
       let nearest = 0
       let nearestDist = Infinity
@@ -102,10 +123,10 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
         <div className="absolute bottom-[6%] right-[4%] w-[34vw] h-[34vw] rounded-full bg-[#c9a86e]/[0.05] blur-[130px]" />
       </div>
 
-      <div className="container relative mx-auto px-4 max-w-5xl py-14 md:py-20">
+      <div className="container relative mx-auto px-4 max-w-5xl py-10 md:py-14">
         {/* Заголовок */}
-        <div className="text-center mb-10 md:mb-12">
-          <div className="flex justify-between items-center text-white/40 mb-6">
+        <div className="text-center mb-7 md:mb-9">
+          <div className="flex justify-between items-center text-white/40 mb-5">
             <span className="section-index">06 / ПРОЦЕСС · V2</span>
             <span className="section-index font-mono-num">
               {String(current + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
@@ -121,12 +142,16 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
 
         {/* Таймлайн */}
         <div ref={sectionRef} className="relative">
-          {/* Центральная ось (десктоп — по центру, мобилка — слева) */}
-          <div className="absolute md:left-1/2 left-5 top-0 bottom-0 md:-translate-x-1/2 w-px bg-white/[0.08]" />
+          {/* Центральная ось: строго от центра первого узла до центра
+              последнего (top/span в px), а не по всей высоте контейнера. */}
+          <div
+            className="absolute md:left-1/2 left-5 md:-translate-x-1/2 w-px bg-white/[0.08]"
+            style={{ top: `${axis.top}px`, height: `${axis.span}px` }}
+          />
           {/* Заполненная часть оси + бегущая точка-прогресс */}
           <div
-            className="absolute md:left-1/2 left-5 top-0 md:-translate-x-1/2 w-px bg-gradient-to-b from-[#c9a86e] to-[#d4b876]"
-            style={{ height: `${fill * 100}%` }}
+            className="absolute md:left-1/2 left-5 md:-translate-x-1/2 w-px bg-gradient-to-b from-[#c9a86e] to-[#d4b876]"
+            style={{ top: `${axis.top}px`, height: `${fill * axis.span}px` }}
           >
             {/* Точка-прогресс на конце заполненной оси */}
             <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-[#c9a86e] shadow-[0_0_0_5px_rgba(201,168,110,0.18),0_0_22px_rgba(201,168,110,0.6)]">
@@ -134,7 +159,7 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
             </div>
           </div>
 
-          <div className="space-y-8 md:space-y-11 py-2">
+          <div className="space-y-5 md:space-y-6 py-1">
             {steps.map((s, i) => {
               const Icon = s.Icon
               const isCurrent = i === current
@@ -150,15 +175,20 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                   className="relative md:grid md:grid-cols-[1fr_auto_1fr] md:items-center md:gap-0"
                 >
                   {/* Узел на оси */}
-                  <div className="absolute md:static md:col-start-2 md:row-start-1 left-5 md:left-auto -translate-x-1/2 md:translate-x-0 top-6 md:top-auto z-20 flex justify-center">
+                  <div
+                    ref={(el) => {
+                      nodeRefs.current[i] = el
+                    }}
+                    className="absolute md:static md:col-start-2 md:row-start-1 left-5 md:left-auto -translate-x-1/2 md:translate-x-0 top-5 md:top-auto z-20 flex justify-center"
+                  >
                     <motion.div
                       animate={{
-                        scale: isCurrent ? 1.15 : 1,
+                        scale: isCurrent ? 1.12 : 1,
                         opacity: show ? 1 : 0.3,
                       }}
                       transition={{ type: "spring", stiffness: 200, damping: 20 }}
                       className={
-                        "w-11 h-11 rounded-2xl flex items-center justify-center border transition-colors duration-500 " +
+                        "w-10 h-10 rounded-xl flex items-center justify-center border transition-colors duration-500 " +
                         (isCurrent
                           ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] border-transparent shadow-[0_0_26px_rgba(201,168,110,0.5)]"
                           : isPast
@@ -166,7 +196,7 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                           : "bg-white/[0.04] text-white/40 border-white/10")
                       }
                     >
-                      <Icon className="w-5 h-5" />
+                      <Icon className="w-[18px] h-[18px]" />
                     </motion.div>
                   </div>
 
