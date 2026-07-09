@@ -59,6 +59,7 @@ import ReviewsWidget from "@/components/reviews-widget";
 import FloatingContactWidget from "@/components/floating-contact-widget";
 import CountryPattern from "@/components/country-pattern";
 import HowWeWorkScroll from "@/components/HowWeWorkScroll";
+import HowWeWorkScrollV2 from "@/components/HowWeWorkScrollV2";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -2294,6 +2295,14 @@ export default function Home() {
           чередуется лево/право (зигзаг). Реализовано в отдельном компоненте
           HowWeWorkScroll — прежний статичный список сохранён в git для отката. */}
       <HowWeWorkScroll steps={orderSteps} />
+
+      {/* ===== ВРЕМЕННО: две версии блока «Как мы работаем» для сравнения.
+           Ниже — версия 2 (зигзаг-таймлайн без фиксации). После выбора
+           лучшей — удалить проигравшую и этот разделитель. ===== */}
+      <div className="w-full bg-[#0e1720] py-6 text-center">
+        <span className="section-index">↓ ВАРИАНТ 2 (зигзаг, без фиксации) ↓</span>
+      </div>
+      <HowWeWorkScrollV2 steps={orderSteps} />
 
       {/* Reviews Section - Grid with Animation */}
       <section id="reviews" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#1a2332] scroll-mt-24 section-soft-top">
