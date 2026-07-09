@@ -23,49 +23,56 @@ export interface WorkStep {
 
 export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   const wrapRef = useRef<HTMLDivElement>(null)
-  const [active, setActive] = useState(0)
-  // progress 0..1 внутри враппера. Начальное значение детерминировано (0),
-  // поэтому SSR и первый клиентский кадр совпадают — hydration mismatch нет.
+  // Дробная позиция колоды (0..N-1) — плавно догоняет цель по скроллу (lerp),
+  // поэтому карточки перетекают маслянисто, а не прыгают по шагам.
+  const [pos, setPos] = useState(0)
   const [progress, setProgress] = useState(0)
-  // Фаза пина: 'before' (ещё не доскроллили), 'pinned' (контент зафиксирован
-  // на весь экран через position:fixed), 'after' (проскроллили дальше).
-  // Используем fixed вместо sticky — sticky ломается от overflow у предков,
-  // а fixed от него не зависит (у предков нет transform/filter → containing
-  // block = viewport).
+  // Фаза пина: 'before' | 'pinned' | 'after'. fixed вместо sticky —
+  // sticky ломается от overflow у предков, fixed от него не зависит.
   const [phase, setPhase] = useState<"before" | "pinned" | "after">("before")
 
-  // Прямой расчёт по скроллу. wrapRef — «высокий» спейсер, держит место
-  // прокрутки; сам контент выдёргивается в fixed на время пина.
+  // Непрерывный rAF-цикл: каждый кадр читаем скролл → целевую позицию, и
+  // сглаживаем к ней текущую (экспоненциальный lerp). Это даёт инерцию и
+  // «маслянистое» перетекание карточек вместо ступенек.
   useEffect(() => {
     const el = wrapRef.current
     if (!el) return
     let raf = 0
-    const compute = () => {
-      raf = 0
+    let cur = 0 // текущая (сглаженная) позиция
+    let target = 0 // целевая позиция из скролла
+    let running = true
+
+    const readTarget = () => {
       const rect = el.getBoundingClientRect()
       const vh = window.innerHeight
-      const total = el.offsetHeight - vh // диапазон прокрутки внутри пина
+      const total = el.offsetHeight - vh
       const scrolled = Math.min(Math.max(-rect.top, 0), total)
       const p = total > 0 ? scrolled / total : 0
       setProgress(p)
-
-      // Определяем фазу пина по положению враппера.
       if (rect.top > 0) setPhase("before")
       else if (-rect.top >= total) setPhase("after")
       else setPhase("pinned")
+      target = p * (steps.length - 1)
+    }
 
-      // Активный шаг по прогрессу. Переход между шагами анимирует CSS-transition
-      // на карточках (0.5s) — плавный переезд колоды без лишних перерисовок.
-      const idx = Math.min(steps.length - 1, Math.max(0, Math.floor(p * steps.length - 1e-6)))
-      setActive(idx)
+    const tick = () => {
+      if (!running) return
+      // Экспоненциальное сглаживание: чем ближе к цели, тем медленнее.
+      cur += (target - cur) * 0.14
+      if (Math.abs(target - cur) < 0.0005) cur = target
+      setPos(cur)
+      raf = requestAnimationFrame(tick)
     }
-    const onScroll = () => {
-      if (!raf) raf = requestAnimationFrame(compute)
-    }
-    compute()
+
+    const onScroll = () => readTarget()
+    readTarget()
+    cur = target // без анимации на первом кадре (нет рывка при загрузке)
+    setPos(cur)
+    raf = requestAnimationFrame(tick)
     window.addEventListener("scroll", onScroll, { passive: true })
     window.addEventListener("resize", onScroll)
     return () => {
+      running = false
       window.removeEventListener("scroll", onScroll)
       window.removeEventListener("resize", onScroll)
       if (raf) cancelAnimationFrame(raf)
@@ -75,6 +82,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // Высота враппера: 100vh на сам пин + по ~62vh скролла на каждый доп. шаг.
   const wrapHeight = `${100 + (steps.length - 1) * 62}vh`
   const railScale = 0.04 + progress * 0.96
+  const active = Math.max(0, Math.min(steps.length - 1, Math.round(pos)))
 
   const cur = steps[active] // для крупного номера шага поверх фото
 
@@ -185,23 +193,22 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 >
                   {steps.map((s, i) => {
                     const StepIcon = s.Icon
-                    // Отсчёт от активного шага (целое): CSS-transition 0.5s даёт
-                    // плавный переезд колоды между шагами. Дробную позицию не
-                    // используем здесь, иначе непрерывные апдейты дерутся с
-                    // transition и появляется лаг.
-                    const offset = i - active // 0 = в фокусе; ± = выше/ниже
+                    // Дробное смещение от текущей (сглаженной) позиции: карточки
+                    // перетекают непрерывно. Плавность даёт lerp в rAF-цикле,
+                    // поэтому CSS-transition тут НЕ нужен (иначе двойное
+                    // сглаживание = лаг).
+                    const offset = i - pos // 0 = в фокусе; ± = выше/ниже
                     const abs = Math.abs(offset)
                     // Рендерим только ближайшие уровни (перф + чистый вид).
                     if (abs > 2.4) return null
-                    const sign = offset === 0 ? 0 : offset > 0 ? 1 : -1
                     const clamped = Math.min(abs, 2)
-                    // Геометрия колоды
-                    const y = offset * 120 // вертикальный разнос карточек, px
+                    // Геометрия колоды (всё непрерывно по offset)
+                    const y = offset * 122 // вертикальный разнос карточек, px
                     const z = -clamped * 190 // вглубь
-                    const rotX = sign * -16 * Math.min(clamped, 1.5) // наклон
+                    const rotX = -offset * 12 // наклон в сторону движения
                     const scale = 1 - clamped * 0.1
-                    const opacity = Math.max(0, 1 - clamped * 0.4)
-                    const blur = clamped * 1.5
+                    const opacity = Math.max(0, 1 - clamped * 0.42)
+                    const blur = clamped * 1.4
                     const isActive = abs < 0.5
                     return (
                       <div
@@ -211,10 +218,8 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                           zIndex: 100 - Math.round(abs * 10),
                           transform: `translate(-50%, -50%) translateY(${y}px) translateZ(${z}px) rotateX(${rotX}deg) scale(${scale})`,
                           opacity,
-                          filter: blur > 0.05 ? `blur(${blur}px)` : undefined,
+                          filter: blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : undefined,
                           transformStyle: "preserve-3d",
-                          transition:
-                            "transform 0.5s cubic-bezier(0.16,1,0.3,1), opacity 0.5s ease, filter 0.5s ease",
                         }}
                       >
                         <div
