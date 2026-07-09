@@ -123,9 +123,9 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
         <div className="absolute bottom-[6%] right-[4%] w-[34vw] h-[34vw] rounded-full bg-[#c9a86e]/[0.05] blur-[130px]" />
       </div>
 
-      <div className="container relative mx-auto px-4 max-w-3xl py-10 md:py-14">
+      <div className="container relative mx-auto px-4 max-w-5xl py-8 md:py-10">
         {/* Заголовок */}
-        <div className="text-center mb-7 md:mb-9">
+        <div className="text-center mb-5 md:mb-6">
           <div className="flex justify-between items-center text-white/40 mb-5">
             <span className="section-index">06 / ПРОЦЕСС · V2</span>
             <span className="section-index font-mono-num">
@@ -159,7 +159,7 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
             </div>
           </div>
 
-          <div className="space-y-5 md:space-y-6 py-1">
+          <div className="space-y-2.5 md:space-y-3 py-1">
             {steps.map((s, i) => {
               const Icon = s.Icon
               const isCurrent = i === current
@@ -212,13 +212,13 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                     className={
                       "pl-14 md:pl-0 md:row-start-1 " +
                       (left
-                        ? "md:col-start-1 md:pr-6 md:text-right"
-                        : "md:col-start-3 md:pl-6")
+                        ? "md:col-start-1 md:pr-12 md:text-right"
+                        : "md:col-start-3 md:pl-12")
                     }
                   >
                     <div
                       className={
-                        "relative inline-block w-full rounded-2xl border p-5 lg:p-5 transition-colors duration-500 " +
+                        "relative inline-block w-full rounded-2xl border px-5 py-3.5 transition-colors duration-500 " +
                         (isCurrent
                           ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_24px_60px_-25px_rgba(0,0,0,0.85),0_0_44px_-14px_rgba(201,168,110,0.28)]"
                           : "border-white/[0.08] bg-white/[0.02]")
