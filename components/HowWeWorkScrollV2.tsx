@@ -35,19 +35,18 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
     const section = sectionRef.current
     if (!section) return
     let raf = 0
+    let curFill = 0 // сглаженное заполнение оси
+    let targetFill = 0 // целевое (из скролла)
+    let running = true
 
-    const compute = () => {
-      raf = 0
+    // Дискретные величины (текущий шаг, реавил) читаем сразу при скролле —
+    // им сглаживание не нужно.
+    const readDiscrete = () => {
       const vh = window.innerHeight
       const centerY = vh / 2
-
-      // Прогресс оси: 0 когда верх блока у центра экрана, 1 когда низ у центра.
       const rect = section.getBoundingClientRect()
-      const denom = rect.height
-      const f = Math.min(1, Math.max(0, (centerY - rect.top) / denom))
-      setFill(f)
+      targetFill = Math.min(1, Math.max(0, (centerY - rect.top) / rect.height))
 
-      // Определяем текущий шаг + реавил уже видимых.
       let nearest = 0
       let nearestDist = Infinity
       const nextRevealed: boolean[] = []
@@ -63,20 +62,31 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
           nearestDist = dist
           nearest = i
         }
-        // Показываем шаг, когда его центр поднялся выше 88% высоты экрана.
         nextRevealed[i] = revealed[i] || mid < vh * 0.88
       })
       setCurrent(nearest)
       if (nextRevealed.some((v, i) => v !== revealed[i])) setRevealed(nextRevealed)
     }
 
-    const onScroll = () => {
-      if (!raf) raf = requestAnimationFrame(compute)
+    // Непрерывный lerp только для точки-прогресса → плавное, сглаженное
+    // движение вместо рывков за колесом.
+    const tick = () => {
+      if (!running) return
+      curFill += (targetFill - curFill) * 0.1
+      if (Math.abs(targetFill - curFill) < 0.0004) curFill = targetFill
+      setFill(curFill)
+      raf = requestAnimationFrame(tick)
     }
-    compute()
+
+    const onScroll = () => readDiscrete()
+    readDiscrete()
+    curFill = targetFill // без рывка на первом кадре
+    setFill(curFill)
+    raf = requestAnimationFrame(tick)
     window.addEventListener("scroll", onScroll, { passive: true })
     window.addEventListener("resize", onScroll)
     return () => {
+      running = false
       window.removeEventListener("scroll", onScroll)
       window.removeEventListener("resize", onScroll)
       if (raf) cancelAnimationFrame(raf)
@@ -92,9 +102,9 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
         <div className="absolute bottom-[6%] right-[4%] w-[34vw] h-[34vw] rounded-full bg-[#c9a86e]/[0.05] blur-[130px]" />
       </div>
 
-      <div className="container relative mx-auto px-4 max-w-5xl py-16 md:py-24">
+      <div className="container relative mx-auto px-4 max-w-5xl py-14 md:py-20">
         {/* Заголовок */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12">
           <div className="flex justify-between items-center text-white/40 mb-6">
             <span className="section-index">06 / ПРОЦЕСС · V2</span>
             <span className="section-index font-mono-num">
@@ -124,7 +134,7 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
             </div>
           </div>
 
-          <div className="space-y-16 md:space-y-24 py-4">
+          <div className="space-y-8 md:space-y-11 py-2">
             {steps.map((s, i) => {
               const Icon = s.Icon
               const isCurrent = i === current
@@ -178,31 +188,31 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                   >
                     <div
                       className={
-                        "relative inline-block w-full rounded-3xl border p-6 lg:p-7 transition-colors duration-500 " +
+                        "relative inline-block w-full rounded-2xl border p-5 lg:p-5 transition-colors duration-500 " +
                         (isCurrent
-                          ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_30px_70px_-25px_rgba(0,0,0,0.85),0_0_50px_-14px_rgba(201,168,110,0.28)]"
+                          ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_24px_60px_-25px_rgba(0,0,0,0.85),0_0_44px_-14px_rgba(201,168,110,0.28)]"
                           : "border-white/[0.08] bg-white/[0.02]")
                       }
                     >
                       <div
                         className={
-                          "flex items-center gap-3 mb-2.5 " +
+                          "flex items-center gap-3 mb-1.5 " +
                           (left ? "md:justify-end" : "")
                         }
                       >
-                        <span className="text-[#c9a86e]/80 text-[11px] uppercase tracking-[0.35em] font-mono-num">
+                        <span className="text-[#c9a86e]/80 text-[10px] uppercase tracking-[0.35em] font-mono-num">
                           Шаг {s.step.padStart(2, "0")}
                         </span>
                       </div>
                       <h3
                         className={
-                          "text-white font-semibold mb-2.5 leading-tight transition-all duration-500 " +
-                          (isCurrent ? "text-2xl lg:text-3xl" : "text-xl lg:text-2xl")
+                          "text-white font-semibold mb-1.5 leading-tight transition-all duration-500 " +
+                          (isCurrent ? "text-xl lg:text-2xl" : "text-lg lg:text-xl")
                         }
                       >
                         {s.title}
                       </h3>
-                      <p className="text-white/60 text-[15px] leading-relaxed">
+                      <p className="text-white/55 text-sm leading-relaxed">
                         {s.description}
                       </p>
                     </div>
