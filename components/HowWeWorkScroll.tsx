@@ -84,8 +84,9 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
     }
   }, [steps.length])
 
-  // Высота враппера: 100vh на сам пин + по ~62vh скролла на каждый доп. шаг.
-  const wrapHeight = `${100 + (steps.length - 1) * 62}vh`
+  // Высота враппера: 100vh на сам пин + по ~38vh скролла на каждый доп. шаг.
+  // Меньше vh на шаг = меньше надо крутить (быстрее сменяются кадры).
+  const wrapHeight = `${100 + (steps.length - 1) * 38}vh`
   const railScale = 0.04 + progress * 0.96
   const active = Math.max(0, Math.min(steps.length - 1, Math.round(pos)))
 
