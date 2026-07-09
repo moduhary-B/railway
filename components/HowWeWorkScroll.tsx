@@ -52,13 +52,18 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       if (rect.top > 0) setPhase("before")
       else if (-rect.top >= total) setPhase("after")
       else setPhase("pinned")
-      target = p * (steps.length - 1)
+      // СНАП к ключевым кадрам: цель округляем до ближайшего целого шага.
+      // Между двумя состояниями «зависнуть» нельзя — цель всегда целая, а
+      // плавность даёт lerp ниже (cur мягко доезжает до цели).
+      const rawStep = p * (steps.length - 1)
+      target = Math.max(0, Math.min(steps.length - 1, Math.round(rawStep)))
     }
 
     const tick = () => {
       if (!running) return
-      // Экспоненциальное сглаживание: чем ближе к цели, тем медленнее.
-      cur += (target - cur) * 0.14
+      // Экспоненциальное сглаживание: cur мягко догоняет целую цель.
+      // Чуть мягче (0.11), чтобы «доводка» до кадра читалась как плавный доезд.
+      cur += (target - cur) * 0.11
       if (Math.abs(target - cur) < 0.0005) cur = target
       setPos(cur)
       raf = requestAnimationFrame(tick)
