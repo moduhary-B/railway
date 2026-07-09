@@ -1028,10 +1028,16 @@ export default function Home() {
                   <span className="kicker">Импорт с 2019 · Владивосток → РФ</span>
                 </div>
 
-                {/* Hero заголовок. Ни один пробел не потеряется: используем flex-wrap
-                    и сплошной золотой цвет для акцентного слова (не gradient+clip-text,
-                    из-за которого при непогрузке шрифта был "невидимый" текст) */}
-                <h1 className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]">
+                {/* Hero заголовок — вылет вправо (msg_2). Ни один пробел не
+                    потеряется: используем flex-wrap и сплошной золотой цвет для
+                    акцентного слова (не gradient+clip-text, из-за которого при
+                    непогрузке шрифта был "невидимый" текст) */}
+                <motion.h1
+                  initial={{ x: -60, opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+                  className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]"
+                >
                   Автомобили из{" "}
                   <span className="text-[#c9a86e] font-extrabold">
                     Японии, Кореи и&nbsp;Китая
@@ -1039,7 +1045,7 @@ export default function Home() {
                   <span className="block mt-1 text-white/90 text-3xl md:text-5xl lg:text-6xl">
                     с&nbsp;гарантией качества
                   </span>
-                </h1>
+                </motion.h1>
 
                 {/* Подзаголовок — вылет снизу (msg_2) */}
                 <motion.p
