@@ -183,21 +183,20 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                   >
                     <motion.div
                       animate={{
-                        scale: isCurrent ? 1.12 : 1,
+                        scale: isCurrent ? 1.35 : 1,
                         opacity: show ? 1 : 0.3,
                       }}
                       transition={{ type: "spring", stiffness: 200, damping: 20 }}
                       className={
-                        "w-10 h-10 rounded-xl flex items-center justify-center border transition-colors duration-500 " +
+                        "rounded-full flex items-center justify-center transition-colors duration-500 " +
                         (isCurrent
-                          ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] border-transparent shadow-[0_0_26px_rgba(201,168,110,0.5)]"
+                          ? "w-4 h-4 bg-[#c9a86e] shadow-[0_0_0_5px_rgba(201,168,110,0.18),0_0_18px_rgba(201,168,110,0.6)]"
                           : isPast
-                          ? "bg-[#c9a86e]/15 text-[#c9a86e]/70 border-[#c9a86e]/25"
-                          : "bg-white/[0.04] text-white/40 border-white/10")
+                          ? "w-3 h-3 bg-[#c9a86e]/60"
+                          : "w-3 h-3 bg-white/20 ring-2 ring-[#0e1720]")
                       }
-                    >
-                      <Icon className="w-[18px] h-[18px]" />
-                    </motion.div>
+                    />
+                    {/* прячем узел за точкой-прогрессом, чтобы не спорили */}
                   </div>
 
                   {/* Карточка шага — слева или справа от оси */}
@@ -212,39 +211,69 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                     className={
                       "pl-14 md:pl-0 md:row-start-1 " +
                       (left
-                        ? "md:col-start-1 md:pr-12 md:text-right"
+                        ? "md:col-start-1 md:pr-12"
                         : "md:col-start-3 md:pl-12")
                     }
                   >
                     <div
                       className={
-                        "relative inline-block w-full rounded-2xl border px-5 py-3.5 transition-colors duration-500 " +
+                        "group/card relative w-full overflow-hidden rounded-2xl border px-6 py-5 transition-colors duration-500 " +
                         (isCurrent
                           ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_24px_60px_-25px_rgba(0,0,0,0.85),0_0_44px_-14px_rgba(201,168,110,0.28)]"
-                          : "border-white/[0.08] bg-white/[0.02]")
+                          : "border-white/[0.08] bg-gradient-to-br from-white/[0.045] to-white/[0.01]")
                       }
                     >
+                      {/* Крупный номер-«ватермарка» на фоне — заполняет пустоту */}
+                      <span
+                        className={
+                          "pointer-events-none absolute -top-4 font-mono-num font-extrabold leading-none select-none transition-colors duration-500 " +
+                          (left ? "right-4" : "right-4") + " " +
+                          (isCurrent ? "text-[#c9a86e]/[0.14]" : "text-white/[0.05]")
+                        }
+                        style={{ fontSize: "5.5rem" }}
+                      >
+                        {s.step.padStart(2, "0")}
+                      </span>
+                      {/* Верхний блик по краю карточки */}
+                      <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+
                       <div
                         className={
-                          "flex items-center gap-3 mb-1.5 " +
-                          (left ? "md:justify-end" : "")
+                          "relative flex items-start gap-4 " +
+                          (left ? "md:flex-row-reverse md:text-right" : "")
                         }
                       >
-                        <span className="text-[#c9a86e]/80 text-[10px] uppercase tracking-[0.35em] font-mono-num">
-                          Шаг {s.step.padStart(2, "0")}
-                        </span>
+                        {/* Иконка внутри карточки */}
+                        <div
+                          className={
+                            "shrink-0 w-12 h-12 rounded-xl flex items-center justify-center border transition-colors duration-500 " +
+                            (isCurrent
+                              ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] border-transparent shadow-[0_0_22px_rgba(201,168,110,0.4)]"
+                              : "bg-white/[0.05] text-[#c9a86e]/80 border-white/10")
+                          }
+                        >
+                          <Icon className="w-5 h-5" />
+                        </div>
+
+                        <div className="flex-1 min-w-0">
+                          <div className={"mb-1 " + (left ? "md:text-right" : "")}>
+                            <span className="text-[#c9a86e]/80 text-[10px] uppercase tracking-[0.35em] font-mono-num">
+                              Шаг {s.step.padStart(2, "0")}
+                            </span>
+                          </div>
+                          <h3
+                            className={
+                              "text-white font-semibold mb-1.5 leading-tight transition-all duration-500 " +
+                              (isCurrent ? "text-xl lg:text-2xl" : "text-lg lg:text-xl")
+                            }
+                          >
+                            {s.title}
+                          </h3>
+                          <p className="text-white/55 text-sm leading-relaxed">
+                            {s.description}
+                          </p>
+                        </div>
                       </div>
-                      <h3
-                        className={
-                          "text-white font-semibold mb-1.5 leading-tight transition-all duration-500 " +
-                          (isCurrent ? "text-xl lg:text-2xl" : "text-lg lg:text-xl")
-                        }
-                      >
-                        {s.title}
-                      </h3>
-                      <p className="text-white/55 text-sm leading-relaxed">
-                        {s.description}
-                      </p>
                     </div>
                   </motion.div>
                 </div>
