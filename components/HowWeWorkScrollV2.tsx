@@ -123,7 +123,7 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
         <div className="absolute bottom-[6%] right-[4%] w-[34vw] h-[34vw] rounded-full bg-[#c9a86e]/[0.05] blur-[130px]" />
       </div>
 
-      <div className="container relative mx-auto px-4 max-w-5xl py-10 md:py-14">
+      <div className="container relative mx-auto px-4 max-w-3xl py-10 md:py-14">
         {/* Заголовок */}
         <div className="text-center mb-7 md:mb-9">
           <div className="flex justify-between items-center text-white/40 mb-5">
@@ -210,10 +210,10 @@ export default function HowWeWorkScrollV2({ steps }: { steps: WorkStep[] }) {
                     }}
                     transition={{ type: "spring", stiffness: 120, damping: 22 }}
                     className={
-                      "pl-16 md:pl-0 md:row-start-1 " +
+                      "pl-14 md:pl-0 md:row-start-1 " +
                       (left
-                        ? "md:col-start-1 md:pr-12 md:text-right"
-                        : "md:col-start-3 md:pl-12")
+                        ? "md:col-start-1 md:pr-6 md:text-right"
+                        : "md:col-start-3 md:pl-6")
                     }
                   >
                     <div
