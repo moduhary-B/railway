@@ -1034,7 +1034,7 @@ export default function Home() {
           - Более rounded углы у карточек "Для вопросов"
           - Карточки справа чуть приглушённые (меньше заметны)
           ====================================================== */}
-      <section id="hero-v1" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24">
+      {/* <section id="hero-v1" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24"> */}
         {/* Video background как в базе */}
         <div className="absolute inset-0 z-0" id="hero1">
           <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
@@ -1261,7 +1261,10 @@ export default function Home() {
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
-                      <Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
+                      </div>
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
@@ -1270,7 +1273,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      {/* </section> */}
 
       {/* ======================================================
           ВАРИАНТ 2 — С КОМПАКТНЫМ ЗАГОЛОВКОМ
@@ -1385,7 +1388,12 @@ export default function Home() {
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-cover" /></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative">
+                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
+                      </div>
+                    </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
                 </motion.div>
@@ -1400,7 +1408,7 @@ export default function Home() {
           База из ideal-two + приятные визуальные акценты (округлости, приглушённые карточки)
           без нарушения прямых требований клиента
           ====================================================== */}
-      <section id="hero-v3" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24">
+      {/* <section id="hero-v3" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24"> */}
         <div className="absolute inset-0 z-0" id="hero3">
           <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
             <div className="absolute inset-0 overflow-hidden">
@@ -1503,7 +1511,12 @@ export default function Home() {
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-cover" /></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative">
+                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
+                      </div>
+                    </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
                 </motion.div>
@@ -1511,7 +1524,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      {/* </section> */}
 
       {/* Marquee галерея выданных авто клиентам — msg_5 */}
       <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden section-soft-top">
