@@ -1136,14 +1136,48 @@ export default function Home() {
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-contain" /></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative" style={{backgroundColor: '#EE1C25'}}>
+                      {/* Большая звезда по центру */}
+                      <div className="absolute text-[#FFDE00]" style={{fontSize: '1.8em', top: '32%', left: '32%'}}>★</div>
+                      {/* Маленькие звёзды внутри кружка */}
+                      <div className="absolute text-[#FFDE00]" style={{fontSize: '0.45em', top: '18%', left: '58%'}}>★</div>
+                      <div className="absolute text-[#FFDE00]" style={{fontSize: '0.45em', top: '28%', left: '65%'}}>★</div>
+                      <div className="absolute text-[#FFDE00]" style={{fontSize: '0.45em', top: '38%', left: '60%'}}>★</div>
+                      <div className="absolute text-[#FFDE00]" style={{fontSize: '0.45em', top: '48%', left: '65%'}}>★</div>
+                    </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
                   </Link>
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
-                      <Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-contain" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative">
+                      {/* Настоящий флаг Кореи (Taegeukgi) */}
+                      <svg viewBox="0 0 100 100" className="w-full h-full">
+                        <circle cx="50" cy="50" r="48" fill="#ffffff"/>
+                        {/* Taegeuk */}
+                        <path d="M50 5 A45 45 0 0 1 50 95 A22.5 22.5 0 0 1 50 50 A22.5 22.5 0 0 0 50 5" fill="#CD2E3A"/>
+                        <path d="M50 5 A45 45 0 0 0 50 95 A22.5 22.5 0 0 0 50 50 A22.5 22.5 0 0 1 50 5" fill="#0047A0"/>
+                        <circle cx="50" cy="50" r="8" fill="#ffffff"/>
+                        {/* Trigrams (simplified) */}
+                        <g stroke="#000000" strokeWidth="3" strokeLinecap="round">
+                          {/* Top left */}
+                          <line x1="15" y1="15" x2="32" y2="15"/>
+                          <line x1="15" y1="20" x2="32" y2="20"/>
+                          <line x1="15" y1="25" x2="32" y2="25"/>
+                          {/* Top right */}
+                          <line x1="68" y1="15" x2="85" y2="15"/>
+                          <line x1="68" y1="20" x2="78" y2="20"/>
+                          <line x1="75" y1="25" x2="85" y2="25"/>
+                          {/* Bottom left */}
+                          <line x1="15" y1="75" x2="32" y2="75"/>
+                          <line x1="15" y1="80" x2="25" y2="80"/>
+                          <line x1="15" y1="85" x2="32" y2="85"/>
+                          {/* Bottom right */}
+                          <line x1="68" y1="75" x2="85" y2="75"/>
+                          <line x1="68" y1="80" x2="85" y2="80"/>
+                          <line x1="68" y1="85" x2="85" y2="85"/>
+                        </g>
+                      </svg>
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
@@ -1153,120 +1187,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* ВАРИАНТ 3 — СБАЛАНСИРОВАННЫЙ МИКС (закомментирован, только V2 активен) */}
-          <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
-            <div className="absolute inset-0 overflow-hidden">
-              <video src="/back2.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover opacity-40" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(201,168,110,0.15)_0%,_transparent_70%)]"></div>
-            </div>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-[#0a0f1a]/80"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-              <div className="text-center lg:text-left">
-                <div className="mb-5 flex justify-center lg:justify-start">
-                  <span className="kicker">Подбор · Доставка · Сопровождение</span>
-                </div>
-
-                <motion.h1 initial={{ x: 60, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }} className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]">
-                  Автомобили из<br />
-                  <span className="text-[#c9a86e] font-extrabold">Азии</span><br />
-                  <span className="text-white/90 text-[clamp(1.5rem,6.5vw,1.875rem)] md:text-5xl lg:text-6xl">с&nbsp;гарантией качества</span>
-                </motion.h1>
-
-                <motion.p initial={{ y: 40, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }} className="text-white/70 text-base md:text-lg mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                  Мы специализируемся на подборе и доставке автомобилей из Японии, Кореи и Китая <span className="text-white/95">с полным сопровождением сделки</span>.
-                </motion.p>
-
-                <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.7 }} className="flex items-center justify-center mb-8">
-                  <button onClick={() => consultation.open("hero")} className="btn-sweep focus-lux text-[#0e1720] font-semibold px-8 py-4 md:px-10 md:py-4 rounded-xl min-h-[54px] flex items-center gap-3 uppercase tracking-[0.15em] text-sm md:text-base shadow-[0_0_40px_-8px_rgba(201,168,110,0.55)]">
-                    Оставить заявку <ArrowRight className="w-4 h-4" />
-                  </button>
-                </motion.div>
-
-                <div className="max-w-xl mx-auto lg:mx-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="w-8 h-px bg-[#c9a86e]" />
-                    <span className="font-mono-num text-[10px] uppercase text-[#c9a86e]">Для вопросов</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <a href={ORIENT_SOCIALS.max.href} target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#7357ff]/35 bg-[#7357ff]/10 px-4 text-sm font-medium text-white/90 hover:bg-[#7357ff]/20 hover:border-[#8d77ff]/60 hover:text-white transition-all focus-lux">
-                      <SocialIcon network="max" size={22} /> <span>MAX</span> <span className="text-white/45">·</span> <span className="font-mono-num">+7 (995) 868-97-68</span>
-                    </a>
-                    <a href={ORIENT_SOCIALS.whatsapp.href} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-none min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.07] px-4 text-sm font-medium text-white/85 hover:bg-[#25D366]/15 hover:border-[#25D366]/50 hover:text-white transition-all focus-lux">
-                      <SocialIcon network="whatsapp" size={21} /> WhatsApp
-                    </a>
-                    <a href={ORIENT_SOCIALS.telegram.href} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-none min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#26A5E4]/30 bg-[#26A5E4]/[0.07] px-4 text-sm font-medium text-white/85 hover:bg-[#26A5E4]/15 hover:border-[#26A5E4]/50 hover:text-white transition-all focus-lux">
-                      <SocialIcon network="telegram" size={21} /> Telegram
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="hidden lg:block">
-                <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-[#c9a86e]/20 to-[#d4b876]/20 rounded-full blur-3xl opacity-30"></div>
-                  <motion.div initial="hidden" animate="visible" variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.15, delayChildren: 0.5 } } }} className="grid grid-cols-2 gap-4 relative">
-                    <div className="space-y-4">
-                      {[{ Icon: Shield, title: "Полное сопровождение", text: "От выбора до получения ключей" }, { Icon: Award, title: "Независимая оценка", text: "Экспертиза каждого автомобиля" }].map(({ Icon, title, text }) => (
-                        <motion.div key={title} variants={{ hidden: { opacity: 0, x: 40 }, visible: { opacity: 1, x: 0 } }} transition={{ duration: 0.5, ease: "easeOut" }} className="bg-[#1a2332]/25 backdrop-blur-sm border border-[#c9a86e]/5 p-6 rounded-2xl transform hover:scale-105 hover:border-[#c9a86e]/20 transition-all duration-300">
-                          {/* Контурные иконки: контур вместо заливки фона */}
-                          <div className="w-12 h-12 rounded-full border border-[#c9a86e]/60 flex items-center justify-center mb-4">
-                            <Icon className="w-6 h-6 text-[#c9a86e]" />
-                          </div>
-                          <h3 className="text-white font-semibold mb-2">{title}</h3>
-                          <p className="text-white/70 text-sm">{text}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                    <div className="space-y-4 mt-8">
-                      {[{ Icon: FileCheck, title: "Юридическая чистота", text: "Гарантия легальности сделки" }, { Icon: Clock, title: "Короткие сроки", text: "Быстрая доставка в любой регион" }].map(({ Icon, title, text }) => (
-                        <motion.div key={title} variants={{ hidden: { opacity: 0, x: 40 }, visible: { opacity: 1, x: 0 } }} transition={{ duration: 0.5, ease: "easeOut" }} className="bg-[#1a2332]/25 backdrop-blur-sm border border-[#c9a86e]/5 p-6 rounded-2xl transform hover:scale-105 hover:border-[#c9a86e]/20 transition-all duration-300">
-                          {/* Контурные иконки: контур вместо заливки фона */}
-                          <div className="w-12 h-12 rounded-full border border-[#c9a86e]/60 flex items-center justify-center mb-4">
-                            <Icon className="w-6 h-6 text-[#c9a86e]" />
-                          </div>
-                          <h3 className="text-white font-semibold mb-2">{title}</h3>
-                          <p className="text-white/70 text-sm">{text}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-10 pt-5 border-t border-[#c9a86e]/20">
-              <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-20px" }} variants={{ hidden: {}, visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } } }} className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-20">
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/japan" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Японии">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white to-gray-100 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110"><div className="w-4 h-4 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-inner"></div></div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">ЯПОНИИ</span>
-                  </Link>
-                </motion.div>
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-contain" /></div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
-                  </Link>
-                </motion.div>
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
-                      <Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-contain" />
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
-                  </Link>
-                </motion.div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      {/* </section> */}
 
       {/* Marquee галерея выданных авто клиентам — msg_5 */}
       <section className="py-8 md:py-12 w-full bg-[#0a0f1a] relative overflow-hidden section-soft-top">
