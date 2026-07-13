@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# Next.js build
+.next
+out
+
+# Logs
+*.log
+logs/
+
+# Very large media folders - exclude for quick deploy test
+# (uncomment these if you want them in the build)
+public/v-rev
+# public/usvid
+# public/kupl
+
+# Misc
+.DS_Store
+*.swp
+.idea
+.vscode

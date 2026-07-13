@@ -1,8 +1,3 @@
-// Национальные паттерны для карточек каталога (msg_7:
-// "придумать какой фон можно использовать для шапок, чтобы он
-// ассоциировался со страной"). Узнаваемые силуэты + повторяющийся
-// геометрический паттерн, не абстракция.
-
 interface Props {
   kind: "sakura" | "lanterns" | "meander"
   color: string
@@ -10,184 +5,144 @@ interface Props {
 
 export default function CountryPattern({ kind, color }: Props) {
   if (kind === "sakura") {
-    // Япония — гора Фудзи как большой силуэт + тории (ворота) в углу +
-    // мелкий паттерн волн Хокусая (сэйгайха)
     return (
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.18] pointer-events-none"
-        viewBox="0 0 300 200"
+        className="absolute inset-0 w-full h-full opacity-[0.44] pointer-events-none"
+        viewBox="0 0 480 200"
         preserveAspectRatio="xMidYMid slice"
         aria-hidden
       >
         <defs>
-          {/* Волны сэйгайха — традиционный японский паттерн */}
-          <pattern id="jp-waves" x="0" y="0" width="20" height="10" patternUnits="userSpaceOnUse">
-            <path
-              d="M0 10 A10 10 0 0 1 20 10"
-              fill="none"
-              stroke={color}
-              strokeWidth="0.6"
-              opacity="0.6"
-            />
+          <pattern id="jp-seigaiha" width="32" height="16" patternUnits="userSpaceOnUse">
+            <path d="M0 16 A16 16 0 0 1 32 16" fill="none" stroke={color} strokeWidth="1" opacity="0.55" />
+            <path d="M8 16 A8 8 0 0 1 24 16" fill="none" stroke={color} strokeWidth="0.8" opacity="0.35" />
           </pattern>
         </defs>
-        {/* Фон волн внизу */}
-        <rect x="0" y="140" width="300" height="60" fill="url(#jp-waves)" />
 
-        {/* Гора Фудзи — крупный симметричный силуэт справа */}
-        <g opacity="0.9">
-          <path
-            d="M 130 140 L 200 55 L 210 55 L 220 40 L 235 55 L 245 55 L 315 140 Z"
-            fill={color}
-            opacity="0.45"
-          />
-          {/* Снежная шапка */}
-          <path
-            d="M 180 90 L 200 55 L 210 55 L 220 40 L 235 55 L 245 55 L 265 90 L 240 82 L 220 90 L 200 82 Z"
-            fill="#ffffff"
-            opacity="0.25"
-          />
+        <circle cx="358" cy="69" r="53" fill="#bc002d" opacity="0.62" />
+        <circle cx="358" cy="69" r="61" fill="none" stroke={color} strokeWidth="1" opacity="0.13" />
+
+        <g transform="translate(303 25) scale(0.95)" fill="none" stroke={color} strokeLinecap="square">
+          <path d="M0 7 Q58 18 116 7" strokeWidth="7" opacity="0.88" />
+          <path d="M7 20 Q58 25 109 20" strokeWidth="4" opacity="0.78" />
+          <path d="M22 22 V115 M94 22 V115" strokeWidth="6" opacity="0.84" />
+          <path d="M21 46 H95" strokeWidth="4" opacity="0.7" />
+          <path d="M16 115 H29 M87 115 H101" strokeWidth="5" opacity="0.65" />
         </g>
 
-        {/* Тории (красные ворота) в левом верхнем углу */}
-        <g transform="translate(30 30)" opacity="0.7">
-          <rect x="0" y="0" width="60" height="4" fill={color} />
-          <rect x="-4" y="4" width="68" height="3" fill={color} />
-          <rect x="8" y="7" width="4" height="42" fill={color} />
-          <rect x="48" y="7" width="4" height="42" fill={color} />
-          <rect x="8" y="18" width="44" height="3" fill={color} />
-        </g>
-
-        {/* Иероглиф 日 (солнце/Япония) стилизованный, декоративный */}
-        <g transform="translate(240 155)" opacity="0.5">
-          <circle cx="0" cy="0" r="8" fill="none" stroke={color} strokeWidth="1.5" />
-          <circle cx="0" cy="0" r="3" fill={color} />
-        </g>
+        <rect x="0" y="137" width="480" height="63" fill="url(#jp-seigaiha)" opacity="0.8" />
+        <path d="M0 171 Q80 152 160 171 T320 171 T480 171" fill="none" stroke={color} strokeWidth="1.2" opacity="0.22" />
       </svg>
     )
   }
 
   if (kind === "lanterns") {
-    // Китай — силуэт пагоды + фонарики + мелкий паттерн облаков
     return (
       <svg
-        className="absolute inset-0 w-full h-full opacity-[0.18] pointer-events-none"
-        viewBox="0 0 300 200"
+        className="absolute inset-0 w-full h-full opacity-[0.42] pointer-events-none"
+        viewBox="0 0 480 200"
         preserveAspectRatio="xMidYMid slice"
         aria-hidden
       >
         <defs>
-          {/* Китайский облачный паттерн */}
-          <pattern id="cn-clouds" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path
-              d="M8 20 Q4 20 4 16 Q4 12 8 12 Q8 8 12 8 Q16 8 16 12 Q20 12 20 16 Q20 20 16 20 Z"
-              fill="none"
-              stroke={color}
-              strokeWidth="0.5"
-              opacity="0.4"
-            />
+          <pattern id="cn-lattice" width="34" height="34" patternUnits="userSpaceOnUse">
+            <path d="M17 0 L34 17 L17 34 L0 17 Z" fill="none" stroke={color} strokeWidth="0.8" opacity="0.2" />
+            <circle cx="17" cy="17" r="3" fill="none" stroke={color} strokeWidth="0.7" opacity="0.25" />
           </pattern>
+          <linearGradient id="cn-disc" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stopColor={color} stopOpacity="0.26" />
+            <stop offset="1" stopColor={color} stopOpacity="0.04" />
+          </linearGradient>
         </defs>
-        <rect width="300" height="200" fill="url(#cn-clouds)" />
 
-        {/* Силуэт пагоды справа */}
-        <g transform="translate(200 40)" opacity="0.55">
-          {/* Крыши пагоды — 4 яруса */}
-          {[0, 30, 55, 78].map((y, i) => {
-            const w = 46 - i * 6
-            return (
-              <g key={i} transform={`translate(0 ${y})`}>
-                {/* Загнутая крыша */}
-                <path
-                  d={`M ${-w} 0 Q ${-w - 4} -6 ${-w + 3} -8 L ${w - 3} -8 Q ${w + 4} -6 ${w} 0 Z`}
-                  fill={color}
-                />
-                {/* Тело яруса */}
-                <rect x={-w + 8} y="0" width={(w - 8) * 2} height="12" fill={color} opacity="0.6" />
-              </g>
-            )
-          })}
-          {/* Шпиль сверху */}
-          <line x1="0" y1="-18" x2="0" y2="-6" stroke={color} strokeWidth="1.5" />
-          <circle cx="0" cy="-20" r="2.5" fill={color} />
+        <rect x="235" width="245" height="200" fill="url(#cn-lattice)" />
+        <circle cx="350" cy="87" r="69" fill="url(#cn-disc)" />
+        <circle cx="350" cy="87" r="55" fill="none" stroke={color} strokeWidth="1" opacity="0.22" />
+
+        <g transform="translate(350 29)" fill={color}>
+          <path d="M-64 27 Q-73 20 -59 15 Q-24 21 0 0 Q24 21 59 15 Q73 20 64 27 Z" opacity="0.7" />
+          <rect x="-43" y="27" width="86" height="12" rx="2" opacity="0.42" />
+          <path d="M-54 61 Q-62 55 -50 50 Q-20 55 0 38 Q20 55 50 50 Q62 55 54 61 Z" opacity="0.65" />
+          <rect x="-35" y="61" width="70" height="12" rx="2" opacity="0.4" />
+          <path d="M-43 92 Q-50 87 -39 82 Q-16 86 0 72 Q16 86 39 82 Q50 87 43 92 Z" opacity="0.6" />
+          <rect x="-27" y="92" width="54" height="15" rx="2" opacity="0.38" />
+          <rect x="-4" y="-10" width="8" height="12" opacity="0.6" />
+          <path d="M-34 107 H34 L25 125 H-25 Z" opacity="0.36" />
         </g>
 
-        {/* Красные фонарики висят слева */}
-        <g opacity="0.75">
-          {[
-            [40, 40, 14],
-            [90, 30, 10],
-            [50, 90, 12],
-          ].map(([cx, cy, r], i) => (
-            <g key={i} transform={`translate(${cx} ${cy})`}>
-              {/* Верёвочка */}
-              <line x1="0" y1={-r - 12} x2="0" y2={-r - 2} stroke={color} strokeWidth="0.7" />
-              {/* Верхняя крышечка */}
-              <rect x={-r * 0.5} y={-r - 2} width={r} height="2" fill={color} />
-              {/* Тело фонарика */}
-              <ellipse cx="0" cy="0" rx={r * 0.9} ry={r} fill={color} opacity="0.85" />
-              {/* Вертикальные полоски */}
-              <line x1={-r * 0.4} y1={-r * 0.9} x2={-r * 0.4} y2={r * 0.9} stroke="#0e1720" strokeWidth="0.6" opacity="0.5" />
-              <line x1="0" y1={-r} x2="0" y2={r} stroke="#0e1720" strokeWidth="0.7" opacity="0.5" />
-              <line x1={r * 0.4} y1={-r * 0.9} x2={r * 0.4} y2={r * 0.9} stroke="#0e1720" strokeWidth="0.6" opacity="0.5" />
-              {/* Кисточка снизу */}
-              <line x1="0" y1={r + 1} x2="0" y2={r + 6} stroke={color} strokeWidth="0.7" />
-            </g>
-          ))}
+        <g transform="translate(272 28)" stroke={color} fill="none">
+          <path d="M0 -28 V-13" strokeWidth="1.2" opacity="0.7" />
+          <rect x="-12" y="-13" width="24" height="3" fill={color} stroke="none" opacity="0.7" />
+          <path d="M-17 -8 Q0 -19 17 -8 V17 Q0 29 -17 17 Z" fill={color} stroke="none" opacity="0.55" />
+          <path d="M-8 -6 V18 M0 -9 V22 M8 -6 V18" stroke="#0e1720" strokeWidth="1" opacity="0.5" />
+          <path d="M0 24 V34 M-4 34 L0 39 L4 34" strokeWidth="1" opacity="0.7" />
+        </g>
+
+        <g fill="none" stroke={color} strokeWidth="1.1" opacity="0.5">
+          <path d="M235 143 H278 Q288 143 288 133 Q288 124 299 124 H324" />
+          <path d="M260 161 H302 Q312 161 312 151 H346" />
+          <path d="M401 151 H438 Q449 151 449 140 H480" />
         </g>
       </svg>
     )
   }
 
-  // Корея — силуэт традиционного дворца/ханок + меандр + трёхточка
   return (
     <svg
-      className="absolute inset-0 w-full h-full opacity-[0.18] pointer-events-none"
-      viewBox="0 0 300 200"
+      className="absolute inset-0 w-full h-full opacity-[0.48] pointer-events-none"
+      viewBox="0 0 480 200"
       preserveAspectRatio="xMidYMid slice"
       aria-hidden
     >
       <defs>
-        {/* Меандр корейский */}
-        <pattern id="kr-meander" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
-          <path
-            d="M0 12 L8 12 L8 4 L16 4 L16 16 L4 16 L4 20 L20 20 L20 8 L12 8"
-            fill="none"
-            stroke={color}
-            strokeWidth="0.7"
-            strokeLinecap="square"
-            opacity="0.5"
-          />
+        <pattern id="kr-changho" width="36" height="36" patternUnits="userSpaceOnUse">
+          <rect x="1" y="1" width="34" height="34" fill="none" stroke={color} strokeWidth="0.7" opacity="0.17" />
+          <path d="M18 1 V35 M1 18 H35 M7 7 L29 29 M29 7 L7 29" fill="none" stroke={color} strokeWidth="0.55" opacity="0.2" />
         </pattern>
+        <radialGradient id="kr-halo">
+          <stop offset="0" stopColor="#ffffff" stopOpacity="0.12" />
+          <stop offset="1" stopColor={color} stopOpacity="0" />
+        </radialGradient>
       </defs>
-      <rect width="300" height="200" fill="url(#kr-meander)" />
 
-      {/* Силуэт ханок (традиционный корейский дом) с загнутой крышей */}
-      <g transform="translate(200 100)" opacity="0.6">
-        {/* Крыша с загнутыми краями */}
-        <path
-          d="M -60 0 Q -70 -6 -60 -10 L -20 -30 L 20 -30 L 60 -10 Q 70 -6 60 0 Z"
-          fill={color}
-        />
-        {/* Гребень */}
-        <rect x="-58" y="-2" width="116" height="3" fill={color} opacity="0.7" />
-        {/* Опоры */}
-        <rect x="-45" y="0" width="3" height="28" fill={color} opacity="0.85" />
-        <rect x="0" y="0" width="3" height="28" fill={color} opacity="0.85" />
-        <rect x="42" y="0" width="3" height="28" fill={color} opacity="0.85" />
-        {/* Пол/фундамент */}
-        <rect x="-55" y="28" width="110" height="4" fill={color} opacity="0.7" />
+      <rect x="245" width="235" height="200" fill="url(#kr-changho)" />
+      <circle cx="360" cy="92" r="82" fill="url(#kr-halo)" />
+
+      <g transform="translate(360 88)" opacity="0.72">
+        <circle r="49" fill="#f4f5f7" opacity="0.08" />
+        <path d="M0 -45 A45 45 0 0 1 0 45 A22.5 22.5 0 0 1 0 0 A22.5 22.5 0 0 0 0 -45 Z" fill="#cd2e3a" opacity="0.82" />
+        <path d="M0 45 A45 45 0 0 1 0 -45 A22.5 22.5 0 0 1 0 0 A22.5 22.5 0 0 0 0 45 Z" fill={color} opacity="0.9" />
+        <circle r="45" fill="none" stroke="#ffffff" strokeWidth="0.8" opacity="0.22" />
       </g>
 
-      {/* Тэгык (тхэгык) — символ инь-ян из корейского флага, упрощённый */}
-      <g transform="translate(50 45)" opacity="0.65">
-        <circle r="14" fill="none" stroke={color} strokeWidth="1.2" />
-        <path
-          d={`M 0 -14 A 14 14 0 0 1 0 14 A 7 7 0 0 1 0 0 A 7 7 0 0 0 0 -14 Z`}
-          fill={color}
-          opacity="0.55"
-        />
+      {/* Четыре триграммы флага Республики Корея, симметрично вокруг тхэгыка. */}
+      <g transform="translate(305 35) rotate(-30)" stroke="#eef1f5" strokeWidth="3.5" opacity="0.4">
+        <line x1="-13" y1="-8" x2="13" y2="-8" />
+        <line x1="-13" y1="0" x2="13" y2="0" />
+        <line x1="-13" y1="8" x2="13" y2="8" />
       </g>
+      <g transform="translate(415 35) rotate(30)" stroke="#eef1f5" strokeWidth="3.5" opacity="0.38">
+        <line x1="-13" y1="-8" x2="-2" y2="-8" /><line x1="2" y1="-8" x2="13" y2="-8" />
+        <line x1="-13" y1="0" x2="13" y2="0" />
+        <line x1="-13" y1="8" x2="-2" y2="8" /><line x1="2" y1="8" x2="13" y2="8" />
+      </g>
+      <g transform="translate(305 137) rotate(30)" stroke="#eef1f5" strokeWidth="3.5" opacity="0.36">
+        <line x1="-13" y1="-8" x2="13" y2="-8" />
+        <line x1="-13" y1="0" x2="-2" y2="0" /><line x1="2" y1="0" x2="13" y2="0" />
+        <line x1="-13" y1="8" x2="13" y2="8" />
+      </g>
+      <g transform="translate(415 137) rotate(-30)" stroke="#eef1f5" strokeWidth="3.5" opacity="0.34">
+        <line x1="-13" y1="-8" x2="-2" y2="-8" /><line x1="2" y1="-8" x2="13" y2="-8" />
+        <line x1="-13" y1="0" x2="-2" y2="0" /><line x1="2" y1="0" x2="13" y2="0" />
+        <line x1="-13" y1="8" x2="-2" y2="8" /><line x1="2" y1="8" x2="13" y2="8" />
+      </g>
+
+      <path
+        d="M238 171 Q252 158 278 160 Q315 135 351 150 Q382 131 415 149 Q446 142 480 158 V200 H238 Z"
+        fill={color}
+        opacity="0.13"
+      />
+      <path d="M248 171 Q285 149 321 161 Q360 143 397 159 Q438 146 480 161" fill="none" stroke={color} strokeWidth="1.3" opacity="0.4" />
     </svg>
   )
 }
