@@ -1131,7 +1131,7 @@ export default function Home() {
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/japan" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Японии">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16">
-                      <Image src="/icons/japan-flag-round-circle-icon.svg" alt="Флаг Японии" width={64} height={64} className="w-full h-full object-contain" />
+                      <img src="/icons/japan-flag-round-circle-icon.svg" alt="Флаг Японии" className="w-full h-full" />
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">ЯПОНИИ</span>
                   </Link>
@@ -1139,7 +1139,7 @@ export default function Home() {
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16">
-                      <Image src="/icons/china-flag-round-circle-icon.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-contain" />
+                      <img src="/icons/china-flag-round-circle-icon.svg" alt="Флаг Китая" className="w-full h-full" />
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
                   </Link>
@@ -1147,7 +1147,7 @@ export default function Home() {
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
                     <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16">
-                      <Image src="/icons/korea-flag-round-circle-icon.svg" alt="Флаг Кореи" width={64} height={64} className="w-full h-full object-contain" />
+                      <img src="/icons/korea-flag-round-circle-icon.svg" alt="Флаг Кореи" className="w-full h-full" />
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
