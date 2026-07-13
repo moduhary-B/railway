@@ -1027,253 +1027,7 @@ export default function Home() {
       <section id="hero-old2"> ... старый код HERO2 ... </section>
       */}
 
-      {/* ======================================================
-          ВАРИАНТ 1 — БАЗОВЫЙ (максимально близко к ideal-two + безопасные улучшения)
-          - Точные тексты как хочет клиент
-          - Кружки стран большие, как в ideal-two
-          - Более rounded углы у карточек "Для вопросов"
-          - Карточки справа чуть приглушённые (меньше заметны)
-          ====================================================== */}
-      {/* <section id="hero-v1" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24"> */}
-        {/* Video background как в базе */}
-        <div className="absolute inset-0 z-0" id="hero1">
-          <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
-            <div className="absolute inset-0 overflow-hidden">
-              <video
-                src="/back2.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-full h-full object-cover opacity-40"
-                style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }}
-              />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(201,168,110,0.15)_0%,_transparent_70%)]"></div>
-            </div>
-          </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0a0f1a] via-transparent to-[#0a0f1a]/80"></div>
-        </div>
-
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-              <div className="text-center lg:text-left">
-                <div className="mb-5 flex justify-center lg:justify-start">
-                  <span className="kicker">Подбор · Доставка · Сопровождение</span>
-                </div>
-
-                <motion.h1
-                  initial={{ x: 60, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-                  className="text-4xl md:text-6xl lg:text-7xl font-light mb-6 text-white leading-[1.05]"
-                >
-                  Автомобили из<br />
-                  <span className="text-[#c9a86e] font-extrabold">Азии</span><br />
-                  <span className="text-white/90 text-[clamp(1.5rem,6.5vw,1.875rem)] md:text-5xl lg:text-6xl">
-                    с&nbsp;гарантией качества
-                  </span>
-                </motion.h1>
-
-                <motion.p
-                  initial={{ y: 40, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
-                  className="text-white/70 text-base md:text-lg mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed"
-                >
-                  Мы специализируемся на подборе и доставке автомобилей из Японии, Кореи и Китая{" "}
-                  <span className="text-white/95">с полным сопровождением сделки</span>.
-                </motion.p>
-
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.7 }}
-                  className="flex items-center justify-center mb-8"
-                >
-                  <button
-                    type="button"
-                    onClick={() => consultation.open("hero")}
-                    className="btn-sweep focus-lux text-[#0e1720] font-semibold px-8 py-4 md:px-10 md:py-4 rounded-xl min-h-[54px] flex items-center gap-3 uppercase tracking-[0.15em] text-sm md:text-base shadow-[0_0_40px_-8px_rgba(201,168,110,0.55)]"
-                  >
-                    Оставить заявку
-                    <ArrowRight className="w-4 h-4" />
-                  </button>
-                </motion.div>
-
-                {/* Для вопросов — более округлые углы (понравилось) */}
-                <div className="max-w-xl mx-auto lg:mx-0">
-                  <div className="flex items-center gap-3 mb-3">
-                    <span className="w-8 h-px bg-[#c9a86e]" />
-                    <span className="font-mono-num text-[10px] uppercase text-[#c9a86e]">Для вопросов</span>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <a
-                      href={ORIENT_SOCIALS.max.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#7357ff]/35 bg-[#7357ff]/10 px-4 text-sm font-medium text-white/90 hover:bg-[#7357ff]/20 hover:border-[#8d77ff]/60 hover:text-white transition-all focus-lux"
-                    >
-                      <SocialIcon network="max" size={22} />
-                      <span>MAX</span>
-                      <span className="text-white/45">·</span>
-                      <span className="font-mono-num">+7 (995) 868-97-68</span>
-                      <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-white group-hover:translate-x-1 transition-all" />
-                    </a>
-                    <a
-                      href={ORIENT_SOCIALS.whatsapp.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 sm:flex-none min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.07] px-4 text-sm font-medium text-white/85 hover:bg-[#25D366]/15 hover:border-[#25D366]/50 hover:text-white transition-all focus-lux"
-                    >
-                      <SocialIcon network="whatsapp" size={21} />
-                      WhatsApp
-                    </a>
-                    <a
-                      href={ORIENT_SOCIALS.telegram.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 sm:flex-none min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#26A5E4]/30 bg-[#26A5E4]/[0.07] px-4 text-sm font-medium text-white/85 hover:bg-[#26A5E4]/15 hover:border-[#26A5E4]/50 hover:text-white transition-all focus-lux"
-                    >
-                      <SocialIcon network="telegram" size={21} />
-                      Telegram
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* Desktop feature cards — чуть более прозрачные (приглушённые) */}
-              <div className="hidden lg:block">
-                <div className="relative">
-                  <div className="absolute -inset-4 bg-gradient-to-r from-[#c9a86e]/20 to-[#d4b876]/20 rounded-full blur-3xl opacity-30"></div>
-                  <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={{
-                      hidden: {},
-                      visible: { transition: { staggerChildren: 0.15, delayChildren: 0.5 } },
-                    }}
-                    className="grid grid-cols-2 gap-4 relative"
-                  >
-                    <div className="space-y-4">
-                      {[
-                        { Icon: Shield, title: "Полное сопровождение", text: "От выбора до получения ключей" },
-                        { Icon: Award, title: "Независимая оценка", text: "Экспертиза каждого автомобиля" },
-                      ].map(({ Icon, title, text }) => (
-                        <motion.div
-                          key={title}
-                          variants={{ hidden: { opacity: 0, x: 40 }, visible: { opacity: 1, x: 0 } }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                          className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 p-6 rounded-2xl transform hover:scale-105 hover:border-[#c9a86e]/50 transition-all duration-300"
-                        >
-                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mb-4">
-                            <Icon className="w-6 h-6" />
-                          </div>
-                          <h3 className="text-white font-semibold mb-2">{title}</h3>
-                          <p className="text-white/70 text-sm">{text}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                    <div className="space-y-4 mt-8">
-                      {[
-                        { Icon: FileCheck, title: "Юридическая чистота", text: "Гарантия легальности сделки" },
-                        { Icon: Clock, title: "Короткие сроки", text: "Быстрая доставка в любой регион" },
-                      ].map(({ Icon, title, text }) => (
-                        <motion.div
-                          key={title}
-                          variants={{ hidden: { opacity: 0, x: 40 }, visible: { opacity: 1, x: 0 } }}
-                          transition={{ duration: 0.5, ease: "easeOut" }}
-                          className="bg-[#1a2332]/80 backdrop-blur-sm border border-[#c9a86e]/20 p-6 rounded-2xl transform hover:scale-105 hover:border-[#c9a86e]/50 transition-all duration-300"
-                        >
-                          <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mb-4">
-                            <Icon className="w-6 h-6" />
-                          </div>
-                          <h3 className="text-white font-semibold mb-2">{title}</h3>
-                          <p className="text-white/70 text-sm">{text}</p>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
-                </div>
-              </div>
-
-              {/* Mobile feature cards */}
-              <div className="hidden">
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="text-center p-4 bg-[#1a2332]/65 backdrop-blur-sm border border-[#c9a86e]/15 rounded-xl">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mx-auto mb-2">
-                      <Shield className="w-4 h-4" />
-                    </div>
-                    <p className="text-xs text-white font-medium">Полное сопровождение</p>
-                  </div>
-                  <div className="text-center p-4 bg-[#1a2332]/65 backdrop-blur-sm border border-[#c9a86e]/15 rounded-xl">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mx-auto mb-2">
-                      <Award className="w-4 h-4" />
-                    </div>
-                    <p className="text-xs text-white font-medium">Независимая оценка</p>
-                  </div>
-                  <div className="text-center p-4 bg-[#1a2332]/65 backdrop-blur-sm border border-[#c9a86e]/15 rounded-xl">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mx-auto mb-2">
-                      <FileCheck className="w-4 h-4" />
-                    </div>
-                    <p className="text-xs text-white font-medium">Юридическая чистота</p>
-                  </div>
-                  <div className="text-center p-4 bg-[#1a2332]/65 backdrop-blur-sm border border-[#c9a86e]/15 rounded-xl">
-                    <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#c9a86e] to-[#d4b876] flex items-center justify-center text-[#0e1720] mx-auto mb-2">
-                      <Clock className="w-4 h-4" />
-                    </div>
-                    <p className="text-xs text-white font-medium">Короткие сроки</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Страны — большие кружки + большие подписи, как в ideal-two */}
-            <div className="mt-10 pt-5 border-t border-[#c9a86e]/20">
-              <motion.div
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-20px" }}
-                variants={{
-                  hidden: {},
-                  visible: { transition: { staggerChildren: 0.15, delayChildren: 0.1 } },
-                }}
-                className="flex flex-wrap justify-center items-center gap-3 sm:gap-6 md:gap-20"
-              >
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/japan" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Японии">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-white to-gray-100 flex items-center justify-center shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110">
-                      <div className="w-4 h-4 sm:w-6 sm:h-6 md:w-10 md:h-10 rounded-full bg-gradient-to-br from-red-500 to-red-600 shadow-inner"></div>
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">ЯПОНИИ</span>
-                  </Link>
-                </motion.div>
-
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
-                      <Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-cover" />
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
-                  </Link>
-                </motion.div>
-
-                <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
-                  <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
-                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
-                      </div>
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
-                  </Link>
-                </motion.div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      {/* </section> */}
+      {/* ВАРИАНТ 1 — БАЗОВЫЙ (закомментирован, только V2 активен) */}
 
       {/* ======================================================
           ВАРИАНТ 2 — С КОМПАКТНЫМ ЗАГОЛОВКОМ
@@ -1382,17 +1136,14 @@ export default function Home() {
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-cover" /></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-contain" /></div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
                   </Link>
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative">
-                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
-                      </div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
+                      <Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-contain" />
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>
@@ -1403,13 +1154,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ======================================================
-          ВАРИАНТ 3 — СБАЛАНСИРОВАННЫЙ МИКС (карточки вертикальные + минималистичные)
-          База из ideal-two + приятные визуальные акценты (округлости, приглушённые карточки)
-          без нарушения прямых требований клиента
-          ====================================================== */}
-      {/* <section id="hero-v3" className="relative pt-16 pb-20 md:pt-16 md:pb-32 lg:pt-10 lg:pb-8 overflow-hidden min-h-[90vh] flex items-center scroll-mt-24"> */}
-        <div className="absolute inset-0 z-0" id="hero3">
+      {/* ВАРИАНТ 3 — СБАЛАНСИРОВАННЫЙ МИКС (закомментирован, только V2 активен) */}
           <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
             <div className="absolute inset-0 overflow-hidden">
               <video src="/back2.mp4" autoPlay loop muted playsInline className="w-full h-full object-cover opacity-40" style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover" }} />
@@ -1505,17 +1250,14 @@ export default function Home() {
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/china" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Китая">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-cover" /></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60"><Image src="/icons/flag-china.svg" alt="Флаг Китая" width={64} height={64} className="w-full h-full object-contain" /></div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КИТАЯ</span>
                   </Link>
                 </motion.div>
                 <motion.div variants={{ hidden: { opacity: 0, y: 30 }, visible: { opacity: 1, y: 0 } }}>
                   <Link href="/catalog/korea" className="flex flex-col items-center group cursor-pointer md:flex-row md:gap-4" aria-label="Каталог авто из Кореи">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden bg-white shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60 relative">
-                      <div className="absolute inset-0 bg-[linear-gradient(#0047A0_50%,#CD2E3A_50%)]" />
-                      <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-8 md:h-8 bg-white rounded-full" />
-                      </div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-16 md:h-16 rounded-full overflow-hidden shadow-xl group-hover:shadow-2xl transition-all duration-300 transform group-hover:scale-110 ring-2 ring-white/60">
+                      <Image src="/icons/flag-korea.svg" alt="Флаг Южной Кореи" width={64} height={64} className="w-full h-full object-contain" />
                     </div>
                     <span className="text-white text-sm sm:text-base md:text-4xl font-bold tracking-wider bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mt-2 md:mt-0 group-hover:from-[#c9a86e] group-hover:to-[#d4b876] transition-all">КОРЕИ</span>
                   </Link>

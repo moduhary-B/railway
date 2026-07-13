@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="900" height="600">
-  <path fill="#EE1C25" d="M0 0h900v600H0"/>
-  <g transform="matrix(3 0 0 3 150 150)">
-    <path id="a" d="m0-30 17.634 54.27-46.166-33.54h57.064l-46.166 33.54Z" fill="#FF0"/>
-  </g>
-  <use xlink:href="#a" transform="rotate(23.036 2.784 766.082)"/>
-  <use xlink:href="#a" transform="rotate(45.87 38.201 485.396)"/>
-  <use xlink:href="#a" transform="rotate(69.945 29.892 362.328)"/>
-  <use xlink:href="#a" transform="rotate(20.66 -590.66 957.955)"/>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red circle background -->
+  <circle cx="50" cy="50" r="48" fill="#EE1C25"/>
+  <!-- Large star centered -->
+  <polygon points="50,35 55,48 68,50 57,58 60,70 50,63 40,70 43,58 32,50 45,48" fill="#FFDE00"/>
+  <!-- Small stars positioned around in arc, inside the circle -->
+  <polygon points="68,28 70,33 75,34 71,38 72,43 68,40 64,43 65,38 61,34 66,33" fill="#FFDE00"/>
+  <polygon points="75,38 76,42 80,43 77,46 78,50 75,48 72,50 73,46 70,43 74,42" fill="#FFDE00"/>
+  <polygon points="72,52 73,56 77,57 74,60 75,64 72,62 69,64 70,60 67,57 71,56" fill="#FFDE00"/>
+  <polygon points="65,60 66,64 70,65 67,68 68,72 65,70 62,72 63,68 60,65 64,64" fill="#FFDE00"/>
 </svg>
