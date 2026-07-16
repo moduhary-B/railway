@@ -1,0 +1,286 @@
+.page {
+  --ideal4-section-space: clamp(4rem, 6vw, 6rem);
+  position: relative;
+  background: #0a0f1a;
+}
+
+/* Убираем старое исчезновение верхнего края. Переход создаётся самим
+   градиентом, без линий, рамок, теней и дополнительных цветов. */
+.page :global(.section-soft-top) {
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.page :global(.section-soft-top)::before {
+  display: none;
+}
+
+.page :global(.ideal4-section) {
+  padding-top: var(--ideal4-section-space) !important;
+  padding-bottom: var(--ideal4-section-space) !important;
+}
+
+.page :global(.ideal4-band) {
+  padding-top: clamp(2.75rem, 4vw, 4rem) !important;
+  padding-bottom: clamp(2.75rem, 4vw, 4rem) !important;
+}
+
+/* Исходная палитра сайта. Конец каждого фона совпадает с началом следующего. */
+.page :global(.ideal4-tone-band) {
+  background: #0a0f1a;
+}
+
+.page :global(.ideal4-tone-catalog) {
+  background: linear-gradient(180deg, #0a0f1a 0%, #0e1720 22%, #0e1720 100%);
+}
+
+.page :global(.ideal4-tone-chat) {
+  background: linear-gradient(180deg, #0e1720 0%, #1a2332 100%);
+}
+
+.page :global(.ideal4-tone-media) {
+  background: linear-gradient(180deg, #1a2332 0%, #0e1720 100%);
+}
+
+/* Световые пятна остаются внутри секций и не повторяют положение друг друга. */
+.page :global(.ideal4-tone-about.orient-glow)::before {
+  background:
+    radial-gradient(50% 42% at 72% 32%, rgba(201, 168, 110, 0.09), transparent 66%),
+    radial-gradient(42% 38% at 18% 72%, rgba(201, 168, 110, 0.065), transparent 68%);
+}
+
+.page :global(.ideal4-tone-media.orient-glow)::before {
+  background:
+    radial-gradient(46% 38% at 20% 30%, rgba(201, 168, 110, 0.08), transparent 68%),
+    radial-gradient(44% 38% at 78% 70%, rgba(201, 168, 110, 0.065), transparent 68%);
+}
+
+/*
+ * Видео-карусель: положение карточки задаётся через left, а transform отвечает
+ * только за масштаб. Карточки всегда остаются в DOM, поэтому при перелистывании
+ * новая боковая карточка плавно приезжает из внешнего слота и не появляется в центре.
+ */
+.videoCarouselCard {
+  --video-card-width: 210px;
+  --video-card-half-width: 105px;
+  --video-card-half-height-negative: -186.667px;
+  position: absolute;
+  top: 50%;
+  width: var(--video-card-width);
+  aspect-ratio: 9 / 16;
+  margin-top: var(--video-card-half-height-negative);
+  transform-origin: center;
+  backface-visibility: hidden;
+  will-change: left, transform, opacity;
+  transition:
+    left 550ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 550ms cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 420ms ease;
+}
+
+.videoCarouselCardCenter {
+  left: calc(50% - var(--video-card-half-width));
+  transform: scale(1);
+  opacity: 1;
+}
+
+.videoCarouselCardLeft {
+  left: calc(50% - var(--video-card-half-width) - clamp(150px, 27vw, 205px));
+  transform: scale(0.78);
+  opacity: 0.5;
+}
+
+.videoCarouselCardRight {
+  left: calc(50% - var(--video-card-half-width) + clamp(150px, 27vw, 205px));
+  transform: scale(0.78);
+  opacity: 0.5;
+}
+
+.videoCarouselCardFarLeft {
+  left: calc(50% - var(--video-card-half-width) - clamp(300px, 54vw, 410px));
+  transform: scale(0.68);
+  opacity: 0;
+}
+
+.videoCarouselCardFarRight {
+  left: calc(50% - var(--video-card-half-width) + clamp(300px, 54vw, 410px));
+  transform: scale(0.68);
+  opacity: 0;
+}
+
+@media (min-width: 640px) {
+  .videoCarouselCard {
+    --video-card-width: 240px;
+    --video-card-half-width: 120px;
+    --video-card-half-height-negative: -213.333px;
+  }
+}
+
+@media (min-width: 768px) {
+  .videoCarouselCard {
+    --video-card-width: 280px;
+    --video-card-half-width: 140px;
+    --video-card-half-height-negative: -248.889px;
+  }
+}
+
+.page :global(.ideal4-process),
+.page :global(.ideal4-process-panel) {
+  background: linear-gradient(180deg, #0e1720 0%, #1a2332 100%);
+}
+
+.page :global(.ideal4-tone-reviews) {
+  position: relative;
+  background: #080d15;
+  padding-top: clamp(4rem, 5vw, 5rem) !important;
+  padding-bottom: 0 !important;
+}
+
+.page :global(.ideal4-tone-reviews)::before,
+.page :global(.ideal4-tone-reviews)::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: none;
+  background: linear-gradient(90deg, rgba(201, 168, 110, 0.32), rgba(201, 168, 110, 0.78) 50%, rgba(201, 168, 110, 0.32));
+  box-shadow: 0 0 18px rgba(201, 168, 110, 0.28);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.page :global(.ideal4-tone-reviews)::before {
+  top: 0;
+}
+
+.page :global(.ideal4-tone-reviews)::after {
+  bottom: 0;
+}
+
+.page :global(.ideal4-tone-team) {
+  background: linear-gradient(180deg, #0e1720 0%, #1a2332 100%);
+}
+
+.page :global(.ideal4-tone-contacts) {
+  background: linear-gradient(180deg, #1a2332 0%, #0e1720 100%);
+}
+
+.page :global(.ideal4-footer) {
+  background: linear-gradient(180deg, #0e1720 0%, #0a0f1a 68%, #0a0f1a 100%);
+}
+
+.teamMarqueeTrack {
+  display: flex;
+  width: max-content;
+  gap: 1rem;
+}
+
+.teamMobileScroller {
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+  touch-action: pan-x pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+.teamMobileScroller::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .page {
+    --ideal4-section-space: 4rem;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: clip;
+  }
+
+  /* Глобальные mobile-правила проекта раскрывают каждый overflow-hidden.
+     Для независимого ideal-four возвращаем ожидаемое обрезание каруселей,
+     фоновых свечений и элементов, которые входят в кадр через transform. */
+  .page :global(.overflow-hidden) {
+    overflow: hidden !important;
+  }
+
+  .page :global(.overflow-visible) {
+    overflow: visible !important;
+  }
+
+  .page :global(.overflow-x-auto) {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+  }
+
+  .page :global(.ideal4-process) {
+    overflow-x: clip !important;
+  }
+
+  .page :global(.section-index) {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+  }
+
+  .page :global(.kicker) {
+    max-width: 100%;
+    gap: 0.45rem;
+    font-size: 9px;
+    line-height: 1.5;
+    letter-spacing: 0.18em;
+    text-align: center;
+  }
+
+  .page :global(.kicker)::before,
+  .page :global(.kicker--center)::after {
+    width: 18px;
+    min-width: 18px;
+  }
+
+  .page :global([data-review-variant="mosaic-dark"]) {
+    max-width: 100vw;
+  }
+
+  .page :global(.ideal4-tone-reviews) {
+    min-height: 100svh;
+    padding-top: 2.25rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
+
+@media (max-width: 359px) {
+  .videoCarouselCard {
+    --video-card-width: 190px;
+    --video-card-half-width: 95px;
+    --video-card-half-height-negative: -168.889px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page {
+    scroll-behavior: auto;
+  }
+
+  .page *,
+  .page *::before,
+  .page *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .page :global(.marquee-track) {
+    animation: none !important;
+    transform: translateX(0) !important;
+  }
+
+  .videoCarouselCard {
+    transition: none !important;
+  }
+
+  .teamMarqueeTrack {
+    animation: none !important;
+    transform: translate3d(0, 0, 0) !important;
+  }
+}
