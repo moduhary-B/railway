@@ -1663,7 +1663,7 @@ export default function Home() {
             {/* Две кнопки — стеклянные, с брендовой левой полосой; MAX первая */}
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
-                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+                href="https://max.ru/id253401357515_biz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#5E3FE3]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"
@@ -2303,13 +2303,15 @@ export default function Home() {
           HowWeWorkScroll — прежний статичный список сохранён в git для отката. */}
       <HowWeWorkScroll steps={orderSteps} />
 
-      {/* ===== ВРЕМЕННО: две версии блока «Как мы работаем» для сравнения.
-           Ниже — версия 2 (зигзаг-таймлайн без фиксации). После выбора
-           лучшей — удалить проигравшую и этот разделитель. ===== */}
-      <div className="w-full bg-[#0e1720] py-6 text-center">
-        <span className="section-index">↓ ВАРИАНТ 2 (зигзаг, без фиксации) ↓</span>
-      </div>
-      <HowWeWorkScrollV2 steps={orderSteps} />
+      {/* ВАРИАНТ 2 (зигзаг, без фиксации) — отключён. */}
+      {false && (
+        <>
+          <div className="w-full bg-[#0e1720] py-6 text-center">
+            <span className="section-index">↓ ВАРИАНТ 2 (зигзаг, без фиксации) ↓</span>
+          </div>
+          <HowWeWorkScrollV2 steps={orderSteps} />
+        </>
+      )}
 
       {/* Reviews Section - Grid with Animation */}
       <section id="reviews" className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#1a2332] scroll-mt-24 section-soft-top">
@@ -2441,9 +2443,13 @@ export default function Home() {
           </div>
           */}
           
-          {/* ===== ВАРИАНТ 1 — Editorial Grid (референс msg_25) ===== */}
-          <VariantDivider title="↑ ВАРИАНТ 1 (editorial-сетка, референс msg_25) ↑" />
-          <ReviewsVariantGrid />
+          {/* ВАРИАНТ 1 (editorial-сетка, референс msg_25) — отключён. */}
+          {false && (
+            <>
+              <VariantDivider title="↑ ВАРИАНТ 1 (editorial-сетка, референс msg_25) ↑" />
+              <ReviewsVariantGrid />
+            </>
+          )}
 
           <VariantDivider title="↓ ВАРИАНТ 2 (mosaic-video, референс msg_17) ↓" />
 
@@ -2463,8 +2469,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video Reviews Section — msg_18: убрана карусель, вместо неё грид-плитка
-          с эффектным заголовком, рамкой и паттерном лого в фоне */}
+      {/* «Orient Auto глазами клиентов» — отключён. */}
+      {false && (
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#1a2332] to-[#0e1720] w-full overflow-hidden orient-glow">
         <div className="container mx-auto px-4 max-w-7xl relative">
           {/* Заголовок — сериф и kicker */}
@@ -2719,8 +2725,10 @@ export default function Home() {
           </p>
         </div>
       </section>
+      )}
 
-      {/* Team Section */}
+      {/* Первый вариант «Команда Orient Auto» (карусель) — отключён. */}
+      {false && (
       <section className="py-16 md:py-24 bg-gradient-to-b from-[#0e1720] to-[#1a2332]">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center text-white/40 mb-8">
@@ -2959,6 +2967,7 @@ export default function Home() {
           </p>
         </div>
       </section>
+      )}
 
       {/* Вариант 2: Сетка команды (альтернатива карусели — клиент устал от каруселей) */}
       {/* Текущая карусель выше сохранена полностью. Сетка ниже — по пожеланию. */}

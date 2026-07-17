@@ -27,7 +27,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // Дробная позиция колоды (0..N-1) — плавно догоняет цель по скроллу (lerp),
   // поэтому карточки перетекают маслянисто, а не прыгают по шагам.
   const [pos, setPos] = useState(0)
-  const [progress, setProgress] = useState(0)
   // Фаза пина: 'before' | 'pinned' | 'after'. fixed вместо sticky —
   // sticky ломается от overflow у предков, fixed от него не зависит.
   const [phase, setPhase] = useState<"before" | "pinned" | "after">("before")
@@ -87,7 +86,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       const total = el.offsetHeight - vh
       const scrolled = Math.min(Math.max(-rect.top, 0), total)
       const p = total > 0 ? scrolled / total : 0
-      setProgress(p)
       if (rect.top > 0) setPhase("before")
       else if (-rect.top >= total) setPhase("after")
       else setPhase("pinned")
@@ -126,7 +124,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
       cur = 0
       target = 0
       setPos(0)
-      setProgress(0)
       setPhase("before")
     }
 
@@ -220,10 +217,8 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
   // Высота враппера: 100vh на сам пин + по ~38vh скролла на каждый доп. шаг.
   // Меньше vh на шаг = меньше надо крутить (быстрее сменяются кадры).
   const wrapHeight = `${100 + (steps.length - 1) * 38}vh`
-  const railScale = 0.04 + progress * 0.96
   const active = Math.max(0, Math.min(steps.length - 1, Math.round(pos)))
 
-  const cur = steps[active] // для крупного номера шага поверх фото
   const mobileCur = steps[mobileActive]
   const MobileStepIcon = mobileCur.Icon
   const mobileWrapHeight = `${100 + (steps.length - 1) * 52}svh`
@@ -266,12 +261,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               transition={{ duration: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="mb-4 text-center"
             >
-              <div className="flex justify-between items-center text-white/40 mb-6">
-                <span className="section-index">06 / ПРОЦЕСС</span>
-                <span className="section-index font-mono-num">
-                  {String(active + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
-                </span>
-              </div>
               <div className="flex justify-center mb-4">
                 <span className="kicker kicker--center">Всего {steps.length} шагов</span>
               </div>
@@ -281,49 +270,29 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </h2>
             </motion.div>
 
-            <div className="grid grid-cols-[minmax(0,1fr)_minmax(0,1.08fr)] items-center gap-14">
-              {/* Левая колонка: фото + вертикальная шкала прогресса */}
+            <div className="relative min-h-[520px]">
+              {/* Автомобиль — самостоятельный фоновый слой всего блока, а не часть карусели. */}
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: -45, scale: 0.96 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-30px" }}
-                transition={{ duration: 0.6, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className="flex items-stretch gap-8"
+                transition={{ duration: 0.8, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
+                className="pointer-events-none absolute -left-[21%] bottom-[4%] z-0 w-[76%]"
               >
-                <div className="relative flex min-h-[350px] flex-1 items-center justify-center overflow-visible py-4">
-                  <div className="pointer-events-none absolute left-[48%] top-[45%] h-52 w-[90%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#c9a86e]/[0.085] blur-[90px]" />
-                  <div className="pointer-events-none absolute bottom-[16%] left-[48%] h-10 w-[78%] -translate-x-1/2 rounded-[50%] bg-black/45 blur-2xl" />
-                  <div className="pointer-events-none absolute bottom-[19%] left-[48%] h-px w-[52%] -translate-x-1/2 bg-gradient-to-r from-transparent via-[#c9a86e]/45 to-transparent" />
-                  <div className="relative z-[2] w-[118%] max-w-none -translate-x-[5%] -translate-y-2">
-                    <Image
-                      src="/kiak5.webp"
-                      alt="Kia K5"
-                      width={900}
-                      height={600}
-                      className="h-auto w-full scale-x-[-1] object-contain drop-shadow-[0_26px_23px_rgba(0,0,0,0.48)]"
-                      priority={false}
-                    />
-                  </div>
-                  <div className="absolute bottom-3 left-1 z-[3] flex items-end gap-2">
-                    <span className="font-mono-num text-5xl font-extrabold leading-none text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.7)]">
-                      {cur.step.padStart(2, "0")}
-                    </span>
-                    <span className="mb-1 font-mono-num text-xs text-white/45">
-                      / {String(steps.length).padStart(2, "0")}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Вертикальная шкала прогресса */}
-                <div className="relative z-10 h-[300px] w-px shrink-0 self-center overflow-hidden rounded-full bg-white/[0.075]">
-                  <motion.div
-                    className="absolute inset-x-0 top-0 rounded-full bg-gradient-to-b from-[#c9a86e] to-[#d4b876] origin-top"
-                    style={{ scaleY: railScale, height: "100%" }}
-                  />
-                </div>
+                <div className="absolute left-[15%] top-[45%] h-[48%] w-[62%] -translate-y-1/2 rounded-full bg-[#c9a86e]/[0.09] blur-[105px]" />
+                <div className="absolute bottom-[12%] left-[12%] h-12 w-[72%] rounded-[50%] bg-black/50 blur-2xl" />
+                <Image
+                  src="/kiak5.webp"
+                  alt=""
+                  aria-hidden="true"
+                  width={1200}
+                  height={800}
+                  className="relative h-auto w-full scale-x-[-1] object-contain opacity-[0.48] drop-shadow-[0_30px_28px_rgba(0,0,0,0.5)]"
+                  priority={false}
+                />
               </motion.div>
 
-              {/* Правая колонка: 3D-колода карточек. Всегда видно предыдущую →
+              {/* Самостоятельная 3D-колода карточек. Всегда видно предыдущую →
                   текущую → следующую. БЕЗ мерцания: (1) все карточки постоянно
                   в DOM (никаких return null → нет монтирования/размонтирования);
                   (2) НЕТ filter:blur и backdrop-blur — на 3D-слоях они моргают
@@ -335,7 +304,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.6, delay: 0.14, ease: [0.16, 1, 0.3, 1] }}
-                className="relative h-[460px]"
+                className="relative z-10 ml-auto h-[460px] w-[55%]"
                 style={{
                   perspective: "1600px",
                   WebkitMaskImage:
@@ -421,7 +390,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </motion.div>
 
               {/* Точки-прогресс шагов */}
-              <div className="col-span-full flex justify-center gap-2.5 mt-8">
+              <div className="relative z-10 ml-auto mt-3 flex w-[55%] justify-center gap-2.5">
                 {steps.map((_, i) => (
                   <span
                     key={i}
@@ -457,13 +426,6 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
           </div>
 
           <div className="container relative mx-auto flex h-full w-full flex-col px-4 py-4">
-            <div className="mb-3 flex shrink-0 items-center justify-between text-white/40">
-              <span className="section-index">06 / ПРОЦЕСС</span>
-              <span className="section-index font-mono-num">
-                {String(mobileActive + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
-              </span>
-            </div>
-
             <div className="shrink-0 text-center">
               <div className="mb-2 flex justify-center">
                 <span className="kicker kicker--center">Всего {steps.length} шагов</span>

@@ -387,7 +387,7 @@ export function ReviewsVariantHero({ apiUrl }: { apiUrl?: string }) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-          className="h-[clamp(480px,58svh,540px)]"
+          className="h-[clamp(440px,54svh,490px)]"
         >
           {mobileScreen.kind === "video" ? (
             <div className="flex h-full w-full items-stretch justify-center">
@@ -428,15 +428,6 @@ export function ReviewsVariantHero({ apiUrl }: { apiUrl?: string }) {
           />
         )}
 
-        <div className="mt-5 text-center">
-          <a
-            href="/reviews"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-[#c9a86e]"
-          >
-            Смотреть все отзывы
-            <ChevronRight className="h-4 w-4" />
-          </a>
-        </div>
       </div>
 
       <div className="relative mx-auto hidden w-full max-w-[1500px] px-7 md:block xl:px-10">
@@ -449,7 +440,7 @@ export function ReviewsVariantHero({ apiUrl }: { apiUrl?: string }) {
           <RatingHeader rating={aggregate.rating} count={aggregate.count} />
         </motion.div>
 
-        <div className="relative grid grid-cols-1 items-center gap-3 sm:gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-[minmax(0,1fr)_320px_minmax(0,1fr)] lg:gap-6 xl:gap-8">
+        <div className="relative grid grid-cols-1 items-center gap-3 sm:gap-4 md:grid-cols-2 md:gap-5 lg:grid-cols-[minmax(0,1fr)_288px_minmax(0,1fr)] lg:gap-6 xl:gap-8">
           <ReviewColumn
             key={`left-${safePage}`}
             reviews={screen.left}
@@ -483,21 +474,6 @@ export function ReviewsVariantHero({ apiUrl }: { apiUrl?: string }) {
           />
         )}
 
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-20px" }}
-          transition={{ duration: 0.45, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-          className="mt-6 text-center"
-        >
-          <a
-            href="/reviews"
-            className="group inline-flex items-center gap-2 text-base font-medium text-[#c9a86e] transition-colors hover:text-[#d4b876]"
-          >
-            Смотреть все отзывы
-            <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
-          </a>
-        </motion.div>
       </div>
 
       {open && <ReviewModal r={open} onClose={() => setOpen(null)} />}
@@ -555,12 +531,6 @@ function ReviewCardContent({
       </div>
 
       <Stars rating={review.rating} className={mobile ? "mb-2" : "mb-3"} />
-
-      {review.car && (
-        <div className={`${mobile ? "mb-2" : "mb-3"} inline-flex items-center border-l-2 border-[#c9a86e] pl-2.5 text-[11px] font-bold uppercase text-[#c9a86e]`}>
-          {review.car}
-        </div>
-      )}
 
       <p
         className={`relative flex-1 overflow-hidden text-[13.5px] leading-relaxed text-white/70 ${mobile ? "line-clamp-3" : "line-clamp-4"}`}
@@ -649,10 +619,15 @@ function VideoReviewCard({
         </span>
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/85 via-black/45 to-transparent p-4 md:p-5">
+      <div
+        className="absolute inset-x-0 bottom-0 px-4 pb-4 pt-20 md:px-5 md:pb-5 md:pt-24"
+        style={{
+          background:
+            "linear-gradient(to top, #080c12 0%, #080c12 62%, rgba(8,12,18,0.94) 82%, transparent 100%)",
+        }}
+      >
         <Stars rating={review.rating} className="mb-2" />
         <div className="text-sm font-extrabold leading-tight text-white md:text-base">{review.author}</div>
-        {review.car && <div className="mt-1 text-xs font-semibold uppercase text-[#d7b879]">{review.car}</div>}
       </div>
     </motion.button>
   )

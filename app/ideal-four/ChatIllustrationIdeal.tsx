@@ -61,7 +61,7 @@ export default function ChatIllustrationIdeal() {
         {/* Каналы связи расположены прямо на нижней обводке карточки. */}
         <div className="absolute left-6 bottom-0 translate-y-1/2 flex items-center gap-3">
           <a
-            href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+            href="https://max.ru/id253401357515_biz"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Открыть чат в MAX"

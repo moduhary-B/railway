@@ -1786,7 +1786,7 @@ export default function Home() {
             {/* Две кнопки — стеклянные, с брендовой левой полосой; MAX первая */}
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
-                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+                href="https://max.ru/id253401357515_biz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#5E3FE3]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"

@@ -8,7 +8,7 @@ import { SocialIcon } from "@/components/social-icons"
 
 const socialLinks = [
   {
-    label: "ТГ канал",
+    label: "Telegram канал",
     detail: "Новости и поставки",
     href: "https://t.me/orientauto_ru",
     color: "#26A5E4",
@@ -22,7 +22,7 @@ const socialLinks = [
     icon: <SocialIcon network="instagram" size={23} />,
   },
   {
-    label: "MAX",
+    label: "MAX канал",
     detail: "Канал компании",
     href: "https://max.ru/id253401357515_biz",
     color: "#7357ff",

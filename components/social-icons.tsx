@@ -14,7 +14,7 @@ export interface SocialLink {
 
 // Официальные URL мессенджеров/соцсетей Orient Auto (из правок клиента)
 export const ORIENT_SOCIALS: Record<SocialNetwork, { href: string; label: string }> = {
-  max: { href: "https://web.max.ru/168679067", label: "MAX" },
+  max: { href: "https://max.ru/id253401357515_biz", label: "MAX" },
   whatsapp: { href: "https://wa.me/79958689768", label: "WhatsApp" },
   telegram: { href: "https://t.me/al_orientauto", label: "Telegram" },
   youtube: { href: "https://youtube.com/@orientauto_ru?si=5clsE_vZHCv3Iawc", label: "YouTube" },
@@ -31,7 +31,7 @@ export const ORIENT_CHANNELS: Partial<Record<SocialNetwork, { href: string; labe
 }
 
 // Ссылка на групповой чат менеджеров
-export const ORIENT_CHAT_MAX = "https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+export const ORIENT_CHAT_MAX = "https://max.ru/id253401357515_biz"
 export const ORIENT_CHAT_TG = "https://t.me/orientauto_chat"
 
 const BRAND_COLORS: Record<Exclude<SocialNetwork, "max" | "instagram">, string> = {

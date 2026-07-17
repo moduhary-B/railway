@@ -1728,7 +1728,7 @@ export default function Home() {
             {/* Две кнопки в бренд-цветах, MAX первая */}
             <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
               <a
-                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+                href="https://max.ru/id253401357515_biz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 px-6 py-4 md:px-8 md:py-4 rounded-2xl bg-gradient-to-br from-[#4CC1FF] via-[#5E3FE3] to-[#9333EA] text-white text-base md:text-lg font-semibold shadow-xl hover:scale-105 transition-all duration-300"

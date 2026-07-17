@@ -990,7 +990,7 @@ export default function Home() {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-8 ml-4">
+            <nav className={`hidden lg:flex items-center gap-8 ${pageStyles.headerNav}`}>
               {[
                 { name: "Главная", href: "#hero", isAnchor: true },
                 { name: "Каталог", href: "#catalog", isAnchor: false },
@@ -1288,16 +1288,6 @@ export default function Home() {
       {/* Marquee галерея выданных авто клиентам — msg_5 */}
       <section className="ideal4-band ideal4-tone-band py-8 md:py-12 w-full relative overflow-hidden section-soft-top">
         <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-20px" }}
-          transition={{ duration: 0.5 }}
-          className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6"
-        >
-          <span className="section-index">02 / КЛИЕНТЫ</span>
-          <span className="section-index hidden md:inline font-mono-num">500+ VYDANO</span>
-        </motion.div>
-        <motion.div
           initial={{ opacity: 0, y: 28 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-30px" }}
@@ -1328,16 +1318,6 @@ export default function Home() {
 
       {/* Блок 'О нас' — msg_6: sereif акцент, редакционная типографика */}
       <section className="ideal4-section ideal4-tone-about py-16 md:py-24 bg-[#0a0f1a] w-full overflow-hidden orient-glow section-soft-top">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-20px" }}
-          transition={{ duration: 0.5 }}
-          className="container mx-auto px-4 flex justify-between items-center text-white/40 mb-6"
-        >
-          <span className="section-index">03 / О НАС</span>
-          <span className="section-index hidden md:inline font-mono-num">EST. 2019</span>
-        </motion.div>
         {/* Контейнер с текстом и цифрами */}
         <div className="mx-auto px-4 max-w-7xl relative">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
@@ -1590,18 +1570,7 @@ export default function Home() {
       {/* Catalog Section */}
       <div id="catalog" className="relative top-8 h-0 pointer-events-none"></div>
       <section className="ideal4-section ideal4-tone-catalog scroll-mt-0 relative overflow-hidden section-soft-top">
-        {/* Section index в верхнем углу */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-20px" }}
-          transition={{ duration: 0.5 }}
-          className="container mx-auto px-4 flex justify-between items-center text-white/40"
-        >
-          <span className="section-index">01 / КАТАЛОГ</span>
-          <span className="section-index hidden md:inline">JAPAN · CHINA · KOREA</span>
-        </motion.div>
-        <div className="container mx-auto px-4 relative z-10 pt-8 md:pt-10">
+        <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1634,7 +1603,7 @@ export default function Home() {
                 description: 'Надёжные автомобили из Японии',
                 accent: '#eef1f5', // белый — по указанию клиента (msg_7: Япония/белый)
                 pattern: 'sakura',
-                stats: { cars: '3000+', brands: '12', avgPrice: '3.2M ₽' },
+                stats: { cars: '3000+', brands: '12', avgPrice: '1.5M ₽' },
                 features: [
                   'Toyota, Honda, Nissan',
                   'Высокая надёжность',
@@ -1649,7 +1618,7 @@ export default function Home() {
                 description: 'Доступные автомобили из Китая',
                 accent: '#e63946', // красный флага
                 pattern: 'lanterns',
-                stats: { cars: '2000+', brands: '8', avgPrice: '1.8M ₽' },
+                stats: { cars: '2000+', brands: '8', avgPrice: '2.1M ₽' },
                 features: [
                   'BYD, Chery, Geely',
                   'Современный дизайн',
@@ -1664,7 +1633,7 @@ export default function Home() {
                 description: 'Качественные автомобили из Южной Кореи',
                 accent: '#0047a0', // синий флага
                 pattern: 'meander',
-                stats: { cars: '1500+', brands: '5', avgPrice: '2.5M ₽' },
+                stats: { cars: '1500+', brands: '5', avgPrice: '3.2M ₽' },
                 features: [
                   'Kia, Hyundai, Genesis',
                   'Современные технологии',
@@ -1781,7 +1750,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-semibold text-white mb-2">Гарантия качества</h3>
                 <p className="text-white/70 text-sm">
-                  30 дней гарантии после получения
+                  Независимая оценка эксперта
                 </p>
               </div>
             </div>
@@ -1792,16 +1761,6 @@ export default function Home() {
       {/* Chat Section — msg_9: "Чат менеджеров" (не только Telegram),
           единый шрифт, две кнопки MAX + TG в бренд-цветах, порядок MAX -> TG */}
       <section className="ideal4-section ideal4-tone-chat py-16 md:py-24 relative overflow-hidden section-soft-top">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-20px" }}
-          transition={{ duration: 0.5 }}
-          className="container mx-auto px-4 pb-4 flex justify-between items-center text-white/40 mb-6"
-        >
-          <span className="section-index">04 / СВЯЗЬ</span>
-          <span className="section-index hidden md:inline">MAX · TELEGRAM</span>
-        </motion.div>
         <div className="absolute top-1/2 right-[8%] -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-[#c9a86e]/20 to-[#d4b876]/10 rounded-full blur-3xl opacity-40 z-0 pointer-events-none"></div>
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center relative z-10 gap-10 md:gap-12">
           <motion.div
@@ -1823,7 +1782,8 @@ export default function Home() {
             {/* Акцент на ежедневных подборках и живом общении с менеджерами. */}
             <div className="max-w-2xl text-center md:text-left mb-8 md:mb-12 space-y-4">
               <p className="text-white/90 text-lg md:text-2xl font-light">
-                Смотрите подборки автомобилей и общайтесь в реальном времени с опытными специалистами Orient Auto!
+                Смотрите подборки автомобилей и общайтесь в реальном времени с опытными специалистами
+                <span className="whitespace-nowrap">&nbsp;Orient Auto</span>!
               </p>
               <p className="text-base md:text-xl font-light text-white/80">
                 <span className="text-[#c9a86e]">Каждый день менеджеры публикуют новые варианты</span>{" "}
@@ -1838,7 +1798,7 @@ export default function Home() {
             {/* Две кнопки — стеклянные, с брендовой левой полосой; MAX первая */}
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
-                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+                href="https://max.ru/id253401357515_biz"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#5E3FE3]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"
@@ -1930,10 +1890,6 @@ export default function Home() {
             transition={{ duration: 0.65, ease: [0.16, 1, 0.3, 1] }}
             className="text-center mb-10 md:mb-14"
           >
-            <div className="flex justify-between items-center text-white/40 mb-8">
-              <span className="section-index">05 / КОНТЕНТ</span>
-              <span className="section-index hidden md:inline">YOUTUBE · TELEGRAM · MAX</span>
-            </div>
             <div className="flex justify-center mb-5">
               <span className="kicker kicker--center">Наши медиа</span>
             </div>
@@ -2513,16 +2469,6 @@ export default function Home() {
       {/* Reviews Section - Grid with Animation */}
       <section id="reviews" className="ideal4-section ideal4-tone-reviews py-16 md:py-24 scroll-mt-24 section-soft-top overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.5 }}
-            className="mb-4 flex items-center justify-between text-white/40 md:mb-8"
-          >
-            <span className="section-index">08 / ДОКАЗАТЕЛЬСТВА</span>
-            <span className="section-index hidden md:inline">2GIS · YANDEX</span>
-          </motion.div>
           {/* ===== ВАРИАНТЫ БЛОКА «ОТЗЫВЫ НАШИХ КЛИЕНТОВ» =====
                Как и с блоком «Как мы работаем» выше (HowWeWorkScroll +
                HowWeWorkScrollV2) — сделано несколько вариантов друг под
@@ -3171,16 +3117,6 @@ export default function Home() {
       <section className="ideal4-section ideal4-tone-team py-16 md:py-24">
         <div className="container mx-auto px-4">
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-between items-center text-white/40 mb-8"
-          >
-            <span className="section-index">09 / КОМАНДА</span>
-            <span className="section-index hidden md:inline font-mono-num">10 SPECIALISTOV</span>
-          </motion.div>
-          <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-20px" }}
@@ -3312,16 +3248,6 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contacts" className="ideal4-section ideal4-tone-contacts py-16 md:py-24 scroll-mt-24">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.5 }}
-            className="flex justify-between items-center text-white/40 mb-8"
-          >
-            <span className="section-index">10 / КОНТАКТЫ</span>
-            <span className="section-index hidden md:inline">VLADIVOSTOK · RUSSIA</span>
-          </motion.div>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

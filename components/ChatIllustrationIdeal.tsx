@@ -72,7 +72,7 @@ export default function ChatIllustrationIdeal() {
             через
           </span>
           <a
-            href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
+            href="https://max.ru/id253401357515_biz"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Открыть чат в MAX"

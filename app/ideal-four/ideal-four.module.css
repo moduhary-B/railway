@@ -4,6 +4,18 @@
   background: #0a0f1a;
 }
 
+.headerNav {
+  margin-left: 1rem;
+}
+
+/* На широком desktop навигация начинается по той же вертикальной оси,
+   что и текстовая колонка hero (max-width: 72rem). */
+@media (min-width: 1740px) {
+  .headerNav {
+    margin-left: max(1rem, calc((100vw - 72rem) / 2 - 17.4375rem));
+  }
+}
+
 /* Убираем старое исчезновение верхнего края. Переход создаётся самим
    градиентом, без линий, рамок, теней и дополнительных цветов. */
 .page :global(.section-soft-top) {
