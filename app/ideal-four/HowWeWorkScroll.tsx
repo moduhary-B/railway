@@ -277,7 +277,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.8, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className="pointer-events-none absolute -left-[21%] bottom-[4%] z-0 w-[76%]"
+                className="pointer-events-none absolute -left-[22%] bottom-[4%] z-0 w-[75%]"
               >
                 <div className="absolute left-[15%] top-[45%] h-[48%] w-[62%] -translate-y-1/2 rounded-full bg-[#c9a86e]/[0.09] blur-[105px]" />
                 <div className="absolute bottom-[12%] left-[12%] h-12 w-[72%] rounded-[50%] bg-black/50 blur-2xl" />
@@ -304,7 +304,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.6, delay: 0.14, ease: [0.16, 1, 0.3, 1] }}
-                className="relative z-10 ml-auto h-[460px] w-[55%]"
+                className="relative z-10 ml-auto h-[460px] w-[54%]"
                 style={{
                   perspective: "1600px",
                   WebkitMaskImage:
@@ -390,7 +390,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </motion.div>
 
               {/* Точки-прогресс шагов */}
-              <div className="relative z-10 ml-auto mt-3 flex w-[55%] justify-center gap-2.5">
+              <div className="relative z-10 ml-auto mt-3 flex w-[54%] justify-center gap-2.5">
                 {steps.map((_, i) => (
                   <span
                     key={i}

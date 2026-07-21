@@ -1044,7 +1044,7 @@ export default function Home() {
               <div className="flex flex-col items-start">
                 <span className="text-[11px] text-white/70 mb-1">Написать нам</span>
                 <div className="flex items-center gap-3">
-                  <SocialLinkButton network="max" href={ORIENT_SOCIALS.max.href} variant="bare" size={26} />
+                  <SocialLinkButton network="max" href="https://web.max.ru/168679067" variant="bare" size={26} />
                   <SocialLinkButton network="whatsapp" href={ORIENT_SOCIALS.whatsapp.href} variant="bare" size={24} />
                   <SocialLinkButton network="telegram" href={ORIENT_SOCIALS.telegram.href} variant="bare" size={24} />
                 </div>
@@ -1118,7 +1118,7 @@ export default function Home() {
                     <div className="pt-4">
                       <div className="text-white/70 text-sm mb-2">Написать нам</div>
                       <div className="flex items-center gap-4">
-                        <SocialLinkButton network="max" href={ORIENT_SOCIALS.max.href} variant="bare" size={30} />
+                        <SocialLinkButton network="max" href="https://web.max.ru/168679067" variant="bare" size={30} />
                         <SocialLinkButton network="whatsapp" href={ORIENT_SOCIALS.whatsapp.href} variant="bare" size={28} />
                         <SocialLinkButton network="telegram" href={ORIENT_SOCIALS.telegram.href} variant="bare" size={28} />
                       </div>
@@ -1215,7 +1215,7 @@ export default function Home() {
                     <span className="font-mono-num text-[10px] uppercase text-[#c9a86e]">Для вопросов</span>
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <a href={ORIENT_SOCIALS.max.href} target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#7357ff]/35 bg-[#7357ff]/10 px-4 text-sm font-medium text-white/90 hover:bg-[#7357ff]/20 hover:border-[#8d77ff]/60 hover:text-white transition-all focus-lux">
+                    <a href="https://web.max.ru/168679067" target="_blank" rel="noopener noreferrer" className="group w-full sm:w-auto min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#7357ff]/35 bg-[#7357ff]/10 px-4 text-sm font-medium text-white/90 hover:bg-[#7357ff]/20 hover:border-[#8d77ff]/60 hover:text-white transition-all focus-lux">
                       <SocialIcon network="max" size={22} /> <span>MAX</span> <span className="text-white/45">·</span> <span className="font-mono-num">+7 (995) 868-97-68</span>
                     </a>
                     <a href={ORIENT_SOCIALS.whatsapp.href} target="_blank" rel="noopener noreferrer" className="flex-1 sm:flex-none min-h-[48px] inline-flex items-center justify-center gap-2 rounded-2xl border border-[#25D366]/30 bg-[#25D366]/[0.07] px-4 text-sm font-medium text-white/85 hover:bg-[#25D366]/15 hover:border-[#25D366]/50 hover:text-white transition-all focus-lux">
@@ -1798,7 +1798,7 @@ export default function Home() {
             {/* Две кнопки — стеклянные, с брендовой левой полосой; MAX первая */}
             <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
-                href="https://max.ru/id253401357515_biz"
+                href="https://max.ru/join/KGMDARU6jZYZPJfs54YSA7tfnt3W8xzc0shptRANxVc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group relative overflow-hidden inline-flex items-center gap-4 pl-4 pr-6 py-4 rounded-xl bg-white/[0.03] border border-white/[0.08] backdrop-blur-sm hover:bg-white/[0.06] hover:border-[#5E3FE3]/40 transition-all duration-300 shadow-lux shadow-lux-hover focus-lux"

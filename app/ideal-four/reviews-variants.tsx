@@ -28,25 +28,60 @@ import {
 } from "@/components/reviews-shared"
 
 /* Общий «шапочный» рейтинг для всех трёх вариантов. */
+const REVIEW_PLATFORM_LINKS = [
+  {
+    source: "yandex" as const,
+    label: "Яндекс Карты",
+    href: "https://yandex.ru/maps/org/orient_auto/107743912077/?ll=131.957171%2C43.098351&z=17",
+  },
+  {
+    source: "2gis" as const,
+    label: "2ГИС",
+    href: "https://2gis.ru/vladivostok/geo/70000001093566771",
+  },
+]
+
+function ReviewPlatformLinks({ compact = false }: { compact?: boolean }) {
+  return (
+    <div className={`flex items-center gap-2 ${compact ? "justify-center" : "justify-end"}`}>
+      {REVIEW_PLATFORM_LINKS.map((platform) => (
+        <a
+          key={platform.source}
+          href={platform.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group inline-flex items-center gap-2 rounded-xl border border-white/[0.1] bg-white/[0.035] px-3 py-2 text-[11px] font-semibold text-white/70 transition-all hover:border-[#c9a86e]/45 hover:bg-white/[0.07] hover:text-white"
+        >
+          <SourceLogo source={platform.source} size={24} />
+          <span>{platform.label}</span>
+        </a>
+      ))}
+    </div>
+  )
+}
+
 function RatingHeader({ rating, count }: { rating: number; count: number }) {
   return (
-    <div className="flex flex-col items-center mb-8 md:mb-10">
-      <div className="flex items-center gap-4 mb-4">
-        <div className="flex gap-1">
-          {[1, 2, 3, 4, 5].map((s) => (
-            <span key={s}>
-              <Star4 />
-            </span>
-          ))}
+    <div className="mb-8 flex flex-col gap-5 md:mb-10 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col items-center md:items-start">
+        <div className="mb-3 flex items-center gap-4">
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map((s) => (
+              <span key={s}>
+                <Star4 />
+              </span>
+            ))}
+          </div>
+          <span className="text-3xl font-extrabold tabular-nums text-white md:text-4xl">
+            {rating.toFixed(1).replace(".", ",")}
+            <span className="text-xl font-light text-white/30"> / 5</span>
+          </span>
         </div>
-        <span className="text-white text-3xl md:text-4xl font-extrabold tabular-nums">
-          {rating.toFixed(1).replace(".", ",")}
-          <span className="text-white/30 text-xl font-light"> / 5</span>
-        </span>
+        <p className="text-center text-xs uppercase tracking-[0.2em] text-white/45 md:text-left">
+          на основе {count} реальных оценок
+        </p>
       </div>
-      <p className="text-white/45 text-xs tracking-[0.2em] uppercase">
-        на основе {count} реальных оценок
-      </p>
+      <ReviewPlatformLinks />
     </div>
   )
 }
@@ -380,6 +415,9 @@ export function ReviewsVariantHero({ apiUrl }: { apiUrl?: string }) {
           <span className="text-[10px] uppercase tracking-[0.14em] text-white/45">
             {aggregate.count} оценок
           </span>
+        </div>
+        <div className="mb-4">
+          <ReviewPlatformLinks compact />
         </div>
 
         <motion.div
