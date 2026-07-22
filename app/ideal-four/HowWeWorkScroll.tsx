@@ -270,14 +270,14 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </h2>
             </motion.div>
 
-            <div className="relative min-h-[520px]">
+            <div className="relative mt-8 min-h-[520px]">
               {/* Автомобиль — самостоятельный фоновый слой всего блока, а не часть карусели. */}
               <motion.div
                 initial={{ opacity: 0, x: -45, scale: 0.96 }}
                 whileInView={{ opacity: 1, x: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.8, delay: 0.08, ease: [0.16, 1, 0.3, 1] }}
-                className="pointer-events-none absolute -left-[22%] bottom-[4%] z-0 w-[75%]"
+                className="pointer-events-none absolute -left-[30%] bottom-[2%] z-0 w-[78%]"
               >
                 <div className="absolute left-[15%] top-[45%] h-[48%] w-[62%] -translate-y-1/2 rounded-full bg-[#c9a86e]/[0.09] blur-[105px]" />
                 <div className="absolute bottom-[12%] left-[12%] h-12 w-[72%] rounded-[50%] bg-black/50 blur-2xl" />
@@ -304,7 +304,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-30px" }}
                 transition={{ duration: 0.6, delay: 0.14, ease: [0.16, 1, 0.3, 1] }}
-                className="relative z-10 ml-auto h-[460px] w-[54%]"
+                className="relative left-[3%] z-10 ml-auto h-[500px] w-[56%] overflow-visible"
                 style={{
                   perspective: "1600px",
                   WebkitMaskImage:
@@ -322,10 +322,13 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                     const offset = i - pos // 0 = в фокусе; ± = выше/ниже
                     const abs = Math.min(Math.abs(offset), 3)
                     // Геометрия колоды (всё непрерывно по offset — нет прыжков)
-                    const y = offset * 132 // вертикальный разнос, px
+                    const y = offset * 158 // вертикальный разнос, px
                     const z = -abs * 160 // вглубь
                     const rotX = Math.max(-30, Math.min(30, -offset * 11)) // наклон
-                    const scale = Math.max(0.7, 1 - abs * 0.09)
+                    // Активную карточку рисуем в нативном масштабе. Раньше scale(1.3)
+                    // растягивал уже отрисованные текст и границы, из-за чего они
+                    // выглядели мыльными. Нужный размер теперь задаётся самой карточке.
+                    const scale = Math.max(0.78, 1 - abs * 0.08)
                     // Прозрачность самой карточки держим высокой (не мерцает),
                     // «уводим вдаль» затемняющим оверлеем ниже.
                     const cardOpacity = Math.max(0.08, 1 - abs * 0.35)
@@ -334,7 +337,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                     return (
                       <div
                         key={i}
-                        className="absolute left-1/2 top-[48%] w-[92%] max-w-md"
+                        className="absolute left-1/2 top-[48%] w-[94%] max-w-[590px]"
                         style={{
                           zIndex: 100 - Math.round(abs * 10),
                           transform: `translate3d(-50%, -50%, 0) translateY(${y}px) translateZ(${z}px) rotateX(${rotX}deg) scale(${scale})`,
@@ -345,7 +348,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                       >
                         <div
                           className={
-                            "relative rounded-[26px] border p-8 " +
+                            "relative min-h-[340px] rounded-[28px] border p-10 " +
                             (isActive
                               ? "border-[#c9a86e]/45 bg-gradient-to-br from-[#20304a] to-[#0e1720] shadow-[0_30px_80px_-20px_rgba(0,0,0,0.85),0_0_0_1px_rgba(201,168,110,0.15),0_0_60px_-10px_rgba(201,168,110,0.25)]"
                               : "border-white/[0.08] bg-gradient-to-br from-[#182234] to-[#0e1720] shadow-[0_20px_50px_-20px_rgba(0,0,0,0.8)]")
@@ -359,27 +362,27 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
                           />
                           {/* Верхний блик */}
                           <div className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent" />
-                          <div className="relative mb-5 flex items-center">
+                          <div className="relative mb-6 flex items-center">
                             <div className="flex items-center gap-4">
                               <div
                                 className={
-                                  "w-14 h-14 rounded-2xl flex items-center justify-center " +
+                                  "flex h-16 w-16 items-center justify-center rounded-2xl " +
                                   (isActive
                                     ? "bg-gradient-to-br from-[#c9a86e] to-[#d4b876] text-[#0e1720] shadow-[0_0_28px_rgba(201,168,110,0.45)]"
                                     : "bg-white/[0.06] text-[#c9a86e]")
                                 }
                               >
-                                <StepIcon className="w-6 h-6" />
+                                <StepIcon className="h-7 w-7" />
                               </div>
                               <span className="text-[#c9a86e]/80 text-[11px] uppercase tracking-[0.35em] font-mono-num">
                                 Шаг {s.step.padStart(2, "0")}
                               </span>
                             </div>
                           </div>
-                          <h3 className="relative text-white text-2xl lg:text-3xl font-semibold mb-4 leading-tight">
+                          <h3 className="relative mb-5 text-3xl font-semibold leading-tight text-white xl:text-4xl">
                             {s.title}
                           </h3>
-                          <p className="relative text-white/60 text-[15px] leading-relaxed">
+                          <p className="relative text-[16px] leading-relaxed text-white/65 xl:text-[17px]">
                             {s.description}
                           </p>
                         </div>
@@ -390,7 +393,7 @@ export default function HowWeWorkScroll({ steps }: { steps: WorkStep[] }) {
               </motion.div>
 
               {/* Точки-прогресс шагов */}
-              <div className="relative z-10 ml-auto mt-3 flex w-[54%] justify-center gap-2.5">
+              <div className="relative left-[3%] z-10 ml-auto mt-3 flex w-[56%] justify-center gap-2.5">
                 {steps.map((_, i) => (
                   <span
                     key={i}

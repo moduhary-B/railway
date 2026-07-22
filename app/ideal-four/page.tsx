@@ -68,6 +68,42 @@ import HowWeWorkScrollV2 from "@/components/HowWeWorkScrollV2";
 import { motion, MotionConfig } from "framer-motion";
 import pageStyles from "./ideal-four.module.css";
 
+function scrollToPageAnchor(
+  href: string,
+  behavior: ScrollBehavior = "smooth",
+  updateHash = true,
+) {
+  const id = href.replace(/^#/, "")
+  const target = document.getElementById(id)
+  if (!target) return
+
+  const header = document.querySelector("header")
+  const headerHeight = header?.getBoundingClientRect().height ?? 0
+  // На десктопе прокручиваем немного глубже стандартного положения:
+  // заголовок остаётся виден, а в экран помещается больше содержимого секции.
+  const targetBounds = target.getBoundingClientRect()
+  const desktopAnchorTop = -72
+  const extraScroll =
+    window.innerWidth >= 1024 ? Math.max(0, headerHeight - desktopAnchorTop) : 12
+  const top =
+    id === "hero"
+      ? 0
+      : window.innerWidth >= 1024 && id === "reviews"
+        ? targetBounds.bottom + window.scrollY - window.innerHeight
+        : targetBounds.top + window.scrollY - headerHeight + extraScroll
+
+  if (updateHash && window.location.hash !== href) {
+    window.history.pushState(null, "", href)
+  }
+  window.scrollTo({ top: Math.max(0, top), behavior })
+
+  if (updateHash) {
+    ;[400, 1300].forEach((delay) => {
+      window.setTimeout(() => scrollToPageAnchor(href, "auto", false), delay)
+    })
+  }
+}
+
 export default function Home() {
   const consultation = useConsultationModal()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -84,6 +120,28 @@ export default function Home() {
   const teamMobileViewportRef = useRef<HTMLDivElement>(null)
   const teamMobileTrackRef = useRef<HTMLDivElement>(null)
   const [teamMobileVisible, setTeamMobileVisible] = useState(false)
+
+  useEffect(() => {
+    const syncHashPosition = () => {
+      if (window.location.hash) {
+        scrollToPageAnchor(window.location.hash, "auto", false)
+      }
+    }
+
+    const frame = window.requestAnimationFrame(syncHashPosition)
+    const settleTimers = [250, 1000, 2200].map((delay) =>
+      window.setTimeout(syncHashPosition, delay),
+    )
+    window.addEventListener("hashchange", syncHashPosition)
+    window.addEventListener("load", syncHashPosition)
+
+    return () => {
+      window.cancelAnimationFrame(frame)
+      settleTimers.forEach(window.clearTimeout)
+      window.removeEventListener("hashchange", syncHashPosition)
+      window.removeEventListener("load", syncHashPosition)
+    }
+  }, [])
 
   useEffect(() => {
     if (!selectedVideo) return
@@ -992,36 +1050,23 @@ export default function Home() {
             {/* Desktop Navigation */}
             <nav className={`hidden lg:flex items-center gap-8 ${pageStyles.headerNav}`}>
               {[
-                { name: "Главная", href: "#hero", isAnchor: true },
-                { name: "Каталог", href: "#catalog", isAnchor: false },
-                { name: "Отзывы", href: "#reviews", isAnchor: true },
-                { name: "Контакты", href: "#contacts", isAnchor: true }
+                { name: "Главная", href: "#hero" },
+                { name: "Каталог", href: "#catalog" },
+                { name: "Отзывы", href: "#reviews" },
+                { name: "Контакты", href: "#contacts" }
               ].map((item) => (
-                item.isAnchor ? (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    onClick={e => {
-                      if (window.location.pathname === "/" && item.name === "Главная") {
-                        e.preventDefault();
-                        window.scrollTo({ top: 0, behavior: "smooth" });
-                      }
-                    }}
-                    className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide relative group py-6"
-                  >
-                    {item.name}
-                    <span className="absolute bottom-4 left-0 w-0 h-0.5 bg-gradient-to-r from-[#c9a86e] to-[#d4b876] group-hover:w-full transition-all duration-300"></span>
-                  </a>
-                ) : (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide relative group py-6"
-                  >
-                    {item.name}
-                    <span className="absolute bottom-4 left-0 w-0 h-0.5 bg-gradient-to-r from-[#c9a86e] to-[#d4b876] group-hover:w-full transition-all duration-300"></span>
-                  </Link>
-                )
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(event) => {
+                    event.preventDefault()
+                    scrollToPageAnchor(item.href)
+                  }}
+                  className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide relative group py-6"
+                >
+                  {item.name}
+                  <span className="absolute bottom-4 left-0 w-0 h-0.5 bg-gradient-to-r from-[#c9a86e] to-[#d4b876] group-hover:w-full transition-all duration-300"></span>
+                </a>
               ))}
             </nav>
 
@@ -1070,31 +1115,18 @@ export default function Home() {
                       { name: "Отзывы", href: "#reviews" },
                       { name: "Контакты", href: "#contacts" }
                     ].map((item) => (
-                      item.name === "Главная" ? (
-                        <a
-                          key={item.name}
-                          href="#hero"
-                          onClick={e => {
-                            setMobileMenuOpen(false)
-                            if (window.location.pathname === "/") {
-                              e.preventDefault();
-                              window.scrollTo({ top: 0, behavior: "smooth" });
-                            }
-                          }}
-                          className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide text-2xl"
-                        >
-                          {item.name}
-                        </a>
-                      ) : (
-                        <a
-                          key={item.name}
-                          href={item.href}
-                          onClick={() => setMobileMenuOpen(false)}
-                          className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide text-2xl"
-                        >
-                          {item.name}
-                        </a>
-                      )
+                      <a
+                        key={item.name}
+                        href={item.href}
+                        onClick={(event) => {
+                          event.preventDefault()
+                          setMobileMenuOpen(false)
+                          scrollToPageAnchor(item.href)
+                        }}
+                        className="text-white/90 hover:text-[#c9a86e] transition-all duration-300 font-medium tracking-wide text-2xl"
+                      >
+                        {item.name}
+                      </a>
                     ))}
                   </nav>
                   <div className="mt-12 space-y-6">
@@ -1149,7 +1181,7 @@ export default function Home() {
           + "с гарантией качества" в одну строчку (понравилось)
           + остальные требования соблюдены
           ====================================================== */}
-      <section id="hero" className="relative flex min-h-[100svh] items-stretch overflow-hidden pb-[clamp(1.5rem,5svh,3.5rem)] pt-20 scroll-mt-24 md:min-h-[90vh] md:pb-32 md:pt-16 lg:items-center lg:pb-8 lg:pt-10">
+      <section id="hero" className="relative flex min-h-[100svh] items-stretch overflow-hidden pb-[clamp(1.5rem,5svh,3.5rem)] pt-20 scroll-mt-16 md:min-h-[90vh] md:pb-32 md:pt-16 lg:items-center lg:pb-8 lg:pt-10">
         <div className="absolute inset-0 z-0" id="hero2">
           <div className="w-full h-full bg-gradient-to-br from-[#0a0f1a] via-[#0e1720] to-[#1a2332]">
             <div className="absolute inset-0 overflow-hidden">
@@ -1568,8 +1600,7 @@ export default function Home() {
      
 
       {/* Catalog Section */}
-      <div id="catalog" className="relative top-8 h-0 pointer-events-none"></div>
-      <section className="ideal4-section ideal4-tone-catalog scroll-mt-0 relative overflow-hidden section-soft-top">
+      <section id="catalog" className="ideal4-section ideal4-tone-catalog scroll-mt-12 md:scroll-mt-14 relative overflow-hidden section-soft-top">
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -2467,7 +2498,7 @@ export default function Home() {
       )}
 
       {/* Reviews Section - Grid with Animation */}
-      <section id="reviews" className="ideal4-section ideal4-tone-reviews py-16 md:py-24 scroll-mt-24 section-soft-top overflow-hidden">
+      <section id="reviews" className="ideal4-section ideal4-tone-reviews py-16 md:py-24 scroll-mt-12 md:scroll-mt-14 section-soft-top overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-4">
           {/* ===== ВАРИАНТЫ БЛОКА «ОТЗЫВЫ НАШИХ КЛИЕНТОВ» =====
                Как и с блоком «Как мы работаем» выше (HowWeWorkScroll +
@@ -3246,7 +3277,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacts" className="ideal4-section ideal4-tone-contacts py-16 md:py-24 scroll-mt-24">
+      <section id="contacts" className="ideal4-section ideal4-tone-contacts py-16 md:py-24 scroll-mt-12 md:scroll-mt-14">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}

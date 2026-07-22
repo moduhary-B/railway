@@ -62,7 +62,7 @@ function ReviewPlatformLinks({ compact = false }: { compact?: boolean }) {
 
 function RatingHeader({ rating, count }: { rating: number; count: number }) {
   return (
-    <div className="mb-8 flex flex-col gap-5 md:mb-10 md:flex-row md:items-center md:justify-between">
+    <div className="mb-8 flex flex-col gap-5 md:mb-10 md:flex-row md:items-center md:justify-between lg:px-[42px] xl:px-[50px]">
       <div className="flex flex-col items-center md:items-start">
         <div className="mb-3 flex items-center gap-4">
           <div className="flex gap-1">
